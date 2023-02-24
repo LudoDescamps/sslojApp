@@ -1,0 +1,13 @@
+// TODO TO MOVE ng-pick-datetime override colors
+.owl-dt-calendar-table .owl-dt-calendar-cell-selected {
+  color: white;
+  background-color: $primary;
+}
+
+.owl-dt-container-buttons {
+  color: $primary;
+}
+
+.mat-datepicker-toggle-active {
+  color: $black !important;
+}

@@ -1,0 +1,124 @@
+@import "colors";
+
+// MAT CARD
+.mat-card {
+  border-radius: 2px !important;
+  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+// MAT DIALOG
+.mat-dialog-actions {
+  display: block !important;
+  text-align: right;
+  margin-bottom: -16px !important;
+}
+
+.full-width-dialog {
+  .mat-dialog-container {
+    padding: 0;
+  }
+  @media (max-width: $screen-xs-max) {
+    height: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    .mat-dialog-container {
+      max-width: 100vw !important;
+      padding: 0;
+    }
+  }
+}
+
+// MAT TABLE
+.mat-header-cell {
+  font-size: $fontS;
+}
+
+// MAT TAB
+.mat-tab-label-active {
+  color: $accent;
+  opacity: 1 !important;
+  @include fontBd;
+}
+
+.mat-tab-label {
+  //text-transform: uppercase;
+  font-size: $fontM;
+}
+
+.mat-tab-label-active {
+  //background-color: $primary;
+  //color: $white;
+}
+
+.mat-tab-body-content {
+  padding: 10px 0;
+}
+
+.cdk-overlay-container {
+  position: fixed;
+  z-index: 99999;
+}
+
+.mat-snack-bar-container.error-snackbar {
+  background: $red;
+  font-weight: bold;
+}
+
+.mat-snack-bar-container.success-snackbar {
+  background: $green;
+  font-weight: bold;
+}
+
+.mat-form-field {
+  line-height: 1.5;
+}
+
+.mat-checkbox-layout {
+  white-space: normal !important;
+  .mat-checkbox-label {
+    line-height: initial !important;
+  }
+}
+
+.mat-select-panel.bigger-select {
+  max-height: 50vh !important;
+}
+
+.grey-frame {
+  background-color: rgba($light-grey, 0.7);
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 5px;
+}
+
+// NGX CHART
+.ngx-charts, text {
+  fill: $black;
+}
+
+.chart-legend .legend-labels {
+  list-style: none !important;
+}
+.chart-legend {
+  display: block;
+}
+.chart-legend .legend-label {
+  color: inherit !important;
+
+  & .active .legend-label-text {
+    color: inherit !important;
+    text-decoration: underline;
+  }
+
+  display: block !important;
+}
+
+.ngx-charts-tooltip-content {
+  z-index: 100000;
+}
+
+// LOADING BAR
+.ngx-bar {
+  box-shadow: 0px 1px 8px rgba($accentrgb, 0.45);
+  margin-top: env(safe-area-inset-top);
+}

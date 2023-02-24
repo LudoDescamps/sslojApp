@@ -1,0 +1,63 @@
+.filter {
+  margin: 8px 0;
+  @media (max-width: $container-lg) {
+    font-size: $fontXS;
+  }
+
+  .filter-content {
+    max-height: 390px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding:0 0 12px 0;
+    @include easeInOut(0.1s);
+
+    &.collapsed {
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      padding: 0;
+    }
+  }
+
+  .mat-label {
+    @include fontBd;
+    padding: 5px 0;
+    mat-icon {
+      float: right;
+      font-size: $fontM;
+    }
+  }
+
+  .mat-checkbox {
+  }
+
+  .mat-checkbox-inner-container {
+    display: inline-block;
+    height: 13px;
+    line-height: 0;
+    margin: auto;
+    margin-right: 8px;
+    order: 0;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 13px;
+    flex-shrink: 0;
+  }
+
+  .mat-select-value-text {
+    @include fontBd;
+    font-size: $fontS;
+    @media (max-width: 1366px) {
+      font-size: $fontXS;
+    }
+  }
+
+  .mat-select-value {
+    @include fontBd;
+    font-size: $fontS;
+    @media (max-width: 1366px) {
+      font-size: $fontXS;
+    }
+  }
+}

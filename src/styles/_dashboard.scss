@@ -1,0 +1,212 @@
+@import "./variables";
+@import "./colors";
+@import "./mixins";
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 72px;
+
+  @media (max-width: $screen-xs-max) {
+    padding-top: calc(env(safe-area-inset-top) + 78px);
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
+  }
+
+  @media (min-width: $screen-sm-min) {
+    ks-filter-panel {
+      position: sticky;
+      align-self: flex-start;
+      top: 72px;
+    }
+  }
+
+  .content {
+    padding: 12px;
+    width: 100%;
+
+    @media (max-width: $screen-xs-max) {
+      padding: 10px;
+      margin-top: 77px;
+    }
+
+    .dashboard-tab {
+      border-radius: 2px;
+      background: $white;
+      width: 100%;
+      padding: 12px 6px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    .grey-container {
+      border-radius: 2px;
+      padding: 12px;
+      background: $light-grey;
+      flex: 1;
+      margin: 6px;
+    }
+
+    .data-figure {
+      div:first-child {
+        margin-bottom: 10px;
+      }
+      div:last-child {
+        @include fontBd;
+        font-size: $fontM;
+      }
+
+      &.ca {
+        background: $accent;
+        padding: 12px;
+        margin: -12px;
+        color: $white;
+        border-radius: 2px;
+        box-shadow: 0 5px 10px rgba($accentrgb, 0.3);
+        @media (max-width: $screen-sm-max) {
+          margin-bottom: 10px;
+        }
+
+        &.obj {
+          background: $dark-grey;
+          box-shadow: 0 5px 10px rgba($blackrgb, 0.1);
+        }
+      }
+
+      @media (max-width: $screen-md) {
+        div:first-child {
+          margin-bottom: 0px;
+        }
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 3px;
+      }
+    }
+
+    .tables {
+      gap: 12px;
+    }
+  }
+
+  .dataTable {
+    width: calc(100% - 12px);
+    border-radius: 2px;
+    margin: 0 6px 0 6px;
+
+    ::ng-deep thead {
+      background: transparent !important;
+    }
+    .mat-header-cell {
+      @include fontSpecial();
+      color: $black;
+    }
+    .mat-cell {
+      border-bottom: none;
+    }
+
+    .mat-row {
+      &:nth-child(2n+1) {
+        background: $light-grey;
+      }
+
+      @media (max-width: $screen-sm-max) {
+        &.gold {
+          @include rankDecoration($gold, $light-grey, '1');
+        }
+
+        &.silver {
+          @include rankDecoration($silver, $white, '2');
+        }
+
+        &.bronze {
+          @include rankDecoration($bronze, $light-grey, '3');
+        }
+
+        &.rank-any {
+          .mat-column-rank {
+            height: 0;
+            padding: 0;
+            &:before {
+              visibility: hidden;
+            }
+
+            .rank {
+              position: absolute;
+              padding: 5px 20px;
+              font-size: 50px;
+              opacity: .4;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: $screen-md-min) {
+      .mat-column-alert {
+        width: 70px;
+      }
+    }
+  }
+
+  .seeAll {
+    display: none;
+    @media (max-width: $screen-md) {
+      display: block;
+    }
+
+    ::ng-deep .font-size svg {
+      vertical-align: baseline;
+    }
+
+    &.less {
+      mat-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .mat-column-rank {
+    &.rank-1 {
+      background: linear-gradient(90deg, $gold -70%, $light-grey 100%);
+      .rank {
+        @include fontBd;
+        font-size: $fontXL;
+        padding-left: 0;
+        color: $gold;
+      }
+    }
+    &.rank-2 {
+      background: linear-gradient(90deg, $silver -70%, transparent 100%);
+      .rank {
+        @include fontBd;
+        font-size: $fontXL;
+        padding-left: 0;
+        color: $silver;
+      }
+    }
+    &.rank-3 {
+      background: linear-gradient(90deg, $bronze -70%, $light-grey 100%);
+      .rank {
+        @include fontBd;
+        font-size: $fontXL;
+        padding-left: 0;
+        color: $bronze;
+      }
+    }
+  }
+
+  .rank {
+    display: inline-block;
+    line-height: 38px;
+    font-size: $fontL;
+    text-align: center;
+    padding-left: 5px;
+    @include fontBd;
+    color: $dark-grey;
+    @media (max-width: $screen-sm-max) {
+      width: fit-content;
+      padding: 2px 8px;
+    }
+  }
+}
