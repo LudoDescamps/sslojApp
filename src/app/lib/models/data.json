@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Poséidon",
+        "element": "LUMIERE",
+        "specificity": "DIEU",
+        "advice": "???",
+        "topAgainst": [],
+        "neverUseAgainst": []
+    },
+    {
+        "name": "Athéna",
+        "element": "EAU",
+        "specificity": "DIEU",
+        "advice": "",
+        "topAgainst": [],
+        "neverUseAgainst": []
+    },
+    {
+        "name": "Pandora",
+        "element": "OBSCURITE",
+        "specificity": "SPECTRE",
+        "advice": "",
+        "topAgainst": [],
+        "neverUseAgainst": []
+    },
+    {
+        "name": "Sorrento",
+        "element": "Lumière",
+        "specificity": "MARINA",
+        "advice": "",
+        "topAgainst": [],
+        "neverUseAgainst": []
+    },
+    {
+        "name": "Kanon",
+        "element": "OBSCURITE",
+        "specificity": "MARINA",
+        "advice": "",
+        "topAgainst": [],
+        "neverUseAgainst": []
+    },
+    {
+        "name": "Io",
+        "element": "EAU",
+        "specificity": "MARINA",
+        "advice": "",
+        "topAgainst": [],
+        "neverUseAgainst": []
+    }
+]
