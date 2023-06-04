@@ -1,0 +1,22 @@
+[
+  {
+    "id": "IMMOBILE_COMME_UNE_MONTAGE",
+    "name": "Immobile comme une montagne",
+    "level": "",
+    "rank": "number",
+    "quality": "LEGENDAIRE",
+    "recommended": true,
+    "restriction": [],
+    "images": []
+  },
+  {
+    "id": "ARC_OR",
+    "name": "Arc d'Or",
+    "level": "",
+    "rank": "number",
+    "quality": "OR",
+    "recommended": true,
+    "restriction": [],
+    "images": []
+  }
+]

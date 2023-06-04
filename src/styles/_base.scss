@@ -1,0 +1,58 @@
+html, body{
+  @include font;
+  font-size: $fontS;
+  line-height: 1.2;
+  color: $black;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body{
+  background-color: $light-grey;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.section {
+  font-size: $fontM;
+  padding-top: 70px;
+  max-width: 1000px;
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+@media (max-width: $screen-md-min) {
+  .section {
+    padding-top: 110px;
+    max-width: auto;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    font-size: $fontM;
+  }
+
+  .container {
+    padding-bottom: 40px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: $dark-grey;
+
+  &:hover {
+    background-color: $middle-grey;
+  }
+}

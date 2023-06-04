@@ -1,0 +1,79 @@
+@import "colors";
+
+// MAT CARD
+.mat-card {
+  border-radius: 8px !important;
+  box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+// MAT DIALOG
+.mat-dialog-actions {
+  display: block !important;
+  text-align: right;
+  margin-bottom: -16px !important;
+}
+
+.full-width-dialog {
+  .mat-dialog-container {
+    padding: 0;
+  }
+  @media (max-width: $screen-xs-max) {
+    height: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    .mat-dialog-container {
+      max-width: 100vw !important;
+      padding: 0;
+    }
+  }
+}
+
+.cdk-overlay-container {
+  position: fixed;
+  z-index: 99999;
+}
+
+.mat-snack-bar-container.error-snackbar {
+  background: $red;
+  font-weight: bold;
+}
+
+.mat-snack-bar-container.success-snackbar {
+  background: $green;
+  font-weight: bold;
+}
+
+.mat-tab-label {
+  //text-transform: uppercase;
+}
+
+.mat-tab-label-active {
+  //background-color: $primary;
+  //color: $white;
+}
+
+.mat-tab-body-content {
+  padding: 10px;
+}
+
+.mat-form-field {
+  line-height: 1.5;
+}
+
+.mat-checkbox-layout {
+  white-space: normal !important;
+  .mat-checkbox-label {
+    line-height: initial !important;
+  }
+}
+
+.mat-select-panel.bigger-select {
+  max-height: 50vh !important;
+}
+
+.grey-frame {
+  background-color: rgba($light-grey, 0.7);
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,79 @@
+.mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
+  //@include fontBd;
+  //text-transform: uppercase;
+
+  &.small {
+    .mat-button-wrapper > * {
+      vertical-align: text-bottom;
+    }
+    padding: 0 8px;
+    line-height: 17px;
+  }
+}
+
+.mat-raised-button, .mat-stroked-button, .mat-flat-button {
+  border-radius: 8px !important;
+}
+
+.font-size {
+  width: initial !important;
+  height: initial !important;
+  font-size: initial !important;
+  vertical-align: bottom;
+
+  svg {
+    max-height: $fontS;
+    max-width: $fontS;
+    vertical-align: bottom;
+  }
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+button {
+  &.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%; // or -20px
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    border-top-color: transparent;
+    animation: spinner .8s linear infinite;
+  }
+
+  &[color=primary] {
+    &.spinner:before {
+      border: 2px solid $primary;
+      border-top-color: transparent;
+    }
+  }
+
+  &[color=accent] {
+    &.spinner:before {
+      border: 2px solid $accent;
+      border-top-color: transparent;
+    }
+  }
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }

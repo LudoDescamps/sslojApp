@@ -1,0 +1,59 @@
+/* --- COLORS --- */
+$primary: #A2BF1A;
+$accent: #333333;
+$black: #333333;
+$light-grey: #f2f2f2;
+$middle-grey: #d8d8d8;
+$dark-grey: #838383;
+$white: #ffffff;
+$red: #c51609;
+$orange: #FF8F00;
+$green: #A2BF1A;
+$blue: #1A80BF;
+$redrgb: 197,22,9;
+$orangergb: 255,143,0;
+$greenrgb: 162,191,26;
+$bluergb: 26,128,191;
+$blackrgb: 0,0,0;
+$whitergb: 255,255,255;
+$primaryrgb: 162,191,26;
+
+html {
+  --primary: #A2BF1A;
+  --accent: #1a2830;
+  --black: #1a2830;
+  --light-grey: #f2f2f2;
+  --middle-grey: #d8d8d8;
+  --dark-grey: #838383;
+  --white: #ffffff;
+  --red: #dc1010;
+  --orange: #FF8F00;
+  --green: #A2BF1A;
+  --blue: #1A80BF;
+  --redrgb: 220,16,16;
+  --orangergb: 255,143,0;
+  --greenrgb: 162,191,26;
+  --bluergb: 26,128,191;
+  --blackrgb: 0,0,0;
+  --whitergb: 255,255,255;
+  --primaryrgb: 162,191,26;
+}
+
+$primary: var(--primary);
+$accent: var(--accent);
+$black: var(--black);
+$light-grey: var(--light-grey);
+$middle-grey: var(--middle-grey);
+$dark-grey: var(--dark-grey);
+$white: var(--white);
+$red: var(--red);
+$orange: var(--orange);
+$green: var(--green);
+$blue: var(--blue);
+$redrgb: var(--redrgb);
+$orangergb: var(--orangergb);
+$greenrgb: var(--greenrgb);
+$bluergb: var(--bluergb);
+$blackrgb: var(--blackrgb);
+$whitergb: var(--whitergb);
+$primaryrgb: var(--primaryrgb);

@@ -1,0 +1,99 @@
+@import "variables";
+
+h1{
+  margin:1em 0;
+  @include fontSpecial;
+  font-size: $fontL;
+  line-height: $fontL;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+h2{
+  margin:1em 0;
+  @include fontBd;
+  font-size: $fontM;
+  line-height: $fontM;
+  letter-spacing: normal;
+  color:$primary;
+}
+
+h3{
+  margin:1em 0;
+  @include fontBd;
+  font-size: $fontS;
+  line-height: $fontS;
+  letter-spacing: normal;
+}
+
+h4, h5{
+  padding-bottom: 0.5em;
+}
+
+p {
+  font-size: 1em;
+  margin:0 0 1em 0;
+}
+
+ul:not(.slick-dots) {
+  margin:0 0 1em 1em;
+  li {
+    font-size: 1em;
+    &:before {
+      content: "-";
+      position: absolute;
+      margin-left: -1em;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link {
+  cursor: pointer;
+}
+
+strong,
+b {
+  @include font;
+  font-weight: 700;
+}
+
+.small{
+  font-size: $fontXS;
+}
+
+.medium {
+  font-size: $fontM;
+}
+
+.big {
+  font-size: $fontL;
+}
+
+.error {
+  color:$red;
+}
+
+.success {
+  color:$green;
+}
+
+.primary {
+  color: $primary;
+}
+
+.accent {
+  color: $accent;
+}
+
+.grey {
+  color: $dark-grey;
+}

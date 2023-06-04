@@ -1,0 +1,97 @@
+@media (max-width: 960px) {
+  .mat-table[matTableResponsive] {
+    .mat-header-row {
+      display: flex;
+      flex-wrap: wrap;
+      height: auto !important;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+
+      th.mat-header-cell {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        padding: 1rem 0.5rem;
+        justify-content: space-around;
+        border-bottom: none;
+
+        & > .mat-sort-header-container {
+          .mat-sort-header-arrow {
+            color: inherit;
+          }
+
+          background: rgba($whitergb, 0.2);
+          padding: 2px 7px;
+          outline: 0;
+          border-radius: 15px;
+        }
+
+        & > .mat-sort-header-container:not(.mat-sort-header-sorted) {
+          //color: $black;
+          &:after {
+            content: '⇵';
+            display: inline;
+            margin-left: -1rem;
+            color: $primary;
+          }
+        }
+
+        &:not([mat-sort-header]),
+        &.mat-sort-header-disabled {
+          display: none;
+        }
+      }
+    }
+
+    .mat-row {
+      height: auto;
+      &:not(:first-of-type) {
+        outline: 1px solid rgba($blackrgb, 0.05);
+      }
+
+      td.mat-cell:not(.mat-column-actions):not(.mat-column-more) {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        padding: 0 0.3rem 0.5rem 0.3rem;
+        text-align: left !important;
+        word-break: break-word;
+
+        & > * {
+          grid-column: 2;
+        }
+
+        &:before {
+          content: attr(data-column-name);
+          text-align: right;
+          @include fontBd;
+          margin-right: 10px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+      }
+
+      td.mat-cell[colspan] {
+        display: none !important;
+      }
+
+      td.mat-column-actions, td.mat-column-more {
+        display: table-cell;
+        width: 40px;
+        padding: 0 3px 0 0;
+      }
+
+      td:first-of-type {
+        border-top: 0.5rem solid transparent;
+      }
+    }
+  }
+
+  .mat-card,
+  .mat-expansion-panel {
+    .mat-table[matTableResponsive] {
+      //border: 0.5rem solid transparent;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+// --- FONT ---
+@mixin font{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin fontBd{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+@mixin fontSpecial{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+// --- EASING ---
+@mixin easeInOut($time, $property: all){
+  -webkit-transition: $property $time cubic-bezier(0.4, 0.0, 0.2, 1);
+  -moz-transition: $property $time cubic-bezier(0.4, 0.0, 0.2, 1);
+  -o-transition: $property $time cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: $property $time cubic-bezier(0.4, 0.0, 0.2, 1);
+
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  -moz-transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@mixin easeOut($time, $property: all){
+  -webkit-transition: $property $time cubic-bezier(0.0, 0.0, 0.2, 1);
+  -moz-transition: $property $time cubic-bezier(0.0, 0.0, 0.2, 1);
+  -o-transition: $property $time cubic-bezier(0.0, 0.0, 0.2, 1);
+  transition: $property $time cubic-bezier(0.0, 0.0, 0.2, 1);
+
+  -webkit-transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+  -moz-transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+@mixin easeIn($time, $property: all){
+  -webkit-transition: $property $time cubic-bezier(0.4, 0.0, 1, 1);
+  -moz-transition: $property $time cubic-bezier(0.4, 0.0, 1, 1);
+  -o-transition: $property $time cubic-bezier(0.4, 0.0, 1, 1);
+  transition: $property $time cubic-bezier(0.4, 0.0, 1, 1);
+
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+  -moz-transition-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+  transition-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "BOUCLIER_OR",
+    "name": "Bouclier d'Or",
+    "level": "",
+    "rank": "number",
+    "recommended": true,
+    "restriction": [],
+    "images": ["bouclier_or.png"]
+  },
+  {
+    "id": "ARC_OR",
+    "name": "Arc d'Or",
+    "level": "",
+    "rank": "number",
+    "recommended": true,
+    "restriction": [],
+    "images": ["arc_or.png"]
+  }
+]

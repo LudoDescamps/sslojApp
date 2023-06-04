@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Poséidon",
+    "element": "LUMIERE",
+    "knightClass": "COMPETENCE",
+    "artefacts": [
+      {
+        "id": "ARC_OR"
+      },
+      {
+        "id": "BOUCLIER_OR"
+      }
+    ],
+    "aryas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGE"
+      }
+    ],
+    "specificity": "DIEU",
+    "advice": "???",
+    "topAgainst": [],
+    "neverUseAgainst": [],
+    "images": ["poseidon.jpg","poseidon.jpg"]
+  },
+  {
+    "name": "Athéna",
+    "element": "EAU",
+    "knightClass": "",
+    "artefacts": [
+      {
+      "id": "ARC_OR"
+      }
+    ],
+    "aryas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGE"
+      }
+    ],
+    "specificity": "DIEU",
+    "advice": "",
+    "topAgainst": [],
+    "neverUseAgainst": []
+  },
+  {
+    "name": "Pandora",
+    "element": "OBSCURITE",
+    "knightClass": "",
+    "artefacts": [],
+    "specificity": "SPECTRE",
+    "advice": "",
+    "topAgainst": [],
+    "neverUseAgainst": []
+  },
+  {
+    "name": "Sorrento",
+    "element": "Lumière",
+    "knightClass": "",
+    "artefacts": [],
+    "specificity": "MARINA",
+    "advice": "",
+    "topAgainst": [],
+    "neverUseAgainst": []
+  },
+  {
+    "name": "Kanon",
+    "element": "OBSCURITE",
+    "knightClass": "",
+    "artefacts": [],
+    "specificity": "MARINA",
+    "advice": "",
+    "topAgainst": [],
+    "neverUseAgainst": []
+  },
+  {
+    "name": "Io",
+    "element": "EAU",
+    "knightClass": "",
+    "artefacts": [],
+    "specificity": "MARINA",
+    "advice": "",
+    "topAgainst": [],
+    "neverUseAgainst": []
+  }
+]

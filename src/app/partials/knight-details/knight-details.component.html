@@ -1,0 +1,43 @@
+<div>
+  Nom: {{ knight?.name }}
+</div>
+
+<div>
+  <!--  Spécificité: {{ getSpecificity(knight?.specificity) }}-->
+  Spécificité: {{ mappedSpecificities[knight?.specificity] }}
+</div>
+
+<div>
+  Élément: {{ mappedKnightElement[knight?.element] }}
+</div>
+
+<div *ngIf="knight">
+  <img style="height: 300px;"
+       [src]= "(knight.images && knight.images.length > 0 ? 'assets/images/knights/' + knight?.images[0] : 'assets/images/no-image.png')" >
+</div>
+<div *ngIf="knight && knight">
+  <img style="height: 50px;"
+       [src]= "knight.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'" >
+</div>
+
+<div *ngIf="knight">
+  Artéfacts:
+  <!--  <div class="row">-->
+  <!--    <ng-container *ngFor="let artefact of knight?.artefacts">-->
+  <!--      <div class="col-md-3">-->
+  <!--&lt;!&ndash;        <app-artefact-details [artefactKey]="artefact.id"></app-artefact-details>&ndash;&gt;-->
+  <!--      </div>-->
+  <!--    </ng-container>-->
+  <!--  </div>-->
+</div>
+
+<!--<div *ngIf="knight && knight?.artefacts">-->
+<!--  Artéfacts:-->
+<!--  <div class="row">-->
+<!--    <ng-container *ngFor="let artefact of knight?.artefacts">-->
+<!--      <div class="col-md-3">-->
+<!--        <app-artefact-details [artefactKey]="artefact.id"></app-artefact-details>-->
+<!--      </div>-->
+<!--    </ng-container>-->
+<!--  </div>-->
+<!--</div>-->
