@@ -5,10 +5,14 @@
     "knightClass": "COMPETENCE",
     "artefacts": [
       {
-        "id": "ARC_OR"
+        "id": "ARC_OR",
+        "recommended": true
       },
       {
         "id": "BOUCLIER_OR"
+      },
+      {
+        "id": "BATON_OR_3_SECTIONS"
       }
     ],
     "aryas": [

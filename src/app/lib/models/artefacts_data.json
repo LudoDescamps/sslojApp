@@ -16,5 +16,14 @@
     "recommended": true,
     "restriction": [],
     "images": ["arc_or.png"]
+  },
+  {
+    "id": "BATON_OR_3_SECTIONS",
+    "name": "Bâton d'or 3 sections",
+    "level": "",
+    "rank": "number",
+    "recommended": true,
+    "restriction": [],
+    "images": ["baton_or_3_sections.png"]
   }
 ]

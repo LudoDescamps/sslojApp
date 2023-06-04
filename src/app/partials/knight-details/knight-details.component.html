@@ -1,8 +1,7 @@
 <div>
-
 <!--  Classe & élément -->
   <div class="row no-margin">
-    <div class="col-md-3 flex semi-rounded-box" *ngIf="knight">
+    <div class="col-sm-3 col-md-3 flex semi-rounded-box" *ngIf="knight">
       <div class="display-flex-center">
         <img style="height: 50px;"
              [src]= "knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'" >
@@ -17,34 +16,27 @@
 
   <!--  Artéfacts -->
   <div class="row no-margin mt20">
-    <div class="col-md-3 flex semi-rounded-box" *ngIf="knight">
-      <ng-container *ngFor="let artefact of knight?.artefacts">
-        <div class="display-flex-center">
-          <img style="height: 50px;"
-               [src]= " artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'" >
-        </div>
+    <div class="col-sm-3 col-md-3 flex semi-rounded-box" style="flex-wrap: wrap;" *ngIf="knight">
+
+      <ng-container class="row no-margin" >
+        <ng-container *ngFor="let artefact of knight?.artefacts">
+          <div class="col-md-6">
+            <div class="display-flex-center" style="flex-direction: column">
+              <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
+                   [src]= " artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'" >
+              <span class="pt10" style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id].name}}</span>
+            </div>
+          </div>
+        </ng-container>
       </ng-container>
-
-
-<!--      <div class="display-flex-center">-->
-<!--        <img style="height: 50px;"-->
-<!--             [src]= "knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'" >-->
-<!--      </div>-->
     </div>
   </div>
 </div>
 
-<div>
-  Nom: {{ knight?.name }}
-</div>
 
 <div>
   <!--  Spécificité: {{ getSpecificity(knight?.specificity) }}-->
   Spécificité: {{ mappedSpecificities[knight?.specificity] }}
-</div>
-
-<div>
-  Élément: {{ mappedKnightElement[knight?.element] }}
 </div>
 
 <div *ngIf="knight">
