@@ -1,0 +1,32 @@
+// @import "./styles/colors";
+
+.semi-rounded-box {
+  border: 2px solid #d8d8d8;
+  border-radius: 10px 0;
+  padding: 10px;
+}
+
+/**
+// Déécomenter pour bordure arc en ciel animée
+.semi-rounded-box {
+  --angle: 0deg;
+  border: 2px solid;
+  padding: 10px;
+  border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+  border-radius: 10px 0;
+
+  animation: 7s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+*/

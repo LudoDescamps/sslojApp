@@ -1,4 +1,40 @@
 <div>
+
+<!--  Classe & élément -->
+  <div class="row no-margin">
+    <div class="col-md-3 flex semi-rounded-box" *ngIf="knight">
+      <div class="display-flex-center">
+        <img style="height: 50px;"
+             [src]= "knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'" >
+      </div>
+
+      <div class="display-flex-center">
+        <img style="height: 50px;"
+             [src]= "knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'" >
+      </div>
+    </div>
+  </div>
+
+  <!--  Artéfacts -->
+  <div class="row no-margin mt20">
+    <div class="col-md-3 flex semi-rounded-box" *ngIf="knight">
+      <ng-container *ngFor="let artefact of knight?.artefacts">
+        <div class="display-flex-center">
+          <img style="height: 50px;"
+               [src]= " artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'" >
+        </div>
+      </ng-container>
+
+
+<!--      <div class="display-flex-center">-->
+<!--        <img style="height: 50px;"-->
+<!--             [src]= "knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'" >-->
+<!--      </div>-->
+    </div>
+  </div>
+</div>
+
+<div>
   Nom: {{ knight?.name }}
 </div>
 
@@ -15,10 +51,7 @@
   <img style="height: 300px;"
        [src]= "(knight.images && knight.images.length > 0 ? 'assets/images/knights/' + knight?.images[0] : 'assets/images/no-image.png')" >
 </div>
-<div *ngIf="knight && knight">
-  <img style="height: 50px;"
-       [src]= "knight.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'" >
-</div>
+
 
 <div *ngIf="knight">
   Artéfacts:

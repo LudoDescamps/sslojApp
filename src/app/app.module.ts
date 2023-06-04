@@ -9,12 +9,14 @@ import {MatCardModule} from "@angular/material/card";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatSelectModule} from "@angular/material/select";
 import { KnightDetailsComponent } from './partials/knight-details/knight-details.component';
+import { ClassAndElementComponent } from './partials/class-and-element/class-and-element.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KnightSelectorComponent,
-    KnightDetailsComponent
+    KnightDetailsComponent,
+    ClassAndElementComponent
   ],
   imports: [
     BrowserModule,
