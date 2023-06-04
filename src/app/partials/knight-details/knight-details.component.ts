@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 import {Knight, KnightElement, Specificity} from "../../lib/models/Knight";
 import {Artefact, ArtefactAdapter} from "../../lib/models/Artefact";
 import artefactsData from "../../lib/models/artefacts_data.json";
@@ -8,7 +8,7 @@ import artefactsData from "../../lib/models/artefacts_data.json";
   templateUrl: './knight-details.component.html',
   styleUrls: ['./knight-details.component.scss']
 })
-export class KnightDetailsComponent implements OnInit, OnChanges {
+export class KnightDetailsComponent implements OnChanges {
   @Input() knight: Knight;
   public mappedSpecificities: { [p: string]: any } = {};
   public mappedKnightElement: { [p: string]: any } = {};
@@ -31,13 +31,6 @@ export class KnightDetailsComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes);
-    console.log(changes['knight']);
-    console.log(changes['knight']?.currentValue);
     this.knight = changes['knight']?.currentValue;
-    console.log(this.knight);
-  }
-
-  ngOnInit(): void {
   }
 }
