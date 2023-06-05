@@ -12,7 +12,7 @@
   --angle: 0deg;
   border: 2px solid;
   padding: 1px;
-  border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+  border-image: conic-gradient(from var(--angle), yellow, lime, aqua, magenta, magenta, aqua, lime, yellow) 1;
 
   animation: 7s rotate linear infinite;
 }

@@ -2,5 +2,6 @@
 // Typography
 $custom-typography: mat.define-typography-config(
   $font-family: '"Inter", "Noto Sans", sans-serif'
+  //$font-family: '"stonehen", "Inter", "Noto Sans", sans-serif'
 );
 @include mat.core($custom-typography);

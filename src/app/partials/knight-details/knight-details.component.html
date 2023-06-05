@@ -12,15 +12,12 @@
              [src]= "knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'" >
       </div>
     </div>
-  </div>
 
-  <!--  Artéfacts -->
-  <div class="row no-margin mt20">
-    <div class="col-sm-3 col-md-3 col-lg-2 flex semi-rounded-box" style="flex-wrap: wrap;" *ngIf="knight">
-
+    <!--  Artéfacts -->
+    <div class="col-sm-3 col-md-4 col-lg-2 flex semi-rounded-box" style="flex-wrap: wrap;" *ngIf="knight">
       <ng-container class="row no-margin" >
         <ng-container *ngFor="let artefact of knight?.artefacts">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="display-flex-center" style="flex-direction: column">
               <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
                    [src]= " artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'" >
@@ -31,6 +28,24 @@
       </ng-container>
     </div>
   </div>
+
+<!--  &lt;!&ndash;  Artéfacts &ndash;&gt;-->
+<!--  <div class="row no-margin mt20">-->
+<!--    <div class="col-sm-3 col-md-3 col-lg-2 flex semi-rounded-box" style="flex-wrap: wrap;" *ngIf="knight">-->
+
+<!--      <ng-container class="row no-margin" >-->
+<!--        <ng-container *ngFor="let artefact of knight?.artefacts">-->
+<!--          <div class="col-md-6">-->
+<!--            <div class="display-flex-center" style="flex-direction: column">-->
+<!--              <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"-->
+<!--                   [src]= " artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'" >-->
+<!--              <span class="pt10" style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id].name}}</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </ng-container>-->
+<!--      </ng-container>-->
+<!--    </div>-->
+<!--  </div>-->
 </div>
 
 
