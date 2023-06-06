@@ -1,21 +1,21 @@
 [
   {
-  "id": "LONG_CHANT_DU_DRAGON",
-    "name": "Long chant du dragon",
+  "id": "IMMOBILE_COMME_UNE_MONTAGNE",
+    "name": "Immobile comme une montagne",
     "level": "",
     "rank": "",
     "quality": "LEGENDAIRE",
     "restriction": [],
-    "images": []
+    "images": ["immobile_comme_une_montagne.png"]
   },
   {
-    "id": "RAPIDE_COME_LE_VENT",
+    "id": "RAPIDE_COMME_LE_VENT",
     "name": "Rapide comme le vent",
     "level": "",
     "rank": "",
     "quality": "LEGENDAIRE",
     "restriction": [],
-    "images": []
+    "images": ["rapide_comme_le_vent.png"]
   },
   {
     "id": "FEROCE_COMME_LE_FEU",

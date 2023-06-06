@@ -27,19 +27,16 @@
 
       <!--  Araya -->
       <div class="semi-rounded-box mt10">
-        <div class="row no-margin">
+        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
           <ng-container *ngFor="let araya of knight?.arayas">
-            <div class="col-md-2 display-flex-center" style="flex-direction: column;">
-              <img style="height: 50px;" [ngClass]="{'rainbow': araya.recommended}"
+            <div class="col-md-6 display-flex-center pb10" style="flex-direction: column;">
+              <img style="height: 100px;" [ngClass]="{'rainbow': araya.recommended}"
                    [src]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
               <span class="pt10"
-                    style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[araya?.id]?.name}}</span>
+                    style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArayas[araya?.id]?.name}}</span>
             </div>
           </ng-container>
         </div>
-
-
-
       </div>
     </div>
 
@@ -56,9 +53,5 @@
 <!--  Spécificité: {{ mappedSpecificities[knight?.specificity] }}-->
 <!--</div>-->
 
-<!--<div *ngIf="knight">-->
-<!--  <img style="height: 300px;"-->
-<!--       [src]= "(knight.images && knight.images.length > 0 ? 'assets/images/knights/' + knight?.images[0] : 'assets/images/no-image.png')" >-->
-<!--</div>-->
 
 

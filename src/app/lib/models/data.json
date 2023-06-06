@@ -13,15 +13,21 @@
       },
       {
         "id": "BATON_OR_3_SECTIONS"
+      },
+      {
+        "id": "BATON_OR_3_SECTIONS"
       }
     ],
     "arayas": [
       {
-        "id": "LONG_CHANT_DU_DRAGON",
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE",
         "recommended": true
       },
       {
-        "id": "RAPIDE_COME_LE_VENT"
+        "id": "RAPIDE_COMME_LE_VENT"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT"
       }
     ],
     "specificity": "DIEU",
