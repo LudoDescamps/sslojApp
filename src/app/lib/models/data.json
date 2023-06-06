@@ -15,7 +15,7 @@
         "id": "BATON_OR_3_SECTIONS"
       }
     ],
-    "aryas": [
+    "arayas": [
       {
         "id": "LONG_CHANT_DU_DRAGON",
         "recommended": true
@@ -33,13 +33,13 @@
   {
     "name": "Athéna",
     "element": "EAU",
-    "knightClass": "",
+    "knightClass": "DEFENSE",
     "artefacts": [
       {
       "id": "ARC_OR"
       }
     ],
-    "aryas": [
+    "arayas": [
       {
         "id": "IMMOBILE_COMME_UNE_MONTAGE"
       }

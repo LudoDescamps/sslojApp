@@ -7,7 +7,7 @@ export class Knight {
   knightClass?: string;
   artefacts: any[] = [];
   // artefacts: { id: string, recommended?: boolean, comments?: string[] }[] = [];
-  aryas?: { id: string, recommended?: boolean, comments?: string[] }[];
+  arayas?: { id: string, recommended?: boolean, comments?: string[] }[];
   constellation?: any; // TODO
   specialties?: any[]; // TODO ajouter la classe
   images?: string[] = []; // TODO ajouter la classe
@@ -18,14 +18,14 @@ export class Knight {
 
   constructor(name?: string, element?: KnightElement, knightClass?: string,
               artefacts: any[] = [],
-              aryas?: { id: string, recommended?: boolean, comments?: string[] }[],
+              arayas?: { id: string, recommended?: boolean, comments?: string[] }[],
               constellation?: any, specialties?: any[], images?: string[], specificity?: Specificity, advice?: string,
               topAgainst?: Knight[], neverUseAgainst?: Knight[]) {
     this.name = name;
     this.element = element;
     this.knightClass = knightClass;
     this.artefacts = artefacts;
-    this.aryas = aryas;
+    this.arayas = arayas;
     this.constellation = constellation;
     this.specialties = specialties;
     this.images = images;
@@ -48,7 +48,7 @@ export class KnightAdapter implements Adapter<Knight> {
       item.element,
       item.knightClass ? item.knightClass : '',
       item.artefacts ? item.artefacts : [],
-      item.aryas,
+      item.arayas,
       item.constellation,
       item.specialties,
       item.images? item.images : [],

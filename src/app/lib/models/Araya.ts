@@ -2,9 +2,9 @@ import {Injectable} from '@angular/core';
 import {Adapter} from '../interfaces/adapter.interface';
 import {Image} from "./Image";
 
-export class Arya {
+export class Araya {
   id?: string;
-  name?: string; // Nom de l'arya
+  name?: string; // Nom de l'araya
   level?: number;
   rank?: number;
   quality?: Quality;
@@ -26,9 +26,9 @@ export class Arya {
 @Injectable({
   providedIn: 'root',
 })
-export class AryaAdapter implements Adapter<Arya> {
-  adapt(item: any): Arya {
-    return new Arya(
+export class ArayaAdapter implements Adapter<Araya> {
+  adapt(item: any): Araya {
+    return new Araya(
       item.id,
       item.name,
       item.level,

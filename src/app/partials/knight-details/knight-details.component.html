@@ -21,6 +21,18 @@
           </div>
         </ng-container>
       </div>
+
+      <!--  Araya -->
+      <div class="semi-rounded-box mt10">
+        <ng-container *ngFor="let araya of knight?.arayas">
+          <div class="display-flex-center" style="flex-direction: column;">
+            <img style="height: 50px;" [ngClass]="{'rainbow': araya.recommended}"
+                 [src]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
+            <span class="pt10"
+                  style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[araya?.id]?.name}}</span>
+          </div>
+        </ng-container>
+      </div>
     </div>
 
     <div class="col-sm-9 col-md-8 col-lg-10 flex">
