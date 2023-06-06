@@ -1,83 +1,44 @@
 <div>
-<!--  Classe & élément -->
   <div class="row no-margin">
-    <div class="col-sm-3 col-md-3 col-lg-2 flex semi-rounded-box" *ngIf="knight">
-      <div class="display-flex-center">
+    <div class="col-sm-3 col-md-4 col-lg-2 flex" style="display: flex;flex-direction: column;" *ngIf="knight">
+      <!--  Classe & élément -->
+      <div class="semi-rounded-box" style="display: flex;justify-content: space-around">
         <img style="height: 50px;"
-             [src]= "knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'" >
+             [src]="knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'">
+
+        <img style="height: 50px;"
+             [src]="knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'">
       </div>
 
-      <div class="display-flex-center">
-        <img style="height: 50px;"
-             [src]= "knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'" >
-      </div>
-    </div>
-
-    <!--  Artéfacts -->
-    <div class="col-sm-3 col-md-4 col-lg-2 flex semi-rounded-box" style="flex-wrap: wrap;" *ngIf="knight">
-      <ng-container class="row no-margin" >
+      <!--  Artéfacts -->
+      <div class="semi-rounded-box mt10">
         <ng-container *ngFor="let artefact of knight?.artefacts">
-          <div class="col-md-4">
-            <div class="display-flex-center" style="flex-direction: column">
-              <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
-                   [src]= " artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'" >
-              <span class="pt10" style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id].name}}</span>
-            </div>
+          <div class="display-flex-center" style="flex-direction: column;">
+            <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
+                 [src]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
+            <span class="pt10"
+                  style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id].name}}</span>
           </div>
         </ng-container>
-      </ng-container>
+      </div>
+    </div>
+
+    <div class="col-sm-9 col-md-8 col-lg-10 flex">
+      <img style="width: 100%;"
+           [src]= "(knight.images && knight.images.length > 0 ? 'assets/images/knights/' + knight?.images[0] : 'assets/images/no-image.png')" >
     </div>
   </div>
-
-<!--  &lt;!&ndash;  Artéfacts &ndash;&gt;-->
-<!--  <div class="row no-margin mt20">-->
-<!--    <div class="col-sm-3 col-md-3 col-lg-2 flex semi-rounded-box" style="flex-wrap: wrap;" *ngIf="knight">-->
-
-<!--      <ng-container class="row no-margin" >-->
-<!--        <ng-container *ngFor="let artefact of knight?.artefacts">-->
-<!--          <div class="col-md-6">-->
-<!--            <div class="display-flex-center" style="flex-direction: column">-->
-<!--              <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"-->
-<!--                   [src]= " artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'" >-->
-<!--              <span class="pt10" style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id].name}}</span>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </ng-container>-->
-<!--      </ng-container>-->
-<!--    </div>-->
-<!--  </div>-->
 </div>
 
 
-<div>
-  <!--  Spécificité: {{ getSpecificity(knight?.specificity) }}-->
-  Spécificité: {{ mappedSpecificities[knight?.specificity] }}
-</div>
-
-<div *ngIf="knight">
-  <img style="height: 300px;"
-       [src]= "(knight.images && knight.images.length > 0 ? 'assets/images/knights/' + knight?.images[0] : 'assets/images/no-image.png')" >
-</div>
-
-
-<div *ngIf="knight">
-  Artéfacts:
-  <!--  <div class="row">-->
-  <!--    <ng-container *ngFor="let artefact of knight?.artefacts">-->
-  <!--      <div class="col-md-3">-->
-  <!--&lt;!&ndash;        <app-artefact-details [artefactKey]="artefact.id"></app-artefact-details>&ndash;&gt;-->
-  <!--      </div>-->
-  <!--    </ng-container>-->
-  <!--  </div>-->
-</div>
-
-<!--<div *ngIf="knight && knight?.artefacts">-->
-<!--  Artéfacts:-->
-<!--  <div class="row">-->
-<!--    <ng-container *ngFor="let artefact of knight?.artefacts">-->
-<!--      <div class="col-md-3">-->
-<!--        <app-artefact-details [artefactKey]="artefact.id"></app-artefact-details>-->
-<!--      </div>-->
-<!--    </ng-container>-->
-<!--  </div>-->
+<!--<div>-->
+<!--  &lt;!&ndash;  Spécificité: {{ getSpecificity(knight?.specificity) }}&ndash;&gt;-->
+<!--  Spécificité: {{ mappedSpecificities[knight?.specificity] }}-->
 <!--</div>-->
+
+<!--<div *ngIf="knight">-->
+<!--  <img style="height: 300px;"-->
+<!--       [src]= "(knight.images && knight.images.length > 0 ? 'assets/images/knights/' + knight?.images[0] : 'assets/images/no-image.png')" >-->
+<!--</div>-->
+
+

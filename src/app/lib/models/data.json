@@ -17,7 +17,11 @@
     ],
     "aryas": [
       {
-        "id": "IMMOBILE_COMME_UNE_MONTAGE"
+        "id": "LONG_CHANT_DU_DRAGON",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COME_LE_VENT"
       }
     ],
     "specificity": "DIEU",
