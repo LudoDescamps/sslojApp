@@ -12,26 +12,34 @@
 
       <!--  Artéfacts -->
       <div class="semi-rounded-box mt10">
-        <ng-container *ngFor="let artefact of knight?.artefacts">
-          <div class="display-flex-center" style="flex-direction: column;">
-            <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
-                 [src]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
-            <span class="pt10"
-                  style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id].name}}</span>
-          </div>
-        </ng-container>
+        <div class="row no-margin">
+          <ng-container *ngFor="let artefact of knight?.artefacts">
+            <div class="col-md-6 display-flex-center" style="flex-direction: column;">
+              <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
+                   [src]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
+              <span class="pt10"
+                    style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id].name}}</span>
+            </div>
+          </ng-container>
+        </div>
+
       </div>
 
       <!--  Araya -->
       <div class="semi-rounded-box mt10">
-        <ng-container *ngFor="let araya of knight?.arayas">
-          <div class="display-flex-center" style="flex-direction: column;">
-            <img style="height: 50px;" [ngClass]="{'rainbow': araya.recommended}"
-                 [src]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
-            <span class="pt10"
-                  style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[araya?.id]?.name}}</span>
-          </div>
-        </ng-container>
+        <div class="row no-margin">
+          <ng-container *ngFor="let araya of knight?.arayas">
+            <div class="col-md-2 display-flex-center" style="flex-direction: column;">
+              <img style="height: 50px;" [ngClass]="{'rainbow': araya.recommended}"
+                   [src]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
+              <span class="pt10"
+                    style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[araya?.id]?.name}}</span>
+            </div>
+          </ng-container>
+        </div>
+
+
+
       </div>
     </div>
 
