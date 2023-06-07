@@ -46,12 +46,13 @@ $app-theme: mat.define-light-theme($app-primary, $app-accent, $app-warn);
 @import "styles/bootstrap_grid";
 @import "styles/base";
 
-html {
-  @import "styles/commons";
-  @import "styles/_mat-table-responsive.directive.scss";
-}
+//html {
+//  @import "styles/commons";
+//  @import "styles/_mat-table-responsive.directive.scss";
+//}
 
-html.dark {
+//html.dark {
+html {
   @import "styles/colors-dark";
 
   // Create the theme object (a Sass map containing all of the palettes).

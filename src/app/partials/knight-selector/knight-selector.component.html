@@ -1,4 +1,4 @@
-<div class="login-component container">
+<div class="login-component container mt10">
   <div class="row">
     <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
       <mat-card class="login-card">
@@ -17,22 +17,9 @@
                 </mat-select>
               </mat-form-field>
             </div>
-
-            <!--            <app-knight-details></app-knight-details>-->
-
-            <!--            <div *ngIf="selectedKnight">-->
-            <!--              <img style="height: 300px;"-->
-            <!--                   [src]= "(selectedKnight.images && selectedKnight.images.length > 0 ? 'assets/images/knights/' + selectedKnight?.images[0] : 'assets/images/no-image.png')" >-->
-            <!--            </div>-->
-            <!--            <div *ngIf="selectedKnight">-->
-            <!--              <img style="height: 50px;"-->
-            <!--                   [src]= "selectedKnight.knightClass ? 'assets/images/knight_class/' + selectedKnight?.knightClass + '.png' : 'assets/images/no-image.png'" >-->
-            <!--            </div>-->
-
           </mat-card-content>
-          <!--          <mat-card-actions class="text-center">-->
-          <!--          </mat-card-actions>-->
         </form>
+
         <div class="text-center" *ngIf="knightForm.get('name')?.value">
           <app-knight-details [knight]="selectedKnight"></app-knight-details>
         </div>
