@@ -24,6 +24,8 @@ export class KnightSelectorComponent implements OnInit {
 
     console.log(data);
     this.knights = data.map(knight => this.knightAdapter.adapt(knight));
+    this.knights.sort(
+      (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
     console.log(this.knights);
 
     console.log(artefactsData);
@@ -38,8 +40,8 @@ export class KnightSelectorComponent implements OnInit {
 
   ngOnInit(): void {
     // TODO à enlever
-    this.knightForm.get('name')?.setValue(this.knights[0]);
-    this.selectedKnight = this.knights[0];
+    this.knightForm.get('name')?.setValue(this.knights.find(item => item.name === 'Poséidon'));
+    this.selectedKnight = this.knights.find(item => item.name === 'Poséidon');
   }
 
   updateSelected(event: Event) {
