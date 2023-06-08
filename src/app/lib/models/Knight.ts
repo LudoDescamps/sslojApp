@@ -3,6 +3,7 @@ import { Adapter } from '../interfaces/adapter.interface';
 
 export class Knight {
   name?: string;
+  constellationName?: string;
   element?: KnightElement;
   knightClass?: string;
   artefacts: any[] = [];
@@ -16,12 +17,13 @@ export class Knight {
   topAgainst?: Knight[];
   neverUseAgainst?: Knight[];
 
-  constructor(name?: string, element?: KnightElement, knightClass?: string,
+  constructor(name?: string, constellationName?: string, element?: KnightElement, knightClass?: string,
               artefacts: any[] = [],
               arayas?: { id: string, recommended?: boolean, comments?: string[] }[],
               constellation?: any, specialties?: any[], images?: string[], specificity?: Specificity, advice?: string,
               topAgainst?: Knight[], neverUseAgainst?: Knight[]) {
     this.name = name;
+    this.constellationName = constellationName;
     this.element = element;
     this.knightClass = knightClass;
     this.artefacts = artefacts;
@@ -45,6 +47,7 @@ export class KnightAdapter implements Adapter<Knight> {
 
     return new Knight(
       item.name,
+      item.constellationName,
       item.element,
       item.knightClass ? item.knightClass : '',
       item.artefacts ? item.artefacts : [],

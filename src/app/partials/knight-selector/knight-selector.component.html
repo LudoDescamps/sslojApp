@@ -12,7 +12,7 @@
                 <mat-select formControlName="name"  (selectionChange)="updateSelected($event.value)"
                             placeholder="{{ 'Sélectionner un chevalier' }}">
                   <ng-container *ngFor="let knight of knights">
-                    <mat-option [value]="knight">{{ knight.name }}</mat-option>
+                    <mat-option [value]="knight">{{ knight.name }} - {{knight?.constellationName}}</mat-option>
                   </ng-container>
                 </mat-select>
               </mat-form-field>
