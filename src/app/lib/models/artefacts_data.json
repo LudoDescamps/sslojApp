@@ -1,29 +1,142 @@
 [
   {
-    "id": "BOUCLIER_OR",
-    "name": "Bouclier d'Or",
-    "level": "",
-    "rank": "number",
-    "recommended": true,
-    "restriction": [],
-    "images": ["bouclier_or.png"]
-  },
-  {
-    "id": "ARC_OR",
+    "id": "ARC_D_OR",
     "name": "Arc d'Or",
     "level": "",
     "rank": "number",
-    "recommended": true,
     "restriction": [],
-    "images": ["arc_or.png"]
+    "images": [
+      "arc_d_or.png"
+    ]
   },
   {
-    "id": "BATON_OR_3_SECTIONS",
-    "name": "Bâton d'or 3 sections",
+    "id": "BATON_D_OR_A_3_SECTIONS",
+    "name": "Bâton d'or à 3 sections",
     "level": "",
     "rank": "number",
-    "recommended": true,
     "restriction": [],
-    "images": ["baton_or_3_sections.png"]
+    "images": [
+      "baton_d_or_a_3_sections.png"
+    ]
+  },
+  {
+    "id": "BEQUILLE_D_OR",
+    "name": "Béquille d'Or",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "bequille_d_or.png"
+    ]
+  },
+  {
+    "id": "BOUCLIER_D_ATHENA",
+    "name": "Bouclier d'Athéna",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "bouclier_d_athena.png"
+    ]
+  },
+  {
+    "id": "BOUCLIER_D_OR",
+    "name": "Bouclier d'Or",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "bouclier_d_or.png"
+    ]
+  },
+  {
+    "id": "CHAPELET_DE_SHAKA",
+    "name": "Chapelet de Shaka",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "chapelet_de_shaka.png"
+    ]
+  },
+  {
+    "id": "DAGUE_DU_GRAND_POPE",
+    "name": "Dague du Grand Pope",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "dague_du_grand_pope.png"
+    ]
+  },
+  {
+    "id": "EPEE_D_HADES",
+    "name": "Épée d'Hades",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "epee_d_hades.png"
+    ]
+  },
+  {
+    "id": "EPEE_D_OR",
+    "name": "Épée d'Or",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "epee_d_or.png"
+    ]
+  },
+  {
+    "id": "GOLDEN_LANCE",
+    "name": "Golden Lance",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "golden_lance.png"
+    ]
+  },
+  {
+    "id": "NUNCHAKO_D_OR",
+    "name": "Nunchaku d'Or",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "nunchaku_d_or.png"
+    ]
+  },
+  {
+    "id": "NUNCHAKO_D_OR",
+    "name": "Sceptre de Victoire",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "sceptre_de_victoire.png"
+    ]
+  },
+  {
+    "id": "TRIDENT_DE_POSEIDON",
+    "name": "Trident de Poséidon",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "trident_de_poseidon.png"
+    ]
+  },
+  {
+    "id": "URNE_D_ATHENA",
+    "name": "Urne d'Athéna",
+    "level": "",
+    "rank": "number",
+    "restriction": [],
+    "images": [
+      "urne_d_athena.png"
+    ]
   }
 ]

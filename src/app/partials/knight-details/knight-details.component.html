@@ -1,9 +1,12 @@
 <div>
-  <div class="row no-margin mat-h2 mb5">
+  <div class="row no-margin mat-h1 mb5">
     {{ knight?.name }}
   </div>
+  <div class="row no-margin mat-h3 mb5">
+    {{ knight?.constellationName }}
+  </div>
 
-  <div class="row no-margin mat-h2 mb10">
+  <div class="row no-margin mat-h3 mb10">
     Spécificité: {{ mappedSpecificities[knight?.specificity] }}
   </div>
 
@@ -25,8 +28,8 @@
             <div class="col-sm-6 col-md-6 display-flex-center" style="flex-direction: column;">
               <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
                    [src]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
-              <span class="pt10"
-                    style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id].name}}</span>
+              <span class="pt5 pb5"
+                    style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id]?.name}}</span>
             </div>
           </ng-container>
         </div>

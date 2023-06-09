@@ -24,17 +24,14 @@
     "knightClass": "COMPETENCE",
     "artefacts": [
       {
-        "id": "ARC_OR",
+        "id": "TRIDENT_DE_POSEIDON",
         "recommended": true
       },
       {
-        "id": "BOUCLIER_OR"
+        "id": "EPEE_D_OR"
       },
       {
-        "id": "BATON_OR_3_SECTIONS"
-      },
-      {
-        "id": "BATON_OR_3_SECTIONS"
+        "id": "GOLDEN_LANCE"
       }
     ],
     "arayas": [
@@ -269,7 +266,7 @@
     "arayas/2/id": "",
     "specificity": "MARINA",
     "advice": "",
-    "images": ["io_scyllajpg"]
+    "images": ["io_scylla.jpg"]
   },
   {
     "name": "Thétis",
@@ -377,7 +374,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["saga_gemaux.jpg"]
   },
   {
     "name": "Shaka",
@@ -395,7 +392,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["shaka_vierge.jpg"]
   },
   {
     "name": "Kanon",
@@ -413,7 +410,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["kanon_gemaux.jpg"]
   },
   {
     "name": "Saga le Maléfique",
@@ -431,7 +428,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["saga_le_malefique_gemaux.jpg"]
   },
   {
     "name": "Milo",
@@ -449,7 +446,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["milo_scorpion.jpg"]
   },
   {
     "name": "Deathmask",
@@ -467,7 +464,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["deathmask_cancer.jpg"]
   },
   {
     "name": "Aphrodite",
@@ -485,7 +482,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["aphrodite_poissons.jpg"]
   },
   {
     "name": "Shiryû",
@@ -503,7 +500,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["shiryu_balance.jpg"]
   },
   {
     "name": "Aiolia",
@@ -521,7 +518,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["aiolia_lion.jpg"]
   },
   {
     "name": "Mû",
@@ -539,7 +536,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["mu_belier.jpg"]
   },
   {
     "name": "Seiya",
@@ -557,7 +554,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["seiya_sagittaire.jpg"]
   },
   {
     "name": "Aiolos",
@@ -575,7 +572,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["aiolos_sagittaire.jpg"]
   },
   {
     "name": "Ikki",
@@ -593,7 +590,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["ikki_lion.jpg"]
   },
   {
     "name": "Camus",
@@ -611,7 +608,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["camus_verseau.jpg"]
   },
   {
     "name": "Dohko",
@@ -629,7 +626,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["dohko_balance.jpg"]
   },
   {
     "name": "Hyôga",
@@ -647,7 +644,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["hyoga_verseau.jpg"]
   },
   {
     "name": "Aldébaran",
@@ -665,7 +662,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["aldebaran_taureau.jpg"]
   },
   {
     "name": "Shura",
@@ -683,7 +680,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["shura_capricorne.jpg"]
   },
   {
     "name": "Shun",
@@ -701,7 +698,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["shun_vierge.jpg"]
   },
   {
     "name": "Moses",
@@ -719,7 +716,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["moses_baleine.jpg"]
   },
   {
     "name": "Marine",
@@ -737,7 +734,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["marine_aigle.jpg"]
   },
   {
     "name": "Orphée",
@@ -755,7 +752,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["orphee_lyre.jpg"]
   },
   {
     "name": "Algethi",
@@ -773,11 +770,11 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["algethi_hercule.jpg"]
   },
   {
     "name": "Shaina",
-    "constellationName": "Ophiucus",
+    "constellationName": "Ophiuchus",
     "element": "FEU",
     "knightClass": "ASSASSIN",
     "artefacts/0/id": "",
@@ -791,7 +788,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["shaina_ophiuchus.jpg"]
   },
   {
     "name": "Dante",
@@ -809,7 +806,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["dante_cerbere.jpg"]
   },
   {
     "name": "Babel",
@@ -827,7 +824,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["babel_centaure.jpg"]
   },
   {
     "name": "Misty",
@@ -845,7 +842,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["misty_lezard.jpg"]
   },
   {
     "name": "Jamian",
@@ -863,7 +860,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["jamian_corbeau.jpg"]
   },
   {
     "name": "Dio",
@@ -881,7 +878,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["dio_mouche.jpg"]
   },
   {
     "name": "Ptolemy",
@@ -899,7 +896,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["ptolemy_fleche.jpg"]
   },
   {
     "name": "Algol",
@@ -917,7 +914,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["algol_persee.jpg"]
   },
   {
     "name": "Sirius",
@@ -935,11 +932,11 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["sirius_grand_chien.jpg"]
   },
   {
     "name": "Astérion",
-    "constellationName": "Chien de Chasse",
+    "constellationName": "Chiens de Chasse",
     "element": "TERRE",
     "knightClass": "SOUTIEN",
     "artefacts/0/id": "",
@@ -953,7 +950,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["asterion_chiens_de_chasse.jpg"]
   },
   {
     "name": "Capella",
@@ -971,7 +968,7 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["capella_aurige.jpg"]
   },
   {
     "name": "June",
@@ -989,6 +986,6 @@
     "arayas/2/id": "",
     "specificity": "",
     "advice": "",
-    "images": ["poseidon_empereur_des_mers.jpg"]
+    "images": ["june_cameleon.jpg"]
   }
 ]
