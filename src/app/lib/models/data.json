@@ -22,7 +22,7 @@
     "constellationName": "Empereur des Mers",
     "element": "LUMIERE",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "3",
+    "minConstellationLevel": "9",
     "minArmourLevel": "30",
     "specialties": [
       "Contrôle aléatoire grâce à l'étourdissementet perte de cosmos",
