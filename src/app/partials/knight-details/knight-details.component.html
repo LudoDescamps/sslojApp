@@ -22,7 +22,7 @@
       </div>
 
       <!--  Artéfacts -->
-      <div class="semi-rounded-box mt10">
+      <div class="semi-rounded-box mt10" *ngIf="knight?.artefacts?.length > 0">
         <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
           <ng-container *ngFor="let artefact of knight?.artefacts">
             <div class="col-sm-6 col-md-6 display-flex-center" style="flex-direction: column;">
@@ -33,22 +33,35 @@
             </div>
           </ng-container>
         </div>
-
       </div>
 
-<!--      &lt;!&ndash;  Araya &ndash;&gt;-->
-<!--      <div class="semi-rounded-box mt10">-->
-<!--        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">-->
-<!--          <ng-container *ngFor="let araya of knight?.arayas">-->
-<!--            <div class="col-md-6 display-flex-center pb10" style="flex-direction: column;">-->
-<!--              <img style="height: 100px;" [ngClass]="{'rainbow': araya.recommended}"-->
-<!--                   [src]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">-->
-<!--              <span class="pt10"-->
-<!--                    style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArayas[araya?.id]?.name}}</span>-->
-<!--            </div>-->
-<!--          </ng-container>-->
-<!--        </div>-->
-<!--      </div>-->
+      <!--  MIN CONSTELLATION LEVEL -->
+      <div class="semi-rounded-box mt10" *ngIf="knight?.minConstellationLevel">
+        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
+          <div  class="text-center full-width">Constellation minimum</div>
+          <div class="text-center full-width">{{knight?.minConstellationLevel}}</div>
+        </div>
+      </div>
+
+      <!--  MIN ARMOUR LEVEL -->
+      <div class="semi-rounded-box mt10" *ngIf="knight?.minArmourLevel">
+        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
+          <div  class="text-center full-width">Armure minimum</div>
+          <div class="text-center full-width">{{knight?.minArmourLevel}}</div>
+        </div>
+      </div>
+
+      <!--  MIN ARMOUR LEVEL -->
+      <div class="semi-rounded-box mt10" *ngIf="knight?.specialties?.length > 0">
+        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
+          <div  class="text-center full-width">Spécialités</div>
+          <ng-container *ngFor="let specialty of knight?.specialties">
+            <div class="text-left small">
+              . {{specialty}}
+            </div>
+          </ng-container>
+        </div>
+      </div>
     </div>
 
     <div class="col-sm-9 col-md-8 col-lg-10 flex">
@@ -61,7 +74,7 @@
 
   <div class="row no-margin">
     <!--  Araya -->
-    <div class="semi-rounded-box mt10">
+    <div class="semi-rounded-box mt10" *ngIf="knight?.arayas">
       <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
         <ng-container *ngFor="let araya of knight?.arayas">
           <div class="col-md-2 display-flex-center pb10" style="flex-direction: column;">

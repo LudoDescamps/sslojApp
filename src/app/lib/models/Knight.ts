@@ -16,12 +16,14 @@ export class Knight {
   advice?: string;
   topAgainst?: Knight[];
   neverUseAgainst?: Knight[];
+  minConstellationLevel?: number;
+  minArmourLevel?: number;
 
   constructor(name?: string, constellationName?: string, element?: KnightElement, knightClass?: string,
               artefacts: any[] = [],
               arayas?: { id: string, recommended?: boolean, comments?: string[] }[],
               constellation?: any, specialties?: any[], images?: string[], specificity?: Specificity, advice?: string,
-              topAgainst?: Knight[], neverUseAgainst?: Knight[]) {
+              topAgainst?: Knight[], neverUseAgainst?: Knight[], minConstellationLevel?: number, minArmourLevel?: number) {
     this.name = name;
     this.constellationName = constellationName;
     this.element = element;
@@ -35,6 +37,8 @@ export class Knight {
     this.advice = advice;
     this.topAgainst = topAgainst;
     this.neverUseAgainst = neverUseAgainst;
+    this.minConstellationLevel = minConstellationLevel;
+    this.minArmourLevel = minArmourLevel;
   }
 }
 
@@ -59,6 +63,8 @@ export class KnightAdapter implements Adapter<Knight> {
       item.advice,
       item.topAgainst,
       item.neverUseAgainst,
+      item.minConstellationLevel,
+      item.minArmourLevel,
     );
   }
 }

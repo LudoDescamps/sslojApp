@@ -22,28 +22,51 @@
     "constellationName": "Empereur des Mers",
     "element": "LUMIERE",
     "knightClass": "COMPETENCE",
+    "minConstellationLevel": "3",
+    "minArmourLevel": "30",
+    "specialties": [
+      "Contrôle aléatoire grâce à l'étourdissementet perte de cosmos",
+      "Dégat de zone importants sur toute la team adverse"
+    ],
     "artefacts": [
       {
         "id": "TRIDENT_DE_POSEIDON",
         "recommended": true
       },
       {
-        "id": "EPEE_D_OR"
+        "id": "GOLDEN_LANCE"
       },
       {
-        "id": "GOLDEN_LANCE"
+        "id": "EPEE_D_OR"
       }
     ],
     "arayas": [
       {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE",
+        "id": "FEROCE_COMME_LE_FEU_ROUGE",
         "recommended": true
       },
       {
-        "id": "RAPIDE_COMME_LE_VENT"
+        "id": "FEROCE_COMME_LE_FEU_OR"
+
       },
       {
-        "id": "RAPIDE_COMME_LE_VENT"
+        "id": "LE_POUVOIR_C_EST_LA_JUSTICE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "FLECHE_D_OR_MEURTRIER_DE_DIEU_OR",
+        "recommended": true
+      },
+      {
+        "id": "LE_POUVOIR_DE_L_EXTINCTION_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COME_LE_VENT_OR"
       }
     ],
     "specificity": "DIEU",
