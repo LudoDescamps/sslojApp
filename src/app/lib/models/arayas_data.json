@@ -9,22 +9,22 @@
     "images": ["immobile_comme_une_montagne.png"]
   },
   {
-    "id": "RAPIDE_COMME_LE_VENT",
+    "id": "RAPIDE_COMME_LE_VENT_ROUGE",
     "name": "Rapide comme le vent",
     "level": "",
     "rank": "",
     "quality": "LEGENDAIRE",
     "restriction": [],
-    "images": ["rapide_comme_le_vent.png"]
+    "images": ["rapide_comme_le_vent_rouge.png"]
   },
   {
-    "id": "FEROCE_COMME_LE_FEU",
+    "id": "FEROCE_COMME_LE_FEU_ROUGE",
     "name": "Féroce comme le feu",
     "level": "",
     "rank": "",
     "quality": "LEGENDAIRE",
     "restriction": [],
-    "images": []
+    "images": ["feroce_comme_le_feu_rouge.png"]
   },
   {
     "id": "LE_POUVOIR_DE_L_EXTINCTION",
