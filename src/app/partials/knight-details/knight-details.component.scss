@@ -10,7 +10,7 @@
 // Bordure arc en ciel animée
 .rainbow {
   --angle: 0deg;
-  border: 2px solid;
+  border: 3px solid;
   padding: 1px;
   border-image: conic-gradient(from var(--angle), yellow, lime, aqua, magenta, magenta, aqua, lime, yellow) 1;
 

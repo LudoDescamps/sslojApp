@@ -20,7 +20,7 @@
           </mat-card-content>
         </form>
 
-        <div class="text-center" *ngIf="knightForm.get('name')?.value">
+        <div class="text-center details-container" *ngIf="knightForm.get('name')?.value">
           <app-knight-details [knight]="selectedKnight"></app-knight-details>
         </div>
       </mat-card>

@@ -1,4 +1,4 @@
-.login-card {
+.details-container {
   @media (max-width: 768px) { background-image: url("/assets/images/no-image.png"); }
-
+  //@media (max-width: 768px) { background-image: url("/assets/images/knights/" + var(--knightName)); }
 }
