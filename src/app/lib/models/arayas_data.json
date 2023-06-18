@@ -1,15 +1,15 @@
 [
   {
-    "id": "ATHENA_EXCLAMATION_ROUGE",
-    "name": "Athéna exclamation",
-    "level": "",
-    "rank": "",
-    "quality": "LEGENDAIRE",
-    "restriction": ["CHEVALIER_D_OR"],
-    "images": [
-      "athena_exclamation_rouge.png"
-    ]
-  },
+  "id": "ATHENA_EXCLAMATION_ROUGE",
+  "name": "Athéna exclamation",
+  "level": "",
+  "rank": "",
+  "quality": "LEGENDAIRE",
+  "restriction": ["CHEVALIER_D_OR"],
+  "images": [
+    "athena_exclamation_rouge.png"
+  ]
+},
   {
     "id": "CALME_COMME_L_EAU_ROUGE",
     "name": "Calme comme l'eau",
@@ -120,7 +120,17 @@
       "volonte_des_dieux_rouge.png"
     ]
   },
-
+  {
+    "id": "AME_DE_DRAGON_OR",
+    "name": "Âme de Dragon",
+    "level": "",
+    "rank": "",
+    "quality": "OR",
+    "restriction": [],
+    "images": [
+      "ame_de_dragon_or.png"
+    ]
+  },
   {
     "id": "CALME_COMME_L_EAU_OR",
     "name": "Calme comme l'eau",
@@ -155,6 +165,17 @@
     ]
   },
   {
+    "id": "EXPLOSION_DE_L_ADVERSITE_OR",
+    "name": "Explosion de l'adversité",
+    "level": "",
+    "rank": "",
+    "quality": "OR",
+    "restriction": ["ASSASSIN"],
+    "images": [
+      "explosion_de_l_adversite_or.png"
+    ]
+  },
+  {
     "id": "EXCALIBUR_DU_JUGEMENT_OR",
     "name": "Excalibur du Jugement",
     "level": "",
@@ -185,6 +206,22 @@
     "restriction": ["COMPETENCE"],
     "images": [
       "fleche_d_or_meurtrier_de_dieu_or.png"
+    ]
+  },
+  {
+    "id": "FROID_EXTREME_OR",
+    "name": "Froid Extrême",
+    "level": "",
+    "rank": "",
+    "quality": "OR",
+    "restriction": [
+      "CAMUS_VERSEAU",
+      "HYOGA_VERSEAU",
+      "ISAAC_KRAKEN",
+      "HYOGA_ARMURE_DIVINE_DU_CYGNE"
+    ],
+    "images": [
+      "froid_extreme_or.png"
     ]
   },
   {
@@ -229,6 +266,17 @@
     "restriction": [],
     "images": [
       "rapide_comme_le_vent_or.png"
+    ]
+  },
+  {
+    "id": "RESISTANT_ET_INFLEXIBLE_OR",
+    "name": "Résistant et inflexible",
+    "level": "",
+    "rank": "",
+    "quality": "OR",
+    "restriction": [],
+    "images": [
+      "resistant_et_inflexible_or.png"
     ]
   }
 ]

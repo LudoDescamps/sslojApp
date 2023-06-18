@@ -21,6 +21,7 @@
         </form>
 
         <div class="text-center details-container" *ngIf="knightForm.get('name')?.value">
+<!--        <div class="text-center details-container" style="&#45;&#45;knightName:'poseidon_empereur_des_mers.jpg'" *ngIf="knightForm.get('name')?.value">-->
           <app-knight-details [knight]="selectedKnight"></app-knight-details>
         </div>
       </mat-card>

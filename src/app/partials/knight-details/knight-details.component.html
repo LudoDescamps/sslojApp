@@ -11,9 +11,9 @@
   </div>
 
   <div class="row no-margin">
-    <div class="col-sm-3 col-md-4 col-lg-2 flex" style="display: flex;flex-direction: column;" *ngIf="knight">
+    <div class="col-sm-3 col-md-4 col-lg-4 flex" style="display: flex;flex-direction: column;" *ngIf="knight">
       <!--  Classe & élément -->
-      <div class="semi-rounded-box" style="display: flex;justify-content: space-around">
+      <div class="semi-rounded-box col-xs-6" style="display: flex;justify-content: space-around">
         <img style="height: 50px;"
              [src]="knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'">
 
@@ -22,7 +22,7 @@
       </div>
 
       <!--  Artéfacts -->
-      <div class="semi-rounded-box mt10" *ngIf="knight?.artefacts?.length > 0">
+      <div class="semi-rounded-box col-xs-6 mt10" *ngIf="knight?.artefacts?.length > 0">
         <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
           <ng-container *ngFor="let artefact of knight?.artefacts">
             <div class="col-sm-6 col-md-6 display-flex-center" style="flex-direction: column;">
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div class="col-sm-9 col-md-8 col-lg-10 flex">
+    <div class="col-sm-9 col-md-8 col-lg-offset-1 col-lg-7 flex">
       <img style="width: 100%;"
            [src]= "(knight.images && knight.images.length > 0 ?
            'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')" >
