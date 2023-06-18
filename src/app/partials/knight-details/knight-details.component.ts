@@ -1,5 +1,5 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
-import {Knight, KnightElement, Specificity} from "../../lib/models/Knight";
+import {Knight, KnightClass, KnightElement, Specificity} from "../../lib/models/Knight";
 import {Artefact, ArtefactAdapter} from "../../lib/models/Artefact";
 import artefactsData from "../../lib/models/artefacts_data.json";
 import arayasData from "../../lib/models/arayas_data.json";
@@ -14,6 +14,7 @@ export class KnightDetailsComponent implements OnChanges {
   @Input() knight: Knight;
   public mappedSpecificities: { [p: string]: any } = {};
   public mappedKnightElement: { [p: string]: any } = {};
+  public mappedKnightClass: { [p: string]: any } = {};
   public mappedArtefacts: { [p: string]: any } = {};
   public mappedArayas: { [p: string]: any } = {};
   public artefacts: Artefact[];
@@ -29,6 +30,10 @@ export class KnightDetailsComponent implements OnChanges {
       this.mappedKnightElement[elmt[0]] = elmt[1];
     });
 
+    Object.entries(KnightClass).forEach(knightC => {
+      this.mappedKnightClass[knightC[0]] = knightC[1];
+    });
+    console.log(this.mappedKnightElement);
     this.artefacts = artefactsData.map(artefact => this.artefactAdapter.adapt(artefact));
     this.artefacts.forEach(artefact => {
       artefact?.id ? this.mappedArtefacts[artefact.id] = artefact : undefined;

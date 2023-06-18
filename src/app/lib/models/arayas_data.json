@@ -278,5 +278,116 @@
     "images": [
       "resistant_et_inflexible_or.png"
     ]
+  },
+
+  {
+    "id": "ARTS_MARTIAUX_DE_GLACE_VIOLET",
+    "name": "Arts Martiaux de Glace",
+    "level": "",
+    "rank": "",
+    "quality": "VIOLET",
+    "restriction": [],
+    "images": [
+      "arts_martiaux_de_glace_violet.png"
+    ]
+  },
+  {
+    "id": "DRAGON_SANS_ARMURE_VIOLET",
+    "name": "Dragon sans Armure",
+    "level": "",
+    "rank": "",
+    "quality": "VIOLET",
+    "restriction": [],
+    "images": [
+      "dragon_sans_armure_violet.png"
+    ]
+  },
+  {
+    "id": "FLAMME_PHENIX_VIOLET",
+    "name": "Flamme Phénix",
+    "level": "",
+    "rank": "",
+    "quality": "VIOLET",
+    "restriction": [],
+    "images": [
+      "flamme_phenix_violet.png"
+    ]
+  },
+  {
+    "id": "HERITAGE_SAGITTAIRE_VIOLET",
+    "name": "Héritage du Sagittaire",
+    "level": "",
+    "rank": "",
+    "quality": "VIOLET",
+    "restriction": [],
+    "images": [
+      "heritage_du_sagittaire_violet.png"
+    ]
+  },
+  {
+    "id": "IAI_CONFRONTATION_VIOLET",
+    "name": "Iai Confrontation",
+    "level": "",
+    "rank": "",
+    "quality": "VIOLET",
+    "restriction": [],
+    "images": [
+      "iai_confrontation_violet.png"
+    ]
+  },
+  {
+    "id": "LE_POUVOIR_C_EST_LA_JUSTICE_VIOLET",
+    "name": "Le Pouvoir c'est la Justice",
+    "level": "",
+    "rank": "",
+    "quality": "VIOLET",
+    "restriction": [],
+    "images": [
+      "le_pouvoir_c_est_la_justice_violet.png"
+    ]
+  },
+  {
+    "id": "LION_EN_COLERE_VIOLET",
+    "name": "Lion en Colère",
+    "level": "",
+    "rank": "",
+    "quality": "VIOLET",
+    "restriction": [],
+    "images": [
+      "lion_en_colere_violet.png"
+    ]
+  },
+  {
+    "id": "RASSEMBLEMENT_DE_CHEVALIERS_VIOLET",
+    "name": "Rassemblement de Chevaliers",
+    "level": "",
+    "rank": "",
+    "quality": "VIOLET",
+    "restriction": [],
+    "images": [
+      "rassemblement_de_chevaliers_violet.png"
+    ]
+  },
+  {
+    "id": "ROSE_DEMONIAQUE_VIOLET",
+    "name": "Rose démoniaque",
+    "level": "",
+    "rank": "",
+    "quality": "VIOLET",
+    "restriction": [],
+    "images": [
+      "rose_demoniaque_violet.png"
+    ]
+  },
+  {
+    "id": "TACTIQUE_ROYALE_VIOLET",
+    "name": "Tactique Royale",
+    "level": "",
+    "rank": "",
+    "quality": "VIOLET",
+    "restriction": [],
+    "images": [
+      "tactique_royale_violet.png"
+    ]
   }
 ]

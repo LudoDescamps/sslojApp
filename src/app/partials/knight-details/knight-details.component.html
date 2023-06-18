@@ -12,29 +12,42 @@
 
   <div class="row no-margin">
     <div class="col-sm-3 col-md-4 col-lg-4 flex" style="display: flex;flex-direction: column;" *ngIf="knight">
-      <!--  Classe & élément -->
-      <div class="semi-rounded-box col-xs-6" style="display: flex;justify-content: space-around">
-        <img style="height: 50px;" [alt]="knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'"
-             [src]="knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'">
+      <div class="row no-margin">
+        <!--  Classe & élément -->
+        <div class="semi-rounded-box col-xs-5" style="display: flex;justify-content: space-around">
+          <div class="display-flex-center" style="flex-direction: column;">
+            <img style="height: 50px;" [alt]="knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'"
+                 [src]="knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'">
 
-        <img style="height: 50px;" [alt]="knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'"
-             [src]="knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'">
-      </div>
+            <span class="pt5 pb5"
+                  style="font-size: 10px; width: 50px;line-height: normal;">{{ mappedKnightClass[knight?.knightClass] }}</span>
+          </div>
 
-      <!--  Artéfacts -->
-      <div class="semi-rounded-box col-xs-6 mt10" *ngIf="knight?.artefacts?.length > 0">
-        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
-          <ng-container *ngFor="let artefact of knight?.artefacts">
-            <div class="col-sm-6 col-md-6 display-flex-center" style="flex-direction: column;">
-              <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
-                   [alt]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'"
-                   [src]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
-              <span class="pt5 pb5"
-                    style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id]?.name}}</span>
-            </div>
-          </ng-container>
+          <div class="display-flex-center" style="flex-direction: column;">
+            <img style="height: 50px;" [alt]="knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'"
+                 [src]="knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'">
+
+            <span class="pt5 pb5"
+                  style="font-size: 10px; width: 50px;line-height: normal;">{{ mappedKnightElement[knight?.element] }}</span>
+          </div>
+        </div>
+
+        <!--  Artéfacts -->
+        <div class="semi-rounded-box col-xs-offset-1 col-xs-6 mt10" *ngIf="knight?.artefacts?.length > 0">
+          <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
+            <ng-container *ngFor="let artefact of knight?.artefacts">
+              <div class="col-sm-6 col-md-6 display-flex-center" style="flex-direction: column;">
+                <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
+                     [alt]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'"
+                     [src]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
+                <span class="pt5 pb5"
+                      style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id]?.name}}</span>
+              </div>
+            </ng-container>
+          </div>
         </div>
       </div>
+
 
       <!--  MIN CONSTELLATION LEVEL -->
       <div class="semi-rounded-box mt10" *ngIf="knight?.minConstellationLevel">
@@ -53,7 +66,7 @@
       </div>
 
       <!--  SPECIALITIES -->
-      <div class="semi-rounded-box mt10" *ngIf="knight?.specialties?.length > 0">
+      <div class="semi-rounded-box mt10 mb10" *ngIf="knight?.specialties?.length > 0">
         <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
           <div  class="text-center full-width">Spécialités</div>
           <ng-container *ngFor="let specialty of knight?.specialties">

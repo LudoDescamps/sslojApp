@@ -82,8 +82,8 @@ export enum KnightElement {
   TERRE = 'Terre',
   FEU = 'Feu',
   AIR = 'Air',
-  DARK = 'Dark',
-  LIGHT = 'Light'
+  OBSCURITE = 'Obscurité',
+  LUMIERE = 'Lumière'
 }
 
 export enum Specificity {
@@ -94,6 +94,14 @@ export enum Specificity {
   OR = 'Chevalier d\'or',
   ARGENT = 'Chevalier d\'argent',
   BRONZE = 'Chevalier de bronze'
+}
+
+export enum knightClass {
+  ASSASSIN= 'Assassin',
+  COMPETENCE = 'Compétence',
+  DEFENSE = 'Défense',
+  OFFENSIF = 'Offensif',
+  SOUTIEN = 'Soutien'
 }
 
 export enum Specificity2 { // TODO rename
