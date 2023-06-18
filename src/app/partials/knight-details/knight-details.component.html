@@ -14,10 +14,10 @@
     <div class="col-sm-3 col-md-4 col-lg-4 flex" style="display: flex;flex-direction: column;" *ngIf="knight">
       <!--  Classe & élément -->
       <div class="semi-rounded-box col-xs-6" style="display: flex;justify-content: space-around">
-        <img style="height: 50px;"
+        <img style="height: 50px;" [alt]="knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'"
              [src]="knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'">
 
-        <img style="height: 50px;"
+        <img style="height: 50px;" [alt]="knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'"
              [src]="knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'">
       </div>
 
@@ -27,6 +27,7 @@
           <ng-container *ngFor="let artefact of knight?.artefacts">
             <div class="col-sm-6 col-md-6 display-flex-center" style="flex-direction: column;">
               <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
+                   [alt]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'"
                    [src]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
               <span class="pt5 pb5"
                     style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id]?.name}}</span>
@@ -66,6 +67,8 @@
 
     <div class="col-sm-9 col-md-8 col-lg-offset-1 col-lg-7 flex">
       <img style="width: 100%;"
+           [alt]= "(knight.images && knight.images.length > 0 ?
+           'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')"
            [src]= "(knight.images && knight.images.length > 0 ?
            'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')" >
 <!--           'https://at-the-villa.com/ssloj/knight_illustrations/' + knight.images[0] : 'assets/images/no-image.png')" >-->
@@ -79,6 +82,7 @@
         <ng-container *ngFor="let araya of knight?.arayas">
           <div class="col-md-2 display-flex-center pb10" style="flex-direction: column;">
             <img style="height: 100px;" [ngClass]="{'rainbow': araya.recommended}"
+                 [alt]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'"
                  [src]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
             <span class="pt10"
                   style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArayas[araya?.id]?.name}}</span>
