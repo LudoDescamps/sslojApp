@@ -1,14 +1,30 @@
 <div>
-  <div class="row no-margin mat-h1 mb5">
-    {{ knight?.name }}
-  </div>
-  <div class="row no-margin mat-h3 mb5">
-    {{ knight?.constellationName }}
+  <div>
+    <div class="col-xs-8">
+      <div class="row no-margin mat-h1 mb5">
+        {{ knight?.name }}
+      </div>
+      <div class="row no-margin mat-h3 mb5">
+        {{ knight?.constellationName }}
+      </div>
+
+      <div class="row no-margin mat-h3 mb10">
+        Spécificité: {{ mappedSpecificities[knight?.specificity] }}
+      </div>
+    </div>
+
+    <div class="col-xs-4 knight-img-mobile">
+      <div class="mb10 flex">
+        <img style="width: 100%;"
+             [alt]= "(knight.images && knight.images.length > 0 ?
+           'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')"
+             [src]= "(knight.images && knight.images.length > 0 ?
+           'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')" >
+        <!--           'https://at-the-villa.com/ssloj/knight_illustrations/' + knight.images[0] : 'assets/images/no-image.png')" >-->
+      </div>
+    </div>
   </div>
 
-  <div class="row no-margin mat-h3 mb10">
-    Spécificité: {{ mappedSpecificities[knight?.specificity] }}
-  </div>
 
   <div class="row no-margin">
     <div class="col-sm-3 col-md-4 col-lg-4 flex" style="display: flex;flex-direction: column;" *ngIf="knight">
@@ -37,7 +53,7 @@
           <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
             <ng-container *ngFor="let artefact of knight?.artefacts">
               <div class=" col-xs-4 col-sm-6 col-md-6 display-flex-center" style="flex-direction: column;">
-                <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
+                <img class="artefact-img" [ngClass]="{'rainbow': artefact.recommended}"
                      [alt]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'"
                      [src]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
                 <span class="pt5 pb5"
@@ -78,19 +94,21 @@
       </div>
     </div>
 
-    <div class="col-sm-9 col-md-8 col-lg-offset-1 col-lg-7 flex">
-      <img style="width: 100%;"
-           [alt]= "(knight.images && knight.images.length > 0 ?
+    <div class="hidden-xs col-sm-9 col-md-8 col-lg-offset-1 col-lg-7 flex">
+      <div style="width: 90%; margin: auto;">
+        <img style="width: 100%;"
+             [alt]= "(knight.images && knight.images.length > 0 ?
            'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')"
-           [src]= "(knight.images && knight.images.length > 0 ?
+             [src]= "(knight.images && knight.images.length > 0 ?
            'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')" >
-<!--           'https://at-the-villa.com/ssloj/knight_illustrations/' + knight.images[0] : 'assets/images/no-image.png')" >-->
+        <!--           'https://at-the-villa.com/ssloj/knight_illustrations/' + knight.images[0] : 'assets/images/no-image.png')" >-->
+      </div>
     </div>
   </div>
 
   <div class="row no-margin">
     <!--  Araya -->
-    <div class="semi-rounded-box mt10" *ngIf="knight?.arayas">
+    <div class="semi-rounded-box" *ngIf="knight?.arayas">
       <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
         <ng-container *ngFor="let araya of knight?.arayas">
           <div class="col-xs-3 col-sm-4 col-md-2 display-flex-center pb10" style="flex-direction: column;">

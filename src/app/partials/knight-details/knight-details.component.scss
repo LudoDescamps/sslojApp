@@ -1,5 +1,22 @@
 // @import "./styles/colors";
 
+.artefact-img {
+  height: 50px;
+}
+
+@media (max-width: 767px) {
+  .artefact-img {
+    height: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .knight-img-mobile, {
+    display: none !important;
+  }
+}
+
+
 .semi-rounded-box {
   border: 2px solid #d8d8d8;
   border-radius: 10px 0;
