@@ -68,7 +68,7 @@
       <!--  MIN CONSTELLATION LEVEL -->
       <div class="semi-rounded-box mt10" *ngIf="knight?.minConstellationLevel">
         <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
-          <div  class="text-center full-width">Constellation minimum</div>
+          <div  class="text-center full-width">Constellation recommandée</div>
           <div class="text-center full-width">{{knight?.minConstellationLevel}}</div>
         </div>
       </div>
@@ -76,7 +76,7 @@
       <!--  MIN ARMOUR LEVEL -->
       <div class="semi-rounded-box mt10" *ngIf="knight?.minArmourLevel">
         <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
-          <div  class="text-center full-width">Armure minimum</div>
+          <div  class="text-center full-width">Armure recommandée</div>
           <div class="text-center full-width">{{knight?.minArmourLevel}}</div>
         </div>
       </div>
@@ -95,7 +95,7 @@
     </div>
 
     <div class="hidden-xs col-sm-9 col-md-8 col-lg-offset-1 col-lg-7 flex">
-      <div style="width: 90%; margin: auto;">
+      <div style="width: 60%; margin: auto;">
         <img style="width: 100%;"
              [alt]= "(knight.images && knight.images.length > 0 ?
            'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')"
@@ -111,7 +111,7 @@
     <div class="semi-rounded-box" *ngIf="knight?.arayas">
       <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
         <ng-container *ngFor="let araya of knight?.arayas">
-          <div class="col-xs-3 col-sm-4 col-md-2 display-flex-center pb10" style="flex-direction: column;">
+          <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 display-flex-center pb10" style="flex-direction: column;">
             <img style="height: 100px;" [ngClass]="{'rainbow': araya.recommended}"
                  [alt]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'"
                  [src]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">

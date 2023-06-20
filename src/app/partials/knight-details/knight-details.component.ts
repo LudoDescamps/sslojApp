@@ -1,8 +1,8 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 import {Knight, KnightClass, KnightElement, Specificity} from "../../lib/models/Knight";
 import {Artefact, ArtefactAdapter} from "../../lib/models/Artefact";
-import artefactsData from "../../lib/models/artefacts_data.json";
-import arayasData from "../../lib/models/arayas_data.json";
+import artefactsData from "../../lib/data/artefacts_data.json";
+import arayasData from "../../lib/data/arayas_data.json";
 import {Araya, ArayaAdapter} from "../../lib/models/Araya";
 
 @Component({

@@ -3,8 +3,8 @@ import {FormControl, FormGroup} from "@angular/forms";
 import {Artefact, ArtefactAdapter} from "../../lib/models/Artefact";
 import {Knight, KnightAdapter} from "../../lib/models/Knight";
 
-import data from './../../lib/models/data.json';
-import artefactsData from './../../lib/models/artefacts_data.json';
+import data from '../../lib/data/data.json';
+import artefactsData from '../../lib/data/artefacts_data.json';
 
 @Component({
   selector: 'app-knight-selector',
