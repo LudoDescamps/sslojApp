@@ -39,6 +39,19 @@ export class KnightDetailsComponent implements OnChanges {
       artefact?.id ? this.mappedArtefacts[artefact.id] = artefact : undefined;
     });
 
+    console.log(this.artefacts);
+    const people: any[] = [
+      { name: "Alice", age: 30, country: "USA" },
+      { name: "Bob", age: 25, country: "Canada" },
+      { name: "Charlie", age: 35, country: "USA" },
+    ];
+
+    const sortedPeople = multiCriteriaSort<any>(people, [
+      (person) => person.country,
+      (person) => person.age,
+    ]);
+    console.log(sortedPeople);
+
     this.arayas = arayasData.map(araya => this.arayaAdapter.adapt(araya));
     this.arayas.forEach(araya => {
       araya?.id ? this.mappedArayas[araya.id] = araya : undefined;
@@ -49,4 +62,22 @@ export class KnightDetailsComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     this.knight = changes['knight']?.currentValue;
   }
+}
+
+function multiCriteriaSort<T>(arr: T[], criteria: ((item: T) => any)[]) {
+  return arr.sort((a: T, b: T) => {
+    for (let criterion of criteria) {
+      const aValue = criterion(a);
+      const bValue = criterion(b);
+
+      if (aValue < bValue) {
+        return -1;
+      }
+      if (aValue > bValue) {
+        return 1;
+      }
+    }
+
+    return 0;
+  });
 }
