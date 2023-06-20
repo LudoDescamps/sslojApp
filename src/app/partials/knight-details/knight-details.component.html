@@ -33,10 +33,10 @@
         </div>
 
         <!--  Artéfacts -->
-        <div class="semi-rounded-box col-xs-offset-1 col-xs-6 mt10" *ngIf="knight?.artefacts?.length > 0">
+        <div class="semi-rounded-box col-xs-offset-1 col-xs-6" *ngIf="knight?.artefacts?.length > 0">
           <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
             <ng-container *ngFor="let artefact of knight?.artefacts">
-              <div class="col-sm-6 col-md-6 display-flex-center" style="flex-direction: column;">
+              <div class=" col-xs-4 col-sm-6 col-md-6 display-flex-center" style="flex-direction: column;">
                 <img style="height: 50px;" [ngClass]="{'rainbow': artefact.recommended}"
                      [alt]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'"
                      [src]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
@@ -93,7 +93,7 @@
     <div class="semi-rounded-box mt10" *ngIf="knight?.arayas">
       <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
         <ng-container *ngFor="let araya of knight?.arayas">
-          <div class="col-md-2 display-flex-center pb10" style="flex-direction: column;">
+          <div class="col-xs-3 col-sm-4 col-md-2 display-flex-center pb10" style="flex-direction: column;">
             <img style="height: 100px;" [ngClass]="{'rainbow': araya.recommended}"
                  [alt]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'"
                  [src]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
