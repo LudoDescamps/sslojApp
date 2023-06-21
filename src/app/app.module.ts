@@ -10,6 +10,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {MatSelectModule} from "@angular/material/select";
 import { KnightDetailsComponent } from './partials/knight-details/knight-details.component';
 import { ClassAndElementComponent } from './partials/class-and-element/class-and-element.component';
+import {NgxMatSelectSearchModule} from "ngx-mat-select-search";
 
 @NgModule({
   declarations: [
@@ -18,14 +19,15 @@ import { ClassAndElementComponent } from './partials/class-and-element/class-and
     KnightDetailsComponent,
     ClassAndElementComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    ReactiveFormsModule,
-    MatSelectModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatCardModule,
+        ReactiveFormsModule,
+        MatSelectModule,
+        NgxMatSelectSearchModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

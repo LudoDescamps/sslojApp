@@ -11,11 +11,26 @@
                 <mat-label class="mat-label">{{ 'Chevalier' }}</mat-label>
                 <mat-select formControlName="name"  (selectionChange)="updateSelected($event.value)"
                             placeholder="{{ 'Sélectionner un chevalier' }}">
-                  <ng-container *ngFor="let knight of knights">
+                  <mat-option>
+                    <ngx-mat-select-search formControlName="knightFilter" placeholderLabel="{{ 'Rechercher'  }}"
+                                           noEntriesFoundLabel="{{ 'Aucun résultat' }}"></ngx-mat-select-search>
+                  </mat-option>
+                  <ng-container *ngFor="let knight of filteredKnights | async">
                     <mat-option [value]="knight">{{ knight.name }} - {{knight?.constellationName}}</mat-option>
                   </ng-container>
                 </mat-select>
               </mat-form-field>
+
+
+<!--              <mat-form-field floatLabel="always" color="accent" >-->
+<!--                <mat-label class="mat-label">{{ 'Chevalier' }}</mat-label>-->
+<!--                <mat-select formControlName="name"  (selectionChange)="updateSelected($event.value)"-->
+<!--                            placeholder="{{ 'Sélectionner un chevalier' }}">-->
+<!--                  <ng-container *ngFor="let knight of knights">-->
+<!--                    <mat-option [value]="knight">{{ knight.name }} - {{knight?.constellationName}}</mat-option>-->
+<!--                  </ng-container>-->
+<!--                </mat-select>-->
+<!--              </mat-form-field>-->
             </div>
           </mat-card-content>
         </form>

@@ -47,10 +47,14 @@ export class KnightDetailsComponent implements OnChanges {
     ];
 
     const sortedPeople = multiCriteriaSort<any>(people, [
-      (person) => person.country,
-      (person) => person.age,
+      { criterion: (person) => person.country, order: SortOrder.Descending },
+      { criterion: (person) => person.name, order: SortOrder.Descending },
     ]);
     console.log(sortedPeople);
+    // console.log( multiCriteriaSort<any>(people, [
+    //   { criterion: (person) => person.age, order: SortOrder.Ascending },
+    //   // { criterion: (person) => person.name, order: SortOrder.Ascending },
+    // ]));
 
     this.arayas = arayasData.map(araya => this.arayaAdapter.adapt(araya));
     this.arayas.forEach(araya => {
@@ -64,17 +68,32 @@ export class KnightDetailsComponent implements OnChanges {
   }
 }
 
-function multiCriteriaSort<T>(arr: T[], criteria: ((item: T) => any)[]) {
+enum SortOrder {
+  Ascending = "asc",
+  Descending = "desc",
+}
+
+function multiCriteriaSort<T>(arr: T[], criteria: { criterion: (item: T) => any; order: SortOrder }[]) {
   return arr.sort((a: T, b: T) => {
     for (let criterion of criteria) {
-      const aValue = criterion(a);
-      const bValue = criterion(b);
+      const aValue = criterion.criterion(a);
+      const bValue = criterion.criterion(b);
 
+      let result: number;
       if (aValue < bValue) {
-        return -1;
+        result = -1;
+      } else if (aValue > bValue) {
+        result = 1;
+      } else {
+        result = 0;
       }
-      if (aValue > bValue) {
-        return 1;
+
+      if (criterion.order === SortOrder.Descending) {
+        result *= -1;
+      }
+
+      if (result !== 0) {
+        return result;
       }
     }
 
