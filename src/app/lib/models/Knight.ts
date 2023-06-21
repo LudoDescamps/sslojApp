@@ -72,7 +72,7 @@ export class KnightAdapter implements Adapter<Knight> {
 export enum KnightClass {
   ASSASSIN = 'Assassin',
   COMPETENCE = 'Compétence',
-  DEFENSE = 'Défense',
+  DEFENSIF = 'Défensif',
   OFFENSIF = 'Offensif',
   SOUTIEN = 'Soutien'
 }
