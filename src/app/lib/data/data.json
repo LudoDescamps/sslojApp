@@ -177,8 +177,7 @@
     "advice": "",
     "images": ["athena_deesse_de_la_terre.jpg"]
   },
-  {
-    "name": "Hyôga",
+  { "name": "Hyôga",
     "constellationName": "Cygne d'Or",
     "element": "AIR",
     "knightClass": "COMPETENCE",
@@ -234,8 +233,7 @@
     "advice": "",
     "images": ["hyoga_cygne_d_or.jpg"]
   },
-  {
-    "name": "Shun",
+  { "name": "Shun",
     "constellationName": "Andromède d'Or",
     "element": "TERRE",
     "knightClass": "SOUTIEN",
@@ -288,8 +286,7 @@
     "advice": "",
     "images": ["shun_andromede_d_or.jpg"]
   },
-  {
-    "name": "Rhadamanthe",
+  { "name": "Rhadamanthe",
     "constellationName": "Étoile Céleste de la Férocité",
     "element": "OBSCURITE",
     "knightClass": "OFFENSIF",
@@ -307,8 +304,7 @@
     "advice": "",
     "images": ["rhadamanthe_etoile_celeste_de_la_ferocite.jpg"]
   },
-  {
-    "name": "Pandora",
+  { "name": "Pandora",
     "constellationName": "Commandant des Enfers",
     "element": "OBSCURITE",
     "knightClass": "SOUTIEN",
@@ -363,8 +359,7 @@
     "advice": "",
     "images": ["pandora_commandant_des_enfers.jpg"]
   },
-  {
-    "name": "Niobé",
+  { "name": "Niobé",
     "constellationName": "Étoile Terrestre de l'Obscurité",
     "element": "EAU",
     "knightClass": "ASSASSIN",
@@ -416,8 +411,7 @@
     "advice": "",
     "images": ["niobe_etoile_terrestre_de_l_obscurite.jpg"]
   },
-  {
-    "name": "Shion",
+  { "name": "Shion",
     "constellationName": "Bélier",
     "element": "FEU",
     "knightClass": "DEFENSIF",
@@ -467,8 +461,7 @@
     "advice": "",
     "images": ["shion_belier.jpg"]
   },
-  {
-    "name": "Myû",
+  { "name": "Myû",
     "constellationName": "Étoile Terrestre Enchanteresse",
     "element": "AIR",
     "knightClass": "SOUTIEN",
@@ -520,8 +513,7 @@
     "advice": "",
     "images": ["myu_etoile_terrestre_enchanteresse.jpg"]
   },
-  {
-    "name": "Zélos",
+  { "name": "Zélos",
     "constellationName": "L'Étoile Terrestre de l'Étrangeté",
     "element": "TERRE",
     "knightClass": "DEFENSIF",
@@ -540,80 +532,186 @@
     "advice": "",
     "images": ["zelos_l_etoile_terrestre_de_l_etrangete.jpg"]
   },
-  {
-    "name": "Sorrento",
+  { "name": "Sorrento",
     "constellationName": "Sirène",
     "element": "LUMIERE",
     "knightClass": "SOUTIEN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Soigne et débuff les alliés et les ennemis",
+      "Contrôle de l'équipe adverse (cosmos et séduction)"
+    ],
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "FEROCE_COMME_LE_FEU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "FEROCE_COMME_LE_FEU_OR"
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specificity": "MARINA",
     "advice": "",
     "images": ["sorrento_sirene.jpg"]
   },
-  {
-    "name": "Kanon",
+  { "name": "Kanon",
     "constellationName": "Dragon des Mers",
     "element": "OBSCURITE",
     "knightClass": "ASSASSIN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Force son vis à vis à utiliser une compétence en ouverture et peut en reprendre le contrôle",
+      "Fait perdre du cosmos, empêche les soins",
+      "Exile un ennemi"
+    ],
+    "artefacts": [
+      {
+        "id": "SCEPTRE_DE_VICTOIRE",
+        "recommended": true
+      },
+      {
+        "id": "DAGUE_DU_GRAND_POPE"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      }
+    ],
     "specificity": "MARINA",
     "advice": "",
     "images": ["kanon_dragon_des_mers.jpg"]
   },
-  {
-    "name": "Io",
+  { "name": "Io",
     "constellationName": "Scylla",
     "element": "EAU",
     "knightClass": "ASSASSIN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+     
+    ],
+    "artefacts": [
+      
+    ],
+    "arayas": [
+      
+    ],
     "specificity": "MARINA",
     "advice": "",
     "images": ["io_scylla.jpg"]
   },
-  {
-    "name": "Thétis",
+  { "name": "Thétis",
     "constellationName": "Sirène",
     "element": "EAU",
     "knightClass": "SOUTIEN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Se lie avec l'allié le plus puissant puis le protège, lui fournit du cosmos et des buffs offensifs (sauf si Poséidon est dans l'équipe il sera prioritaire)",
+      "Peut rendre l'ennemi rigide ce qui l'empêche d'agir"
+    ],
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      }
+    ],
     "specificity": "MARINA",
     "advice": "",
     "images": ["thetis_sirene.jpg"]
   },
-  {
-    "name": "Krishna",
+  { "name": "Krishna",
     "constellationName": "Chrysaor",
     "element": "FEU",
     "knightClass": "OFFENSIF",
