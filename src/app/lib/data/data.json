@@ -293,16 +293,17 @@
     "constellationName": "Étoile Céleste de la Férocité",
     "element": "OBSCURITE",
     "knightClass": "OFFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+    ],
+    "artefacts": [
+      
+    ],
+    "arayas": [
+        
+    ],
+    "specificity": "SPECTRES",
     "advice": "",
     "images": ["rhadamanthe_etoile_celeste_de_la_ferocite.jpg"]
   },
@@ -311,16 +312,54 @@
     "constellationName": "Commandant des Enfers",
     "element": "OBSCURITE",
     "knightClass": "SOUTIEN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "SPECTRE",
+    "minConstellationLevel": "9",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Soigne les alliés et attaque l'adversaire",
+      "Empêche les soins des adversaires"
+    ],
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+
+      },      
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      },
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specificity": "SPECTRES",
     "advice": "",
     "images": ["pandora_commandant_des_enfers.jpg"]
   },
@@ -329,16 +368,51 @@
     "constellationName": "Étoile Terrestre de l'Obscurité",
     "element": "EAU",
     "knightClass": "ASSASSIN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Augmente les dégats et la durée du poison",
+      "Protège les allés en leurs fournissant de l'esquive",
+      "Contrôle avec de l'étourdissement"
+    ],
+    "artefacts": [
+      {
+        "id": "DAGUE_DU_GRAND_POPE",
+        "recommended": true
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
+        "recommended": true
+      } 
+    ],
+    "specificity": "SPECTRES",
     "advice": "",
     "images": ["niobe_etoile_terrestre_de_l_obscurite.jpg"]
   },
@@ -346,6 +420,110 @@
     "name": "Shion",
     "constellationName": "Bélier",
     "element": "FEU",
+    "knightClass": "DEFENSIF",
+    "minConstellationLevel": "9",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Protège et buff les alliés"
+    ],
+    "artefacts": [
+      {
+        "id": "CHAPELET_DE_SHAKA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "COLERE_DU_PHENIX_OR",
+        "recommended": true
+      },
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      }
+    ],
+    "specificity": "SPECTRES",
+    "advice": "",
+    "images": ["shion_belier.jpg"]
+  },
+  {
+    "name": "Myû",
+    "constellationName": "Étoile Terrestre Enchanteresse",
+    "element": "AIR",
+    "knightClass": "SOUTIEN",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Dissipe les débuffs, contrôles",
+      "Effet de champ et d'environnement"
+    ],
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+
+      },  
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },    
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      }
+    ],
+    "specificity": "SPECTRES",
+    "advice": "",
+    "images": ["myu_etoile_terrestre_enchanteresse.jpg"]
+  },
+  {
+    "name": "Zélos",
+    "constellationName": "L'Étoile Terrestre de l'Étrangeté",
+    "element": "TERRE",
     "knightClass": "DEFENSIF",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -356,27 +534,9 @@
     "arayas/0/recommended": "",
     "arayas/1/id": "",
     "arayas/2/id": "",
-    "specificity": "",
+    "specificity": "SPECTRES",
     "advice": "",
-    "images": ["shion_belier.jpg"]
-  },
-  {
-    "name": "Myû",
-    "constellationName": "Étoile Terrestre Enchanteresse",
-    "element": "AIR",
-    "knightClass": "SOUTIEN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
-    "advice": "",
-    "images": ["myu_etoile_terrestre_enchanteresse.jpg"]
+    "images": ["zelos_l_etoile_terrestre_de_l_etrangete.jpg"]
   },
   {
     "name": "Sorrento",
