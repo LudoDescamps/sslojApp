@@ -45,7 +45,7 @@ export class KnightSelectorComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.knightFilterSubscription = this.knightForm?.get('knightFilterFunction')?.valueChanges?.subscribe(() => {
+    this.knightFilterSubscription = this.knightForm?.get('knightFilter')?.valueChanges?.subscribe(() => {
       this.knightFilterFunction();
     });
     // TODO à enlever
@@ -65,7 +65,7 @@ export class KnightSelectorComponent implements OnInit {
       return;
     }
     // get the search keyword
-    let search = this.knightForm?.get('knightFilterFunction')?.value;
+    let search = this.knightForm?.get('knightFilter')?.value;
     if (!search) {
       this.filteredKnights.next(this.knights.slice());
       return;
