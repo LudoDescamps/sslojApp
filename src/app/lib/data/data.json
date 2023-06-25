@@ -715,15 +715,48 @@
     "constellationName": "Chrysaor",
     "element": "FEU",
     "knightClass": "OFFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Protège les alliés et augmente leurs attaques"
+    ],
+    "artefacts": [
+      {
+        "id": "EPEE_D_HADES",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      }
+    ],
     "specificity": "MARINA",
     "advice": "",
     "images": ["krishna_chrysaor.jpg"]
@@ -733,15 +766,44 @@
     "constellationName": "Cheval des Mers",
     "element": "AIR",
     "knightClass": "DEFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Grande capacité de survie",
+      "Protège le deuxième front à ses côtés",
+      "Ralentit les adversaires"
+    ],
+    "artefacts": [
+      {
+        "id": "CHAPELET_DE_SHAKA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "LION_EN_COLERE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "COLERE_DU_PHENIX_OR",
+        "recommended": true
+      }
+    ],
     "specificity": "MARINA",
     "advice": "",
     "images": ["baian_cheval_des_mers.jpg"]
@@ -751,15 +813,49 @@
     "constellationName": "Kraken",
     "element": "AIR",
     "knightClass": "OFFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Contrôle grâce à l'aveuglement",
+      "Ralentit l'accumulation de cosmos et peut geler l'adversaire",
+      "Devient plus fort au fil du combat"
+    ],
+    "artefacts": [
+      {
+        "id": "EPEE_D_HADES",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "FROID_EXTREME_OR",
+        "recommended": true
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "EXCALIBUR_DU_JUGEMENT_OR"
+      }
+    ],
     "specificity": "MARINA",
     "advice": "",
     "images": ["isaac_kraken.jpg"]
@@ -769,15 +865,48 @@
     "constellationName": "Lyumnades",
     "element": "TERRE",
     "knightClass": "SOUTIEN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Peut sauver les alliés de dégats mortels",
+      "Augmente les dégâts des alliés grâce à décharge électrique"
+    ],
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR",
+        "recommended": true
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR"
+      }
+    ],
     "specificity": "MARINA",
     "advice": "",
     "images": ["kasa_lyumnades.jpg"]
