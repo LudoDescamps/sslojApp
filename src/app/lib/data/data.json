@@ -1,54 +1,42 @@
 [
-  {
-    "name": "Déesse de la guerre",
+  { "name": "Déesse de la guerre",
     "constellationName": "Déesse",
     "element": "LUMIERE",
     "knightClass": "DEFENSIF",
     "minConstellationLevel": "9",
     "minArmourLevel": "30",
     "specialties": [
-      "Soigne et dissipe les débuff des alliées",
-      "Augmente les soins reçus pour toute l'équipe",
-      "Peut empècher de mourir"
+      "Protège et fournit du cosmos aux aliiés"
     ],
     "artefacts": [
       {
-        "id": "URNE_D_ATHENA",
+        "id": "CHAPELET_DE_SHAKA",
         "recommended": true
       },
       {
         "id": "BOUCLIER_D_OR"
-      },
-      {
-        "id": "SCEPTRE_DE_VICTOIRE"
       }
     ],
     "arayas": [
       {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "id": "AME_DE_DRAGON_OR",
         "recommended": true
       },
       {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR",
         "recommended": true
 
       },
       {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
+        "id": "LION_EN_COLERE_VIOLET",
         "recommended": true
       },
       {
-        "id": "CALME_COMME_L_EAU_OR"
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR",
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
         "recommended": true
       },
       {
-        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "id": "COLERE_DU_PHENIX_OR",
         "recommended": true
       }      
     ],
@@ -56,8 +44,7 @@
     "advice": "???",
     "images": ["deesse_de_la_guerre_deesse.jpg"]
   },
-  {
-    "name": "Poséidon",
+  { "name": "Poséidon",
     "constellationName": "Empereur des Mers",
     "element": "LUMIERE",
     "knightClass": "COMPETENCE",
@@ -114,38 +101,78 @@
     "neverUseAgainst": [],
     "images": ["poseidon_empereur_des_mers.jpg"]
   },
-  {
-    "name": "Hypnos",
+  { "name": "Thanatos",
+    "constellationName": "Dieu de la mort",
+    "element": "OBSCURITE",
+    "knightClass": "COMPETENCE",
+    "artefacts": [],
+    "arayas": [],
+    "specificity": "DIEU",
+    "advice": "",
+    "images": ["thanatos_dieu_de_la_mort.jpg"]
+  },
+  { "name": "Hypnos",
     "constellationName": "Dieu du Sommeil",
     "element": "OBSCURITE",
     "knightClass": "SOUTIEN",
-    "artefacts/0/id": "ARC_OR",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "IMMOBILE_COMME_UNE_MONTAGE",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
+    "artefacts": [],
+    "arayas": [],
     "specificity": "DIEU",
     "advice": "",
     "images": ["hypnos_dieu_du_sommeil.jpg"]
   },
-  {
-    "name": "Athéna",
+  { "name": "Athéna",
     "constellationName": "Déesse de la Terre",
     "element": "EAU",
     "knightClass": "SOUTIEN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Soigne et dissipe les débuff des alliées",
+      "Augmente les soins reçus pour toute l'équipe",
+      "Peut empècher de mourir"
+    ],
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR",
+        "recommended": true
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      }      
+    ],
     "specificity": "",
     "advice": "",
     "images": ["athena_deesse_de_la_terre.jpg"]

@@ -108,7 +108,7 @@
 
   <div class="row no-margin">
     <!--  Araya -->
-    <div class="semi-rounded-box" *ngIf="knight?.arayas">
+    <div class="semi-rounded-box" *ngIf="knight?.arayas?.length > 0">
       <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
         <ng-container *ngFor="let araya of knight?.arayas">
           <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 display-flex-center pb10" style="flex-direction: column;">
