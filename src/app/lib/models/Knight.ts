@@ -89,7 +89,7 @@ export enum KnightElement {
 export enum Specificity {
   DIEU= 'Dieu',
   CHAMP_STELLAIRE = 'Chevalier du champ stellaire',
-  SPECTRE = 'Spectre',
+  SPECTRES = 'Spectres',
   MARINA = 'Marina',
   OR = 'Chevalier d\'or',
   ARGENT = 'Chevalier d\'argent',
