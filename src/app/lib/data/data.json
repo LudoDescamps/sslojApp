@@ -525,15 +525,17 @@
     "constellationName": "L'Étoile Terrestre de l'Étrangeté",
     "element": "TERRE",
     "knightClass": "DEFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+
+    ],
+    "artefacts": [
+
+    ],
+    "arayas": [
+      
+    ],
     "specificity": "SPECTRES",
     "advice": "",
     "images": ["zelos_l_etoile_terrestre_de_l_etrangete.jpg"]
