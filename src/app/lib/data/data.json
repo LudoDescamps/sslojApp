@@ -62,11 +62,11 @@
         "recommended": true
       },
       {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "id": "RAPIDE_COMME_LE_AIR_ROUGE",
         "recommended": true
       },
       {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
+        "id": "RAPIDE_COMME_LE_AIR_OR"
       }
     ],
     "specificity": "DIEU",
@@ -114,7 +114,7 @@
   {
     "name": "Hyôga",
     "constellationName": "Cygne d'Or",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "COMPETENCE",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -222,7 +222,7 @@
   {
     "name": "Myû",
     "constellationName": "Étoile Terrestre Enchanteresse",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "SOUTIEN",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -330,7 +330,7 @@
   {
     "name": "Baian",
     "constellationName": "Cheval des Mers",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "DEFENSIF",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -348,7 +348,7 @@
   {
     "name": "Isaac",
     "constellationName": "Kraken",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "OFFENSIF",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -618,7 +618,7 @@
   {
     "name": "Camus",
     "constellationName": "Verseau",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "COMPETENCE",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -636,7 +636,7 @@
   {
     "name": "Dohko",
     "constellationName": "Balance",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "DEFENSIF",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -654,7 +654,7 @@
   {
     "name": "Hyôga",
     "constellationName": "Verseau",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "COMPETENCE",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -852,7 +852,7 @@
   {
     "name": "Misty",
     "constellationName": "Lézard",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "SOUTIEN",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -870,7 +870,7 @@
   {
     "name": "Jamian",
     "constellationName": "Corbeau",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "COMPETENCE",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -888,7 +888,7 @@
   {
     "name": "Dio",
     "constellationName": "Mouche",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "OFFENSIF",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -906,7 +906,7 @@
   {
     "name": "Ptolemy",
     "constellationName": "Flèche",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "ASSASSIN",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
@@ -996,7 +996,7 @@
   {
     "name": "June",
     "constellationName": "Caméléon",
-    "element": "VENT",
+    "element": "AIR",
     "knightClass": "SOUTIEN",
     "artefacts/0/id": "",
     "artefacts/0/recommended": "",
