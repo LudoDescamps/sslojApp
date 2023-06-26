@@ -909,93 +909,237 @@
     "advice": "",
     "images": ["kasa_lyumnades.jpg"]
   },
-  {
-    "name": "Saga",
+  { "name": "Saga",
     "constellationName": "Gémaux",
     "element": "LUMIERE",
     "knightClass": "OFFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "9",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Dégats de masse conséquents",
+      "Capacité de survie",
+      "Temporise le combat"
+    ],
+    "artefacts": [
+      {
+        "id": "EPEE_D_HADES",
+        "recommended": true
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      },
+      {
+        "id": "EPEE_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "FEROCE_COMME_LE_FEU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "FEROCE_COMME_LE_FEU_OR"
+      },
+      {
+        "id": "ATHENA_EXCLAMATION_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specificity": "OR",
     "advice": "",
     "images": ["saga_gemaux.jpg"]
   },
-  {
-    "name": "Shaka",
+  { "name": "Shaka",
     "constellationName": "Vierge",
     "element": "LUMIERE",
     "knightClass": "COMPETENCE",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+    ],
+    "artefacts": [
+    ],
+    "arayas": [
+    ],
+    "specificity": "OR",
     "advice": "",
     "images": ["shaka_vierge.jpg"]
   },
-  {
-    "name": "Kanon",
+  { "name": "Kanon",
     "constellationName": "Gémaux",
     "element": "LUMIERE",
     "knightClass": "ASSASSIN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Contrôle l'adversaire avec confusion et peut l'étourdir",
+      "Inflige de lourds dégats à sa mort"
+    ],
+    "artefacts": [
+      {
+        "id": "DAGUE_DU_GRAND_POPE",
+        "recommended": true
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "COEUR_DE_PERSEVERANCE_OR",
+        "recommended": true
+      }
+    ],
+    "specificity": "OR",
     "advice": "",
     "images": ["kanon_gemaux.jpg"]
   },
-  {
-    "name": "Saga le Maléfique",
+  { "name": "Saga le Maléfique",
     "constellationName": "Gémaux",
     "element": "OBSCURITE",
     "knightClass": "COMPETENCE",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Contrôle son vis à vis",
+      "Dégats de masse importants",
+      "Réduit l'accumulation du cosmos et les chances de coups critiques de la team adverse"
+    ],
+    "artefacts": [
+      {
+        "id": "TRIDENT_DE_POSEIDON",
+        "recommended": true
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "FLECHE_D_OR_MEURTRIER_DE_DIEU_OR",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      }
+    ],
+    "specificity": "OR",
     "advice": "",
     "images": ["saga_le_malefique_gemaux.jpg"]
   },
-  {
-    "name": "Milo",
+  { "name": "Milo",
     "constellationName": "Scorpion",
     "element": "EAU",
     "knightClass": "ASSASSIN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Focus sur l'ennemi avec les pv les plus élevés et l'empêche d'agir en début de combat",
+      "Tue sa cible quand il atteint 15 stacks"
+    ],
+    "artefacts": [
+      {
+        "id": "DAGUE_DU_GRAND_POPE",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "NUNCHAKU_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specificity": "OR",
     "advice": "",
     "images": ["milo_scorpion.jpg"]
   },
@@ -1004,16 +1148,54 @@
     "constellationName": "Cancer",
     "element": "EAU",
     "knightClass": "COMPETENCE",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Ralentit l'accumulation de cosmos",
+      "Brûle le cosmos de ses cibles et le vol",
+      "Récupère du cosmos, de la santé, augmente son attaque et sa défense quand une cible meurt"
+    ],
+    "artefacts": [
+      {
+        "id": "TRIDENT_DE_POSEIDON",
+        "recommended": true
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specificity": "OR",
     "advice": "",
     "images": ["deathmask_cancer.jpg"]
   },
