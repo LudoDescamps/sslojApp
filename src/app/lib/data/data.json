@@ -1885,7 +1885,8 @@
     "advice": "",
     "images": ["shun_vierge.jpg"]
   },
-  { "name": "Moses",
+  {
+     "name": "Moses",
     "constellationName": "Baleine",
     "element": "EAU",
     "knightClass": "DEFENSIF",
