@@ -808,8 +808,7 @@
     "advice": "",
     "images": ["baian_cheval_des_mers.jpg"]
   },
-  {
-    "name": "Isaac",
+  { "name": "Isaac",
     "constellationName": "Kraken",
     "element": "AIR",
     "knightClass": "OFFENSIF",
@@ -860,8 +859,7 @@
     "advice": "",
     "images": ["isaac_kraken.jpg"]
   },
-  {
-    "name": "Kâsa",
+  { "name": "Kâsa",
     "constellationName": "Lyumnades",
     "element": "TERRE",
     "knightClass": "SOUTIEN",
