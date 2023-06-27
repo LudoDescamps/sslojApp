@@ -1933,8 +1933,7 @@
     "advice": "",
     "images": ["moses_baleine.jpg"]
   },
-  {
-    "name": "Marine",
+  { "name": "Marine",
     "constellationName": "Aigle",
     "element": "EAU",
     "knightClass": "OFFENSIF",
@@ -1984,8 +1983,7 @@
     "advice": "",
     "images": ["marine_aigle.jpg"]
   },
-  {
-    "name": "Orphée",
+  { "name": "Orphée",
     "constellationName": "Lyre",
     "element": "EAU",
     "knightClass": "COMPETENCE",
@@ -2042,8 +2040,7 @@
     "advice": "",
     "images": ["orphee_lyre.jpg"]
   },
-  {
-    "name": "Algethi",
+  { "name": "Algethi",
     "constellationName": "Hercule",
     "element": "FEU",
     "knightClass": "DEFENSIF",
@@ -2091,21 +2088,50 @@
     "advice": "",
     "images": ["algethi_hercule.jpg"]
   },
-  {
-    "name": "Shaina",
+  { "name": "Shaina",
     "constellationName": "Ophiuchus",
     "element": "FEU",
     "knightClass": "ASSASSIN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Inflige de lourds dégâts sur les boss"
+    ],
+    "artefacts": [
+      {
+        "id": "EPEE_D_OR",
+        "recommended": true
+      }
+    ],
+    "arayas": [
+      {
+        "id": "FEROCE_COMME_LE_FEU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "FEROCE_COMME_LE_FEU_OR"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "EXPLOSION_DE_L_ADVERSITE_OR",
+        "recommended": true
+      },
+      {
+        "id": "ROSE_DEMONIAQUE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specificity": "OR",
     "advice": "",
     "images": ["shaina_ophiuchus.jpg"]
   },
@@ -2114,16 +2140,50 @@
     "constellationName": "Cerbère",
     "element": "FEU",
     "knightClass": "OFFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Vol de vie qui ignore la défense adverse",
+      "Soutient de l'équipe en fournissant du vol de vie aux alliés"
+    ],
+    "artefacts": [
+      {
+        "id": "EPEE_D_HADES",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "EPEE_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      }
+    ],
+    "specificity": "OR",
     "advice": "",
     "images": ["dante_cerbere.jpg"]
   },
