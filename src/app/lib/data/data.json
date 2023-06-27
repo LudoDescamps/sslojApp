@@ -1929,7 +1929,7 @@
         "recommended": true
       }
     ],
-    "specificity": "OR",
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["moses_baleine.jpg"]
   },
@@ -1979,7 +1979,7 @@
         "recommended": true
       }
     ],
-    "specificity": "OR",
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["marine_aigle.jpg"]
   },
@@ -2036,7 +2036,7 @@
         "recommended": true
       }
     ],
-    "specificity": "OR",
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["orphee_lyre.jpg"]
   },
@@ -2084,7 +2084,7 @@
         "recommended": true
       }
     ],
-    "specificity": "OR",
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["algethi_hercule.jpg"]
   },
@@ -2131,12 +2131,11 @@
         "recommended": true
       }
     ],
-    "specificity": "OR",
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["shaina_ophiuchus.jpg"]
   },
-  {
-    "name": "Dante",
+  { "name": "Dante",
     "constellationName": "Cerbère",
     "element": "FEU",
     "knightClass": "OFFENSIF",
@@ -2183,187 +2182,348 @@
         "recommended": true
       }
     ],
-    "specificity": "OR",
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["dante_cerbere.jpg"]
   },
-  {
-    "name": "Babel",
+  { "name": "Babel",
     "constellationName": "Centaure",
     "element": "FEU",
     "knightClass": "COMPETENCE",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Dégâts de brûlure",
+      "Augmente les dégâts de brûlure de l'équipe",
+      "Étourdissements"
+    ],
+    "artefacts": [
+      {
+        "id": "TRIDENT_DE_POSEIDON",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "FLAMME_PHENIX_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "COEUR_DE_PERSEVERANCE_OR",
+        "recommended": true
+      }
+    ],
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["babel_centaure.jpg"]
   },
-  {
-    "name": "Misty",
+  { "name": "Misty",
     "constellationName": "Lézard",
     "element": "AIR",
     "knightClass": "SOUTIEN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Ralentit le cosmos de la front line",
+      "Soigne et protège les allés"
+    ],
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      }
+    ],
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["misty_lezard.jpg"]
   },
-  {
-    "name": "Jamian",
+  { "name": "Jamian",
     "constellationName": "Corbeau",
     "element": "AIR",
     "knightClass": "COMPETENCE",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "",
+    "minArmourLevel": "",
+    "specialties": [
+    ],
+    "artefacts": [
+    ],
+    "arayas": [
+    ],
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["jamian_corbeau.jpg"]
   },
-  {
-    "name": "Dio",
+  { "name": "Dio",
     "constellationName": "Mouche",
     "element": "AIR",
     "knightClass": "OFFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "",
+    "minArmourLevel": "",
+    "specialties": [
+    ],
+    "artefacts": [
+    ],
+    "arayas": [
+    ],
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["dio_mouche.jpg"]
   },
-  {
-    "name": "Ptolemy",
+  { "name": "Ptolemy",
     "constellationName": "Flèche",
     "element": "AIR",
     "knightClass": "ASSASSIN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "",
+    "minArmourLevel": "",
+    "specialties": [
+    ],
+    "artefacts": [
+    ],
+    "arayas": [
+    ],
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["ptolemy_fleche.jpg"]
   },
-  {
-    "name": "Algol",
+  { "name": "Algol",
     "constellationName": "Persée",
     "element": "TERRE",
     "knightClass": "DEFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "",
+    "minArmourLevel": "",
+    "specialties": [
+    ],
+    "artefacts": [
+    ],
+    "arayas": [
+    ],
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["algol_persee.jpg"]
   },
-  {
-    "name": "Sirius",
+  { "name": "Sirius",
     "constellationName": "Grand Chien",
     "element": "TERRE",
     "knightClass": "OFFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Contrôle par étourdissement",
+      "Protège les alliés et supprime les contrôles",
+      "Boost le cosmos et la vitesse d'attaque en ouverture"
+    ],
+    "artefacts": [
+      {
+        "id": "BOUCLIER_D_OR",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_ATHENA"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "COEUR_DE_PERSEVERANCE_OR",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      }
+    ],
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["sirius_grand_chien.jpg"]
   },
-  {
-    "name": "Astérion",
+  { "name": "Astérion",
     "constellationName": "Chiens de Chasse",
     "element": "TERRE",
     "knightClass": "SOUTIEN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "9",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Buff les alliés et débuff la back line adverse",
+      "Soigne légérement tous les alliés simultanément",
+      "Silence et débuff les cibles touchées par son ulti"
+    ],
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      }
+    ],
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["asterion_chiens_de_chasse.jpg"]
   },
-  {
-    "name": "Capella",
+  { "name": "Capella",
     "constellationName": "Aurige",
     "element": "TERRE",
     "knightClass": "COMPETENCE",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "",
+    "minArmourLevel": "",
+    "specialties": [
+    ],
+    "artefacts": [
+    ],
+    "arayas": [
+    ],
+    "specificity": "ARGENT",
     "advice": "",
     "images": ["capella_aurige.jpg"]
   },
-  {
-    "name": "June",
+  { "name": "June",
     "constellationName": "Caméléon",
     "element": "AIR",
     "knightClass": "SOUTIEN",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Soigne, protège et fournit du cosmos aux alliés",
+      "Empêche l'adversaire d'agir"
+    ],
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      }
+    ],
+    "specificity": "BRONZE",
     "advice": "",
     "images": ["june_cameleon.jpg"]
   }
