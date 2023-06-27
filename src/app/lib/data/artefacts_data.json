@@ -10,13 +10,13 @@
     ]
   },
   {
-    "id": "BATON_D_OR_A_3_SECTIONS",
-    "name": "Bâton d'or à 3 sections",
+    "id": "BATON_D_OR_A_TROIS_SECTIONS",
+    "name": "Bâton d'or à trois sections",
     "level": "",
     "rank": "number",
     "restriction": [],
     "images": [
-      "baton_d_or_a_3_sections.png"
+      "baton_d_or_a_trois_sections.png"
     ]
   },
   {

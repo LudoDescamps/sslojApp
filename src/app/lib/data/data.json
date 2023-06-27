@@ -1885,8 +1885,7 @@
     "advice": "",
     "images": ["shun_vierge.jpg"]
   },
-  {
-     "name": "Moses",
+  { "name": "Moses",
     "constellationName": "Baleine",
     "element": "EAU",
     "knightClass": "DEFENSIF",
@@ -1939,16 +1938,49 @@
     "constellationName": "Aigle",
     "element": "EAU",
     "knightClass": "OFFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Grande capacité d'esquive"
+    ],
+    "artefacts": [
+      {
+        "id": "BEQUILLE_D_OR",
+        "recommended": true
+      },
+      {
+        "id": "EPEE_D_HADES"
+      },
+      {
+        "id": "BATON_D_OR_A_TROIS_SECTIONS"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "LE_POUVOIR_C_EST_LA_JUSTICE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      }
+    ],
+    "specificity": "OR",
     "advice": "",
     "images": ["marine_aigle.jpg"]
   },
@@ -1957,16 +1989,56 @@
     "constellationName": "Lyre",
     "element": "EAU",
     "knightClass": "COMPETENCE",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Contrôle multicible et drain de cosmos",
+      "Brise la défense"
+    ],
+    "artefacts": [
+      {
+        "id": "TRIDENT_DE_POSEIDON",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "FEROCE_COMME_LE_FEU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "FEROCE_COMME_LE_FEU_OR"
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      }
+    ],
+    "specificity": "OR",
     "advice": "",
     "images": ["orphee_lyre.jpg"]
   },
@@ -1975,16 +2047,47 @@
     "constellationName": "Hercule",
     "element": "FEU",
     "knightClass": "DEFENSIF",
-    "artefacts/0/id": "",
-    "artefacts/0/recommended": "",
-    "artefacts/1/id": "",
-    "artefacts/2/id": "",
-    "artefacts/3/id": "",
-    "arayas/0/id": "",
-    "arayas/0/recommended": "",
-    "arayas/1/id": "",
-    "arayas/2/id": "",
-    "specificity": "",
+    "minConstellationLevel": "?",
+    "minArmourLevel": "?",
+    "specialties": [
+      "Grande capacité de survie",
+      "Renverse son opposant et réduit sa défense"
+    ],
+    "artefacts": [
+      {
+        "id": "CHAPELET_DE_SHAKA",
+        "recommended": true
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      },
+      {
+        "id": "BOUCLIER_D_ATHENA"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "LION_EN_COLERE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specificity": "OR",
     "advice": "",
     "images": ["algethi_hercule.jpg"]
   },
