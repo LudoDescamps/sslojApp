@@ -15,6 +15,13 @@ import {KnightService} from "./lib/services/knight.service";
 import {HttpClientModule} from "@angular/common/http";
 import { KnightAddUpdateComponent } from './partials/administration/knight-add-update/knight-add-update.component';
 import {NgxUiLoaderConfig, NgxUiLoaderModule} from "ngx-ui-loader";
+import {MatInputModule} from "@angular/material/input";
+import {MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldDefaultOptions} from "@angular/material/form-field";
+
+// Mat form fields appearance
+const appearance: MatFormFieldDefaultOptions = {
+  appearance: 'outline',
+};
 
 // Configure loader
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
@@ -61,8 +68,12 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     NgxMatSelectSearchModule,
     HttpClientModule,
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
+    MatInputModule,
   ],
-  providers: [KnightService],
+  providers: [
+    KnightService,
+    {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: appearance},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

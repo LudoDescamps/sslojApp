@@ -1,5 +1,6 @@
 [
-  { "name": "Déesse de la guerre",
+  { "id": "DEESSE_DE_LA_GUERRE_DEESSE",
+   "name": "Déesse de la guerre",
     "constellationName": "Déesse",
     "element": "LUMIERE",
     "knightClass": "DEFENSIF",
@@ -38,13 +39,14 @@
       {
         "id": "COLERE_DU_PHENIX_OR",
         "recommended": true
-      }      
+      }
     ],
     "specificity": "DIEU",
     "advice": "???",
     "images": ["deesse_de_la_guerre_deesse.jpg"]
   },
-  { "name": "Poséidon",
+  { "id": "POSEIDON_EMPEREUR_DES_MERS",
+    "name": "Poséidon",
     "constellationName": "Empereur des Mers",
     "element": "LUMIERE",
     "knightClass": "COMPETENCE",
@@ -101,7 +103,8 @@
     "neverUseAgainst": [],
     "images": ["poseidon_empereur_des_mers.jpg"]
   },
-  { "name": "Thanatos",
+  { "id": "THANATOS_DIEU_DE_LA_MORT",
+    "name": "Thanatos",
     "constellationName": "Dieu de la mort",
     "element": "OBSCURITE",
     "knightClass": "COMPETENCE",
@@ -111,7 +114,8 @@
     "advice": "",
     "images": ["thanatos_dieu_de_la_mort.jpg"]
   },
-  { "name": "Hypnos",
+  { "id": "HYPNOS_DIEU_DU_SOMMEIL",
+    "name": "Hypnos",
     "constellationName": "Dieu du Sommeil",
     "element": "OBSCURITE",
     "knightClass": "SOUTIEN",
@@ -121,7 +125,8 @@
     "advice": "",
     "images": ["hypnos_dieu_du_sommeil.jpg"]
   },
-  { "name": "Athéna",
+  { "id": "ATHENA_DEESSE_DE_LA_TERRE",
+    "name": "Athéna",
     "constellationName": "Déesse de la Terre",
     "element": "EAU",
     "knightClass": "SOUTIEN",
@@ -171,13 +176,14 @@
       {
         "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
         "recommended": true
-      }      
+      }
     ],
     "specificity": "DIEU",
     "advice": "",
     "images": ["athena_deesse_de_la_terre.jpg"]
   },
-  { "name": "Hyôga",
+  { "id": "HYOGA_CYGNE_D_OR",
+    "name": "Hyôga",
     "constellationName": "Cygne d'Or",
     "element": "AIR",
     "knightClass": "COMPETENCE",
@@ -227,13 +233,14 @@
       {
         "id": "ARTS_MARTIAUX_DE_GLACE_VIOLET",
         "recommended": true
-      }     
+      }
     ],
     "specificity": "CHAMP_STELLAIRE",
     "advice": "",
     "images": ["hyoga_cygne_d_or.jpg"]
   },
-  { "name": "Shun",
+  { "id": "SHUN_ANDROMEDE_D_OR",
+    "name": "Shun",
     "constellationName": "Andromède d'Or",
     "element": "TERRE",
     "knightClass": "SOUTIEN",
@@ -280,13 +287,14 @@
       {
         "id": "COEUR_DE_PERSEVERANCE_OR",
         "recommended": true
-      }     
+      }
     ],
     "specificity": "CHAMP_STELLAIRE",
     "advice": "",
     "images": ["shun_andromede_d_or.jpg"]
   },
-  { "name": "Rhadamanthe",
+  { "id": "RHADAMANTHE_ETOILE_CELESTE_DE_LA_FEROCITE",
+    "name": "Rhadamanthe",
     "constellationName": "Étoile Céleste de la Férocité",
     "element": "OBSCURITE",
     "knightClass": "OFFENSIF",
@@ -295,16 +303,17 @@
     "specialties": [
     ],
     "artefacts": [
-      
+
     ],
     "arayas": [
-        
+
     ],
     "specificity": "SPECTRES",
     "advice": "",
     "images": ["rhadamanthe_etoile_celeste_de_la_ferocite.jpg"]
   },
-  { "name": "Pandora",
+  { "id": "PANDORA_COMMANDANT_DES_ENFERS",
+    "name": "Pandora",
     "constellationName": "Commandant des Enfers",
     "element": "OBSCURITE",
     "knightClass": "SOUTIEN",
@@ -345,7 +354,7 @@
       {
         "id": "CALME_COMME_L_EAU_OR"
 
-      },      
+      },
       {
         "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
         "recommended": true
@@ -359,7 +368,8 @@
     "advice": "",
     "images": ["pandora_commandant_des_enfers.jpg"]
   },
-  { "name": "Niobé",
+  { "id": "NIOBE_ETOILE_TERRESTRE_DE_L_OBSCURITE",
+    "name": "Niobé",
     "constellationName": "Étoile Terrestre de l'Obscurité",
     "element": "EAU",
     "knightClass": "ASSASSIN",
@@ -405,13 +415,14 @@
       {
         "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
         "recommended": true
-      } 
+      }
     ],
     "specificity": "SPECTRES",
     "advice": "",
     "images": ["niobe_etoile_terrestre_de_l_obscurite.jpg"]
   },
-  { "name": "Shion",
+  { "id": "SHION_BELIER",
+    "name": "Shion",
     "constellationName": "Bélier",
     "element": "FEU",
     "knightClass": "DEFENSIF",
@@ -461,7 +472,8 @@
     "advice": "",
     "images": ["shion_belier.jpg"]
   },
-  { "name": "Myû",
+  { "id": "MYU_ETOILE_TERRESTRE_ENCHANTERESSE",
+    "name": "Myû",
     "constellationName": "Étoile Terrestre Enchanteresse",
     "element": "AIR",
     "knightClass": "SOUTIEN",
@@ -499,11 +511,11 @@
       {
         "id": "CALME_COMME_L_EAU_OR"
 
-      },  
+      },
       {
         "id": "VOLONTE_DES_DIEUX_ROUGE",
         "recommended": true
-      },    
+      },
       {
         "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
         "recommended": true
@@ -513,7 +525,8 @@
     "advice": "",
     "images": ["myu_etoile_terrestre_enchanteresse.jpg"]
   },
-  { "name": "Zélos",
+  { "id": "zelos_l_etoile_terrestre_de_l_etrangete",
+    "name": "Zélos",
     "constellationName": "L'Étoile Terrestre de l'Étrangeté",
     "element": "TERRE",
     "knightClass": "DEFENSIF",
@@ -526,13 +539,14 @@
 
     ],
     "arayas": [
-      
+
     ],
     "specificity": "SPECTRES",
     "advice": "",
     "images": ["zelos_l_etoile_terrestre_de_l_etrangete.jpg"]
   },
-  { "name": "Sorrento",
+  { "id": "SORRENTO_SIRENE",
+    "name": "Sorrento",
     "constellationName": "Sirène",
     "element": "LUMIERE",
     "knightClass": "SOUTIEN",
@@ -586,7 +600,8 @@
     "advice": "",
     "images": ["sorrento_sirene.jpg"]
   },
-  { "name": "Kanon",
+  { "id": "KANON_DRAGON_DES_MERS",
+    "name": "Kanon",
     "constellationName": "Dragon des Mers",
     "element": "OBSCURITE",
     "knightClass": "ASSASSIN",
@@ -641,26 +656,28 @@
     "advice": "",
     "images": ["kanon_dragon_des_mers.jpg"]
   },
-  { "name": "Io",
+  { "id": "IO_SCYLLA",
+    "name": "Io",
     "constellationName": "Scylla",
     "element": "EAU",
     "knightClass": "ASSASSIN",
     "minConstellationLevel": "?",
     "minArmourLevel": "?",
     "specialties": [
-     
+
     ],
     "artefacts": [
-      
+
     ],
     "arayas": [
-      
+
     ],
     "specificity": "MARINA",
     "advice": "",
     "images": ["io_scylla.jpg"]
   },
-  { "name": "Thétis",
+  { "id": "THETIS_SIRENE",
+    "name": "Thétis",
     "constellationName": "Sirène",
     "element": "EAU",
     "knightClass": "SOUTIEN",
@@ -711,7 +728,8 @@
     "advice": "",
     "images": ["thetis_sirene.jpg"]
   },
-  { "name": "Krishna",
+  { "id": "KRISHNA_CHRYSAOR",
+    "name": "Krishna",
     "constellationName": "Chrysaor",
     "element": "FEU",
     "knightClass": "OFFENSIF",
@@ -765,7 +783,7 @@
     "constellationName": "Cheval des Mers",
     "element": "AIR",
     "knightClass": "DEFENSIF",
-    "minConstellationLevel": "?",
+    "minConstellationLevel": null,
     "minArmourLevel": "?",
     "specialties": [
       "Grande capacité de survie",

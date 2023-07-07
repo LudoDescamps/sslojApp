@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Adapter } from '../interfaces/adapter.interface';
 
 export class Knight {
+  id: string;
   name?: string;
   constellationName?: string;
   element?: KnightElement;
@@ -19,11 +20,12 @@ export class Knight {
   minConstellationLevel?: number;
   minArmourLevel?: number;
 
-  constructor(name?: string, constellationName?: string, element?: KnightElement, knightClass?: string,
+  constructor(id?: string, name?: string, constellationName?: string, element?: KnightElement, knightClass?: string,
               artefacts: any[] = [],
               arayas?: { id: string, recommended?: boolean, comments?: string[] }[],
               constellation?: any, specialties?: any[], images?: string[], specificity?: Specificity, advice?: string,
               topAgainst?: Knight[], neverUseAgainst?: Knight[], minConstellationLevel?: number, minArmourLevel?: number) {
+    this.id = id;
     this.name = name;
     this.constellationName = constellationName;
     this.element = element;
@@ -50,6 +52,7 @@ export class KnightAdapter implements Adapter<Knight> {
 
 
     return new Knight(
+      item.id,
       item.name,
       item.constellationName,
       item.element,
