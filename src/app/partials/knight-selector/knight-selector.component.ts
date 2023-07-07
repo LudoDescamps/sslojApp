@@ -33,8 +33,6 @@ export class KnightSelectorComponent implements OnInit {
     this.knightSelectorForm.updateValueAndValidity();
 
     lastValueFrom(this.knightService.getKnights()).then(knights => {
-      console.log(knights);
-      console.log(knights);
       this.knights = knights;
 
       this.knightSelectorForm.get('name')?.setValue(this.knights.find(item => item.name === 'Poséidon'));
@@ -50,7 +48,6 @@ export class KnightSelectorComponent implements OnInit {
     // console.log(this.knights.filter(item => item.element === KnightElement.LUMIERE));
 
     this.artefacts = artefactsData.map(artefact => this.artefactAdapter.adapt(artefact));
-    console.log(this.artefacts);
   }
 
   ngOnInit(): void {

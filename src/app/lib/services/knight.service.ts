@@ -8,51 +8,38 @@ import {Knight, KnightAdapter} from "../models/Knight";
 })
 export class KnightService {
 
-  items: any[];
+  knights: Knight[];
 
   constructor(private http: HttpClient,
               private knightAdapter: KnightAdapter) {}
 
-  ngOnInit() {
-    this.getKnights();
-  }
-
   getKnights(): Observable<Knight[]> {
     return this.http.get<Knight[]>('assets/data/knightsData.json').pipe(
       map((data: any[]) => data.map(item => this.knightAdapter.adapt(item))));
-
-    // this.http.get<any[]>('assets/data.json').subscribe(
-    //   (data) => {
-    //     this.items = data;
-    //   },
-    //   (error) => {
-    //     console.error('Error fetching data:', error);
-    //   }
-    // );
   }
 
-  addItem(item: any) {
-    this.items.push(item);
+  addKnight(knight: Knight) {
+    this.knights.push(knight);
     this.saveData();
   }
 
-  updateItem(item: any) {
-    // Code pour mettre à jour l'élément dans this.items
+  updateKnight(knight: Knight) {
+    // Code pour mettre à jour l'élément dans this.knights
     this.saveData();
   }
 
-  deleteItem(item: any) {
-    // Code pour supprimer l'élément de this.items
+  deleteKnight(knight: Knight) {
+    // Code pour supprimer l'élément de this.knights
     this.saveData();
   }
 
   saveData() {
-    const json = JSON.stringify(this.items);
+    const json = JSON.stringify(this.knights);
     const blob = new Blob([json], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = 'data.json';
+    anchor.download = 'knightsData.json';
     anchor.click();
     URL.revokeObjectURL(url);
   }
