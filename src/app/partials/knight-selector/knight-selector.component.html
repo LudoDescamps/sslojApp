@@ -4,39 +4,30 @@
       <mat-card class="login-card" >
 
         <h2 class="text-center">{{ 'Saint Seiya - Legend of justice' }}</h2>
-        <form [formGroup]="knightForm">
+        <form [formGroup]="knightSelectorForm">
           <mat-card-content>
             <div class="filter ks-filter-single-select-container full-width">
               <mat-form-field floatLabel="always" color="accent" >
                 <mat-label class="mat-label">{{ 'Chevalier' }}</mat-label>
                 <mat-select formControlName="name"  (selectionChange)="updateSelected($event.value)"
                             placeholder="{{ 'Sélectionner un chevalier' }}">
+
                   <mat-option>
                     <ngx-mat-select-search formControlName="knightFilter" placeholderLabel="{{ 'Rechercher'  }}"
-                                           noEntriesFoundLabel="{{ 'Aucun résultat' }}"></ngx-mat-select-search>
+                                           noEntriesFoundLabel="{{ 'Aucun résultat' }}">
+                    </ngx-mat-select-search>
                   </mat-option>
+
                   <ng-container *ngFor="let knight of filteredKnights | async">
                     <mat-option [value]="knight">{{ knight.name }} - {{knight?.constellationName}}</mat-option>
                   </ng-container>
                 </mat-select>
               </mat-form-field>
-
-
-<!--              <mat-form-field floatLabel="always" color="accent" >-->
-<!--                <mat-label class="mat-label">{{ 'Chevalier' }}</mat-label>-->
-<!--                <mat-select formControlName="name"  (selectionChange)="updateSelected($event.value)"-->
-<!--                            placeholder="{{ 'Sélectionner un chevalier' }}">-->
-<!--                  <ng-container *ngFor="let knight of knights">-->
-<!--                    <mat-option [value]="knight">{{ knight.name }} - {{knight?.constellationName}}</mat-option>-->
-<!--                  </ng-container>-->
-<!--                </mat-select>-->
-<!--              </mat-form-field>-->
             </div>
           </mat-card-content>
         </form>
 
-        <div class="text-center details-container" *ngIf="knightForm.get('name')?.value">
-<!--        <div class="text-center details-container" style="&#45;&#45;knightName:'poseidon_empereur_des_mers.jpg'" *ngIf="knightForm.get('name')?.value">-->
+        <div class="text-center details-container" *ngIf="knightSelectorForm.get('name')?.value">
           <app-knight-details [knight]="selectedKnight"></app-knight-details>
         </div>
       </mat-card>

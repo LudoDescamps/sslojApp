@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Poséidon",
+    "element": "LUMIERE",
+    "knightClass": "COMPETENCE",
+    "artefacts": [
+      {
+        "id": "ARC_OR",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_OR"
+      },
+      {
+        "id": "BATON_OR_3_SECTIONS"
+      },
+      {
+        "id": "BATON_OR_3_SECTIONS"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT"
+      }
+    ],
+    "specificity": "DIEU",
+    "advice": "???",
+    "topAgainst": [],
+    "neverUseAgainst": [],
+    "images": ["poseidon_empereur_des_mers.jpg"]
+  },
+  {
+    "name": "Athéna",
+    "element": "EAU",
+    "knightClass": "DEFENSE",
+    "artefacts": [
+      {
+      "id": "ARC_OR"
+      }
+    ],
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGE"
+      }
+    ],
+    "specificity": "DIEU",
+    "advice": "",
+    "topAgainst": [],
+    "neverUseAgainst": []
+  },
+  {
+    "name": "Pandora",
+    "element": "OBSCURITE",
+    "knightClass": "",
+    "artefacts": [],
+    "specificity": "SPECTRE",
+    "advice": "",
+    "topAgainst": [],
+    "neverUseAgainst": []
+  },
+  {
+    "name": "Sorrento",
+    "element": "Lumière",
+    "knightClass": "",
+    "artefacts": [],
+    "specificity": "MARINA",
+    "advice": "",
+    "topAgainst": [],
+    "neverUseAgainst": []
+  },
+  {
+    "name": "Kanon",
+    "element": "OBSCURITE",
+    "knightClass": "",
+    "artefacts": [],
+    "specificity": "MARINA",
+    "advice": "",
+    "topAgainst": [],
+    "neverUseAgainst": []
+  },
+  {
+    "name": "Io",
+    "element": "EAU",
+    "knightClass": "",
+    "artefacts": [],
+    "specificity": "MARINA",
+    "advice": "",
+    "topAgainst": [],
+    "neverUseAgainst": []
+  }
+]

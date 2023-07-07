@@ -3,9 +3,9 @@ import {FormControl, FormGroup} from "@angular/forms";
 import {Artefact, ArtefactAdapter} from "../../lib/models/Artefact";
 import {Knight, KnightAdapter, KnightElement} from "../../lib/models/Knight";
 
-import data from '../../lib/data/data.json';
 import artefactsData from '../../lib/data/artefacts_data.json';
-import {ReplaySubject, Subscription} from "rxjs";
+import {lastValueFrom, ReplaySubject, Subscription} from "rxjs";
+import {KnightService} from "../../lib/services/knight.service";
 
 @Component({
   selector: 'app-knight-selector',
@@ -13,7 +13,7 @@ import {ReplaySubject, Subscription} from "rxjs";
   styleUrls: ['./knight-selector.component.scss']
 })
 export class KnightSelectorComponent implements OnInit {
-  public knightForm: FormGroup;
+  public knightSelectorForm: FormGroup;
   public knights: Knight[];
   public artefacts: Artefact[] | undefined;
   public selectedKnight: Knight = new Knight();
@@ -23,49 +23,55 @@ export class KnightSelectorComponent implements OnInit {
   private knightFilterSubscription: Subscription;
 
   constructor(private knightAdapter: KnightAdapter,
+              private knightService: KnightService,
               private artefactAdapter: ArtefactAdapter) {
 
-    console.log(data);
-    this.knights = data.map(knight => this.knightAdapter.adapt(knight));
-    this.knights.sort(
-      (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
-    console.log(this.knights);
-
-    console.log(this.knights.filter(item => item.element === KnightElement.LUMIERE));
-    console.log(artefactsData);
-    this.artefacts = artefactsData.map(artefact => this.artefactAdapter.adapt(artefact));
-    console.log(this.artefacts);
-
-    this.knightForm = new FormGroup({
+    this.knightSelectorForm = new FormGroup({
       name: new FormControl(undefined),
       knightFilter: new FormControl(undefined),
     })
-    this.knightForm.updateValueAndValidity();
-    this.knightFilterFunction();
+    this.knightSelectorForm.updateValueAndValidity();
+
+    lastValueFrom(this.knightService.getKnights()).then(knights => {
+      console.log(knights);
+      console.log(knights);
+      this.knights = knights;
+
+      this.knightSelectorForm.get('name')?.setValue(this.knights.find(item => item.name === 'Poséidon'));
+      this.selectedKnight = this.knights.find(item => item.name === 'Poséidon');
+
+      this.knights.sort(
+        (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
+      this.knightFilterFunction();
+    }, err => {
+      console.log(err);
+    });
+
+    // console.log(this.knights.filter(item => item.element === KnightElement.LUMIERE));
+
+    this.artefacts = artefactsData.map(artefact => this.artefactAdapter.adapt(artefact));
+    console.log(this.artefacts);
   }
 
   ngOnInit(): void {
-    this.knightFilterSubscription = this.knightForm?.get('knightFilter')?.valueChanges?.subscribe(() => {
+    this.knightFilterSubscription = this.knightSelectorForm?.get('knightFilter')?.valueChanges?.subscribe(() => {
       this.knightFilterFunction();
     });
-    // TODO à enlever
-    this.knightForm.get('name')?.setValue(this.knights.find(item => item.name === 'Poséidon'));
-    this.selectedKnight = this.knights.find(item => item.name === 'Poséidon');
-
   }
 
   updateSelected(event: Event) {
-    console.log(event);
     this.selectedKnight = this.knightAdapter.adapt(event);
-    // this.selectedKnight = event as Knight;
   }
 
+  /*
+  Knight search filter
+   */
   private knightFilterFunction() {
     if (!this.knights) {
       return;
     }
     // get the search keyword
-    let search = this.knightForm?.get('knightFilter')?.value;
+    let search = this.knightSelectorForm?.get('knightFilter')?.value;
     if (!search) {
       this.filteredKnights.next(this.knights.slice());
       return;
@@ -77,5 +83,4 @@ export class KnightSelectorComponent implements OnInit {
       this.knights.filter(organisation => organisation.name.toLowerCase().indexOf(search) > -1)
     );
   }
-
 }

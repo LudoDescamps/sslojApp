@@ -11,13 +11,17 @@ import {MatSelectModule} from "@angular/material/select";
 import { KnightDetailsComponent } from './partials/knight-details/knight-details.component';
 import { ClassAndElementComponent } from './partials/class-and-element/class-and-element.component';
 import {NgxMatSelectSearchModule} from "ngx-mat-select-search";
+import {KnightService} from "./lib/services/knight.service";
+import {HttpClientModule} from "@angular/common/http";
+import { KnightAddUpdateComponent } from './partials/administration/knight-add-update/knight-add-update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KnightSelectorComponent,
     KnightDetailsComponent,
-    ClassAndElementComponent
+    ClassAndElementComponent,
+    KnightAddUpdateComponent
   ],
     imports: [
         BrowserModule,
@@ -26,9 +30,10 @@ import {NgxMatSelectSearchModule} from "ngx-mat-select-search";
         MatCardModule,
         ReactiveFormsModule,
         MatSelectModule,
-        NgxMatSelectSearchModule
+        NgxMatSelectSearchModule,
+        HttpClientModule
     ],
-  providers: [],
+  providers: [KnightService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
