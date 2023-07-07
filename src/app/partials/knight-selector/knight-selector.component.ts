@@ -6,6 +6,7 @@ import {Knight, KnightAdapter, KnightElement} from "../../lib/models/Knight";
 import artefactsData from '../../lib/data/artefacts_data.json';
 import {lastValueFrom, ReplaySubject, Subscription} from "rxjs";
 import {KnightService} from "../../lib/services/knight.service";
+import {NgxUiLoaderService} from "ngx-ui-loader";
 
 @Component({
   selector: 'app-knight-selector',
@@ -24,6 +25,7 @@ export class KnightSelectorComponent implements OnInit {
 
   constructor(private knightAdapter: KnightAdapter,
               private knightService: KnightService,
+              private loaderService: NgxUiLoaderService,
               private artefactAdapter: ArtefactAdapter) {
 
     this.knightSelectorForm = new FormGroup({
@@ -32,6 +34,7 @@ export class KnightSelectorComponent implements OnInit {
     })
     this.knightSelectorForm.updateValueAndValidity();
 
+    this.loaderService.start('getKnights');
     lastValueFrom(this.knightService.getKnights()).then(knights => {
       this.knights = knights;
 
@@ -41,8 +44,10 @@ export class KnightSelectorComponent implements OnInit {
       this.knights.sort(
         (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
       this.knightFilterFunction();
+      this.loaderService.stop('getKnights');
     }, err => {
       console.log(err);
+      this.loaderService.stop('getKnights');
     });
 
     // console.log(this.knights.filter(item => item.element === KnightElement.LUMIERE));

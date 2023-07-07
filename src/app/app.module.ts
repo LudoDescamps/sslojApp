@@ -14,7 +14,35 @@ import {NgxMatSelectSearchModule} from "ngx-mat-select-search";
 import {KnightService} from "./lib/services/knight.service";
 import {HttpClientModule} from "@angular/common/http";
 import { KnightAddUpdateComponent } from './partials/administration/knight-add-update/knight-add-update.component';
+import {NgxUiLoaderConfig, NgxUiLoaderModule} from "ngx-ui-loader";
 
+// Configure loader
+const ngxUiLoaderConfig: NgxUiLoaderConfig = {
+  bgsColor: '#9d9d9d',
+  bgsOpacity: 0.5,
+  bgsPosition: 'center-center',
+  bgsSize: 100,
+  bgsType: 'three-strings',
+  blur: 3,
+  fgsColor: '#A2BF1A',
+  fgsPosition: 'center-center',
+  fgsSize: 100,
+  fgsType: 'three-strings',
+  gap: 24,
+  logoPosition: 'center-center',
+  logoSize: 120,
+  logoUrl: '',
+  masterLoaderId: 'master',
+  overlayBorderRadius: '0',
+  overlayColor: 'rgba(255,255,255,0.5)',
+  pbColor: '#9d9d9d',
+  pbDirection: 'ltr',
+  pbThickness: 3,
+  hasProgressBar: false,
+  text: '',
+  textColor: '#9d9d9d',
+  textPosition: 'center-center',
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,16 +51,17 @@ import { KnightAddUpdateComponent } from './partials/administration/knight-add-u
     ClassAndElementComponent,
     KnightAddUpdateComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatCardModule,
-        ReactiveFormsModule,
-        MatSelectModule,
-        NgxMatSelectSearchModule,
-        HttpClientModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+    NgxMatSelectSearchModule,
+    HttpClientModule,
+    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
+  ],
   providers: [KnightService],
   bootstrap: [AppComponent]
 })
