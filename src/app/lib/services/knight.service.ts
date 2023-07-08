@@ -14,7 +14,7 @@ export class KnightService {
               private knightAdapter: KnightAdapter) {}
 
   getKnights(): Observable<Knight[]> {
-    return this.http.get<Knight[]>('assets/data/knightsData.json').pipe(
+    return this.http.get<Knight[]>('assets/data/knights_data.json').pipe(
       map((data: any[]) => data.map(item => this.knightAdapter.adapt(item))));
   }
 
@@ -39,7 +39,7 @@ export class KnightService {
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = 'knightsData.json';
+    anchor.download = 'knights_data.json';
     anchor.click();
     URL.revokeObjectURL(url);
   }
