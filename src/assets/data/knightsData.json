@@ -779,7 +779,8 @@
     "advice": "",
     "images": ["krishna_chrysaor.jpg"]
   },
-  { "name": "Baian",
+  { "id": "BAIAN_CHEVAL_DES_MERS",
+    "name": "Baian",
     "constellationName": "Cheval des Mers",
     "element": "AIR",
     "knightClass": "DEFENSIF",
@@ -825,7 +826,8 @@
     "advice": "",
     "images": ["baian_cheval_des_mers.jpg"]
   },
-  { "name": "Isaac",
+  { "id": "ISAAC_KRAKEN",
+    "name": "Isaac",
     "constellationName": "Kraken",
     "element": "AIR",
     "knightClass": "OFFENSIF",
@@ -876,7 +878,8 @@
     "advice": "",
     "images": ["isaac_kraken.jpg"]
   },
-  { "name": "Kâsa",
+  { "id": "KASA_LYUMNADES",
+    "name": "Kâsa",
     "constellationName": "Lyumnades",
     "element": "TERRE",
     "knightClass": "SOUTIEN",
@@ -926,7 +929,8 @@
     "advice": "",
     "images": ["kasa_lyumnades.jpg"]
   },
-  { "name": "Saga",
+  { "id": "SAGA_GEMAUX",
+    "name": "Saga",
     "constellationName": "Gémaux",
     "element": "LUMIERE",
     "knightClass": "OFFENSIF",
@@ -981,7 +985,8 @@
     "advice": "",
     "images": ["saga_gemaux.jpg"]
   },
-  { "name": "Shaka",
+  { "id": "SHAKA_VIERGE",
+    "name": "Shaka",
     "constellationName": "Vierge",
     "element": "LUMIERE",
     "knightClass": "COMPETENCE",
@@ -997,7 +1002,8 @@
     "advice": "",
     "images": ["shaka_vierge.jpg"]
   },
-  { "name": "Kanon",
+  { "id": "KANON_GEMAUX",
+    "name": "Kanon",
     "constellationName": "Gémaux",
     "element": "LUMIERE",
     "knightClass": "ASSASSIN",
@@ -1048,7 +1054,8 @@
     "advice": "",
     "images": ["kanon_gemaux.jpg"]
   },
-  { "name": "Saga le Maléfique",
+  { "id": "SAGA_LE_MALEFIQUE_GEMAUX",
+    "name": "Saga le Maléfique",
     "constellationName": "Gémaux",
     "element": "OBSCURITE",
     "knightClass": "COMPETENCE",
@@ -1106,7 +1113,8 @@
     "advice": "",
     "images": ["saga_le_malefique_gemaux.jpg"]
   },
-  { "name": "Milo",
+  { "id": "MILO_SCORPION",
+    "name": "Milo",
     "constellationName": "Scorpion",
     "element": "EAU",
     "knightClass": "ASSASSIN",
@@ -1160,7 +1168,8 @@
     "advice": "",
     "images": ["milo_scorpion.jpg"]
   },
-  { "name": "Deathmask",
+  { "id": "DEATHMASK_CANCER",
+    "name": "Deathmask",
     "constellationName": "Cancer",
     "element": "EAU",
     "knightClass": "COMPETENCE",
@@ -1215,7 +1224,8 @@
     "advice": "",
     "images": ["deathmask_cancer.jpg"]
   },
-  { "name": "Aphrodite",
+  { "id": "APHRODITE_POISSONS",
+    "name": "Aphrodite",
     "constellationName": "Poissons",
     "element": "EAU",
     "knightClass": "COMPETENCE",
@@ -1264,7 +1274,8 @@
     "advice": "",
     "images": ["aphrodite_poissons.jpg"]
   },
-  { "name": "Shiryû",
+  { "id": "SHIRYU_BALANCE",
+    "name": "Shiryû",
     "constellationName": "Balance",
     "element": "EAU",
     "knightClass": "DEFENSIF",
@@ -1315,7 +1326,8 @@
     "advice": "",
     "images": ["shiryu_balance.jpg"]
   },
-  { "name": "Aiolia",
+  { "id": "AIOLIA_LION",
+    "name": "Aiolia",
     "constellationName": "Lion",
     "element": "FEU",
     "knightClass": "OFFENSIF",
@@ -1369,7 +1381,8 @@
     "advice": "",
     "images": ["aiolia_lion.jpg"]
   },
-  { "name": "Mû",
+  { "id": "MU_BELIER",
+    "name": "Mû",
     "constellationName": "Bélier",
     "element": "FEU",
     "knightClass": "SOUTIEN",
@@ -1423,7 +1436,8 @@
     "advice": "",
     "images": ["mu_belier.jpg"]
   },
-  { "name": "Seiya",
+  { "id": "SEIYA_SAGITTAIRE",
+    "name": "Seiya",
     "constellationName": "Sagittaire",
     "element": "FEU",
     "knightClass": "ASSASSIN",
@@ -1477,7 +1491,8 @@
     "advice": "",
     "images": ["seiya_sagittaire.jpg"]
   },
-  { "name": "Aiolos",
+  { "id": "AIOLOS_SAGITTAIRE",
+    "name": "Aiolos",
     "constellationName": "Sagittaire",
     "element": "FEU",
     "knightClass": "ASSASSIN",
@@ -1531,7 +1546,8 @@
     "advice": "",
     "images": ["aiolos_sagittaire.jpg"]
   },
-  { "name": "Ikki",
+  { "id": "IKKI_LION",
+    "name": "Ikki",
     "constellationName": "Lion",
     "element": "FEU",
     "knightClass": "COMPETENCE",
@@ -1586,7 +1602,8 @@
     "advice": "",
     "images": ["ikki_lion.jpg"]
   },
-  { "name": "Camus",
+  { "id": "CAMUS_VERSEAU",
+    "name": "Camus",
     "constellationName": "Verseau",
     "element": "AIR",
     "knightClass": "COMPETENCE",
@@ -1644,7 +1661,8 @@
     "advice": "",
     "images": ["camus_verseau.jpg"]
   },
-  { "name": "Dohko",
+  { "id": "DOHKO_BALANCE",
+    "name": "Dohko",
     "constellationName": "Balance",
     "element": "AIR",
     "knightClass": "DEFENSIF",
@@ -1693,7 +1711,8 @@
     "advice": "",
     "images": ["dohko_balance.jpg"]
   },
-  { "name": "Hyôga",
+  { "id": "HYOGA_VERSEAU",
+    "name": "Hyôga",
     "constellationName": "Verseau",
     "element": "AIR",
     "knightClass": "COMPETENCE",
@@ -1750,7 +1769,8 @@
     "advice": "",
     "images": ["hyoga_verseau.jpg"]
   },
-  { "name": "Aldébaran",
+  { "id": "ALDEBARAN_TAUREAU",
+    "name": "Aldébaran",
     "constellationName": "Taureau",
     "element": "TERRE",
     "knightClass": "DEFENSIF",
@@ -1798,7 +1818,8 @@
     "advice": "",
     "images": ["aldebaran_taureau.jpg"]
   },
-  { "name": "Shura",
+  { "id": "SHURA_CAPRICORNE",
+    "name": "Shura",
     "constellationName": "Capricorne",
     "element": "TERRE",
     "knightClass": "ASSASSIN",
@@ -1852,7 +1873,8 @@
     "advice": "",
     "images": ["shura_capricorne.jpg"]
   },
-  { "name": "Shun",
+  { "id": "SHUN_VIERGE",
+    "name": "Shun",
     "constellationName": "Vierge",
     "element": "TERRE",
     "knightClass": "COMPETENCE",
@@ -1903,7 +1925,8 @@
     "advice": "",
     "images": ["shun_vierge.jpg"]
   },
-  { "name": "Moses",
+  { "id": "MOSES_BALEINE",
+    "name": "Moses",
     "constellationName": "Baleine",
     "element": "EAU",
     "knightClass": "DEFENSIF",
@@ -1951,7 +1974,8 @@
     "advice": "",
     "images": ["moses_baleine.jpg"]
   },
-  { "name": "Marine",
+  { "id": "MARINE_AIGLE",
+    "name": "Marine",
     "constellationName": "Aigle",
     "element": "EAU",
     "knightClass": "OFFENSIF",
@@ -2001,7 +2025,8 @@
     "advice": "",
     "images": ["marine_aigle.jpg"]
   },
-  { "name": "Orphée",
+  { "id": "ORPHEE_LYRE",
+    "name": "Orphée",
     "constellationName": "Lyre",
     "element": "EAU",
     "knightClass": "COMPETENCE",
@@ -2058,7 +2083,8 @@
     "advice": "",
     "images": ["orphee_lyre.jpg"]
   },
-  { "name": "Algethi",
+  { "id": "ALGETHI_HERCULE",
+    "name": "Algethi",
     "constellationName": "Hercule",
     "element": "FEU",
     "knightClass": "DEFENSIF",
@@ -2106,7 +2132,8 @@
     "advice": "",
     "images": ["algethi_hercule.jpg"]
   },
-  { "name": "Shaina",
+  { "id": "SHAINA_OPHIUCHUS",
+    "name": "Shaina",
     "constellationName": "Ophiuchus",
     "element": "FEU",
     "knightClass": "ASSASSIN",
@@ -2153,7 +2180,8 @@
     "advice": "",
     "images": ["shaina_ophiuchus.jpg"]
   },
-  { "name": "Dante",
+  { "id": "DANTE_CERBERE",
+    "name": "Dante",
     "constellationName": "Cerbère",
     "element": "FEU",
     "knightClass": "OFFENSIF",
@@ -2204,7 +2232,8 @@
     "advice": "",
     "images": ["dante_cerbere.jpg"]
   },
-  { "name": "Babel",
+  { "id": "BABEL_CENTAURE",
+    "name": "Babel",
     "constellationName": "Centaure",
     "element": "FEU",
     "knightClass": "COMPETENCE",
@@ -2256,7 +2285,8 @@
     "advice": "",
     "images": ["babel_centaure.jpg"]
   },
-  { "name": "Misty",
+  { "id": "MISTY_LEZARD",
+    "name": "Misty",
     "constellationName": "Lézard",
     "element": "AIR",
     "knightClass": "SOUTIEN",
@@ -2307,7 +2337,8 @@
     "advice": "",
     "images": ["misty_lezard.jpg"]
   },
-  { "name": "Jamian",
+  { "id": "JAMIAN_CORBEAU",
+    "name": "Jamian",
     "constellationName": "Corbeau",
     "element": "AIR",
     "knightClass": "COMPETENCE",
@@ -2323,7 +2354,8 @@
     "advice": "",
     "images": ["jamian_corbeau.jpg"]
   },
-  { "name": "Dio",
+  { "id": "DIO_MOUCHE",
+    "name": "Dio",
     "constellationName": "Mouche",
     "element": "AIR",
     "knightClass": "OFFENSIF",
@@ -2339,7 +2371,8 @@
     "advice": "",
     "images": ["dio_mouche.jpg"]
   },
-  { "name": "Ptolemy",
+  { "id": "PTOLEMY_FLECHE",
+    "name": "Ptolemy",
     "constellationName": "Flèche",
     "element": "AIR",
     "knightClass": "ASSASSIN",
@@ -2355,7 +2388,8 @@
     "advice": "",
     "images": ["ptolemy_fleche.jpg"]
   },
-  { "name": "Algol",
+  { "id": "ALGOL_PERSEE",
+    "name": "Algol",
     "constellationName": "Persée",
     "element": "TERRE",
     "knightClass": "DEFENSIF",
@@ -2371,7 +2405,8 @@
     "advice": "",
     "images": ["algol_persee.jpg"]
   },
-  { "name": "Sirius",
+  { "id": "SIRIUS_GRAND_CHIEN",
+    "name": "Sirius",
     "constellationName": "Grand Chien",
     "element": "TERRE",
     "knightClass": "OFFENSIF",
@@ -2423,7 +2458,8 @@
     "advice": "",
     "images": ["sirius_grand_chien.jpg"]
   },
-  { "name": "Astérion",
+  { "id": "ASTERION_CHIENS_DE_CHASSE",
+    "name": "Astérion",
     "constellationName": "Chiens de Chasse",
     "element": "TERRE",
     "knightClass": "SOUTIEN",
@@ -2478,7 +2514,8 @@
     "advice": "",
     "images": ["asterion_chiens_de_chasse.jpg"]
   },
-  { "name": "Capella",
+  { "id": "CAPELLA_AURIGE",
+    "name": "Capella",
     "constellationName": "Aurige",
     "element": "TERRE",
     "knightClass": "COMPETENCE",
@@ -2494,7 +2531,8 @@
     "advice": "",
     "images": ["capella_aurige.jpg"]
   },
-  { "name": "June",
+  { "id": "JUNE_CAMELEON",
+    "name": "June",
     "constellationName": "Caméléon",
     "element": "AIR",
     "knightClass": "SOUTIEN",

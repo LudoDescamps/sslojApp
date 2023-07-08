@@ -35,8 +35,8 @@
                 <mat-form-field class="full-width">
                   <mat-label class="mat-label"> Élément </mat-label>
                   <mat-select formControlName="element">
-                    <ng-container *ngFor="let knight of filteredKnights | async">
-                      <mat-option [value]="knight">{{ knight.name }} - {{knight?.constellationName}}</mat-option>
+                    <ng-container *ngFor="let knightElement of knightElements">
+                      <mat-option [value]="knightElement">{{ knightElement }} - {{knightElement}}</mat-option>
                     </ng-container>
                   </mat-select>
                 </mat-form-field>

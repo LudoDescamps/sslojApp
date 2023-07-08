@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
-import {Knight, KnightAdapter} from "../../../lib/models/Knight";
+import {Knight, KnightAdapter, KnightElement} from "../../../lib/models/Knight";
 import {Artefact, ArtefactAdapter} from "../../../lib/models/Artefact";
 import {lastValueFrom, ReplaySubject, Subscription} from "rxjs";
 import {KnightService} from "../../../lib/services/knight.service";
@@ -16,6 +16,7 @@ export class KnightAddUpdateComponent implements OnInit {
   public knightForm: FormGroup;
   public knights: Knight[];
   public artefacts: Artefact[] | undefined;
+  public knightElements: KnightElement[];
   public selectedKnight: Knight = new Knight();
 
   data: any;
@@ -44,7 +45,7 @@ export class KnightAddUpdateComponent implements OnInit {
       neverUseAgainst: new FormControl(undefined),
       minConstellationLevel: new FormControl(undefined),
       minArmourLevel: new FormControl(undefined),
-    })
+    });
     this.knightForm.updateValueAndValidity();
 
     this.loaderService.start('getKnights');
@@ -53,6 +54,8 @@ export class KnightAddUpdateComponent implements OnInit {
 
       // this.knightForm.get('name')?.setValue(this.knights.find(item => item.name === 'Poséidon'));
       this.selectedKnight = this.knights.find(item => item.name === 'Poséidon');
+
+      this.knightForm.patchValue(this.selectedKnight);
 
       this.knights.sort(
         (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
