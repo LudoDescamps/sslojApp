@@ -145,6 +145,14 @@ export class KnightAddUpdateComponent implements OnInit {
     this.knightForm.markAsDirty();
   }
 
+  /*
+  Only one can be recommended
+   */
+  checkDisabledRecommendedArtefact(i: number): boolean {
+    const oneOfIsRecommended = this.artefacts.value.some(val => val.recommended === true);
+    return !(this.artefacts.value[i].recommended === true || !oneOfIsRecommended);
+  }
+
     /*
     Knight search filter
      */

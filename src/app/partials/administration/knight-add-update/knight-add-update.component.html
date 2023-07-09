@@ -56,7 +56,7 @@
                       <ng-container *ngFor="let kClass of knightClass">
                         <mat-option [value]="kClass.value">
                           <div class="flex display-flex-center">
-                            {{ kClass.viewValue }}<img class="ml20" style="height: 30px"
+                            {{ kClass.viewValue }}<img class="ml20" style="height: 30px" alt="knight_class"
                                                        [src]="'assets/images/knight_class/' + kClass?.value + '.png'">
                           </div>
                         </mat-option>
@@ -72,7 +72,7 @@
                       <ng-container *ngFor="let knightElement of knightElements">
                         <mat-option [value]="knightElement.value">
                           <div class="flex display-flex-center">
-                            {{ knightElement.viewValue }}<img class="ml20" style="height: 30px"
+                            {{ knightElement.viewValue }}<img class="ml20" style="height: 30px" alt="element"
                                                               [src]="'assets/images/element/' + knightElement?.value + '.png'">
                           </div>
 
@@ -87,39 +87,41 @@
             <fieldset class="with-legend">
               <legend>Artéfacts</legend>
 
-              <fieldset formArrayName="artefacts" class="with-legend">
-                <legend>Liste actuelle</legend>
+              <ng-container formArrayName="artefacts">
 
                 <div *ngFor="let artefact of artefacts?.controls; let i=index">
                   <div [formGroupName]="i">
-                    <div class="ml30">Artefact {{i + 1}}</div>
+                    <fieldset class="with-legend">
+                      <legend>Artefact {{i + 1}}</legend>
 
-                    <div class="flex mb30" style="align-items: center">
-                      <div class="w150">
-                        {{mappedArtefacts?.[artefacts?.value[i].id]?.name}}
-                      </div>
+                      <div class="flex" style="align-items: center">
+                        <div class="w150">
+                          {{mappedArtefacts?.[artefacts?.value[i].id]?.name}}
+                        </div>
 
-                      <div class="flex-evenly">
-                        <mat-checkbox formControlName="recommended">Recommandé</mat-checkbox>
-                        <!-- (change)="displayValueChange($event, 'FREE_TEXT_AREAS', i)">{{ 'FORM.DISPLAY'  }}</mat-checkbox> -->
-                      </div>
+                        <div class="flex-evenly">
+                          <mat-checkbox [disabled]="checkDisabledRecommendedArtefact(i)" formControlName="recommended">Recommandé</mat-checkbox>
+                          <!-- (change)="displayValueChange($event, 'FREE_TEXT_AREAS', i)">{{ 'FORM.DISPLAY'  }}</mat-checkbox> -->
+                        </div>
 
-                      <div class="flex-evenly">
-                        <button mat-stroked-button class="small" color="warn" type="button"
-                                (click)="removeArtefact(i)">
-                          <mat-icon class="font-size pt5 pb5">delete</mat-icon>
-                        </button>
+                        <div class="flex-evenly">
+                          <button mat-stroked-button class="small" color="warn" type="button"
+                                  (click)="removeArtefact(i)">
+                            <mat-icon class="font-size pt5 pb5">delete</mat-icon>
+                          </button>
+                        </div>
                       </div>
-                    </div>
+                    </fieldset>
                   </div>
                 </div>
 
                 <div class="text_right mt20">
                   <button mat-flat-button class="small" color="primary" type="button" (click)="addArtefact()">
                     <mat-icon class="font-size">add</mat-icon>
-                    Ajouter un artefact</button>
+                    Ajouter un artefact
+                  </button>
                 </div>
-              </fieldset>
+              </ng-container>
             </fieldset>
           </mat-card-content>
         </form>
