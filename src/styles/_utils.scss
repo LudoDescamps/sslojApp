@@ -153,6 +153,14 @@ $sizes: 0, 5, 10, 20, 30, 40, 50, 60;
   }
 }
 
+/* --- WIDTH --- */
+$sizes: 50, 80, 100, 125, 150, 175, 200, 250, 300, 500;
+@each $size in $sizes {
+  .w#{$size} {
+    width: #{$size}px !important;
+  }
+}
+
 .display-flex-center {
   display: flex;
   align-items: center;

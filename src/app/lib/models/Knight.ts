@@ -81,12 +81,12 @@ export enum KnightClass {
 }
 
 export enum KnightElement {
-  EAU = 'Eau',
-  TERRE = 'Terre',
-  FEU = 'Feu',
   AIR = 'Air',
-  OBSCURITE = 'Obscurité',
-  LUMIERE = 'Lumière'
+  EAU = 'Eau',
+  FEU = 'Feu',
+  TERRE = 'Terre',
+  LUMIERE = 'Lumière',
+  OBSCURITE = 'Obscurité'
 }
 
 export enum Specificity {
@@ -102,7 +102,7 @@ export enum Specificity {
 export enum knightClass {
   ASSASSIN= 'Assassin',
   COMPETENCE = 'Compétence',
-  DEFENSE = 'Défense',
+  DEFENSIF = 'Défensif',
   OFFENSIF = 'Offensif',
   SOUTIEN = 'Soutien'
 }

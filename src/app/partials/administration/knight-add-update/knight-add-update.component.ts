@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
-import {Knight, KnightAdapter, KnightElement} from "../../../lib/models/Knight";
+import {FormArray, FormControl, FormGroup, Validators} from "@angular/forms";
+import {Knight, KnightAdapter, knightClass, KnightElement, Specificity} from "../../../lib/models/Knight";
 import {Artefact, ArtefactAdapter} from "../../../lib/models/Artefact";
 import {lastValueFrom, ReplaySubject, Subscription} from "rxjs";
 import {KnightService} from "../../../lib/services/knight.service";
 import {NgxUiLoaderService} from "ngx-ui-loader";
-import artefactsData from "../../../lib/data/artefacts_data.json";
+import {ArtefactService} from "../../../lib/services/artefact.service";
 
 @Component({
   selector: 'app-knight-add-update',
@@ -14,9 +14,13 @@ import artefactsData from "../../../lib/data/artefacts_data.json";
 })
 export class KnightAddUpdateComponent implements OnInit {
   public knightForm: FormGroup;
+  public artefactsFormArray: FormArray = new FormArray([]);
   public knights: Knight[];
-  public artefacts: Artefact[] | undefined;
-  public knightElements: KnightElement[];
+  public artefactsData: Artefact[];
+  public mappedArtefacts: { [p: string]: Artefact } = {};
+  public knightElements: {value: string, viewValue: string}[] = [];
+  public knightSpecificities: {value: string, viewValue: string}[] = [];
+  public knightClass: {value: string, viewValue: string}[] = [];
   public selectedKnight: Knight = new Knight();
 
   data: any;
@@ -25,8 +29,8 @@ export class KnightAddUpdateComponent implements OnInit {
 
   constructor(private knightAdapter: KnightAdapter,
               private knightService: KnightService,
-              private loaderService: NgxUiLoaderService,
-              private artefactAdapter: ArtefactAdapter) {
+              private artefactService: ArtefactService,
+              private loaderService: NgxUiLoaderService) {
 
     this.knightForm = new FormGroup({
       id: new FormControl(undefined),
@@ -34,7 +38,7 @@ export class KnightAddUpdateComponent implements OnInit {
       constellationName: new FormControl(undefined),
       element: new FormControl(undefined),
       knightClass: new FormControl(undefined),
-      artefacts: new FormControl(undefined),
+      artefacts: this.artefactsFormArray,
       arayas: new FormControl(undefined),
       constellation: new FormControl(undefined),
       specialties: new FormControl(undefined),
@@ -48,14 +52,30 @@ export class KnightAddUpdateComponent implements OnInit {
     });
     this.knightForm.updateValueAndValidity();
 
+    Object.entries(KnightElement).forEach(elmt => {
+      this.knightElements.push({value: elmt[0], viewValue: elmt[1]})
+    });
+
+    Object.entries(Specificity).forEach(spec => {
+      this.knightSpecificities.push({value: spec[0], viewValue: spec[1]})
+    });
+
+    Object.entries(knightClass).forEach(kClass => {
+      this.knightClass.push({value: kClass[0], viewValue: kClass[1]})
+    });
+
     this.loaderService.start('getKnights');
     lastValueFrom(this.knightService.getKnights()).then(knights => {
       this.knights = knights;
-
+      console.log('getKnights')
       // this.knightForm.get('name')?.setValue(this.knights.find(item => item.name === 'Poséidon'));
       this.selectedKnight = this.knights.find(item => item.name === 'Poséidon');
 
       this.knightForm.patchValue(this.selectedKnight);
+
+      if (this.selectedKnight.artefacts?.length > 0) {
+        this.createArtefactsFormArray();
+      }
 
       this.knights.sort(
         (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
@@ -66,9 +86,22 @@ export class KnightAddUpdateComponent implements OnInit {
       this.loaderService.stop('getKnights');
     });
 
-    // console.log(this.knights.filter(item => item.element === KnightElement.LUMIERE));
+    this.loaderService.start('getArtefacts');
+    lastValueFrom(this.artefactService.getArtefacts()).then(artefacts => {
+      this.artefactsData = artefacts;
+      this.artefactsData.forEach(artefact => {
+        this.mappedArtefacts[artefact.id] = artefact;
+      });
+      console.log('getArtefacts')
+      // if (this.selectedKnight) {
+      //   this.knightForm.patchValue(this.selectedKnight);
+      // }
 
-    this.artefacts = artefactsData.map(artefact => this.artefactAdapter.adapt(artefact));
+      this.loaderService.stop('getArtefacts');
+    }, err => {
+      console.log(err);
+      this.loaderService.stop('getArtefacts');
+    });
   }
 
   ngOnInit(): void {
@@ -81,9 +114,40 @@ export class KnightAddUpdateComponent implements OnInit {
     this.selectedKnight = this.knightAdapter.adapt(event);
   }
 
-  /*
-  Knight search filter
-   */
+  createArtefactsFormArray() {
+    this.artefacts.clear();
+
+    this.selectedKnight.artefacts?.forEach((artefact) => {
+      const control = new FormGroup({
+        id: new FormControl(artefact.id),
+        recommended: new FormControl(artefact.recommended),
+      });
+      this.artefacts.push(control);
+      });
+    console.log(this.artefacts);
+  }
+
+  get artefacts(): FormArray {
+    return this.knightForm.get('artefacts') as FormArray;
+  }
+
+  addArtefact() {
+    const control = new FormGroup({
+      id: new FormControl(undefined, Validators.required),
+      recommended: new FormControl(undefined),
+    });
+    this.artefacts.push(control);
+    this.knightForm.markAsDirty();
+  }
+
+  removeArtefact(index: number) {
+    this.artefacts.removeAt(index);
+    this.knightForm.markAsDirty();
+  }
+
+    /*
+    Knight search filter
+     */
   private knightFilterFunction() {
     if (!this.knights) {
       return;
@@ -101,4 +165,6 @@ export class KnightAddUpdateComponent implements OnInit {
       this.knights.filter(organisation => organisation.name.toLowerCase().indexOf(search) > -1)
     );
   }
+
+  protected readonly Object = Object;
 }

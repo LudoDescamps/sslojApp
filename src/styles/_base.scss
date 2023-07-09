@@ -24,6 +24,22 @@ body{
   position: relative;
 }
 
+fieldset.with-legend {
+  border: 1px solid #ffffff4d;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 20px 0;
+
+  legend {
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-left: 4px;
+    color: $dark-grey;
+    //background: $white;
+    @include fontBd;
+  }
+}
+
 @media (max-width: $screen-md-min) {
   .section {
     padding-top: 110px;

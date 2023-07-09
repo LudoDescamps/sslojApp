@@ -159,7 +159,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": ["DEFENSE"],
+    "restriction": ["DEFENSIF"],
     "images": [
       "colere_du_phenix_or.png"
     ]

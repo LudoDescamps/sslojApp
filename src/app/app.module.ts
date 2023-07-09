@@ -17,6 +17,9 @@ import { KnightAddUpdateComponent } from './partials/administration/knight-add-u
 import {NgxUiLoaderConfig, NgxUiLoaderModule} from "ngx-ui-loader";
 import {MatInputModule} from "@angular/material/input";
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldDefaultOptions} from "@angular/material/form-field";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatIconModule} from "@angular/material/icon";
+import {MatButtonModule} from "@angular/material/button";
 
 // Mat form fields appearance
 const appearance: MatFormFieldDefaultOptions = {
@@ -69,6 +72,9 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     HttpClientModule,
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
     MatInputModule,
+    MatCheckboxModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   providers: [
     KnightService,
