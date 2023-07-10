@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormArray, FormControl, FormGroup, Validators} from "@angular/forms";
 import {Knight, KnightAdapter, knightClass, KnightElement, Specificity} from "../../../lib/models/Knight";
-import {Artefact, ArtefactAdapter} from "../../../lib/models/Artefact";
+import {Artefact} from "../../../lib/models/Artefact";
 import {lastValueFrom, ReplaySubject, Subscription} from "rxjs";
 import {KnightService} from "../../../lib/services/knight.service";
 import {NgxUiLoaderService} from "ngx-ui-loader";
@@ -41,7 +41,7 @@ export class KnightAddUpdateComponent implements OnInit {
       artefacts: this.artefactsFormArray,
       arayas: new FormControl(undefined),
       constellation: new FormControl(undefined),
-      specialties: new FormControl(undefined),
+      specialties: new FormArray([]),
       images: new FormControl(undefined),
       specificity: new FormControl(undefined),
       advice: new FormControl(undefined),
@@ -72,9 +72,10 @@ export class KnightAddUpdateComponent implements OnInit {
       this.selectedKnight = this.knights.find(item => item.name === 'Poséidon');
 
       this.knightForm.patchValue(this.selectedKnight);
-
+      console.log(this.knightForm);
       if (this.selectedKnight.artefacts?.length > 0) {
         this.createArtefactsFormArray();
+        this.createSpecialtiesFormArray();
       }
 
       this.knights.sort(
@@ -150,6 +151,33 @@ export class KnightAddUpdateComponent implements OnInit {
     this.knightForm.markAsDirty();
   }
 
+  createSpecialtiesFormArray() {
+    this.specialties.clear();
+
+    this.selectedKnight.specialties?.forEach((specialty) => {
+      const control = new FormControl(
+        specialty, [Validators.required]
+      );
+      this.specialties.push(control);
+    });
+    console.log(this.specialties);
+  }
+
+  get specialties(): FormArray {
+    return this.knightForm.get('specialties') as FormArray;
+  }
+
+  addSpecialty() {
+    const control = new FormControl(undefined, Validators.required);
+    this.specialties.push(control);
+    this.knightForm.markAsDirty();
+  }
+
+  removeSpecialty(index: number) {
+    this.specialties.removeAt(index);
+    this.knightForm.markAsDirty();
+  }
+
   /*
   Only one can be recommended
    */
@@ -185,4 +213,5 @@ export class KnightAddUpdateComponent implements OnInit {
   }
 
   protected readonly Object = Object;
+  protected readonly FormArray = FormArray;
 }

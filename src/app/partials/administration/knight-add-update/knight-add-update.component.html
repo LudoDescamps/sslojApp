@@ -146,6 +146,42 @@
               </div>
             </fieldset>
 
+            <fieldset class="with-legend">
+              <legend>Spécialités</legend>
+
+              <ng-container formArrayName="specialties">
+
+                <div *ngFor="let specialty of specialties?.controls; let i=index">
+                    <fieldset class="with-legend">
+                      <legend>Spécialité {{i + 1}}</legend>
+
+                      <div class="flex" style="align-items: center">
+
+                          <mat-form-field class="full-width">
+                            <mat-label>Spécialité</mat-label>
+                            <input matInput [formControlName]="i" type="text" autocomplete="off" name="i">
+                          </mat-form-field>
+
+
+                        <div class="flex-evenly ml10">
+                          <button mat-stroked-button class="small" color="warn" type="button"
+                                  (click)="removeSpecialty(i)">
+                            <mat-icon class="font-size pt5 pb5">delete</mat-icon>
+                          </button>
+                        </div>
+                      </div>
+                    </fieldset>
+                </div>
+
+                <div class="text_right mt20">
+                  <button mat-flat-button class="small" color="primary" type="button" (click)="addSpecialty()">
+                    <mat-icon class="font-size">add</mat-icon>
+                    Ajouter une spécialité
+                  </button>
+                </div>
+              </ng-container>
+            </fieldset>
+
             <mat-card-actions>
               <div class="text-right pr8">
                 <button mat-flat-button type="button" class="mr10" (click)="resetForm()">Annuler</button>
