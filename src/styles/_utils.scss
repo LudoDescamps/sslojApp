@@ -110,7 +110,7 @@
 }
 
 /* --- MARGINS / PADDINGS --- */
-$sizes: 0, 5, 10, 20, 30, 40, 50, 60;
+$sizes: 0, 5, 8, 10, 20, 30, 40, 50, 60;
 @each $size in $sizes {
   .p#{$size} {
     padding: #{$size}px !important;

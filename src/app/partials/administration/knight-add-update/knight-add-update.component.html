@@ -123,6 +123,35 @@
                 </div>
               </ng-container>
             </fieldset>
+
+            <fieldset class="with-legend">
+              <legend>Constellation & armure recommandées</legend>
+              <div class="row no-margin">
+                <div class="col-sm-6 col-md-6">
+                  <mat-form-field class="full-width">
+                    <mat-label>Constellation recommandée</mat-label>
+                    <input matInput formControlName="minConstellationLevel" type="number" max="9" autocomplete="off"
+                           name="id">
+                  </mat-form-field>
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                  <mat-form-field class="full-width">
+                    <mat-label>Armure recommandée</mat-label>
+                    <input matInput formControlName="minArmourLevel" type="number"
+                           [max]="(knightForm.get('element').value === 'LUMIERE' || knightForm.get('element').value === 'OBSCURITE') ? 40 : 30"
+                           autocomplete="off" name="id">
+                  </mat-form-field>
+                </div>
+              </div>
+            </fieldset>
+
+            <mat-card-actions>
+              <div class="text-right pr8">
+                <button mat-flat-button type="button" class="mr10" (click)="resetForm()">Annuler</button>
+                <button mat-flat-button color="primary" (click)="save()">Enregistrer</button>
+              </div>
+            </mat-card-actions>
           </mat-card-content>
         </form>
 

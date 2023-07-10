@@ -110,6 +110,11 @@ export class KnightAddUpdateComponent implements OnInit {
     });
   }
 
+  save() {
+    console.log(this.knightForm.value);
+    this.knightService.saveData(this.knightForm.value)
+  }
+
   updateSelected(event: Event) {
     this.selectedKnight = this.knightAdapter.adapt(event);
   }
@@ -151,6 +156,11 @@ export class KnightAddUpdateComponent implements OnInit {
   checkDisabledRecommendedArtefact(i: number): boolean {
     const oneOfIsRecommended = this.artefacts.value.some(val => val.recommended === true);
     return !(this.artefacts.value[i].recommended === true || !oneOfIsRecommended);
+  }
+
+  resetForm() {
+    this.artefacts.clear();
+    this.knightForm.reset();
   }
 
     /*
