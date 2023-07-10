@@ -96,7 +96,25 @@
 
                       <div class="flex" style="align-items: center">
                         <div class="w150">
-                          {{mappedArtefacts?.[artefacts?.value[i].id]?.name}}
+                          <ng-container *ngIf="artefacts?.value[i].id; else noArtefact">
+                            {{mappedArtefacts?.[artefacts?.value[i].id]?.name}}
+                          </ng-container>
+
+                          <ng-template #noArtefact>
+                            <mat-form-field class="full-width">
+                              <mat-label class="mat-label"> Artefact</mat-label>
+                              <mat-select formControlName="id">
+                                <ng-container *ngFor="let artefact of artefactsData">
+                                  <mat-option [value]="artefact.id">
+                                    <div class="flex display-flex-center">
+                                      {{ artefact.name }}<img class="ml20" style="height: 30px" alt="artefact"
+                                                              [src]="'assets/images/artefacts/' + artefact?.images[0]">
+                                    </div>
+                                  </mat-option>
+                                </ng-container>
+                              </mat-select>
+                            </mat-form-field>
+                          </ng-template>
                         </div>
 
                         <div class="flex-evenly">
