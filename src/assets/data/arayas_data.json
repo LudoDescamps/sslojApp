@@ -32,7 +32,7 @@
       "SHURA_CAPRICORNE"
     ],
     "images": [
-      "excalibur_rouge_rouge.png"
+      "excalibur_rouge.png"
     ]
   },
   {
@@ -71,7 +71,7 @@
     ]
   },
   {
-    "id": "LONG_CHAMP_DU_DRAGON_ROUGE",
+    "id": "LONG_CHANT_DU_DRAGON_ROUGE",
     "name": "Long chant du dragon",
     "level": "",
     "rank": "",
@@ -82,7 +82,7 @@
       "SHIRYU_DRAGON_DIVIN"
     ],
     "images": [
-      "long_champ_du_dragon_rouge.png"
+      "long_chant_du_dragon_rouge.png"
     ]
   },
   {

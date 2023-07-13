@@ -6,6 +6,8 @@ import {lastValueFrom, ReplaySubject, Subscription} from "rxjs";
 import {KnightService} from "../../../lib/services/knight.service";
 import {NgxUiLoaderService} from "ngx-ui-loader";
 import {ArtefactService} from "../../../lib/services/artefact.service";
+import {Araya, ArayaAdapter} from "../../../lib/models/Araya";
+import {ArayaService} from "../../../lib/services/araya.service";
 
 @Component({
   selector: 'app-knight-add-update',
@@ -15,9 +17,12 @@ import {ArtefactService} from "../../../lib/services/artefact.service";
 export class KnightAddUpdateComponent implements OnInit {
   public knightForm: FormGroup;
   public artefactsFormArray: FormArray = new FormArray([]);
+  public arayasFormArray: FormArray = new FormArray([]);
   public knights: Knight[];
   public artefactsData: Artefact[];
+  public arayasData: Araya[];
   public mappedArtefacts: { [p: string]: Artefact } = {};
+  public mappedArayas: { [p: string]: Araya } = {};
   public knightElements: {value: string, viewValue: string}[] = [];
   public knightSpecificities: {value: string, viewValue: string}[] = [];
   public knightClass: {value: string, viewValue: string}[] = [];
@@ -30,6 +35,7 @@ export class KnightAddUpdateComponent implements OnInit {
   constructor(private knightAdapter: KnightAdapter,
               private knightService: KnightService,
               private artefactService: ArtefactService,
+              private arayaService: ArayaService,
               private loaderService: NgxUiLoaderService) {
 
     this.knightForm = new FormGroup({
@@ -39,7 +45,7 @@ export class KnightAddUpdateComponent implements OnInit {
       element: new FormControl(undefined, [Validators.required]),
       knightClass: new FormControl(undefined, [Validators.required]),
       artefacts: this.artefactsFormArray,
-      arayas: new FormControl(undefined),
+      arayas: this.arayasFormArray,
       constellation: new FormControl(undefined),
       specialties: new FormArray([]),
       images: new FormControl(undefined),
@@ -73,10 +79,12 @@ export class KnightAddUpdateComponent implements OnInit {
 
       this.knightForm.patchValue(this.selectedKnight);
       this.knightForm.updateValueAndValidity();
+
+      this.createSpecialtiesFormArray();
       console.log(this.knightForm);
       if (this.selectedKnight.artefacts?.length > 0) {
         this.createArtefactsFormArray();
-        this.createSpecialtiesFormArray();
+
       }
 
       this.knights.sort(
@@ -94,15 +102,24 @@ export class KnightAddUpdateComponent implements OnInit {
       this.artefactsData.forEach(artefact => {
         this.mappedArtefacts[artefact.id] = artefact;
       });
-      console.log('getArtefacts')
-      // if (this.selectedKnight) {
-      //   this.knightForm.patchValue(this.selectedKnight);
-      // }
 
       this.loaderService.stop('getArtefacts');
     }, err => {
       console.log(err);
       this.loaderService.stop('getArtefacts');
+    });
+
+    this.loaderService.start('getArayas');
+    lastValueFrom(this.arayaService.getArayas()).then(arayas => {
+      this.arayasData = arayas;
+      this.arayasData.forEach(araya => {
+        this.mappedArayas[araya.id] = araya;
+      });
+      this.createArayasFormArray();
+      this.loaderService.stop('getArayas');
+    }, err => {
+      console.log(err);
+      this.loaderService.stop('getArayas');
     });
   }
 
@@ -179,18 +196,72 @@ export class KnightAddUpdateComponent implements OnInit {
     this.knightForm.markAsDirty();
   }
 
+  createArayasFormArray() {
+    this.arayas.clear();
+
+    this.selectedKnight.arayas?.forEach((araya) => {
+      console.log(araya);
+      const control = new FormGroup({
+        id: new FormControl(araya.id),
+        recommended: new FormControl(araya.recommended),
+      });
+      this.arayas.push(control);
+    });
+    console.log(this.arayas);
+  }
+
+  get arayas(): FormArray {
+    return this.knightForm.get('arayas') as FormArray;
+  }
+
+  addAraya() {
+    const control = new FormGroup({
+      id: new FormControl(undefined, Validators.required),
+      recommended: new FormControl(undefined),
+    });
+    this.arayas.push(control);
+    this.knightForm.markAsDirty();
+  }
+
+  removeAraya(index: number) {
+    this.arayas.removeAt(index);
+    this.knightForm.markAsDirty();
+  }
+
   /*
   Only one can be recommended
    */
   checkDisabledRecommendedArtefact(i: number): boolean {
-    const oneOfIsRecommended = this.artefacts.value.some(val => val.recommended === true);
+    const oneOfIsRecommended = this.arayas.value.some(val => val.recommended === true);
     return !(this.artefacts.value[i].recommended === true || !oneOfIsRecommended);
+  }
+
+  /*
+  Prevent duplicate araya
+   */
+  checkDisabledExistingAraya(arayaId: string): boolean {
+    return this.arayas.value.some(obj => obj.id === arayaId);
   }
 
   resetForm() {
     this.artefacts.clear();
     this.specialties.clear();
+    this.arayas.clear();
     this.knightForm.reset();
+  }
+
+  sortByProperties(arr: object[], properties: (keyof object)[]): object[] {
+    return arr.slice().sort((a, b) => {
+      for (let property of properties) {
+        if (a[property] < b[property]) {
+          return -1;
+        }
+        if (a[property] > b[property]) {
+          return 1;
+        }
+      }
+      return 0;
+    });
   }
 
     /*
