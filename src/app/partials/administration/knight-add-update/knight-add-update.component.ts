@@ -33,17 +33,17 @@ export class KnightAddUpdateComponent implements OnInit {
               private loaderService: NgxUiLoaderService) {
 
     this.knightForm = new FormGroup({
-      id: new FormControl(undefined),
-      name: new FormControl(undefined),
-      constellationName: new FormControl(undefined),
-      element: new FormControl(undefined),
-      knightClass: new FormControl(undefined),
+      id: new FormControl(undefined, [Validators.required]),
+      name: new FormControl(undefined, [Validators.required]),
+      constellationName: new FormControl(undefined,[Validators.required]),
+      element: new FormControl(undefined, [Validators.required]),
+      knightClass: new FormControl(undefined, [Validators.required]),
       artefacts: this.artefactsFormArray,
       arayas: new FormControl(undefined),
       constellation: new FormControl(undefined),
       specialties: new FormArray([]),
       images: new FormControl(undefined),
-      specificity: new FormControl(undefined),
+      specificity: new FormControl(undefined, [Validators.required]),
       advice: new FormControl(undefined),
       topAgainst: new FormControl(undefined),
       neverUseAgainst: new FormControl(undefined),
@@ -72,6 +72,7 @@ export class KnightAddUpdateComponent implements OnInit {
       this.selectedKnight = this.knights.find(item => item.name === 'Poséidon');
 
       this.knightForm.patchValue(this.selectedKnight);
+      this.knightForm.updateValueAndValidity();
       console.log(this.knightForm);
       if (this.selectedKnight.artefacts?.length > 0) {
         this.createArtefactsFormArray();
@@ -188,6 +189,7 @@ export class KnightAddUpdateComponent implements OnInit {
 
   resetForm() {
     this.artefacts.clear();
+    this.specialties.clear();
     this.knightForm.reset();
   }
 

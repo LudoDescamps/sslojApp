@@ -200,10 +200,68 @@
               </ng-container>
             </fieldset>
 
+            <fieldset class="with-legend">
+              <legend>Arayashiki</legend>
+
+              <ng-container formArrayName="artefacts">
+
+                <div *ngFor="let artefact of artefacts?.controls; let i=index">
+                  <div [formGroupName]="i">
+                    <fieldset class="with-legend">
+                      <legend>Artefact {{i + 1}}</legend>
+
+                      <div class="flex" style="align-items: center">
+                        <div class="w150">
+                          <ng-container *ngIf="artefacts?.value[i].id; else noArtefact">
+                            {{mappedArtefacts?.[artefacts?.value[i].id]?.name}}
+                          </ng-container>
+
+                          <ng-template #noArtefact>
+                            <mat-form-field class="full-width">
+                              <mat-label class="mat-label"> Artefact</mat-label>
+                              <mat-select formControlName="id">
+                                <ng-container *ngFor="let artefact of artefactsData">
+                                  <mat-option [value]="artefact.id">
+                                    <div class="flex display-flex-center">
+                                      {{ artefact.name }}<img class="ml20" style="height: 30px" alt="artefact"
+                                                              [src]="'assets/images/artefacts/' + artefact?.images[0]">
+                                    </div>
+                                  </mat-option>
+                                </ng-container>
+                              </mat-select>
+                            </mat-form-field>
+                          </ng-template>
+                        </div>
+
+                        <div class="flex-evenly">
+                          <mat-checkbox [disabled]="checkDisabledRecommendedArtefact(i)" formControlName="recommended">Recommandé</mat-checkbox>
+                          <!-- (change)="displayValueChange($event, 'FREE_TEXT_AREAS', i)">{{ 'FORM.DISPLAY'  }}</mat-checkbox> -->
+                        </div>
+
+                        <div class="flex-evenly">
+                          <button mat-stroked-button class="small" color="warn" type="button"
+                                  (click)="removeArtefact(i)">
+                            <mat-icon class="font-size pt5 pb5">delete</mat-icon>
+                          </button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="text_right mt20">
+                  <button mat-flat-button class="small" color="primary" type="button" (click)="addArtefact()">
+                    <mat-icon class="font-size">add</mat-icon>
+                    Ajouter un artefact
+                  </button>
+                </div>
+              </ng-container>
+            </fieldset>
+
             <mat-card-actions>
               <div class="text-right pr8">
                 <button mat-flat-button type="button" class="mr10" (click)="resetForm()">Annuler</button>
-                <button mat-flat-button color="primary" (click)="save()">Enregistrer</button>
+                <button mat-flat-button color="primary" [disabled]="!knightForm.dirty || !knightForm.valid" (click)="save()">Enregistrer</button>
               </div>
             </mat-card-actions>
           </mat-card-content>

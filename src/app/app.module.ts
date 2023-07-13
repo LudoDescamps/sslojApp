@@ -78,7 +78,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   ],
   providers: [
     KnightService,
-    {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: appearance},
+    {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: appearance}
   ],
   bootstrap: [AppComponent]
 })
