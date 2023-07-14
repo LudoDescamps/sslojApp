@@ -6,7 +6,11 @@
         <h2 class="text-center"> Saint Seiya - Legend of justice </h2>
         <form [formGroup]="knightSelectorForm">
           <mat-card-content>
-            <div class="filter full-width">
+            <div>
+              <app-element-filter></app-element-filter>
+            </div>
+
+            <div class="full-width">
               <mat-form-field floatLabel="always" color="accent" >
                 <mat-label class="mat-label"> Chevalier </mat-label>
                 <mat-select formControlName="name"  (selectionChange)="updateSelected($event.value)"

@@ -1,0 +1,29 @@
+<div class="full-width">
+  <fieldset class="with-legend">
+    <legend>Filtrer par élément</legend>
+
+    <div class="row no-margin">
+      <div class="flex space-evenly">
+        <ng-container *ngFor="let element of knightElementsArray">
+          <div class="display-flex-center link" style="flex-direction: column;"
+               [ngClass]="{'not-selected': selectedFilter !== element && selectedFilter !==undefined}" (click)="selectedElementFilterChange(element)">
+            <img style="height: 50px;"
+                 [alt]="element ? 'assets/images/element/' + element + '.png' : 'assets/images/no-image.png'"
+                 [src]="element ? 'assets/images/element/' + element + '.png' : 'assets/images/no-image.png'">
+
+            <span class="pt5 pb5 text-center"
+                  style="font-size: 10px; width: 50px;line-height: normal;">{{ mappedKnightElement[element] }}</span>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+
+    <div class="row no-margin text-right mt10">
+      <button mat-flat-button class="small" color="primary" type="button"
+              [disabled]="!selectedFilter" (click)="selectedElementFilterChange()">
+        Reset
+      </button>
+    </div>
+
+  </fieldset>
+</div>

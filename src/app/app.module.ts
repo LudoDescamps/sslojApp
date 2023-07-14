@@ -20,6 +20,7 @@ import {MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldDefaultOptions} from "@angul
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
+import { ElementFilterComponent } from './partials/element-filter/element-filter.component';
 
 // Mat form fields appearance
 const appearance: MatFormFieldDefaultOptions = {
@@ -59,7 +60,8 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     KnightSelectorComponent,
     KnightDetailsComponent,
     ClassAndElementComponent,
-    KnightAddUpdateComponent
+    KnightAddUpdateComponent,
+    ElementFilterComponent
   ],
   imports: [
     BrowserModule,

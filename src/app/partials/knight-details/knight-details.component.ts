@@ -12,11 +12,12 @@ import {Araya, ArayaAdapter} from "../../lib/models/Araya";
 })
 export class KnightDetailsComponent implements OnChanges {
   @Input() knight: Knight;
-  public mappedSpecificities: { [p: string]: any } = {};
-  public mappedKnightElement: { [p: string]: any } = {};
-  public mappedKnightClass: { [p: string]: any } = {};
-  public mappedArtefacts: { [p: string]: any } = {};
-  public mappedArayas: { [p: string]: any } = {};
+  public mappedSpecificities: { [p: string]: Specificity } = {};
+  public mappedKnightElement: { [p: string]: KnightElement } = {};
+  public mappedKnightClass: { [p: string]: KnightClass } = {};
+  public mappedArtefacts: { [p: string]: Artefact } = {};
+  public mappedArayas: { [p: string]: Araya } = {};
+
   public artefacts: Artefact[];
   public arayas: Araya[];
 
