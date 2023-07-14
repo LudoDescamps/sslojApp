@@ -6,7 +6,7 @@ import {lastValueFrom, ReplaySubject, Subscription} from "rxjs";
 import {KnightService} from "../../../lib/services/knight.service";
 import {NgxUiLoaderService} from "ngx-ui-loader";
 import {ArtefactService} from "../../../lib/services/artefact.service";
-import {Araya, ArayaAdapter} from "../../../lib/models/Araya";
+import {Araya} from "../../../lib/models/Araya";
 import {ArayaService} from "../../../lib/services/araya.service";
 
 @Component({
@@ -18,6 +18,7 @@ export class KnightAddUpdateComponent implements OnInit {
   public knightForm: FormGroup;
   public artefactsFormArray: FormArray = new FormArray([]);
   public arayasFormArray: FormArray = new FormArray([]);
+  public imagesFormArray: FormArray = new FormArray([]);
   public knights: Knight[];
   public artefactsData: Artefact[];
   public arayasData: Araya[];
@@ -48,13 +49,13 @@ export class KnightAddUpdateComponent implements OnInit {
       arayas: this.arayasFormArray,
       constellation: new FormControl(undefined),
       specialties: new FormArray([]),
-      images: new FormControl(undefined),
+      images: this.imagesFormArray,
       specificity: new FormControl(undefined, [Validators.required]),
       advice: new FormControl(undefined),
       topAgainst: new FormControl(undefined),
       neverUseAgainst: new FormControl(undefined),
-      minConstellationLevel: new FormControl(undefined),
-      minArmourLevel: new FormControl(undefined),
+      recommendedConstellationLevel: new FormControl(undefined),
+      recommendedArmourLevel: new FormControl(undefined),
     });
     this.knightForm.updateValueAndValidity();
 
@@ -81,6 +82,7 @@ export class KnightAddUpdateComponent implements OnInit {
       this.knightForm.updateValueAndValidity();
 
       this.createSpecialtiesFormArray();
+      this.createImagesFormArray();
       console.log(this.knightForm);
       if (this.selectedKnight.artefacts?.length > 0) {
         this.createArtefactsFormArray();
@@ -228,6 +230,34 @@ export class KnightAddUpdateComponent implements OnInit {
     this.knightForm.markAsDirty();
   }
 
+  createImagesFormArray() {
+    this.images.clear();
+
+    this.selectedKnight.images?.forEach((image) => {
+      const control = new FormControl(
+        image, [Validators.required]
+      );
+      this.images.push(control);
+    });
+    console.log(this.images);
+  }
+
+  get images(): FormArray {
+    return this.knightForm.get('images') as FormArray;
+  }
+
+  addImage() {
+    const control =
+      new FormControl(undefined, Validators.required);
+    this.images.push(control);
+    this.knightForm.markAsDirty();
+  }
+
+  removeImage(index: number) {
+    this.images.removeAt(index);
+    this.knightForm.markAsDirty();
+  }
+
   /*
   Only one can be recommended
    */
@@ -247,6 +277,7 @@ export class KnightAddUpdateComponent implements OnInit {
     this.artefacts.clear();
     this.specialties.clear();
     this.arayas.clear();
+    this.images.clear();
     this.knightForm.reset();
   }
 

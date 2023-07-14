@@ -17,14 +17,14 @@ export class Knight {
   advice?: string;
   topAgainst?: Knight[];
   neverUseAgainst?: Knight[];
-  minConstellationLevel?: number;
-  minArmourLevel?: number;
+  recommendedConstellationLevel?: number;
+  recommendedArmourLevel?: number;
 
   constructor(id?: string, name?: string, constellationName?: string, element?: KnightElement, knightClass?: string,
               artefacts: any[] = [],
               arayas?: { id: string, recommended?: boolean, comments?: string[] }[],
               constellation?: any, specialties?: any[], images?: string[], specificity?: Specificity, advice?: string,
-              topAgainst?: Knight[], neverUseAgainst?: Knight[], minConstellationLevel?: number, minArmourLevel?: number) {
+              topAgainst?: Knight[], neverUseAgainst?: Knight[], recommendedConstellationLevel?: number, recommendedArmourLevel?: number) {
     this.id = id;
     this.name = name;
     this.constellationName = constellationName;
@@ -39,8 +39,8 @@ export class Knight {
     this.advice = advice;
     this.topAgainst = topAgainst;
     this.neverUseAgainst = neverUseAgainst;
-    this.minConstellationLevel = minConstellationLevel;
-    this.minArmourLevel = minArmourLevel;
+    this.recommendedConstellationLevel = recommendedConstellationLevel;
+    this.recommendedArmourLevel = recommendedArmourLevel;
   }
 }
 
@@ -66,8 +66,8 @@ export class KnightAdapter implements Adapter<Knight> {
       item.advice,
       item.topAgainst,
       item.neverUseAgainst,
-      item.minConstellationLevel,
-      item.minArmourLevel,
+      item.recommendedConstellationLevel,
+      item.recommendedArmourLevel,
     );
   }
 }
@@ -91,6 +91,7 @@ export enum KnightElement {
 
 export enum Specificity {
   DIEU= 'Dieu',
+  CHEVALIERS_ARMURE_DIVINE= 'Les chevaliers en armure Divine',
   CHAMP_STELLAIRE = 'Chevalier du champ stellaire',
   SPECTRES = 'Spectres',
   MARINA = 'Marina',

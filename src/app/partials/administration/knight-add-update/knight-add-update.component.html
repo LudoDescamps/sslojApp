@@ -148,7 +148,7 @@
                 <div class="col-sm-6 col-md-6">
                   <mat-form-field class="full-width">
                     <mat-label>Constellation recommandée</mat-label>
-                    <input matInput formControlName="minConstellationLevel" type="number"  min="0" max="9" autocomplete="off"
+                    <input matInput formControlName="recommendedConstellationLevel" type="number"  min="0" max="9" autocomplete="off"
                            name="id">
                   </mat-form-field>
                 </div>
@@ -156,7 +156,7 @@
                 <div class="col-sm-6 col-md-6">
                   <mat-form-field class="full-width">
                     <mat-label>Armure recommandée</mat-label>
-                    <input matInput formControlName="minArmourLevel" type="number" min="0"
+                    <input matInput formControlName="recommendedArmourLevel" type="number" min="0"
                            [max]="(knightForm.get('element').value === 'LUMIERE' || knightForm.get('element').value === 'OBSCURITE') ? 40 : 30"
                            autocomplete="off" name="id">
                   </mat-form-field>
@@ -256,6 +256,68 @@
                   </button>
                 </div>
               </ng-container>
+            </fieldset>
+
+            <fieldset class="with-legend">
+              <legend>Images</legend>
+              <ng-container formArrayName="images">
+
+                <div *ngFor="let image of images?.controls; let i=index">
+                  <fieldset class="with-legend">
+                    <legend>Image {{i + 1}}</legend>
+
+                    <div class="flex" style="align-items: center">
+
+                      <mat-form-field class="full-width">
+                        <mat-label>Image</mat-label>
+                        <input matInput [formControlName]="i" type="text" autocomplete="off" name="i">
+                      </mat-form-field>
+
+
+                      <div class="flex-evenly ml10">
+                        <button mat-stroked-button class="small" color="warn" type="button"
+                                (click)="removeImage(i)">
+                          <mat-icon class="font-size pt5 pb5">delete</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </ng-container>
+
+
+              <!--              <ng-container formArrayName="images">-->
+
+              <!--                <div *ngFor="let araya of images?.controls; let i=index">-->
+
+              <!--                    <fieldset class="with-legend">-->
+              <!--                      <legend>Image {{i + 1}}</legend>-->
+
+              <!--                      <div class="flex" style="align-items: center">-->
+
+              <!--                          <mat-form-field class="full-width">-->
+              <!--                            <mat-label>Image</mat-label>-->
+              <!--                            <input matInput [formControlName]="i" type="text" autocomplete="off" name="i">-->
+              <!--                          </mat-form-field>-->
+
+
+              <!--                        <div class="flex-evenly">-->
+              <!--                          <button mat-stroked-button class="small" color="warn" type="button"-->
+              <!--                                  (click)="removeImage(i)">-->
+              <!--                            <mat-icon class="font-size pt5 pb5">delete</mat-icon>-->
+              <!--                          </button>-->
+              <!--                        </div>-->
+              <!--                      </div>-->
+              <!--                    </fieldset>-->
+              <!--                </div>-->
+
+              <!--                <div class="text_right mt20">-->
+              <!--                  <button mat-flat-button class="small" color="primary" type="button" (click)="addAraya()">-->
+              <!--                    <mat-icon class="font-size">add</mat-icon>-->
+              <!--                    Ajouter un arayashiki-->
+              <!--                  </button>-->
+              <!--                </div>-->
+              <!--              </ng-container>-->
             </fieldset>
 
             <mat-card-actions>

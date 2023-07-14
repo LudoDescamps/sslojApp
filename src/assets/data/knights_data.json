@@ -4,8 +4,8 @@
     "constellationName": "Déesse",
     "element": "LUMIERE",
     "knightClass": "DEFENSIF",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "30",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "30",
     "specialties": [
       "Protège et fournit du cosmos aux alliés"
     ],
@@ -50,8 +50,8 @@
     "constellationName": "Empereur des Mers",
     "element": "LUMIERE",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "30",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "30",
     "specialties": [
       "Contrôle aléatoire grâce à l'étourdissement et perte de cosmos",
       "Dégat de zone importants sur toute la team adverse"
@@ -130,8 +130,8 @@
     "constellationName": "Déesse de la Terre",
     "element": "EAU",
     "knightClass": "SOUTIEN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Soigne et dissipe les débuff des alliées",
       "Augmente les soins reçus pour toute l'équipe",
@@ -187,8 +187,8 @@
     "constellationName": "Cygne d'Or",
     "element": "AIR",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Fournit du cosmos aux alliés en back line quand l'adversaire est gelé",
       "Contrôle grâce à du renversement sur la back line adverse et ignore la bénédiction des dieux",
@@ -244,8 +244,8 @@
     "constellationName": "Andromède d'Or",
     "element": "TERRE",
     "knightClass": "SOUTIEN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Soigne et fournit des boucliers",
       "Protège les alliés en front",
@@ -298,8 +298,8 @@
     "constellationName": "Étoile Céleste de la Férocité",
     "element": "OBSCURITE",
     "knightClass": "OFFENSIF",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
     ],
     "artefacts": [
@@ -317,8 +317,8 @@
     "constellationName": "Commandant des Enfers",
     "element": "OBSCURITE",
     "knightClass": "SOUTIEN",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Soigne les alliés et attaque l'adversaire",
       "Empêche les soins des adversaires"
@@ -373,8 +373,8 @@
     "constellationName": "Étoile Terrestre de l'Obscurité",
     "element": "EAU",
     "knightClass": "ASSASSIN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Augmente les dégats et la durée du poison",
       "Protège les allés en leurs fournissant de l'esquive",
@@ -426,8 +426,8 @@
     "constellationName": "Bélier",
     "element": "FEU",
     "knightClass": "DEFENSIF",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Protège et buff les alliés"
     ],
@@ -477,8 +477,8 @@
     "constellationName": "Étoile Terrestre Enchanteresse",
     "element": "AIR",
     "knightClass": "SOUTIEN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Dissipe les débuffs, contrôles",
       "Effet de champ et d'environnement"
@@ -530,8 +530,8 @@
     "constellationName": "L'Étoile Terrestre de l'Étrangeté",
     "element": "TERRE",
     "knightClass": "DEFENSIF",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
 
     ],
@@ -550,8 +550,8 @@
     "constellationName": "Sirène",
     "element": "LUMIERE",
     "knightClass": "SOUTIEN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Soigne et débuff les alliés et les ennemis",
       "Contrôle de l'équipe adverse (cosmos et séduction)"
@@ -605,8 +605,8 @@
     "constellationName": "Dragon des Mers",
     "element": "OBSCURITE",
     "knightClass": "ASSASSIN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Force son vis à vis à utiliser une compétence en ouverture et peut en reprendre le contrôle",
       "Fait perdre du cosmos, empêche les soins",
@@ -661,8 +661,8 @@
     "constellationName": "Scylla",
     "element": "EAU",
     "knightClass": "ASSASSIN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
 
     ],
@@ -681,8 +681,8 @@
     "constellationName": "Sirène",
     "element": "EAU",
     "knightClass": "SOUTIEN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Se lie avec l'allié le plus puissant puis le protège, lui fournit du cosmos et des buffs offensifs (sauf si Poséidon est dans l'équipe il sera prioritaire)",
       "Peut rendre l'ennemi rigide ce qui l'empêche d'agir"
@@ -733,8 +733,8 @@
     "constellationName": "Chrysaor",
     "element": "FEU",
     "knightClass": "OFFENSIF",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Protège les alliés et augmente leurs attaques"
     ],
@@ -784,8 +784,8 @@
     "constellationName": "Cheval des Mers",
     "element": "AIR",
     "knightClass": "DEFENSIF",
-    "minConstellationLevel": null,
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": null,
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Grande capacité de survie",
       "Protège le deuxième front à ses côtés",
@@ -831,8 +831,8 @@
     "constellationName": "Kraken",
     "element": "AIR",
     "knightClass": "OFFENSIF",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Contrôle grâce à l'aveuglement",
       "Ralentit l'accumulation de cosmos et peut geler l'adversaire",
@@ -883,8 +883,8 @@
     "constellationName": "Lyumnades",
     "element": "TERRE",
     "knightClass": "SOUTIEN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Peut sauver les alliés de dégats mortels",
       "Augmente les dégâts des alliés grâce à décharge électrique"
@@ -934,8 +934,8 @@
     "constellationName": "Gémaux",
     "element": "LUMIERE",
     "knightClass": "OFFENSIF",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Dégats de masse conséquents",
       "Capacité de survie",
@@ -990,8 +990,8 @@
     "constellationName": "Vierge",
     "element": "LUMIERE",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
     ],
     "artefacts": [
@@ -1007,8 +1007,8 @@
     "constellationName": "Gémaux",
     "element": "LUMIERE",
     "knightClass": "ASSASSIN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Contrôle l'adversaire avec confusion et peut l'étourdir",
       "Inflige de lourds dégats à sa mort"
@@ -1059,8 +1059,8 @@
     "constellationName": "Gémaux",
     "element": "OBSCURITE",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Contrôle son vis à vis",
       "Dégats de masse importants",
@@ -1118,8 +1118,8 @@
     "constellationName": "Scorpion",
     "element": "EAU",
     "knightClass": "ASSASSIN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Focus sur l'ennemi avec les pv les plus élevés et l'empêche d'agir en début de combat",
       "Tue sa cible quand il atteint 15 stacks"
@@ -1173,8 +1173,8 @@
     "constellationName": "Cancer",
     "element": "EAU",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Ralentit l'accumulation de cosmos",
       "Brûle le cosmos de ses cibles et le vol",
@@ -1229,8 +1229,8 @@
     "constellationName": "Poissons",
     "element": "EAU",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Dégats de poison sur toute le team adverse",
       "Affaiblit l'attaque et la défense",
@@ -1279,8 +1279,8 @@
     "constellationName": "Balance",
     "element": "EAU",
     "knightClass": "DEFENSIF",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Grande capacité de survie",
       "Dégats de plus en plus importants au fil du combat"
@@ -1331,8 +1331,8 @@
     "constellationName": "Lion",
     "element": "FEU",
     "knightClass": "OFFENSIF",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Augmente les dégâts des alliés grâce à décharge électrique",
       "Fournit du cosmos aux alliés quand une cible meurt"
@@ -1386,8 +1386,8 @@
     "constellationName": "Bélier",
     "element": "FEU",
     "knightClass": "SOUTIEN",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Protège et immunise les alliés aux contrôles",
       "Soigne les alliés"
@@ -1441,8 +1441,8 @@
     "constellationName": "Sagittaire",
     "element": "FEU",
     "knightClass": "ASSASSIN",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Renverse et réduit la défense de l'équipe adverse en ouverture",
       "Dégâts de zone rapides et importants"
@@ -1496,8 +1496,8 @@
     "constellationName": "Sagittaire",
     "element": "FEU",
     "knightClass": "ASSASSIN",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Renverse et réduit la défense de l'équipe adverse en ouverture",
       "Dégâts de zone rapides et importants"
@@ -1551,8 +1551,8 @@
     "constellationName": "Lion",
     "element": "FEU",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Dégats et brûlures de masse",
       "Contrôle, temporise avec ses 2 résurections"
@@ -1607,8 +1607,8 @@
     "constellationName": "Verseau",
     "element": "AIR",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Contrôle la team adverse avec le gel",
       "Peut protéger un allié ou bloquer un adversaire avec le cercueil de glace"
@@ -1666,8 +1666,8 @@
     "constellationName": "Balance",
     "element": "AIR",
     "knightClass": "DEFENSIF",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Grande capacité de survie",
       "Buff les alliés",
@@ -1716,8 +1716,8 @@
     "constellationName": "Verseau",
     "element": "AIR",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Ralentit et gèle les adversaires",
       "Capable d'infliger de lourds dégâts rapidement"
@@ -1774,8 +1774,8 @@
     "constellationName": "Taureau",
     "element": "TERRE",
     "knightClass": "DEFENSIF",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Renvoi de dégâts",
       "Renverse les cibles face à lui"
@@ -1823,8 +1823,8 @@
     "constellationName": "Capricorne",
     "element": "TERRE",
     "knightClass": "ASSASSIN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Dégâts importants contre les boucliers",
       "Réduit le défense de l'adversaire"
@@ -1878,8 +1878,8 @@
     "constellationName": "Vierge",
     "element": "TERRE",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Boost l'équipe en attaque comme en défense",
       "Possibilité d'empêcher les adversaires d'agir"
@@ -1930,8 +1930,8 @@
     "constellationName": "Baleine",
     "element": "EAU",
     "knightClass": "DEFENSIF",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Protège les alliés en front et l'équipe sur l'ouverture du combat",
       "Supprime les effets de contrôle des alliés et affaiblit les adversaires"
@@ -1979,8 +1979,8 @@
     "constellationName": "Aigle",
     "element": "EAU",
     "knightClass": "OFFENSIF",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Grande capacité d'esquive"
     ],
@@ -2030,8 +2030,8 @@
     "constellationName": "Lyre",
     "element": "EAU",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Contrôle multicible et drain de cosmos",
       "Brise la défense"
@@ -2088,8 +2088,8 @@
     "constellationName": "Hercule",
     "element": "FEU",
     "knightClass": "DEFENSIF",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Grande capacité de survie",
       "Renverse son opposant et réduit sa défense"
@@ -2137,8 +2137,8 @@
     "constellationName": "Ophiuchus",
     "element": "FEU",
     "knightClass": "ASSASSIN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Inflige de lourds dégâts sur les boss"
     ],
@@ -2185,8 +2185,8 @@
     "constellationName": "Cerbère",
     "element": "FEU",
     "knightClass": "OFFENSIF",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Vol de vie qui ignore la défense adverse",
       "Soutient de l'équipe en fournissant du vol de vie aux alliés"
@@ -2237,8 +2237,8 @@
     "constellationName": "Centaure",
     "element": "FEU",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Dégâts de brûlure",
       "Augmente les dégâts de brûlure de l'équipe",
@@ -2290,8 +2290,8 @@
     "constellationName": "Lézard",
     "element": "AIR",
     "knightClass": "SOUTIEN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Ralentit le cosmos de la front line",
       "Soigne et protège les allés"
@@ -2342,8 +2342,8 @@
     "constellationName": "Corbeau",
     "element": "AIR",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "",
-    "minArmourLevel": "",
+    "recommendedConstellationLevel": "",
+    "recommendedArmourLevel": "",
     "specialties": [
     ],
     "artefacts": [
@@ -2359,8 +2359,8 @@
     "constellationName": "Mouche",
     "element": "AIR",
     "knightClass": "OFFENSIF",
-    "minConstellationLevel": "",
-    "minArmourLevel": "",
+    "recommendedConstellationLevel": "",
+    "recommendedArmourLevel": "",
     "specialties": [
     ],
     "artefacts": [
@@ -2376,8 +2376,8 @@
     "constellationName": "Flèche",
     "element": "AIR",
     "knightClass": "ASSASSIN",
-    "minConstellationLevel": "",
-    "minArmourLevel": "",
+    "recommendedConstellationLevel": "",
+    "recommendedArmourLevel": "",
     "specialties": [
     ],
     "artefacts": [
@@ -2393,8 +2393,8 @@
     "constellationName": "Persée",
     "element": "TERRE",
     "knightClass": "DEFENSIF",
-    "minConstellationLevel": "",
-    "minArmourLevel": "",
+    "recommendedConstellationLevel": "",
+    "recommendedArmourLevel": "",
     "specialties": [
     ],
     "artefacts": [
@@ -2410,8 +2410,8 @@
     "constellationName": "Grand Chien",
     "element": "TERRE",
     "knightClass": "OFFENSIF",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Contrôle par étourdissement",
       "Protège les alliés et supprime les contrôles",
@@ -2463,8 +2463,8 @@
     "constellationName": "Chiens de Chasse",
     "element": "TERRE",
     "knightClass": "SOUTIEN",
-    "minConstellationLevel": "9",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Buff les alliés et débuff la back line adverse",
       "Soigne légérement tous les alliés simultanément",
@@ -2519,8 +2519,8 @@
     "constellationName": "Aurige",
     "element": "TERRE",
     "knightClass": "COMPETENCE",
-    "minConstellationLevel": "",
-    "minArmourLevel": "",
+    "recommendedConstellationLevel": "",
+    "recommendedArmourLevel": "",
     "specialties": [
     ],
     "artefacts": [
@@ -2536,8 +2536,8 @@
     "constellationName": "Caméléon",
     "element": "AIR",
     "knightClass": "SOUTIEN",
-    "minConstellationLevel": "?",
-    "minArmourLevel": "?",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?",
     "specialties": [
       "Soigne, protège et fournit du cosmos aux alliés",
       "Empêche l'adversaire d'agir"

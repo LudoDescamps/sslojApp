@@ -66,18 +66,18 @@
 
 
       <!--  MIN CONSTELLATION LEVEL -->
-      <div class="semi-rounded-box mt10" *ngIf="knight?.minConstellationLevel">
+      <div class="semi-rounded-box mt10" *ngIf="knight?.recommendedConstellationLevel">
         <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
           <div  class="text-center full-width">Constellation recommandée</div>
-          <div class="text-center full-width">{{knight?.minConstellationLevel}}</div>
+          <div class="text-center full-width">{{knight?.recommendedConstellationLevel}}</div>
         </div>
       </div>
 
       <!--  MIN ARMOUR LEVEL -->
-      <div class="semi-rounded-box mt10" *ngIf="knight?.minArmourLevel">
+      <div class="semi-rounded-box mt10" *ngIf="knight?.recommendedArmourLevel">
         <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
           <div  class="text-center full-width">Armure recommandée</div>
-          <div class="text-center full-width">{{knight?.minArmourLevel}}</div>
+          <div class="text-center full-width">{{knight?.recommendedArmourLevel}}</div>
         </div>
       </div>
 
