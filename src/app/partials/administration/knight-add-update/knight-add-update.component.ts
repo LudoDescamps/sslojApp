@@ -74,9 +74,8 @@ export class KnightAddUpdateComponent implements OnInit {
     this.loaderService.start('getKnights');
     lastValueFrom(this.knightService.getKnights()).then(knights => {
       this.knights = knights;
-      console.log('getKnights')
-      // this.knightForm.get('name')?.setValue(this.knights.find(item => item.name === 'Poséidon'));
-      this.selectedKnight = this.knights.find(item => item.name === 'Poséidon');
+
+      this.selectedKnight = this.knights.find(item => item.id === 'POSEIDON_EMPEREUR_DES_MERS');
 
       this.knightForm.patchValue(this.selectedKnight);
       this.knightForm.updateValueAndValidity();
@@ -133,7 +132,11 @@ export class KnightAddUpdateComponent implements OnInit {
 
   save() {
     console.log(this.knightForm.value);
-    this.knightService.saveData(this.knightForm.value)
+    let knight = this.knightAdapter.adapt(this.knightForm.value);
+    console.log(knight);
+    const updatedArray = updateObjectById(this.knights, knight.id, knight);
+    console.log(updatedArray);
+    this.knightService.saveData(updatedArray)
   }
 
   updateSelected(event: Event) {
@@ -318,4 +321,13 @@ export class KnightAddUpdateComponent implements OnInit {
 
   protected readonly Object = Object;
   protected readonly FormArray = FormArray;
+}
+
+function updateObjectById(arr: Knight[], id: string, updatedObject: Partial<Knight>): Knight[] {
+  return arr.map(obj => {
+    if (obj.id === id) {
+      return { ...obj, ...updatedObject };
+    }
+    return obj;
+  });
 }

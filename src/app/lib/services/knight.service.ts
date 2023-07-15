@@ -20,27 +20,27 @@ export class KnightService {
 
   addKnight(knight: Knight) {
     this.knights.push(knight);
-    this.saveData();
+    // this.saveData();
   }
 
   updateKnight(knight: Knight) {
     // Code pour mettre à jour l'élément dans this.knights
-    this.saveData();
+    // this.saveData();
   }
 
   deleteKnight(knight: Knight) {
     // Code pour supprimer l'élément de this.knights
-    this.saveData();
+    // this.saveData();
   }
 
-  saveData(knight?: Knight) {
-    const json = JSON.stringify(knight);
+  saveData(knights: Knight[]) {
+    const json = JSON.stringify(knights);
     // const json = JSON.stringify(this.knights);
     const blob = new Blob([json], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = 'knights_data1.json';
+    anchor.download = 'knights_data.json';
     anchor.click();
     URL.revokeObjectURL(url);
   }

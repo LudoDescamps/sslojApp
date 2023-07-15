@@ -44,22 +44,7 @@ export class KnightSelectorComponent implements OnInit {
     /**
      * Retrieve all knights
      */
-    this.loaderService.start('getKnights');
-    lastValueFrom(this.knightService.getKnights()).then(knights => {
-      this.knights = knights;
-
-      this.knightSelectorForm.get('name')?.setValue(this.knights.find(item => item.id === 'POSEIDON_EMPEREUR_DES_MERS'));
-      this.selectedKnight = this.knights.find(item => item.id === 'POSEIDON_EMPEREUR_DES_MERS');
-
-      // Sort knights by name
-      this.knights.sort(
-        (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
-      this.knightFilterFunction();
-      this.loaderService.stop('getKnights');
-    }, err => {
-      console.log(err);
-      this.loaderService.stop('getKnights');
-    });
+    this.elementFilterChange();
 
     this.loaderService.start('getArtefacts');
     lastValueFrom(this.artefactService.getArtefacts()).then(artefacts => {
@@ -86,7 +71,7 @@ export class KnightSelectorComponent implements OnInit {
     this.selectedKnight = this.knightAdapter.adapt(event);
   }
 
-  elementFilterChange(element: string) {
+  elementFilterChange(element?: string) {
     /**
      * Retrieve all knights
      */
