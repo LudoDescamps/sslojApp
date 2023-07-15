@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {Knight} from "../models/Knight";
 
 @Injectable({
   providedIn: 'root',
@@ -6,7 +7,7 @@ import { Injectable } from '@angular/core';
 
 export class FilterByParam {
 
-  filterByParam(arr: object[], param: string, value: any): object[] {
+  filterByElement(arr: Knight[], param: string, value: any): Knight[] {
     return arr.filter(obj => obj[param] === value);
   }
 

@@ -1,4 +1,4 @@
-import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, EventEmitter, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {KnightElement} from "../../lib/models/Knight";
 
 @Component({
@@ -7,6 +7,7 @@ import {KnightElement} from "../../lib/models/Knight";
   styleUrls: ['./element-filter.component.scss']
 })
 export class ElementFilterComponent implements OnInit, OnChanges {
+  @Output() public elementFilter: EventEmitter<string> = new EventEmitter();
 
   public knightElementsArray: string[] = []
   public mappedKnightElement: { [p: string]: KnightElement } = {};
@@ -30,6 +31,6 @@ export class ElementFilterComponent implements OnInit, OnChanges {
 
   selectedElementFilterChange(element?: string) {
     this.selectedFilter = element;
+    this.elementFilter.emit(element);
   }
-
 }

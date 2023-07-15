@@ -7,6 +7,7 @@ import {lastValueFrom, ReplaySubject, Subscription} from "rxjs";
 import {KnightService} from "../../lib/services/knight.service";
 import {NgxUiLoaderService} from "ngx-ui-loader";
 import {ArtefactService} from "../../lib/services/artefact.service";
+import {FilterByParam} from "../../lib/functions/filter-by-param";
 
 @Component({
   selector: 'app-knight-selector',
@@ -18,7 +19,6 @@ export class KnightSelectorComponent implements OnInit {
   public knights: Knight[];
   public artefactsData: Artefact[];
   public selectedKnight: Knight = new Knight();
-  // public artefactsData: Artefact[];
   public mappedArtefacts: { [p: string]: Artefact } = {};
 
   data: any;
@@ -29,7 +29,8 @@ export class KnightSelectorComponent implements OnInit {
               private knightService: KnightService,
               private artefactService: ArtefactService,
               private artefactAdapter: ArtefactAdapter,
-              private loaderService: NgxUiLoaderService) {
+              private loaderService: NgxUiLoaderService,
+              public filterByParam: FilterByParam) {
 
     /**
      * Init form
@@ -83,6 +84,34 @@ export class KnightSelectorComponent implements OnInit {
 
   updateSelected(event: Event) {
     this.selectedKnight = this.knightAdapter.adapt(event);
+  }
+
+  elementFilterChange(element: string) {
+    console.log(element);
+    /**
+     * Retrieve all knights
+     */
+    this.loaderService.start('getKnights');
+    lastValueFrom(this.knightService.getKnights()).then(knights => {
+      this.knights = knights;
+
+      // this.knightSelectorForm.get('name')?.setValue(this.knights.find(item => item.id === 'POSEIDON_EMPEREUR_DES_MERS'));
+      // this.selectedKnight = this.knights.find(item => item.id === 'POSEIDON_EMPEREUR_DES_MERS');
+
+      if (element) {
+        this.knights = this.filterByParam.filterByElement(this.knights, 'element', element);
+      }
+
+
+      // Sort knights by name
+      this.knights.sort(
+        (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
+      this.knightFilterFunction();
+      this.loaderService.stop('getKnights');
+    }, err => {
+      console.log(err);
+      this.loaderService.stop('getKnights');
+    });
   }
 
   /**
