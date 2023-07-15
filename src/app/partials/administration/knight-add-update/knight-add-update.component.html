@@ -3,10 +3,11 @@
     <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
       <mat-card>
 
-        <h2 class="text-center"> Saint Seiya - Legend of justice </h2>
         <h2 class="text-center"> Ajouter / Modifier un chevalier </h2>
-        <form [formGroup]="knightForm">
-          <mat-card-content>
+
+        <mat-card-content style="height: calc(100vh - 150px); overflow: auto">
+          <form [formGroup]="knightForm">
+
             <fieldset class="with-legend">
               <legend>Info générales</legend>
               <div class="row no-margin">
@@ -86,60 +87,67 @@
 
             <fieldset class="with-legend">
               <legend>Artéfacts</legend>
+              <div class="row no-margin">
+                <div class="col-sm-6 col-md-6">
+                  <ng-container formArrayName="artefacts">
 
-              <ng-container formArrayName="artefacts">
+                    <div *ngFor="let artefact of artefacts?.controls; let i=index">
+                      <div [formGroupName]="i">
+                        <fieldset class="with-legend">
+                          <legend>Artefact {{i + 1}}</legend>
 
-                <div *ngFor="let artefact of artefacts?.controls; let i=index">
-                  <div [formGroupName]="i">
-                    <fieldset class="with-legend">
-                      <legend>Artefact {{i + 1}}</legend>
+                          <div class="flex" style="align-items: center">
+                            <div class="w120">
+                              <ng-container *ngIf="artefacts?.value[i].id; else noArtefact">
+                                {{mappedArtefacts?.[artefacts?.value[i].id]?.name}}
+                              </ng-container>
 
-                      <div class="flex" style="align-items: center">
-                        <div class="w150">
-                          <ng-container *ngIf="artefacts?.value[i].id; else noArtefact">
-                            {{mappedArtefacts?.[artefacts?.value[i].id]?.name}}
-                          </ng-container>
+                              <ng-template #noArtefact>
+                                <mat-form-field class="full-width">
+                                  <mat-label class="mat-label"> Artefact</mat-label>
+                                  <mat-select formControlName="id">
+                                    <ng-container *ngFor="let artefact of artefactsData">
+                                      <mat-option [value]="artefact.id">
+                                        <div class="flex display-flex-center">
+                                          {{ artefact.name }}<img class="ml20" style="height: 30px" alt="artefact"
+                                                                  [src]="'assets/images/artefacts/' + artefact?.images[0]">
+                                        </div>
+                                      </mat-option>
+                                    </ng-container>
+                                  </mat-select>
+                                </mat-form-field>
+                              </ng-template>
+                            </div>
 
-                          <ng-template #noArtefact>
-                            <mat-form-field class="full-width">
-                              <mat-label class="mat-label"> Artefact</mat-label>
-                              <mat-select formControlName="id">
-                                <ng-container *ngFor="let artefact of artefactsData">
-                                  <mat-option [value]="artefact.id">
-                                    <div class="flex display-flex-center">
-                                      {{ artefact.name }}<img class="ml20" style="height: 30px" alt="artefact"
-                                                              [src]="'assets/images/artefacts/' + artefact?.images[0]">
-                                    </div>
-                                  </mat-option>
-                                </ng-container>
-                              </mat-select>
-                            </mat-form-field>
-                          </ng-template>
-                        </div>
+                            <div class="flex-evenly">
+                              <mat-checkbox [disabled]="checkDisabledRecommendedArtefact(i)"
+                                            formControlName="recommended">
+                                Recommandé
+                              </mat-checkbox>
+                              <!-- (change)="displayValueChange($event, 'FREE_TEXT_AREAS', i)">{{ 'FORM.DISPLAY'  }}</mat-checkbox> -->
+                            </div>
 
-                        <div class="flex-evenly">
-                          <mat-checkbox [disabled]="checkDisabledRecommendedArtefact(i)" formControlName="recommended">Recommandé</mat-checkbox>
-                          <!-- (change)="displayValueChange($event, 'FREE_TEXT_AREAS', i)">{{ 'FORM.DISPLAY'  }}</mat-checkbox> -->
-                        </div>
-
-                        <div class="flex-evenly">
-                          <button mat-stroked-button class="small" color="warn" type="button"
-                                  (click)="removeArtefact(i)">
-                            <mat-icon class="font-size pt5 pb5">delete</mat-icon>
-                          </button>
-                        </div>
+                            <div class="flex-evenly">
+                              <button mat-stroked-button class="small" color="warn" type="button"
+                                      (click)="removeArtefact(i)">
+                                <mat-icon class="font-size pt5 pb5">delete</mat-icon>
+                              </button>
+                            </div>
+                          </div>
+                        </fieldset>
                       </div>
-                    </fieldset>
-                  </div>
-                </div>
+                    </div>
 
-                <div class="text_right mt20">
-                  <button mat-flat-button class="small" color="primary" type="button" (click)="addArtefact()">
-                    <mat-icon class="font-size">add</mat-icon>
-                    Ajouter un artefact
-                  </button>
+                    <div class="text_right mt20">
+                      <button mat-flat-button class="small" color="primary" type="button" (click)="addArtefact()">
+                        <mat-icon class="font-size">add</mat-icon>
+                        Ajouter un artefact
+                      </button>
+                    </div>
+
+                  </ng-container>
                 </div>
-              </ng-container>
+              </div>
             </fieldset>
 
             <fieldset class="with-legend">
@@ -148,7 +156,8 @@
                 <div class="col-sm-6 col-md-6">
                   <mat-form-field class="full-width">
                     <mat-label>Constellation recommandée</mat-label>
-                    <input matInput formControlName="recommendedConstellationLevel" type="number"  min="0" max="9" autocomplete="off"
+                    <input matInput formControlName="recommendedConstellationLevel" type="number" min="0" max="9"
+                           autocomplete="off"
                            name="id">
                   </mat-form-field>
                 </div>
@@ -170,25 +179,25 @@
               <ng-container formArrayName="specialties">
 
                 <div *ngFor="let specialty of specialties?.controls; let i=index">
-                    <fieldset class="with-legend">
-                      <legend>Spécialité {{i + 1}}</legend>
+                  <fieldset class="with-legend">
+                    <legend>Spécialité {{i + 1}}</legend>
 
-                      <div class="flex" style="align-items: center">
+                    <div class="flex" style="align-items: center">
 
-                          <mat-form-field class="full-width">
-                            <mat-label>Spécialité</mat-label>
-                            <input matInput [formControlName]="i" type="text" autocomplete="off" name="i">
-                          </mat-form-field>
+                      <mat-form-field class="full-width">
+                        <mat-label>Spécialité</mat-label>
+                        <input matInput [formControlName]="i" type="text" autocomplete="off" name="i">
+                      </mat-form-field>
 
 
-                        <div class="flex-evenly ml10">
-                          <button mat-stroked-button class="small" color="warn" type="button"
-                                  (click)="removeSpecialty(i)">
-                            <mat-icon class="font-size pt5 pb5">delete</mat-icon>
-                          </button>
-                        </div>
+                      <div class="flex-evenly ml10">
+                        <button mat-stroked-button class="small" color="warn" type="button"
+                                (click)="removeSpecialty(i)">
+                          <mat-icon class="font-size pt5 pb5">delete</mat-icon>
+                        </button>
                       </div>
-                    </fieldset>
+                    </div>
+                  </fieldset>
                 </div>
 
                 <div class="text_right mt20">
@@ -211,31 +220,39 @@
                       <legend>Arayashiki {{i + 1}}</legend>
 
                       <div class="flex" style="align-items: center">
-                        <div class="w150">
-                          <ng-container *ngIf="arayas?.value[i].id; else noAraya">
-                            {{mappedArayas?.[arayas?.value[i].id]?.name}}
-                          </ng-container>
+                        <div>
+                          <div class="w175">
+                            <ng-container *ngIf="arayas?.value[i].id; else noAraya">
+                              {{mappedArayas?.[arayas?.value[i].id]?.name}}
+                            </ng-container>
 
-                          <ng-template #noAraya>
-                            <mat-form-field class="full-width">
-                              <mat-label class="mat-label"> Araya</mat-label>
-                              <mat-select formControlName="id">
-                                <ng-container *ngFor="let araya of arayasData">
-                                  <mat-option [value]="araya.id" [disabled]="checkDisabledExistingAraya(araya.id)">
-                                    <div class="flex display-flex-center">
-                                      {{ araya.name }}<img class="ml20" style="height: 35px" alt="araya"
-                                                              [src]="'assets/images/arayas/' + araya?.images[0]">
-                                    </div>
-                                  </mat-option>
-                                </ng-container>
-                              </mat-select>
-                            </mat-form-field>
-                          </ng-template>
+
+                            <ng-template #noAraya>
+                              <mat-form-field class="full-width">
+                                <mat-label class="mat-label"> Araya</mat-label>
+                                <mat-select formControlName="id">
+                                  <ng-container *ngFor="let araya of arayasData">
+                                    <mat-option [value]="araya.id" [disabled]="checkDisabledExistingAraya(araya.id)">
+                                      <div class="flex display-flex-center">
+                                        {{ araya.name }}<img class="ml20" style="height: 35px" alt="araya"
+                                                             [src]="'assets/images/arayas/' + araya?.images[0]">
+                                      </div>
+                                    </mat-option>
+                                  </ng-container>
+                                </mat-select>
+                              </mat-form-field>
+                            </ng-template>
+                          </div>
+
+                          <div class="flex-evenly">
+                            <mat-checkbox formControlName="recommended">Recommandé</mat-checkbox>
+                            <!-- (change)="displayValueChange($event, 'FREE_TEXT_AREAS', i)">{{ 'FORM.DISPLAY'  }}</mat-checkbox> -->
+                          </div>
                         </div>
 
-                        <div class="flex-evenly">
-                          <mat-checkbox formControlName="recommended">Recommandé</mat-checkbox>
-                          <!-- (change)="displayValueChange($event, 'FREE_TEXT_AREAS', i)">{{ 'FORM.DISPLAY'  }}</mat-checkbox> -->
+                        <div>
+                          <img class="ml10" style="height: 45px" alt="element"
+                               [src]="'assets/images/arayas/' + mappedArayas?.[arayas?.value[i].id]?.images[0]">
                         </div>
 
                         <div class="flex-evenly">
@@ -284,54 +301,19 @@
                   </fieldset>
                 </div>
               </ng-container>
-
-
-              <!--              <ng-container formArrayName="images">-->
-
-              <!--                <div *ngFor="let araya of images?.controls; let i=index">-->
-
-              <!--                    <fieldset class="with-legend">-->
-              <!--                      <legend>Image {{i + 1}}</legend>-->
-
-              <!--                      <div class="flex" style="align-items: center">-->
-
-              <!--                          <mat-form-field class="full-width">-->
-              <!--                            <mat-label>Image</mat-label>-->
-              <!--                            <input matInput [formControlName]="i" type="text" autocomplete="off" name="i">-->
-              <!--                          </mat-form-field>-->
-
-
-              <!--                        <div class="flex-evenly">-->
-              <!--                          <button mat-stroked-button class="small" color="warn" type="button"-->
-              <!--                                  (click)="removeImage(i)">-->
-              <!--                            <mat-icon class="font-size pt5 pb5">delete</mat-icon>-->
-              <!--                          </button>-->
-              <!--                        </div>-->
-              <!--                      </div>-->
-              <!--                    </fieldset>-->
-              <!--                </div>-->
-
-              <!--                <div class="text_right mt20">-->
-              <!--                  <button mat-flat-button class="small" color="primary" type="button" (click)="addAraya()">-->
-              <!--                    <mat-icon class="font-size">add</mat-icon>-->
-              <!--                    Ajouter un arayashiki-->
-              <!--                  </button>-->
-              <!--                </div>-->
-              <!--              </ng-container>-->
             </fieldset>
+          </form>
+        </mat-card-content>
 
-            <mat-card-actions>
-              <div class="text-right pr8">
-                <button mat-flat-button type="button" class="mr10" (click)="resetForm()">Annuler</button>
-                <button mat-flat-button color="primary" [disabled]="!knightForm.dirty || !knightForm.valid" (click)="save()">Enregistrer</button>
-              </div>
-            </mat-card-actions>
-          </mat-card-content>
-        </form>
+        <mat-card-actions>
+          <div class="text-right pr8">
+            <button mat-flat-button type="button" class="mr10" (click)="resetForm()">Annuler</button>
+            <button mat-flat-button color="primary" [disabled]="!knightForm.dirty || !knightForm.valid"
+                    (click)="save()">Enregistrer
+            </button>
+          </div>
+        </mat-card-actions>
 
-        <div class="text-center details-container" *ngIf="knightForm.get('name')?.value">
-          <app-knight-details [knight]="selectedKnight"></app-knight-details>
-        </div>
       </mat-card>
     </div>
   </div>
