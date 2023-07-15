@@ -87,7 +87,6 @@ export class KnightSelectorComponent implements OnInit {
   }
 
   elementFilterChange(element: string) {
-    console.log(element);
     /**
      * Retrieve all knights
      */
@@ -95,17 +94,17 @@ export class KnightSelectorComponent implements OnInit {
     lastValueFrom(this.knightService.getKnights()).then(knights => {
       this.knights = knights;
 
-      // this.knightSelectorForm.get('name')?.setValue(this.knights.find(item => item.id === 'POSEIDON_EMPEREUR_DES_MERS'));
-      // this.selectedKnight = this.knights.find(item => item.id === 'POSEIDON_EMPEREUR_DES_MERS');
-
       if (element) {
         this.knights = this.filterByParam.filterByElement(this.knights, 'element', element);
       }
 
-
       // Sort knights by name
       this.knights.sort(
         (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
+
+      this.knightSelectorForm.get('name')?.setValue(this.knights?.[0]);
+      this.selectedKnight = this.knights?.[0];
+
       this.knightFilterFunction();
       this.loaderService.stop('getKnights');
     }, err => {
