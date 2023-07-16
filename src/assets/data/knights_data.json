@@ -1,73 +1,83 @@
 [
-  { "id": "DEESSE_DE_LA_GUERRE_DEESSE",
-   "name": "Déesse de la guerre",
-    "constellationName": "Déesse",
-    "element": "LUMIERE",
-    "knightClass": "DEFENSIF",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "30",
-    "specialties": [
-      "Protège et fournit du cosmos aux alliés"
-    ],
+  {
     "artefacts": [
       {
-        "id": "CHAPELET_DE_SHAKA",
+        "id": "EPEE_D_HADES",
         "recommended": true
       },
       {
         "id": "BOUCLIER_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR",
-        "recommended": true
-
-      },
-      {
-        "id": "LION_EN_COLERE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "COLERE_DU_PHENIX_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "DIEU",
-    "advice": "???",
-    "images": ["deesse_de_la_guerre_deesse.jpg"]
-  },
-  { "id": "POSEIDON_EMPEREUR_DES_MERS",
-    "name": "Poséidon",
-    "constellationName": "Empereur des Mers",
-    "element": "LUMIERE",
-    "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "30",
-    "specialties": [
-      "Contrôle aléatoire grâce à l'étourdissement et perte de cosmos",
-      "Dégat de zone importants sur toute la team adverse"
-    ],
-    "artefacts": [
-      {
-        "id": "TRIDENT_DE_POSEIDON",
-        "recommended": true
-      },
-      {
-        "id": "GOLDEN_LANCE"
       },
       {
         "id": "EPEE_D_OR"
       }
     ],
+    "images": [
+      "aiolia_lion.jpg"
+    ],
+    "id": "AIOLIA_LION",
+    "name": "Aiolia",
+    "constellationName": "Lion",
+    "element": "FEU",
+    "knightClass": "OFFENSIF",
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
+        "recommended": true
+      },
+      {
+        "id": "COEUR_DE_PERSEVERANCE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Augmente les dégâts des alliés grâce à décharge électrique",
+      "Fournit du cosmos aux alliés quand une cible meurt"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "DAGUE_DU_GRAND_POPE",
+        "recommended": true
+      },
+      {
+        "id": "ARC_D_OR"
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      }
+    ],
+    "images": [
+      "aiolos_sagittaire.jpg"
+    ],
+    "id": "AIOLOS_SAGITTAIRE",
+    "name": "Aiolos",
+    "constellationName": "Sagittaire",
+    "element": "FEU",
+    "knightClass": "ASSASSIN",
     "arayas": [
       {
         "id": "FEROCE_COMME_LE_FEU_ROUGE",
@@ -75,18 +85,17 @@
       },
       {
         "id": "FEROCE_COMME_LE_FEU_OR"
-
       },
       {
-        "id": "LE_POUVOIR_C_EST_LA_JUSTICE_VIOLET",
+        "id": "ATHENA_EXCLAMATION_ROUGE",
         "recommended": true
       },
       {
-        "id": "FLECHE_D_OR_MEURTRIER_DE_DIEU_OR",
+        "id": "EXPLOSION_DE_L_ADVERSITE_OR",
         "recommended": true
       },
       {
-        "id": "LE_POUVOIR_DE_L_EXTINCTION_ROUGE",
+        "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
         "recommended": true
       },
       {
@@ -97,46 +106,249 @@
         "id": "RAPIDE_COMME_LE_VENT_OR"
       }
     ],
-    "specificity": "DIEU",
-    "advice": "???",
-    "topAgainst": [],
-    "neverUseAgainst": [],
-    "images": ["poseidon_empereur_des_mers.jpg"]
-  },
-  { "id": "THANATOS_DIEU_DE_LA_MORT",
-    "name": "Thanatos",
-    "constellationName": "Dieu de la mort",
-    "element": "OBSCURITE",
-    "knightClass": "COMPETENCE",
-    "artefacts": [],
-    "arayas": [],
-    "specificity": "DIEU",
-    "advice": "",
-    "images": ["thanatos_dieu_de_la_mort.jpg"]
-  },
-  { "id": "HYPNOS_DIEU_DU_SOMMEIL",
-    "name": "Hypnos",
-    "constellationName": "Dieu du Sommeil",
-    "element": "OBSCURITE",
-    "knightClass": "SOUTIEN",
-    "artefacts": [],
-    "arayas": [],
-    "specificity": "DIEU",
-    "advice": "",
-    "images": ["hypnos_dieu_du_sommeil.jpg"]
-  },
-  { "id": "ATHENA_DEESSE_DE_LA_TERRE",
-    "name": "Athéna",
-    "constellationName": "Déesse de la Terre",
-    "element": "EAU",
-    "knightClass": "SOUTIEN",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
     "specialties": [
-      "Soigne et dissipe les débuff des alliées",
-      "Augmente les soins reçus pour toute l'équipe",
-      "Peut empècher de mourir"
+      "Renverse et réduit la défense de l'équipe adverse en ouverture",
+      "Dégâts de zone rapides et importants"
     ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "BOUCLIER_D_OR",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_ATHENA"
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      }
+    ],
+    "images": [
+      "aldebaran_taureau.jpg"
+    ],
+    "id": "ALDEBARAN_TAUREAU",
+    "name": "Aldébaran",
+    "constellationName": "Taureau",
+    "element": "TERRE",
+    "knightClass": "DEFENSIF",
+    "arayas": [
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "LION_EN_COLERE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "COLERE_DU_PHENIX_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Renvoi de dégâts",
+      "Renverse les cibles face à lui"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "CHAPELET_DE_SHAKA",
+        "recommended": true
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      },
+      {
+        "id": "BOUCLIER_D_ATHENA"
+      }
+    ],
+    "images": [
+      "algethi_hercule.jpg"
+    ],
+    "id": "ALGETHI_HERCULE",
+    "name": "Algethi",
+    "constellationName": "Hercule",
+    "element": "FEU",
+    "knightClass": "DEFENSIF",
+    "arayas": [
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "LION_EN_COLERE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Grande capacité de survie",
+      "Renverse son opposant et réduit sa défense"
+    ],
+    "specificity": "ARGENT",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [],
+    "images": [
+      "algol_persee.jpg"
+    ],
+    "id": "ALGOL_PERSEE",
+    "name": "Algol",
+    "constellationName": "Persée",
+    "element": "TERRE",
+    "knightClass": "DEFENSIF",
+    "arayas": [],
+    "specialties": [],
+    "specificity": "ARGENT",
+    "advice": "",
+    "recommendedConstellationLevel": "",
+    "recommendedArmourLevel": ""
+  },
+  {
+    "artefacts": [
+      {
+        "id": "TRIDENT_DE_POSEIDON",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "aphrodite_poissons.jpg"
+    ],
+    "id": "APHRODITE_POISSONS",
+    "name": "Aphrodite",
+    "constellationName": "Poissons",
+    "element": "EAU",
+    "knightClass": "COMPETENCE",
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "ROSE_DEMONIAQUE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Dégats de poison sur toute le team adverse",
+      "Affaiblit l'attaque et la défense",
+      "Dégats importants à sa mort"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "30"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "asterion_chiens_de_chasse.jpg"
+    ],
+    "id": "ASTERION_CHIENS_DE_CHASSE",
+    "name": "Astérion",
+    "constellationName": "Chiens de Chasse",
+    "element": "TERRE",
+    "knightClass": "SOUTIEN",
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Buff les alliés et débuff la back line adverse",
+      "Soigne légérement tous les alliés simultanément",
+      "Silence et débuff les cibles touchées par son ulti"
+    ],
+    "specificity": "ARGENT",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?"
+  },
+  {
     "artefacts": [
       {
         "id": "URNE_D_ATHENA",
@@ -149,6 +361,14 @@
         "id": "SCEPTRE_DE_VICTOIRE"
       }
     ],
+    "images": [
+      "athena_deesse_de_la_terre.jpg"
+    ],
+    "id": "ATHENA_DEESSE_DE_LA_TERRE",
+    "name": "Athéna",
+    "constellationName": "Déesse de la Terre",
+    "element": "EAU",
+    "knightClass": "SOUTIEN",
     "arayas": [
       {
         "id": "VOLONTE_DES_DIEUX_ROUGE",
@@ -157,7 +377,6 @@
       {
         "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
         "recommended": true
-
       },
       {
         "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
@@ -178,22 +397,257 @@
         "recommended": true
       }
     ],
+    "specialties": [
+      "Soigne et dissipe les débuff des alliées",
+      "Augmente les soins reçus pour toute l'équipe",
+      "Peut empècher de mourir"
+    ],
     "specificity": "DIEU",
     "advice": "",
-    "images": ["athena_deesse_de_la_terre.jpg"]
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
   },
-  { "id": "HYOGA_CYGNE_D_OR",
-    "name": "Hyôga",
-    "constellationName": "Cygne d'Or",
+  {
+    "artefacts": [
+      {
+        "id": "TRIDENT_DE_POSEIDON",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "babel_centaure.jpg"
+    ],
+    "id": "BABEL_CENTAURE",
+    "name": "Babel",
+    "constellationName": "Centaure",
+    "element": "FEU",
+    "knightClass": "COMPETENCE",
+    "arayas": [
+      {
+        "id": "FLAMME_PHENIX_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "COEUR_DE_PERSEVERANCE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Dégâts de brûlure",
+      "Augmente les dégâts de brûlure de l'équipe",
+      "Étourdissements"
+    ],
+    "specificity": "ARGENT",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "CHAPELET_DE_SHAKA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "baian_cheval_des_mers.jpg"
+    ],
+    "id": "BAIAN_CHEVAL_DES_MERS",
+    "name": "Baian",
+    "constellationName": "Cheval des Mers",
+    "element": "AIR",
+    "knightClass": "DEFENSIF",
+    "arayas": [
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "LION_EN_COLERE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "COLERE_DU_PHENIX_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Grande capacité de survie",
+      "Protège le deuxième front à ses côtés",
+      "Ralentit les adversaires"
+    ],
+    "specificity": "MARINA",
+    "advice": "",
+    "recommendedConstellationLevel": null,
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "TRIDENT_DE_POSEIDON",
+        "recommended": true
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "camus_verseau.jpg"
+    ],
+    "id": "CAMUS_VERSEAU",
+    "name": "Camus",
+    "constellationName": "Verseau",
     "element": "AIR",
     "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Fournit du cosmos aux alliés en back line quand l'adversaire est gelé",
-      "Contrôle grâce à du renversement sur la back line adverse et ignore la bénédiction des dieux",
-      "Immunisé au gel et au ralentissement"
+    "arayas": [
+      {
+        "id": "FROID_EXTREME_OR",
+        "recommended": true
+      },
+      {
+        "id": "FEROCE_COMME_LE_FEU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "FEROCE_COMME_LE_FEU_OR"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR",
+        "recommended": true
+      },
+      {
+        "id": "ARTS_MARTIAUX_DE_GLACE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      }
     ],
+    "specialties": [
+      "Contrôle la team adverse avec le gel",
+      "Peut protéger un allié ou bloquer un adversaire avec le cercueil de glace"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [],
+    "images": [
+      "capella_aurige.jpg"
+    ],
+    "id": "CAPELLA_AURIGE",
+    "name": "Capella",
+    "constellationName": "Aurige",
+    "element": "TERRE",
+    "knightClass": "COMPETENCE",
+    "arayas": [],
+    "specialties": [],
+    "specificity": "ARGENT",
+    "advice": "",
+    "recommendedConstellationLevel": "",
+    "recommendedArmourLevel": ""
+  },
+  {
+    "artefacts": [
+      {
+        "id": "EPEE_D_HADES",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "EPEE_D_OR"
+      }
+    ],
+    "images": [
+      "dante_cerbere.jpg"
+    ],
+    "id": "DANTE_CERBERE",
+    "name": "Dante",
+    "constellationName": "Cerbère",
+    "element": "FEU",
+    "knightClass": "OFFENSIF",
+    "arayas": [
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Vol de vie qui ignore la défense adverse",
+      "Soutient de l'équipe en fournissant du vol de vie aux alliés"
+    ],
+    "specificity": "ARGENT",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
     "artefacts": [
       {
         "id": "TRIDENT_DE_POSEIDON",
@@ -206,6 +660,205 @@
         "id": "BOUCLIER_D_OR"
       }
     ],
+    "images": [
+      "deathmask_cancer.jpg"
+    ],
+    "id": "DEATHMASK_CANCER",
+    "name": "Deathmask",
+    "constellationName": "Cancer",
+    "element": "EAU",
+    "knightClass": "COMPETENCE",
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Ralentit l'accumulation de cosmos",
+      "Brûle le cosmos de ses cibles et le vol",
+      "Récupère du cosmos, de la santé, augmente son attaque et sa défense quand une cible meurt"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [],
+    "images": [
+      "dio_mouche.jpg"
+    ],
+    "id": "DIO_MOUCHE",
+    "name": "Dio",
+    "constellationName": "Mouche",
+    "element": "AIR",
+    "knightClass": "OFFENSIF",
+    "arayas": [],
+    "specialties": [],
+    "specificity": "ARGENT",
+    "advice": "",
+    "recommendedConstellationLevel": "",
+    "recommendedArmourLevel": ""
+  },
+  {
+    "artefacts": [
+      {
+        "id": "CHAPELET_DE_SHAKA",
+        "recommended": true
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      },
+      {
+        "id": "BOUCLIER_D_ATHENA"
+      }
+    ],
+    "images": [
+      "dohko_balance.jpg"
+    ],
+    "id": "DOHKO_BALANCE",
+    "name": "Dohko",
+    "constellationName": "Balance",
+    "element": "AIR",
+    "knightClass": "DEFENSIF",
+    "arayas": [
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "LONG_CHANT_DU_DRAGON_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "COLERE_DU_PHENIX_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Grande capacité de survie",
+      "Buff les alliés",
+      "Renverse la back line adverse"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "CHAPELET_DE_SHAKA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "deesse_de_la_guerre_deesse.jpg"
+    ],
+    "id": "DEESSE_DE_LA_GUERRE_DEESSE",
+    "name": "Déesse de la guerre",
+    "constellationName": "Déesse",
+    "element": "LUMIERE",
+    "knightClass": "DEFENSIF",
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR",
+        "recommended": true
+      },
+      {
+        "id": "LION_EN_COLERE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "COLERE_DU_PHENIX_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Protège et fournit du cosmos aux alliés"
+    ],
+    "specificity": "DIEU",
+    "advice": "???",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "30"
+  },
+  {
+    "artefacts": [],
+    "images": [
+      "hypnos_dieu_du_sommeil.jpg"
+    ],
+    "id": "HYPNOS_DIEU_DU_SOMMEIL",
+    "name": "Hypnos",
+    "constellationName": "Dieu du Sommeil",
+    "element": "OBSCURITE",
+    "knightClass": "SOUTIEN",
+    "arayas": [],
+    "specificity": "DIEU",
+    "advice": ""
+  },
+  {
+    "artefacts": [
+      {
+        "id": "TRIDENT_DE_POSEIDON",
+        "recommended": true
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "hyoga_cygne_d_or.jpg"
+    ],
+    "id": "HYOGA_CYGNE_D_OR",
+    "name": "Hyôga",
+    "constellationName": "Cygne d'Or",
+    "element": "AIR",
+    "knightClass": "COMPETENCE",
     "arayas": [
       {
         "id": "FLECHE_D_OR_MEURTRIER_DE_DIEU_OR",
@@ -214,7 +867,6 @@
       {
         "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
         "recommended": true
-
       },
       {
         "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
@@ -235,354 +887,41 @@
         "recommended": true
       }
     ],
-    "specificity": "CHAMP_STELLAIRE",
-    "advice": "",
-    "images": ["hyoga_cygne_d_or.jpg"]
-  },
-  { "id": "SHUN_ANDROMEDE_D_OR",
-    "name": "Shun",
-    "constellationName": "Andromède d'Or",
-    "element": "TERRE",
-    "knightClass": "SOUTIEN",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
     "specialties": [
-      "Soigne et fournit des boucliers",
-      "Protège les alliés en front",
-      "Capable d'infliger des décharges électriques"
-    ],
-    "artefacts": [
-      {
-        "id": "URNE_D_ATHENA",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_OR"
-
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR",
-        "recommended": true
-      },
-      {
-        "id": "COEUR_DE_PERSEVERANCE_OR",
-        "recommended": true
-      }
+      "Fournit du cosmos aux alliés en back line quand l'adversaire est gelé",
+      "Contrôle grâce à du renversement sur la back line adverse et ignore la bénédiction des dieux",
+      "Immunisé au gel et au ralentissement"
     ],
     "specificity": "CHAMP_STELLAIRE",
     "advice": "",
-    "images": ["shun_andromede_d_or.jpg"]
-  },
-  { "id": "RHADAMANTHE_ETOILE_CELESTE_DE_LA_FEROCITE",
-    "name": "Rhadamanthe",
-    "constellationName": "Étoile Céleste de la Férocité",
-    "element": "OBSCURITE",
-    "knightClass": "OFFENSIF",
     "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-    ],
-    "artefacts": [
-
-    ],
-    "arayas": [
-
-    ],
-    "specificity": "SPECTRES",
-    "advice": "",
-    "images": ["rhadamanthe_etoile_celeste_de_la_ferocite.jpg"]
+    "recommendedArmourLevel": "?"
   },
-  { "id": "PANDORA_COMMANDANT_DES_ENFERS",
-    "name": "Pandora",
-    "constellationName": "Commandant des Enfers",
-    "element": "OBSCURITE",
-    "knightClass": "SOUTIEN",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Soigne les alliés et attaque l'adversaire",
-      "Empêche les soins des adversaires"
-    ],
+  {
     "artefacts": [
       {
-        "id": "URNE_D_ATHENA",
+        "id": "TRIDENT_DE_POSEIDON",
         "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
       },
       {
         "id": "GOLDEN_LANCE"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_OR"
-
-      },
-      {
-        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
-        "recommended": true
-      },
-      {
-        "id": "TACTIQUE_ROYALE_VIOLET",
-        "recommended": true
-      }
-    ],
-    "specificity": "SPECTRES",
-    "advice": "",
-    "images": ["pandora_commandant_des_enfers.jpg"]
-  },
-  { "id": "NIOBE_ETOILE_TERRESTRE_DE_L_OBSCURITE",
-    "name": "Niobé",
-    "constellationName": "Étoile Terrestre de l'Obscurité",
-    "element": "EAU",
-    "knightClass": "ASSASSIN",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Augmente les dégats et la durée du poison",
-      "Protège les allés en leurs fournissant de l'esquive",
-      "Contrôle avec de l'étourdissement"
-    ],
-    "artefacts": [
-      {
-        "id": "DAGUE_DU_GRAND_POPE",
-        "recommended": true
-      },
-      {
-        "id": "SCEPTRE_DE_VICTOIRE"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "SPECTRES",
-    "advice": "",
-    "images": ["niobe_etoile_terrestre_de_l_obscurite.jpg"]
-  },
-  { "id": "SHION_BELIER",
-    "name": "Shion",
-    "constellationName": "Bélier",
-    "element": "FEU",
-    "knightClass": "DEFENSIF",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Protège et buff les alliés"
-    ],
-    "artefacts": [
-      {
-        "id": "CHAPELET_DE_SHAKA",
-        "recommended": true
       },
       {
         "id": "BOUCLIER_D_OR"
       }
     ],
-    "arayas": [
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_OR"
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "COLERE_DU_PHENIX_OR",
-        "recommended": true
-      },
-      {
-        "id": "RESISTANT_ET_INFLEXIBLE_OR",
-        "recommended": true
-      }
+    "images": [
+      "hyoga_verseau.jpg"
     ],
-    "specificity": "SPECTRES",
-    "advice": "",
-    "images": ["shion_belier.jpg"]
-  },
-  { "id": "MYU_ETOILE_TERRESTRE_ENCHANTERESSE",
-    "name": "Myû",
-    "constellationName": "Étoile Terrestre Enchanteresse",
+    "id": "HYOGA_VERSEAU",
+    "name": "Hyôga",
+    "constellationName": "Verseau",
     "element": "AIR",
-    "knightClass": "SOUTIEN",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Dissipe les débuffs, contrôles",
-      "Effet de champ et d'environnement"
-    ],
-    "artefacts": [
-      {
-        "id": "URNE_D_ATHENA",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      }
-    ],
+    "knightClass": "COMPETENCE",
     "arayas": [
       {
-        "id": "AME_DE_DRAGON_OR",
+        "id": "FROID_EXTREME_OR",
         "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_OR"
-
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "SPECTRES",
-    "advice": "",
-    "images": ["myu_etoile_terrestre_enchanteresse.jpg"]
-  },
-  { "id": "zelos_l_etoile_terrestre_de_l_etrangete",
-    "name": "Zélos",
-    "constellationName": "L'Étoile Terrestre de l'Étrangeté",
-    "element": "TERRE",
-    "knightClass": "DEFENSIF",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-
-    ],
-    "artefacts": [
-
-    ],
-    "arayas": [
-
-    ],
-    "specificity": "SPECTRES",
-    "advice": "",
-    "images": ["zelos_l_etoile_terrestre_de_l_etrangete.jpg"]
-  },
-  { "id": "SORRENTO_SIRENE",
-    "name": "Sorrento",
-    "constellationName": "Sirène",
-    "element": "LUMIERE",
-    "knightClass": "SOUTIEN",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Soigne et débuff les alliés et les ennemis",
-      "Contrôle de l'équipe adverse (cosmos et séduction)"
-    ],
-    "artefacts": [
-      {
-        "id": "URNE_D_ATHENA",
-        "recommended": true
-      },
-      {
-        "id": "SCEPTRE_DE_VICTOIRE"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_OR"
       },
       {
         "id": "FEROCE_COMME_LE_FEU_ROUGE",
@@ -592,38 +931,14 @@
         "id": "FEROCE_COMME_LE_FEU_OR"
       },
       {
-        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
-        "recommended": true
-      }
-    ],
-    "specificity": "MARINA",
-    "advice": "",
-    "images": ["sorrento_sirene.jpg"]
-  },
-  { "id": "KANON_DRAGON_DES_MERS",
-    "name": "Kanon",
-    "constellationName": "Dragon des Mers",
-    "element": "OBSCURITE",
-    "knightClass": "ASSASSIN",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Force son vis à vis à utiliser une compétence en ouverture et peut en reprendre le contrôle",
-      "Fait perdre du cosmos, empêche les soins",
-      "Exile un ennemi"
-    ],
-    "artefacts": [
-      {
-        "id": "SCEPTRE_DE_VICTOIRE",
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
         "recommended": true
       },
       {
-        "id": "DAGUE_DU_GRAND_POPE"
-      }
-    ],
-    "arayas": [
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
       {
-        "id": "AME_DE_DRAGON_OR",
+        "id": "ARTS_MARTIAUX_DE_GLACE_VIOLET",
         "recommended": true
       },
       {
@@ -632,16 +947,48 @@
       },
       {
         "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
+      }
+    ],
+    "specialties": [
+      "Ralentit et gèle les adversaires",
+      "Capable d'infliger de lourds dégâts rapidement"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
       {
-        "id": "CALME_COMME_L_EAU_ROUGE",
+        "id": "TRIDENT_DE_POSEIDON",
         "recommended": true
       },
       {
-        "id": "CALME_COMME_L_EAU_OR"
+        "id": "EPEE_D_OR"
       },
       {
-        "id": "TACTIQUE_ROYALE_VIOLET",
+        "id": "GOLDEN_LANCE"
+      }
+    ],
+    "images": [
+      "ikki_lion.jpg"
+    ],
+    "id": "IKKI_LION",
+    "name": "Ikki",
+    "constellationName": "Lion",
+    "element": "FEU",
+    "knightClass": "COMPETENCE",
+    "arayas": [
+      {
+        "id": "FEROCE_COMME_LE_FEU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "FEROCE_COMME_LE_FEU_OR"
+      },
+      {
+        "id": "FLECHE_D_OR_MEURTRIER_DE_DIEU_OR",
         "recommended": true
       },
       {
@@ -649,195 +996,45 @@
         "recommended": true
       },
       {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
+        "id": "RAPIDE_COMME_LE_VENT_OR",
+        "recommended": true
+      },
+      {
+        "id": "FLAMME_PHENIX_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "COEUR_DE_PERSEVERANCE_OR",
+        "recommended": true
       }
     ],
-    "specificity": "MARINA",
+    "specialties": [
+      "Dégats et brûlures de masse",
+      "Contrôle, temporise avec ses 2 résurections"
+    ],
+    "specificity": "OR",
     "advice": "",
-    "images": ["kanon_dragon_des_mers.jpg"]
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?"
   },
-  { "id": "IO_SCYLLA",
+  {
+    "artefacts": [],
+    "images": [
+      "io_scylla.jpg"
+    ],
+    "id": "IO_SCYLLA",
     "name": "Io",
     "constellationName": "Scylla",
     "element": "EAU",
     "knightClass": "ASSASSIN",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-
-    ],
-    "artefacts": [
-
-    ],
-    "arayas": [
-
-    ],
+    "arayas": [],
+    "specialties": [],
     "specificity": "MARINA",
     "advice": "",
-    "images": ["io_scylla.jpg"]
-  },
-  { "id": "THETIS_SIRENE",
-    "name": "Thétis",
-    "constellationName": "Sirène",
-    "element": "EAU",
-    "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Se lie avec l'allié le plus puissant puis le protège, lui fournit du cosmos et des buffs offensifs (sauf si Poséidon est dans l'équipe il sera prioritaire)",
-      "Peut rendre l'ennemi rigide ce qui l'empêche d'agir"
-    ],
-    "artefacts": [
-      {
-        "id": "URNE_D_ATHENA",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "TACTIQUE_ROYALE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
-        "recommended": true
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      }
-    ],
-    "specificity": "MARINA",
-    "advice": "",
-    "images": ["thetis_sirene.jpg"]
+    "recommendedArmourLevel": "?"
   },
-  { "id": "KRISHNA_CHRYSAOR",
-    "name": "Krishna",
-    "constellationName": "Chrysaor",
-    "element": "FEU",
-    "knightClass": "OFFENSIF",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Protège les alliés et augmente leurs attaques"
-    ],
-    "artefacts": [
-      {
-        "id": "EPEE_D_HADES",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_OR"
-      },
-      {
-        "id": "RESISTANT_ET_INFLEXIBLE_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "MARINA",
-    "advice": "",
-    "images": ["krishna_chrysaor.jpg"]
-  },
-  { "id": "BAIAN_CHEVAL_DES_MERS",
-    "name": "Baian",
-    "constellationName": "Cheval des Mers",
-    "element": "AIR",
-    "knightClass": "DEFENSIF",
-    "recommendedConstellationLevel": null,
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Grande capacité de survie",
-      "Protège le deuxième front à ses côtés",
-      "Ralentit les adversaires"
-    ],
-    "artefacts": [
-      {
-        "id": "CHAPELET_DE_SHAKA",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "RESISTANT_ET_INFLEXIBLE_OR",
-        "recommended": true
-      },
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "LION_EN_COLERE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "COLERE_DU_PHENIX_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "MARINA",
-    "advice": "",
-    "images": ["baian_cheval_des_mers.jpg"]
-  },
-  { "id": "ISAAC_KRAKEN",
-    "name": "Isaac",
-    "constellationName": "Kraken",
-    "element": "AIR",
-    "knightClass": "OFFENSIF",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Contrôle grâce à l'aveuglement",
-      "Ralentit l'accumulation de cosmos et peut geler l'adversaire",
-      "Devient plus fort au fil du combat"
-    ],
+  {
     "artefacts": [
       {
         "id": "EPEE_D_HADES",
@@ -850,6 +1047,14 @@
         "id": "GOLDEN_LANCE"
       }
     ],
+    "images": [
+      "isaac_kraken.jpg"
+    ],
+    "id": "ISAAC_KRAKEN",
+    "name": "Isaac",
+    "constellationName": "Kraken",
+    "element": "AIR",
+    "knightClass": "OFFENSIF",
     "arayas": [
       {
         "id": "FROID_EXTREME_OR",
@@ -874,21 +1079,34 @@
         "id": "EXCALIBUR_DU_JUGEMENT_OR"
       }
     ],
+    "specialties": [
+      "Contrôle grâce à l'aveuglement",
+      "Ralentit l'accumulation de cosmos et peut geler l'adversaire",
+      "Devient plus fort au fil du combat"
+    ],
     "specificity": "MARINA",
     "advice": "",
-    "images": ["isaac_kraken.jpg"]
-  },
-  { "id": "KASA_LYUMNADES",
-    "name": "Kâsa",
-    "constellationName": "Lyumnades",
-    "element": "TERRE",
-    "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Peut sauver les alliés de dégats mortels",
-      "Augmente les dégâts des alliés grâce à décharge électrique"
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [],
+    "images": [
+      "jamian_corbeau.jpg"
     ],
+    "id": "JAMIAN_CORBEAU",
+    "name": "Jamian",
+    "constellationName": "Corbeau",
+    "element": "AIR",
+    "knightClass": "COMPETENCE",
+    "arayas": [],
+    "specialties": [],
+    "specificity": "ARGENT",
+    "advice": "",
+    "recommendedConstellationLevel": "",
+    "recommendedArmourLevel": ""
+  },
+  {
     "artefacts": [
       {
         "id": "URNE_D_ATHENA",
@@ -898,6 +1116,237 @@
         "id": "BOUCLIER_D_OR"
       }
     ],
+    "images": [
+      "june_cameleon.jpg"
+    ],
+    "id": "JUNE_CAMELEON",
+    "name": "June",
+    "constellationName": "Caméléon",
+    "element": "AIR",
+    "knightClass": "SOUTIEN",
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Soigne, protège et fournit du cosmos aux alliés",
+      "Empêche l'adversaire d'agir"
+    ],
+    "specificity": "BRONZE",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "SCEPTRE_DE_VICTOIRE",
+        "recommended": true
+      },
+      {
+        "id": "DAGUE_DU_GRAND_POPE"
+      }
+    ],
+    "images": [
+      "kanon_dragon_des_mers.jpg"
+    ],
+    "id": "KANON_DRAGON_DES_MERS",
+    "name": "Kanon",
+    "constellationName": "Dragon des Mers",
+    "element": "OBSCURITE",
+    "knightClass": "ASSASSIN",
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      }
+    ],
+    "specialties": [
+      "Force son vis à vis à utiliser une compétence en ouverture et peut en reprendre le contrôle",
+      "Fait perdre du cosmos, empêche les soins",
+      "Exile un ennemi"
+    ],
+    "specificity": "MARINA",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "DAGUE_DU_GRAND_POPE",
+        "recommended": true
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      }
+    ],
+    "images": [
+      "kanon_gemaux.jpg"
+    ],
+    "id": "KANON_GEMAUX",
+    "name": "Kanon",
+    "constellationName": "Gémaux",
+    "element": "LUMIERE",
+    "knightClass": "ASSASSIN",
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "COEUR_DE_PERSEVERANCE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Contrôle l'adversaire avec confusion et peut l'étourdir",
+      "Inflige de lourds dégats à sa mort"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "EPEE_D_HADES",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "krishna_chrysaor.jpg"
+    ],
+    "id": "KRISHNA_CHRYSAOR",
+    "name": "Krishna",
+    "constellationName": "Chrysaor",
+    "element": "FEU",
+    "knightClass": "OFFENSIF",
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Protège les alliés et augmente leurs attaques"
+    ],
+    "specificity": "MARINA",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "kasa_lyumnades.jpg"
+    ],
+    "id": "KASA_LYUMNADES",
+    "name": "Kâsa",
+    "constellationName": "Lyumnades",
+    "element": "TERRE",
+    "knightClass": "SOUTIEN",
     "arayas": [
       {
         "id": "AME_DE_DRAGON_OR",
@@ -925,1065 +1374,16 @@
         "id": "PURIFICATION_DE_LA_TELEKINESIE_OR"
       }
     ],
+    "specialties": [
+      "Peut sauver les alliés de dégats mortels",
+      "Augmente les dégâts des alliés grâce à décharge électrique"
+    ],
     "specificity": "MARINA",
     "advice": "",
-    "images": ["kasa_lyumnades.jpg"]
-  },
-  { "id": "SAGA_GEMAUX",
-    "name": "Saga",
-    "constellationName": "Gémaux",
-    "element": "LUMIERE",
-    "knightClass": "OFFENSIF",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Dégats de masse conséquents",
-      "Capacité de survie",
-      "Temporise le combat"
-    ],
-    "artefacts": [
-      {
-        "id": "EPEE_D_HADES",
-        "recommended": true
-      },
-      {
-        "id": "GOLDEN_LANCE"
-      },
-      {
-        "id": "EPEE_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "FEROCE_COMME_LE_FEU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "FEROCE_COMME_LE_FEU_OR"
-      },
-      {
-        "id": "ATHENA_EXCLAMATION_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "TACTIQUE_ROYALE_VIOLET",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["saga_gemaux.jpg"]
-  },
-  { "id": "SHAKA_VIERGE",
-    "name": "Shaka",
-    "constellationName": "Vierge",
-    "element": "LUMIERE",
-    "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-    ],
-    "artefacts": [
-    ],
-    "arayas": [
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["shaka_vierge.jpg"]
+    "recommendedArmourLevel": "?"
   },
-  { "id": "KANON_GEMAUX",
-    "name": "Kanon",
-    "constellationName": "Gémaux",
-    "element": "LUMIERE",
-    "knightClass": "ASSASSIN",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Contrôle l'adversaire avec confusion et peut l'étourdir",
-      "Inflige de lourds dégats à sa mort"
-    ],
-    "artefacts": [
-      {
-        "id": "DAGUE_DU_GRAND_POPE",
-        "recommended": true
-      },
-      {
-        "id": "SCEPTRE_DE_VICTOIRE"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "COEUR_DE_PERSEVERANCE_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["kanon_gemaux.jpg"]
-  },
-  { "id": "SAGA_LE_MALEFIQUE_GEMAUX",
-    "name": "Saga le Maléfique",
-    "constellationName": "Gémaux",
-    "element": "OBSCURITE",
-    "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Contrôle son vis à vis",
-      "Dégats de masse importants",
-      "Réduit l'accumulation du cosmos et les chances de coups critiques de la team adverse"
-    ],
-    "artefacts": [
-      {
-        "id": "TRIDENT_DE_POSEIDON",
-        "recommended": true
-      },
-      {
-        "id": "GOLDEN_LANCE"
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "TACTIQUE_ROYALE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "FLECHE_D_OR_MEURTRIER_DE_DIEU_OR",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_OR"
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["saga_le_malefique_gemaux.jpg"]
-  },
-  { "id": "MILO_SCORPION",
-    "name": "Milo",
-    "constellationName": "Scorpion",
-    "element": "EAU",
-    "knightClass": "ASSASSIN",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Focus sur l'ennemi avec les pv les plus élevés et l'empêche d'agir en début de combat",
-      "Tue sa cible quand il atteint 15 stacks"
-    ],
-    "artefacts": [
-      {
-        "id": "DAGUE_DU_GRAND_POPE",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      },
-      {
-        "id": "NUNCHAKU_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "TACTIQUE_ROYALE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["milo_scorpion.jpg"]
-  },
-  { "id": "DEATHMASK_CANCER",
-    "name": "Deathmask",
-    "constellationName": "Cancer",
-    "element": "EAU",
-    "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Ralentit l'accumulation de cosmos",
-      "Brûle le cosmos de ses cibles et le vol",
-      "Récupère du cosmos, de la santé, augmente son attaque et sa défense quand une cible meurt"
-    ],
-    "artefacts": [
-      {
-        "id": "TRIDENT_DE_POSEIDON",
-        "recommended": true
-      },
-      {
-        "id": "GOLDEN_LANCE"
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "TACTIQUE_ROYALE_VIOLET",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["deathmask_cancer.jpg"]
-  },
-  { "id": "APHRODITE_POISSONS",
-    "name": "Aphrodite",
-    "constellationName": "Poissons",
-    "element": "EAU",
-    "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Dégats de poison sur toute le team adverse",
-      "Affaiblit l'attaque et la défense",
-      "Dégats importants à sa mort"
-    ],
-    "artefacts": [
-      {
-        "id": "TRIDENT_DE_POSEIDON",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "ROSE_DEMONIAQUE_VIOLET",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["aphrodite_poissons.jpg"]
-  },
-  { "id": "SHIRYU_BALANCE",
-    "name": "Shiryû",
-    "constellationName": "Balance",
-    "element": "EAU",
-    "knightClass": "DEFENSIF",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Grande capacité de survie",
-      "Dégats de plus en plus importants au fil du combat"
-    ],
-    "artefacts": [
-      {
-        "id": "CHAPELET_DE_SHAKA",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      },
-      {
-        "id": "EPEE_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "RESISTANT_ET_INFLEXIBLE_OR",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_OR"
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "EXCALIBUR_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "LONG_CHANT_DU_DRAGON_ROUGE",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["shiryu_balance.jpg"]
-  },
-  { "id": "AIOLIA_LION",
-    "name": "Aiolia",
-    "constellationName": "Lion",
-    "element": "FEU",
-    "knightClass": "OFFENSIF",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Augmente les dégâts des alliés grâce à décharge électrique",
-      "Fournit du cosmos aux alliés quand une cible meurt"
-    ],
-    "artefacts": [
-      {
-        "id": "EPEE_D_HADES",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      },
-      {
-        "id": "EPEE_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
-        "recommended": true
-      },
-      {
-        "id": "COEUR_DE_PERSEVERANCE_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["aiolia_lion.jpg"]
-  },
-  { "id": "MU_BELIER",
-    "name": "Mû",
-    "constellationName": "Bélier",
-    "element": "FEU",
-    "knightClass": "SOUTIEN",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Protège et immunise les alliés aux contrôles",
-      "Soigne les alliés"
-    ],
-    "artefacts": [
-      {
-        "id": "URNE_D_ATHENA",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      },
-      {
-        "id": "BOUCLIER_D_ATHENA"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_OR"
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["mu_belier.jpg"]
-  },
-  { "id": "SEIYA_SAGITTAIRE",
-    "name": "Seiya",
-    "constellationName": "Sagittaire",
-    "element": "FEU",
-    "knightClass": "ASSASSIN",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Renverse et réduit la défense de l'équipe adverse en ouverture",
-      "Dégâts de zone rapides et importants"
-    ],
-    "artefacts": [
-      {
-        "id": "DAGUE_DU_GRAND_POPE",
-        "recommended": true
-      },
-      {
-        "id": "ARC_D_OR"
-      },
-      {
-        "id": "GOLDEN_LANCE"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "FEROCE_COMME_LE_FEU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "FEROCE_COMME_LE_FEU_OR"
-      },
-      {
-        "id": "ATHENA_EXCLAMATION_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "EXPLOSION_DE_L_ADVERSITE_OR",
-        "recommended": true
-      },
-      {
-        "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["seiya_sagittaire.jpg"]
-  },
-  { "id": "AIOLOS_SAGITTAIRE",
-    "name": "Aiolos",
-    "constellationName": "Sagittaire",
-    "element": "FEU",
-    "knightClass": "ASSASSIN",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Renverse et réduit la défense de l'équipe adverse en ouverture",
-      "Dégâts de zone rapides et importants"
-    ],
-    "artefacts": [
-      {
-        "id": "DAGUE_DU_GRAND_POPE",
-        "recommended": true
-      },
-      {
-        "id": "ARC_D_OR"
-      },
-      {
-        "id": "GOLDEN_LANCE"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "FEROCE_COMME_LE_FEU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "FEROCE_COMME_LE_FEU_OR"
-      },
-      {
-        "id": "ATHENA_EXCLAMATION_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "EXPLOSION_DE_L_ADVERSITE_OR",
-        "recommended": true
-      },
-      {
-        "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["aiolos_sagittaire.jpg"]
-  },
-  { "id": "IKKI_LION",
-    "name": "Ikki",
-    "constellationName": "Lion",
-    "element": "FEU",
-    "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Dégats et brûlures de masse",
-      "Contrôle, temporise avec ses 2 résurections"
-    ],
-    "artefacts": [
-      {
-        "id": "TRIDENT_DE_POSEIDON",
-        "recommended": true
-      },
-      {
-        "id": "EPEE_D_OR"
-      },
-      {
-        "id": "GOLDEN_LANCE"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "FEROCE_COMME_LE_FEU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "FEROCE_COMME_LE_FEU_OR"
-      },
-      {
-        "id": "FLECHE_D_OR_MEURTRIER_DE_DIEU_OR",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR",
-        "recommended": true
-      },
-      {
-        "id": "FLAMME_PHENIX_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "COEUR_DE_PERSEVERANCE_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["ikki_lion.jpg"]
-  },
-  { "id": "CAMUS_VERSEAU",
-    "name": "Camus",
-    "constellationName": "Verseau",
-    "element": "AIR",
-    "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Contrôle la team adverse avec le gel",
-      "Peut protéger un allié ou bloquer un adversaire avec le cercueil de glace"
-    ],
-    "artefacts": [
-      {
-        "id": "TRIDENT_DE_POSEIDON",
-        "recommended": true
-      },
-      {
-        "id": "SCEPTRE_DE_VICTOIRE"
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "FROID_EXTREME_OR",
-        "recommended": true
-      },
-      {
-        "id": "FEROCE_COMME_LE_FEU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "FEROCE_COMME_LE_FEU_OR"
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR",
-        "recommended": true
-      },
-      {
-        "id": "ARTS_MARTIAUX_DE_GLACE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["camus_verseau.jpg"]
-  },
-  { "id": "DOHKO_BALANCE",
-    "name": "Dohko",
-    "constellationName": "Balance",
-    "element": "AIR",
-    "knightClass": "DEFENSIF",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Grande capacité de survie",
-      "Buff les alliés",
-      "Renverse la back line adverse"
-    ],
-    "artefacts": [
-      {
-        "id": "CHAPELET_DE_SHAKA",
-        "recommended": true
-      },
-      {
-        "id": "SCEPTRE_DE_VICTOIRE"
-      },
-      {
-        "id": "BOUCLIER_D_ATHENA"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "RESISTANT_ET_INFLEXIBLE_OR",
-        "recommended": true
-      },
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "LONG_CHANT_DU_DRAGON_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "COLERE_DU_PHENIX_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["dohko_balance.jpg"]
-  },
-  { "id": "HYOGA_VERSEAU",
-    "name": "Hyôga",
-    "constellationName": "Verseau",
-    "element": "AIR",
-    "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Ralentit et gèle les adversaires",
-      "Capable d'infliger de lourds dégâts rapidement"
-    ],
-    "artefacts": [
-      {
-        "id": "TRIDENT_DE_POSEIDON",
-        "recommended": true
-      },
-      {
-        "id": "GOLDEN_LANCE"
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "FROID_EXTREME_OR",
-        "recommended": true
-      },
-      {
-        "id": "FEROCE_COMME_LE_FEU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "FEROCE_COMME_LE_FEU_OR"
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "ARTS_MARTIAUX_DE_GLACE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["hyoga_verseau.jpg"]
-  },
-  { "id": "ALDEBARAN_TAUREAU",
-    "name": "Aldébaran",
-    "constellationName": "Taureau",
-    "element": "TERRE",
-    "knightClass": "DEFENSIF",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Renvoi de dégâts",
-      "Renverse les cibles face à lui"
-    ],
-    "artefacts": [
-      {
-        "id": "BOUCLIER_D_OR",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_ATHENA"
-      },
-      {
-        "id": "SCEPTRE_DE_VICTOIRE"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "RESISTANT_ET_INFLEXIBLE_OR",
-        "recommended": true
-      },
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "LION_EN_COLERE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "COLERE_DU_PHENIX_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["aldebaran_taureau.jpg"]
-  },
-  { "id": "SHURA_CAPRICORNE",
-    "name": "Shura",
-    "constellationName": "Capricorne",
-    "element": "TERRE",
-    "knightClass": "ASSASSIN",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Dégâts importants contre les boucliers",
-      "Réduit le défense de l'adversaire"
-    ],
-    "artefacts": [
-      {
-        "id": "DAGUE_DU_GRAND_POPE",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      },
-      {
-        "id": "EPEE_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "EXCALIBUR_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "COEUR_DE_PERSEVERANCE_OR",
-        "recommended": true
-      },
-      {
-        "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["shura_capricorne.jpg"]
-  },
-  { "id": "SHUN_VIERGE",
-    "name": "Shun",
-    "constellationName": "Vierge",
-    "element": "TERRE",
-    "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Boost l'équipe en attaque comme en défense",
-      "Possibilité d'empêcher les adversaires d'agir"
-    ],
-    "artefacts": [
-      {
-        "id": "TRIDENT_DE_POSEIDON",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_OR"
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "FLECHE_D_OR_MEURTRIER_DE_DIEU_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "OR",
-    "advice": "",
-    "images": ["shun_vierge.jpg"]
-  },
-  { "id": "MOSES_BALEINE",
-    "name": "Moses",
-    "constellationName": "Baleine",
-    "element": "EAU",
-    "knightClass": "DEFENSIF",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Protège les alliés en front et l'équipe sur l'ouverture du combat",
-      "Supprime les effets de contrôle des alliés et affaiblit les adversaires"
-    ],
-    "artefacts": [
-      {
-        "id": "CHAPELET_DE_SHAKA",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      },
-      {
-        "id": "BOUCLIER_D_ATHENA"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "RESISTANT_ET_INFLEXIBLE_OR",
-        "recommended": true
-      },
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "LION_EN_COLERE_VIOLET",
-        "recommended": true
-      },
-      {
-        "id": "COLERE_DU_PHENIX_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "ARGENT",
-    "advice": "",
-    "images": ["moses_baleine.jpg"]
-  },
-  { "id": "MARINE_AIGLE",
-    "name": "Marine",
-    "constellationName": "Aigle",
-    "element": "EAU",
-    "knightClass": "OFFENSIF",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Grande capacité d'esquive"
-    ],
+  {
     "artefacts": [
       {
         "id": "BEQUILLE_D_OR",
@@ -1996,6 +1396,14 @@
         "id": "BATON_D_OR_A_TROIS_SECTIONS"
       }
     ],
+    "images": [
+      "marine_aigle.jpg"
+    ],
+    "id": "MARINE_AIGLE",
+    "name": "Marine",
+    "constellationName": "Aigle",
+    "element": "EAU",
+    "knightClass": "OFFENSIF",
     "arayas": [
       {
         "id": "RAPIDE_COMME_LE_VENT_ROUGE",
@@ -2021,21 +1429,349 @@
         "recommended": true
       }
     ],
+    "specialties": [
+      "Grande capacité d'esquive"
+    ],
     "specificity": "ARGENT",
     "advice": "",
-    "images": ["marine_aigle.jpg"]
-  },
-  { "id": "ORPHEE_LYRE",
-    "name": "Orphée",
-    "constellationName": "Lyre",
-    "element": "EAU",
-    "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Contrôle multicible et drain de cosmos",
-      "Brise la défense"
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "DAGUE_DU_GRAND_POPE",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "NUNCHAKU_D_OR"
+      }
     ],
+    "images": [
+      "milo_scorpion.jpg"
+    ],
+    "id": "MILO_SCORPION",
+    "name": "Milo",
+    "constellationName": "Scorpion",
+    "element": "EAU",
+    "knightClass": "ASSASSIN",
+    "arayas": [
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Focus sur l'ennemi avec les pv les plus élevés et l'empêche d'agir en début de combat",
+      "Tue sa cible quand il atteint 15 stacks"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      }
+    ],
+    "images": [
+      "misty_lezard.jpg"
+    ],
+    "id": "MISTY_LEZARD",
+    "name": "Misty",
+    "constellationName": "Lézard",
+    "element": "AIR",
+    "knightClass": "SOUTIEN",
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Ralentit le cosmos de la front line",
+      "Soigne et protège les allés"
+    ],
+    "specificity": "ARGENT",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "CHAPELET_DE_SHAKA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "BOUCLIER_D_ATHENA"
+      }
+    ],
+    "images": [
+      "moses_baleine.jpg"
+    ],
+    "id": "MOSES_BALEINE",
+    "name": "Moses",
+    "constellationName": "Baleine",
+    "element": "EAU",
+    "knightClass": "DEFENSIF",
+    "arayas": [
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "LION_EN_COLERE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "COLERE_DU_PHENIX_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Protège les alliés en front et l'équipe sur l'ouverture du combat",
+      "Supprime les effets de contrôle des alliés et affaiblit les adversaires"
+    ],
+    "specificity": "ARGENT",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "myu_etoile_terrestre_enchanteresse.jpg"
+    ],
+    "id": "MYU_ETOILE_TERRESTRE_ENCHANTERESSE",
+    "name": "Myû",
+    "constellationName": "Étoile Terrestre Enchanteresse",
+    "element": "AIR",
+    "knightClass": "SOUTIEN",
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Dissipe les débuffs, contrôles",
+      "Effet de champ et d'environnement"
+    ],
+    "specificity": "SPECTRES",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "BOUCLIER_D_ATHENA"
+      }
+    ],
+    "images": [
+      "mu_belier.jpg"
+    ],
+    "id": "MU_BELIER",
+    "name": "Mû",
+    "constellationName": "Bélier",
+    "element": "FEU",
+    "knightClass": "SOUTIEN",
+    "arayas": [
+      {
+        "id": "AME_DE_DRAGON_OR",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Protège et immunise les alliés aux contrôles",
+      "Soigne les alliés"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "DAGUE_DU_GRAND_POPE",
+        "recommended": true
+      },
+      {
+        "id": "SCEPTRE_DE_VICTOIRE"
+      }
+    ],
+    "images": [
+      "niobe_etoile_terrestre_de_l_obscurite.jpg"
+    ],
+    "id": "NIOBE_ETOILE_TERRESTRE_DE_L_OBSCURITE",
+    "name": "Niobé",
+    "constellationName": "Étoile Terrestre de l'Obscurité",
+    "element": "EAU",
+    "knightClass": "ASSASSIN",
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Augmente les dégats et la durée du poison",
+      "Protège les allés en leurs fournissant de l'esquive",
+      "Contrôle avec de l'étourdissement"
+    ],
+    "specificity": "SPECTRES",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
     "artefacts": [
       {
         "id": "TRIDENT_DE_POSEIDON",
@@ -2045,6 +1781,14 @@
         "id": "BOUCLIER_D_OR"
       }
     ],
+    "images": [
+      "orphee_lyre.jpg"
+    ],
+    "id": "ORPHEE_LYRE",
+    "name": "Orphée",
+    "constellationName": "Lyre",
+    "element": "EAU",
+    "knightClass": "COMPETENCE",
     "arayas": [
       {
         "id": "FEROCE_COMME_LE_FEU_ROUGE",
@@ -2079,75 +1823,381 @@
         "recommended": true
       }
     ],
+    "specialties": [
+      "Contrôle multicible et drain de cosmos",
+      "Brise la défense"
+    ],
     "specificity": "ARGENT",
     "advice": "",
-    "images": ["orphee_lyre.jpg"]
-  },
-  { "id": "ALGETHI_HERCULE",
-    "name": "Algethi",
-    "constellationName": "Hercule",
-    "element": "FEU",
-    "knightClass": "DEFENSIF",
     "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Grande capacité de survie",
-      "Renverse son opposant et réduit sa défense"
-    ],
+    "recommendedArmourLevel": "?"
+  },
+  {
     "artefacts": [
       {
-        "id": "CHAPELET_DE_SHAKA",
+        "id": "URNE_D_ATHENA",
         "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
       },
       {
         "id": "GOLDEN_LANCE"
-      },
-      {
-        "id": "BOUCLIER_D_ATHENA"
       }
     ],
+    "images": [
+      "pandora_commandant_des_enfers.jpg"
+    ],
+    "id": "PANDORA_COMMANDANT_DES_ENFERS",
+    "name": "Pandora",
+    "constellationName": "Commandant des Enfers",
+    "element": "OBSCURITE",
+    "knightClass": "SOUTIEN",
     "arayas": [
       {
-        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
         "recommended": true
       },
       {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
       },
       {
         "id": "VOLONTE_DES_DIEUX_ROUGE",
         "recommended": true
       },
       {
-        "id": "LION_EN_COLERE_VIOLET",
+        "id": "CALME_COMME_L_EAU_ROUGE",
         "recommended": true
       },
       {
-        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      },
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
         "recommended": true
       }
     ],
+    "specialties": [
+      "Soigne les alliés et attaque l'adversaire",
+      "Empêche les soins des adversaires"
+    ],
+    "specificity": "SPECTRES",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "TRIDENT_DE_POSEIDON",
+        "recommended": true
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      },
+      {
+        "id": "EPEE_D_OR"
+      }
+    ],
+    "images": [
+      "poseidon_empereur_des_mers.jpg"
+    ],
+    "id": "POSEIDON_EMPEREUR_DES_MERS",
+    "name": "Poséidon",
+    "constellationName": "Empereur des Mers",
+    "element": "LUMIERE",
+    "knightClass": "COMPETENCE",
+    "arayas": [
+      {
+        "id": "FEROCE_COMME_LE_FEU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "FEROCE_COMME_LE_FEU_OR"
+      },
+      {
+        "id": "LE_POUVOIR_C_EST_LA_JUSTICE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "FLECHE_D_OR_MEURTRIER_DE_DIEU_OR",
+        "recommended": true
+      },
+      {
+        "id": "LE_POUVOIR_DE_L_EXTINCTION_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      }
+    ],
+    "specialties": [
+      "Contrôle aléatoire grâce à l'étourdissement et perte de cosmos",
+      "Dégat de zone importants sur toute la team adverse"
+    ],
+    "specificity": "DIEU",
+    "advice": "???",
+    "topAgainst": [],
+    "neverUseAgainst": [],
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "30"
+  },
+  {
+    "artefacts": [],
+    "images": [
+      "ptolemy_fleche.jpg"
+    ],
+    "id": "PTOLEMY_FLECHE",
+    "name": "Ptolemy",
+    "constellationName": "Flèche",
+    "element": "AIR",
+    "knightClass": "ASSASSIN",
+    "arayas": [],
+    "specialties": [],
     "specificity": "ARGENT",
     "advice": "",
-    "images": ["algethi_hercule.jpg"]
+    "recommendedConstellationLevel": "",
+    "recommendedArmourLevel": ""
   },
-  { "id": "SHAINA_OPHIUCHUS",
-    "name": "Shaina",
-    "constellationName": "Ophiuchus",
+  {
+    "artefacts": [],
+    "images": [
+      "rhadamanthe_etoile_celeste_de_la_ferocite.jpg"
+    ],
+    "id": "RHADAMANTHE_ETOILE_CELESTE_DE_LA_FEROCITE",
+    "name": "Rhadamanthe",
+    "constellationName": "Étoile Céleste de la Férocité",
+    "element": "OBSCURITE",
+    "knightClass": "OFFENSIF",
+    "arayas": [],
+    "specialties": [],
+    "specificity": "SPECTRES",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "EPEE_D_HADES",
+        "recommended": true
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      },
+      {
+        "id": "EPEE_D_OR"
+      }
+    ],
+    "images": [
+      "saga_gemaux.jpg"
+    ],
+    "id": "SAGA_GEMAUX",
+    "name": "Saga",
+    "constellationName": "Gémaux",
+    "element": "LUMIERE",
+    "knightClass": "OFFENSIF",
+    "arayas": [
+      {
+        "id": "FEROCE_COMME_LE_FEU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "FEROCE_COMME_LE_FEU_OR"
+      },
+      {
+        "id": "ATHENA_EXCLAMATION_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Dégats de masse conséquents",
+      "Capacité de survie",
+      "Temporise le combat"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "TRIDENT_DE_POSEIDON",
+        "recommended": true
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "saga_le_malefique_gemaux.jpg"
+    ],
+    "id": "SAGA_LE_MALEFIQUE_GEMAUX",
+    "name": "Saga le Maléfique",
+    "constellationName": "Gémaux",
+    "element": "OBSCURITE",
+    "knightClass": "COMPETENCE",
+    "arayas": [
+      {
+        "id": "TACTIQUE_ROYALE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "FLECHE_D_OR_MEURTRIER_DE_DIEU_OR",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      }
+    ],
+    "specialties": [
+      "Contrôle son vis à vis",
+      "Dégats de masse importants",
+      "Réduit l'accumulation du cosmos et les chances de coups critiques de la team adverse"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "DAGUE_DU_GRAND_POPE",
+        "recommended": true
+      },
+      {
+        "id": "ARC_D_OR"
+      },
+      {
+        "id": "GOLDEN_LANCE"
+      }
+    ],
+    "images": [
+      "seiya_sagittaire.jpg"
+    ],
+    "id": "SEIYA_SAGITTAIRE",
+    "name": "Seiya",
+    "constellationName": "Sagittaire",
     "element": "FEU",
     "knightClass": "ASSASSIN",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Inflige de lourds dégâts sur les boss"
+    "arayas": [
+      {
+        "id": "FEROCE_COMME_LE_FEU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "FEROCE_COMME_LE_FEU_OR"
+      },
+      {
+        "id": "ATHENA_EXCLAMATION_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "EXPLOSION_DE_L_ADVERSITE_OR",
+        "recommended": true
+      },
+      {
+        "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR"
+      }
     ],
+    "specialties": [
+      "Renverse et réduit la défense de l'équipe adverse en ouverture",
+      "Dégâts de zone rapides et importants"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [],
+    "images": [
+      "seiya_pegase_divin.jpg"
+    ],
+    "id": "SEIYA_PEGASE_DIVIN",
+    "name": "Seiya",
+    "constellationName": "Pégase Divin",
+    "element": "LUMIERE",
+    "knightClass": "OFFENSIF",
+    "arayas": [],
+    "constellation": null,
+    "specialties": [],
+    "specificity": "CHEVALIERS_ARMURE_DIVINE",
+    "advice": null,
+    "topAgainst": null,
+    "neverUseAgainst": null,
+    "recommendedConstellationLevel": 9,
+    "recommendedArmourLevel": 30
+  },
+  {
     "artefacts": [
       {
         "id": "EPEE_D_OR",
         "recommended": true
       }
     ],
+    "images": [
+      "shaina_ophiuchus.jpg"
+    ],
+    "id": "SHAINA_OPHIUCHUS",
+    "name": "Shaina",
+    "constellationName": "Ophiuchus",
+    "element": "FEU",
+    "knightClass": "ASSASSIN",
     "arayas": [
       {
         "id": "FEROCE_COMME_LE_FEU_ROUGE",
@@ -2176,24 +2226,89 @@
         "recommended": true
       }
     ],
+    "specialties": [
+      "Inflige de lourds dégâts sur les boss"
+    ],
     "specificity": "ARGENT",
     "advice": "",
-    "images": ["shaina_ophiuchus.jpg"]
-  },
-  { "id": "DANTE_CERBERE",
-    "name": "Dante",
-    "constellationName": "Cerbère",
-    "element": "FEU",
-    "knightClass": "OFFENSIF",
     "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Vol de vie qui ignore la défense adverse",
-      "Soutient de l'équipe en fournissant du vol de vie aux alliés"
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [],
+    "images": [
+      "shaka_vierge.jpg"
     ],
+    "id": "SHAKA_VIERGE",
+    "name": "Shaka",
+    "constellationName": "Vierge",
+    "element": "LUMIERE",
+    "knightClass": "COMPETENCE",
+    "arayas": [],
+    "specialties": [],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
     "artefacts": [
       {
-        "id": "EPEE_D_HADES",
+        "id": "CHAPELET_DE_SHAKA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "shion_belier.jpg"
+    ],
+    "id": "SHION_BELIER",
+    "name": "Shion",
+    "constellationName": "Bélier",
+    "element": "FEU",
+    "knightClass": "DEFENSIF",
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "COLERE_DU_PHENIX_OR",
+        "recommended": true
+      },
+      {
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Protège et buff les alliés"
+    ],
+    "specificity": "SPECTRES",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "CHAPELET_DE_SHAKA",
         "recommended": true
       },
       {
@@ -2203,9 +2318,17 @@
         "id": "EPEE_D_OR"
       }
     ],
+    "images": [
+      "shiryu_balance.jpg"
+    ],
+    "id": "SHIRYU_BALANCE",
+    "name": "Shiryû",
+    "constellationName": "Balance",
+    "element": "EAU",
+    "knightClass": "DEFENSIF",
     "arayas": [
       {
-        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
         "recommended": true
       },
       {
@@ -2213,37 +2336,87 @@
         "recommended": true
       },
       {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
         "recommended": true
       },
       {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
-      },
-      {
-        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "id": "EXCALIBUR_ROUGE",
         "recommended": true
       },
       {
-        "id": "AME_DE_DRAGON_OR",
+        "id": "LONG_CHANT_DU_DRAGON_ROUGE",
         "recommended": true
       }
     ],
-    "specificity": "ARGENT",
-    "advice": "",
-    "images": ["dante_cerbere.jpg"]
-  },
-  { "id": "BABEL_CENTAURE",
-    "name": "Babel",
-    "constellationName": "Centaure",
-    "element": "FEU",
-    "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
     "specialties": [
-      "Dégâts de brûlure",
-      "Augmente les dégâts de brûlure de l'équipe",
-      "Étourdissements"
+      "Grande capacité de survie",
+      "Dégats de plus en plus importants au fil du combat"
     ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "URNE_D_ATHENA",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      }
+    ],
+    "images": [
+      "shun_andromede_d_or.jpg"
+    ],
+    "id": "SHUN_ANDROMEDE_D_OR",
+    "name": "Shun",
+    "constellationName": "Andromède d'Or",
+    "element": "TERRE",
+    "knightClass": "SOUTIEN",
+    "arayas": [
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "recommended": true
+      },
+      {
+        "id": "RAPIDE_COMME_LE_VENT_OR",
+        "recommended": true
+      },
+      {
+        "id": "COEUR_DE_PERSEVERANCE_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Soigne et fournit des boucliers",
+      "Protège les alliés en front",
+      "Capable d'infliger des décharges électriques"
+    ],
+    "specificity": "CHAMP_STELLAIRE",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
     "artefacts": [
       {
         "id": "TRIDENT_DE_POSEIDON",
@@ -2253,13 +2426,82 @@
         "id": "BOUCLIER_D_OR"
       }
     ],
+    "images": [
+      "shun_vierge.jpg"
+    ],
+    "id": "SHUN_VIERGE",
+    "name": "Shun",
+    "constellationName": "Vierge",
+    "element": "TERRE",
+    "knightClass": "COMPETENCE",
     "arayas": [
       {
-        "id": "FLAMME_PHENIX_VIOLET",
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
         "recommended": true
       },
       {
-        "id": "AME_DE_DRAGON_OR",
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "CALME_COMME_L_EAU_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_COMME_L_EAU_OR"
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
+        "recommended": true
+      },
+      {
+        "id": "FLECHE_D_OR_MEURTRIER_DE_DIEU_OR",
+        "recommended": true
+      }
+    ],
+    "specialties": [
+      "Boost l'équipe en attaque comme en défense",
+      "Possibilité d'empêcher les adversaires d'agir"
+    ],
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [
+      {
+        "id": "DAGUE_DU_GRAND_POPE",
+        "recommended": true
+      },
+      {
+        "id": "BOUCLIER_D_OR"
+      },
+      {
+        "id": "EPEE_D_OR"
+      }
+    ],
+    "images": [
+      "shura_capricorne.jpg"
+    ],
+    "id": "SHURA_CAPRICORNE",
+    "name": "Shura",
+    "constellationName": "Capricorne",
+    "element": "TERRE",
+    "knightClass": "ASSASSIN",
+    "arayas": [
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+      },
+      {
+        "id": "EXCALIBUR_ROUGE",
         "recommended": true
       },
       {
@@ -2270,153 +2512,24 @@
         "id": "RAPIDE_COMME_LE_VENT_OR"
       },
       {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
-      {
         "id": "COEUR_DE_PERSEVERANCE_OR",
         "recommended": true
+      },
+      {
+        "id": "POING_DE_LA_VITESSE_DE_LA_LUMIERE_OR",
+        "recommended": true
       }
     ],
-    "specificity": "ARGENT",
+    "specialties": [
+      "Dégâts importants contre les boucliers",
+      "Réduit le défense de l'adversaire"
+    ],
+    "specificity": "OR",
     "advice": "",
-    "images": ["babel_centaure.jpg"]
-  },
-  { "id": "MISTY_LEZARD",
-    "name": "Misty",
-    "constellationName": "Lézard",
-    "element": "AIR",
-    "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Ralentit le cosmos de la front line",
-      "Soigne et protège les allés"
-    ],
-    "artefacts": [
-      {
-        "id": "URNE_D_ATHENA",
-        "recommended": true
-      },
-      {
-        "id": "BOUCLIER_D_OR"
-      },
-      {
-        "id": "SCEPTRE_DE_VICTOIRE"
-      }
-    ],
-    "arayas": [
-      {
-        "id": "AME_DE_DRAGON_OR",
-        "recommended": true
-      },
-      {
-        "id": "RESISTANT_ET_INFLEXIBLE_OR",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "CALME_COMME_L_EAU_OR"
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
-        "recommended": true
-      }
-    ],
-    "specificity": "ARGENT",
-    "advice": "",
-    "images": ["misty_lezard.jpg"]
+    "recommendedArmourLevel": "?"
   },
-  { "id": "JAMIAN_CORBEAU",
-    "name": "Jamian",
-    "constellationName": "Corbeau",
-    "element": "AIR",
-    "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "",
-    "recommendedArmourLevel": "",
-    "specialties": [
-    ],
-    "artefacts": [
-    ],
-    "arayas": [
-    ],
-    "specificity": "ARGENT",
-    "advice": "",
-    "images": ["jamian_corbeau.jpg"]
-  },
-  { "id": "DIO_MOUCHE",
-    "name": "Dio",
-    "constellationName": "Mouche",
-    "element": "AIR",
-    "knightClass": "OFFENSIF",
-    "recommendedConstellationLevel": "",
-    "recommendedArmourLevel": "",
-    "specialties": [
-    ],
-    "artefacts": [
-    ],
-    "arayas": [
-    ],
-    "specificity": "ARGENT",
-    "advice": "",
-    "images": ["dio_mouche.jpg"]
-  },
-  { "id": "PTOLEMY_FLECHE",
-    "name": "Ptolemy",
-    "constellationName": "Flèche",
-    "element": "AIR",
-    "knightClass": "ASSASSIN",
-    "recommendedConstellationLevel": "",
-    "recommendedArmourLevel": "",
-    "specialties": [
-    ],
-    "artefacts": [
-    ],
-    "arayas": [
-    ],
-    "specificity": "ARGENT",
-    "advice": "",
-    "images": ["ptolemy_fleche.jpg"]
-  },
-  { "id": "ALGOL_PERSEE",
-    "name": "Algol",
-    "constellationName": "Persée",
-    "element": "TERRE",
-    "knightClass": "DEFENSIF",
-    "recommendedConstellationLevel": "",
-    "recommendedArmourLevel": "",
-    "specialties": [
-    ],
-    "artefacts": [
-    ],
-    "arayas": [
-    ],
-    "specificity": "ARGENT",
-    "advice": "",
-    "images": ["algol_persee.jpg"]
-  },
-  { "id": "SIRIUS_GRAND_CHIEN",
-    "name": "Sirius",
-    "constellationName": "Grand Chien",
-    "element": "TERRE",
-    "knightClass": "OFFENSIF",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Contrôle par étourdissement",
-      "Protège les alliés et supprime les contrôles",
-      "Boost le cosmos et la vitesse d'attaque en ouverture"
-    ],
+  {
     "artefacts": [
       {
         "id": "BOUCLIER_D_OR",
@@ -2426,6 +2539,14 @@
         "id": "BOUCLIER_D_ATHENA"
       }
     ],
+    "images": [
+      "sirius_grand_chien.jpg"
+    ],
+    "id": "SIRIUS_GRAND_CHIEN",
+    "name": "Sirius",
+    "constellationName": "Grand Chien",
+    "element": "TERRE",
+    "knightClass": "OFFENSIF",
     "arayas": [
       {
         "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
@@ -2454,22 +2575,17 @@
         "recommended": true
       }
     ],
+    "specialties": [
+      "Contrôle par étourdissement",
+      "Protège les alliés et supprime les contrôles",
+      "Boost le cosmos et la vitesse d'attaque en ouverture"
+    ],
     "specificity": "ARGENT",
     "advice": "",
-    "images": ["sirius_grand_chien.jpg"]
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
   },
-  { "id": "ASTERION_CHIENS_DE_CHASSE",
-    "name": "Astérion",
-    "constellationName": "Chiens de Chasse",
-    "element": "TERRE",
-    "knightClass": "SOUTIEN",
-    "recommendedConstellationLevel": "9",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Buff les alliés et débuff la back line adverse",
-      "Soigne légérement tous les alliés simultanément",
-      "Silence et débuff les cibles touchées par son ulti"
-    ],
+  {
     "artefacts": [
       {
         "id": "URNE_D_ATHENA",
@@ -2477,22 +2593,27 @@
       },
       {
         "id": "SCEPTRE_DE_VICTOIRE"
-      },
-      {
-        "id": "BOUCLIER_D_OR"
       }
     ],
+    "images": [
+      "sorrento_sirene.jpg"
+    ],
+    "id": "SORRENTO_SIRENE",
+    "name": "Sorrento",
+    "constellationName": "Sirène",
+    "element": "LUMIERE",
+    "knightClass": "SOUTIEN",
     "arayas": [
       {
-        "id": "AME_DE_DRAGON_OR",
+        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
         "recommended": true
       },
       {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
         "recommended": true
       },
       {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
+        "id": "RAPIDE_COMME_LE_VENT_OR"
       },
       {
         "id": "CALME_COMME_L_EAU_ROUGE",
@@ -2502,46 +2623,41 @@
         "id": "CALME_COMME_L_EAU_OR"
       },
       {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "id": "FEROCE_COMME_LE_FEU_ROUGE",
         "recommended": true
       },
       {
-        "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
+        "id": "FEROCE_COMME_LE_FEU_OR"
+      },
+      {
+        "id": "HERITAGE_DU_SAGITTAIRE_VIOLET",
         "recommended": true
       }
     ],
-    "specificity": "ARGENT",
-    "advice": "",
-    "images": ["asterion_chiens_de_chasse.jpg"]
-  },
-  { "id": "CAPELLA_AURIGE",
-    "name": "Capella",
-    "constellationName": "Aurige",
-    "element": "TERRE",
-    "knightClass": "COMPETENCE",
-    "recommendedConstellationLevel": "",
-    "recommendedArmourLevel": "",
     "specialties": [
+      "Soigne et débuff les alliés et les ennemis",
+      "Contrôle de l'équipe adverse (cosmos et séduction)"
     ],
-    "artefacts": [
-    ],
-    "arayas": [
-    ],
-    "specificity": "ARGENT",
+    "specificity": "MARINA",
     "advice": "",
-    "images": ["capella_aurige.jpg"]
-  },
-  { "id": "JUNE_CAMELEON",
-    "name": "June",
-    "constellationName": "Caméléon",
-    "element": "AIR",
-    "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?",
-    "specialties": [
-      "Soigne, protège et fournit du cosmos aux alliés",
-      "Empêche l'adversaire d'agir"
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [],
+    "images": [
+      "thanatos_dieu_de_la_mort.jpg"
     ],
+    "id": "THANATOS_DIEU_DE_LA_MORT",
+    "name": "Thanatos",
+    "constellationName": "Dieu de la mort",
+    "element": "OBSCURITE",
+    "knightClass": "COMPETENCE",
+    "arayas": [],
+    "specificity": "DIEU",
+    "advice": ""
+  },
+  {
     "artefacts": [
       {
         "id": "URNE_D_ATHENA",
@@ -2551,9 +2667,17 @@
         "id": "BOUCLIER_D_OR"
       }
     ],
+    "images": [
+      "thetis_sirene.jpg"
+    ],
+    "id": "THETIS_SIRENE",
+    "name": "Thétis",
+    "constellationName": "Sirène",
+    "element": "EAU",
+    "knightClass": "SOUTIEN",
     "arayas": [
       {
-        "id": "AME_DE_DRAGON_OR",
+        "id": "TACTIQUE_ROYALE_VIOLET",
         "recommended": true
       },
       {
@@ -2564,23 +2688,45 @@
         "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
       },
       {
-        "id": "CALME_COMME_L_EAU_ROUGE",
+        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
         "recommended": true
       },
       {
-        "id": "CALME_COMME_L_EAU_OR"
-      },
-      {
-        "id": "VOLONTE_DES_DIEUX_ROUGE",
-        "recommended": true
+        "id": "RAPIDE_COMME_LE_VENT_OR"
       },
       {
         "id": "PURIFICATION_DE_LA_TELEKINESIE_OR",
         "recommended": true
+      },
+      {
+        "id": "VOLONTE_DES_DIEUX_ROUGE",
+        "recommended": true
       }
     ],
-    "specificity": "BRONZE",
+    "specialties": [
+      "Se lie avec l'allié le plus puissant puis le protège, lui fournit du cosmos et des buffs offensifs (sauf si Poséidon est dans l'équipe il sera prioritaire)",
+      "Peut rendre l'ennemi rigide ce qui l'empêche d'agir"
+    ],
+    "specificity": "MARINA",
     "advice": "",
-    "images": ["june_cameleon.jpg"]
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [],
+    "images": [
+      "zelos_l_etoile_terrestre_de_l_etrangete.jpg"
+    ],
+    "id": "zelos_l_etoile_terrestre_de_l_etrangete",
+    "name": "Zélos",
+    "constellationName": "L'Étoile Terrestre de l'Étrangeté",
+    "element": "TERRE",
+    "knightClass": "DEFENSIF",
+    "arayas": [],
+    "specialties": [],
+    "specificity": "SPECTRES",
+    "advice": "",
+    "recommendedConstellationLevel": "?",
+    "recommendedArmourLevel": "?"
   }
 ]

@@ -3,10 +3,32 @@
     <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
       <mat-card>
 
-        <h2 class="text-center"> Ajouter / Modifier un chevalier </h2>
+        <h2 class="text-center">
+          <span *ngIf="!selectedKnight">Ajouter</span>
+          <span *ngIf="selectedKnight">Modifier</span> un chevalier </h2>
 
         <mat-card-content style="height: calc(100vh - 150px); overflow: auto">
           <form [formGroup]="knightForm">
+          <div class="full-width">
+              <mat-form-field floatLabel="always" color="accent">
+                <mat-label class="mat-label"> Chevalier</mat-label>
+                <mat-select formControlName="knightFilter" (selectionChange)="updateSelected($event.value)"
+                            placeholder="Sélectionner un chevalier">
+
+                  <mat-option>
+                    <ngx-mat-select-search formControlName="knightFilter" placeholderLabel="Rechercher"
+                                           noEntriesFoundLabel="Aucun résultat">
+                    </ngx-mat-select-search>
+                  </mat-option>
+
+                  <ng-container *ngFor="let knight of filteredKnights | async">
+                    <mat-option [value]="knight">{{ knight.name }} - {{knight?.constellationName}}</mat-option>
+                  </ng-container>
+                </mat-select>
+              </mat-form-field>
+
+          </div>
+
 
             <fieldset class="with-legend">
               <legend>Info générales</legend>
@@ -87,59 +109,54 @@
 
             <fieldset class="with-legend">
               <legend>Artéfacts</legend>
-              <div class="row no-margin">
-                <div class="col-sm-6 col-md-6">
-                  <ng-container formArrayName="artefacts">
+              <ng-container formArrayName="artefacts">
 
-                    <div *ngFor="let artefact of artefacts?.controls; let i=index">
-                      <div [formGroupName]="i">
-                        <fieldset class="with-legend">
-                          <legend>Artefact {{i + 1}}</legend>
+                <div *ngFor="let artefact of artefacts?.controls; let i=index">
+                  <div [formGroupName]="i">
+                    <fieldset class="with-legend">
+                      <legend>Artefact {{i + 1}}</legend>
 
-                          <div class="flex" style="align-items: center">
-                            <div class="w120">
-                              <ng-container *ngIf="artefacts?.value[i].id; else noArtefact">
-                                {{mappedArtefacts?.[artefacts?.value[i].id]?.name}}
-                              </ng-container>
+                      <div class="flex" style="align-items: center">
+                        <div class="w120">
+                          <ng-container *ngIf="artefacts?.value[i].id; else noArtefact">
+                            {{mappedArtefacts?.[artefacts?.value[i].id]?.name}}
+                          </ng-container>
 
-                              <ng-template #noArtefact>
-                                <mat-form-field class="full-width">
-                                  <mat-label class="mat-label"> Artefact</mat-label>
-                                  <mat-select formControlName="id">
-                                    <ng-container *ngFor="let artefact of artefactsData">
-                                      <mat-option [value]="artefact.id">
-                                        <div class="flex display-flex-center">
-                                          {{ artefact.name }}<img class="ml20" style="height: 30px" alt="artefact"
-                                                                  [src]="'assets/images/artefacts/' + artefact?.images[0]">
-                                        </div>
-                                      </mat-option>
-                                    </ng-container>
-                                  </mat-select>
-                                </mat-form-field>
-                              </ng-template>
-                            </div>
+                          <ng-template #noArtefact>
+                            <mat-form-field class="full-width">
+                              <mat-label class="mat-label"> Artefact</mat-label>
+                              <mat-select formControlName="id">
+                                <ng-container *ngFor="let artefact of artefactsData">
+                                  <mat-option [value]="artefact.id">
+                                    <div class="flex display-flex-center">
+                                      {{ artefact.name }}<img class="ml20" style="height: 30px" alt="artefact"
+                                                              [src]="'assets/images/artefacts/' + artefact?.images[0]">
+                                    </div>
+                                  </mat-option>
+                                </ng-container>
+                              </mat-select>
+                            </mat-form-field>
+                          </ng-template>
+                        </div>
 
-                            <div class="flex-evenly">
-                              <mat-checkbox [disabled]="checkDisabledRecommendedArtefact(i)"
-                                            formControlName="recommended">
-                                Recommandé
-                              </mat-checkbox>
-                              <!-- (change)="displayValueChange($event, 'FREE_TEXT_AREAS', i)">{{ 'FORM.DISPLAY'  }}</mat-checkbox> -->
-                            </div>
+                        <div class="flex-evenly">
+                          <mat-checkbox [disabled]="checkDisabledRecommendedArtefact(i)"
+                                        formControlName="recommended">
+                            Recommandé
+                          </mat-checkbox>
+                        </div>
 
-                            <div class="flex-evenly">
-                              <button mat-stroked-button class="small" color="warn" type="button"
-                                      (click)="removeArtefact(i)">
-                                <mat-icon class="font-size pt5 pb5">delete</mat-icon>
-                              </button>
-                            </div>
-                          </div>
-                        </fieldset>
+                        <div class="flex-evenly">
+                          <button mat-stroked-button class="small" color="warn" type="button"
+                                  (click)="removeArtefact(i)">
+                            <mat-icon class="font-size pt5 pb5">delete</mat-icon>
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                  </ng-container>
+                    </fieldset>
+                  </div>
                 </div>
-              </div>
+              </ng-container>
 
               <div class="text_right mt20">
                 <button mat-flat-button class="small" color="primary" type="button" (click)="addArtefact()">
@@ -185,7 +202,9 @@
 
                       <mat-form-field class="full-width">
                         <mat-label>Spécialité</mat-label>
-                        <input matInput [formControlName]="i" type="text" autocomplete="off" name="i">
+                        <textarea matInput rows="1" [formControlName]="i" type="text" autocomplete="off"
+                                  name="i"></textarea>
+
                       </mat-form-field>
 
 
@@ -299,6 +318,13 @@
                     </div>
                   </fieldset>
                 </div>
+
+                <div class="text_right mt20">
+                  <button mat-flat-button class="small" color="primary" type="button" (click)="addImage()">
+                    <mat-icon class="font-size">add</mat-icon>
+                    Ajouter une image
+                  </button>
+                </div>
               </ng-container>
             </fieldset>
           </form>
@@ -308,7 +334,7 @@
           <div class="text-right pr8">
             <button mat-flat-button type="button" class="mr10" (click)="resetForm()">Annuler</button>
             <button mat-flat-button color="primary" [disabled]="!knightForm.dirty || !knightForm.valid"
-                    (click)="save()">Enregistrer
+                    (click)="selectedKnight ? save() : addNew()">Enregistrer
             </button>
           </div>
         </mat-card-actions>

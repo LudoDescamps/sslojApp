@@ -38,9 +38,10 @@ export class KnightAddUpdateComponent implements OnInit {
               private artefactService: ArtefactService,
               private arayaService: ArayaService,
               private loaderService: NgxUiLoaderService) {
+    const knightIdRegex = /^[A-Z_]+$/;
 
     this.knightForm = new FormGroup({
-      id: new FormControl(undefined, [Validators.required]),
+      id: new FormControl(undefined, [Validators.required, Validators.pattern(knightIdRegex)]),
       name: new FormControl(undefined, [Validators.required]),
       constellationName: new FormControl(undefined,[Validators.required]),
       element: new FormControl(undefined, [Validators.required]),
@@ -56,6 +57,7 @@ export class KnightAddUpdateComponent implements OnInit {
       neverUseAgainst: new FormControl(undefined),
       recommendedConstellationLevel: new FormControl(undefined),
       recommendedArmourLevel: new FormControl(undefined),
+      knightFilter: new FormControl(undefined),
     });
     this.knightForm.updateValueAndValidity();
 
@@ -69,32 +71,6 @@ export class KnightAddUpdateComponent implements OnInit {
 
     Object.entries(knightClass).forEach(kClass => {
       this.knightClass.push({value: kClass[0], viewValue: kClass[1]})
-    });
-
-    this.loaderService.start('getKnights');
-    lastValueFrom(this.knightService.getKnights()).then(knights => {
-      this.knights = knights;
-
-      this.selectedKnight = this.knights.find(item => item.id === 'POSEIDON_EMPEREUR_DES_MERS');
-
-      this.knightForm.patchValue(this.selectedKnight);
-      this.knightForm.updateValueAndValidity();
-
-      this.createSpecialtiesFormArray();
-      this.createImagesFormArray();
-      console.log(this.knightForm);
-      if (this.selectedKnight.artefacts?.length > 0) {
-        this.createArtefactsFormArray();
-
-      }
-
-      this.knights.sort(
-        (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
-      this.knightFilterFunction();
-      this.loaderService.stop('getKnights');
-    }, err => {
-      console.log(err);
-      this.loaderService.stop('getKnights');
     });
 
     this.loaderService.start('getArtefacts');
@@ -122,6 +98,29 @@ export class KnightAddUpdateComponent implements OnInit {
       console.log(err);
       this.loaderService.stop('getArayas');
     });
+
+    this.loaderService.start('getKnights');
+    lastValueFrom(this.knightService.getKnights()).then(knights => {
+      this.knights = knights;
+
+      // this.selectedKnight = this.knights.find(item => item.id === 'POSEIDON_EMPEREUR_DES_MERS');
+      //
+      // this.knightForm.patchValue(this.selectedKnight);
+      // this.knightForm.updateValueAndValidity();
+      //
+      // this.createSpecialtiesFormArray();
+      // this.createImagesFormArray();
+      // this.createArtefactsFormArray();
+      // this.createArayasFormArray();
+
+      this.knights.sort(
+        (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
+      this.knightFilterFunction();
+      this.loaderService.stop('getKnights');
+    }, err => {
+      console.log(err);
+      this.loaderService.stop('getKnights');
+    });
   }
 
   ngOnInit(): void {
@@ -131,29 +130,42 @@ export class KnightAddUpdateComponent implements OnInit {
   }
 
   save() {
-    console.log(this.knightForm.value);
     let knight = this.knightAdapter.adapt(this.knightForm.value);
-    console.log(knight);
     const updatedArray = updateObjectById(this.knights, knight.id, knight);
-    console.log(updatedArray);
     this.knightService.saveData(updatedArray)
   }
 
+  addNew() {
+    let knight = this.knightAdapter.adapt(this.knightForm.value);
+    // const updatedArray = updateObjectById(this.knights, knight.id, knight);
+    this.knights.push(knight);
+    this.knightService.saveData(this.knights)
+  }
+
   updateSelected(event: Event) {
+    this.resetForm();
+
     this.selectedKnight = this.knightAdapter.adapt(event);
+    this.knightForm.patchValue(this.selectedKnight);
+    this.knightForm.get('knightFilter').setValue(event);
+    this.knightForm.updateValueAndValidity();
+
+    this.createSpecialtiesFormArray();
+    this.createImagesFormArray();
+    this.createArayasFormArray();
+    this.createArtefactsFormArray();
   }
 
   createArtefactsFormArray() {
     this.artefacts.clear();
 
-    this.selectedKnight.artefacts?.forEach((artefact) => {
+    this.selectedKnight?.artefacts?.forEach((artefact) => {
       const control = new FormGroup({
         id: new FormControl(artefact.id),
         recommended: new FormControl(artefact.recommended),
       });
       this.artefacts.push(control);
       });
-    console.log(this.artefacts);
   }
 
   get artefacts(): FormArray {
@@ -177,13 +189,12 @@ export class KnightAddUpdateComponent implements OnInit {
   createSpecialtiesFormArray() {
     this.specialties.clear();
 
-    this.selectedKnight.specialties?.forEach((specialty) => {
+    this.selectedKnight?.specialties?.forEach((specialty) => {
       const control = new FormControl(
         specialty, [Validators.required]
       );
       this.specialties.push(control);
     });
-    console.log(this.specialties);
   }
 
   get specialties(): FormArray {
@@ -204,15 +215,13 @@ export class KnightAddUpdateComponent implements OnInit {
   createArayasFormArray() {
     this.arayas.clear();
 
-    this.selectedKnight.arayas?.forEach((araya) => {
-      console.log(araya);
+    this.selectedKnight?.arayas?.forEach((araya) => {
       const control = new FormGroup({
         id: new FormControl(araya.id),
         recommended: new FormControl(araya.recommended),
       });
       this.arayas.push(control);
     });
-    console.log(this.arayas);
   }
 
   get arayas(): FormArray {
@@ -236,13 +245,12 @@ export class KnightAddUpdateComponent implements OnInit {
   createImagesFormArray() {
     this.images.clear();
 
-    this.selectedKnight.images?.forEach((image) => {
+    this.selectedKnight?.images?.forEach((image) => {
       const control = new FormControl(
         image, [Validators.required]
       );
       this.images.push(control);
     });
-    console.log(this.images);
   }
 
   get images(): FormArray {
@@ -277,6 +285,7 @@ export class KnightAddUpdateComponent implements OnInit {
   }
 
   resetForm() {
+    this.selectedKnight = undefined;
     this.artefacts.clear();
     this.specialties.clear();
     this.arayas.clear();
@@ -311,16 +320,13 @@ export class KnightAddUpdateComponent implements OnInit {
       this.filteredKnights.next(this.knights.slice());
       return;
     } else {
-      search = search.toLowerCase();
+      search = search?.toLowerCase();
     }
     // filter the banks
     this.filteredKnights.next(
-      this.knights.filter(organisation => organisation.name.toLowerCase().indexOf(search) > -1)
+      this.knights.filter(knight => knight.name.toLowerCase().indexOf(search) > -1)
     );
   }
-
-  protected readonly Object = Object;
-  protected readonly FormArray = FormArray;
 }
 
 function updateObjectById(arr: Knight[], id: string, updatedObject: Partial<Knight>): Knight[] {

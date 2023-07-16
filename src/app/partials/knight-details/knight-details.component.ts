@@ -4,7 +4,6 @@ import {Artefact, ArtefactAdapter} from "../../lib/models/Artefact";
 import artefactsData from "../../lib/data/artefacts_data.json";
 import arayasData from "../../lib/data/arayas_data.json";
 import {Araya, ArayaAdapter} from "../../lib/models/Araya";
-import {MultiCriteriaSort, SortOrder} from "../../lib/functions/multi-criteria-sort";
 
 @Component({
   selector: 'app-knight-details',
@@ -23,8 +22,7 @@ export class KnightDetailsComponent implements OnChanges {
   public arayas: Araya[];
 
   constructor(private artefactAdapter: ArtefactAdapter,
-              private arayaAdapter: ArayaAdapter,
-              public multiCriteriaSort: MultiCriteriaSort) {
+              private arayaAdapter: ArayaAdapter) {
 
     Object.entries(Specificity).forEach(spec => {
       this.mappedSpecificities[spec[0]] = spec[1];
@@ -37,30 +35,16 @@ export class KnightDetailsComponent implements OnChanges {
     Object.entries(KnightClass).forEach(knightC => {
       this.mappedKnightClass[knightC[0]] = knightC[1];
     });
-    console.log(this.mappedKnightElement);
+
     this.artefacts = artefactsData.map(artefact => this.artefactAdapter.adapt(artefact));
     this.artefacts.forEach(artefact => {
       artefact?.id ? this.mappedArtefacts[artefact.id] = artefact : undefined;
     });
 
-    console.log(this.artefacts);
-    const people: any[] = [
-      { name: "Alice", age: 30, country: "USA" },
-      { name: "Bob", age: 25, country: "Canada" },
-      { name: "Charlie", age: 35, country: "USA" },
-    ];
-
-    const sortedPeople = this.multiCriteriaSort.multiCriteriaSort<any>(people, [
-      { criterion: (person) => person.country, order: SortOrder.Descending },
-      { criterion: (person) => person.name, order: SortOrder.Descending },
-    ]);
-    console.log(sortedPeople);
-
     this.arayas = arayasData.map(araya => this.arayaAdapter.adapt(araya));
     this.arayas.forEach(araya => {
       araya?.id ? this.mappedArayas[araya.id] = araya : undefined;
     });
-    console.log(this.mappedArayas);
   }
 
   ngOnChanges(changes: SimpleChanges): void {
