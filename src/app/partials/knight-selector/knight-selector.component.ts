@@ -8,6 +8,7 @@ import {KnightService} from "../../lib/services/knight.service";
 import {NgxUiLoaderService} from "ngx-ui-loader";
 import {ArtefactService} from "../../lib/services/artefact.service";
 import {FilterByParam} from "../../lib/functions/filter-by-param";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-knight-selector',
@@ -24,11 +25,13 @@ export class KnightSelectorComponent implements OnInit {
   data: any;
   filteredKnights: ReplaySubject<Knight[]> = new ReplaySubject<Knight[]>(1);
   private knightFilterSubscription: Subscription;
+  paramsSubscription: Subscription;
 
   constructor(private knightAdapter: KnightAdapter,
               private knightService: KnightService,
               private artefactService: ArtefactService,
               private artefactAdapter: ArtefactAdapter,
+              private route: ActivatedRoute,
               private loaderService: NgxUiLoaderService,
               public filterByParam: FilterByParam) {
 
@@ -65,6 +68,14 @@ export class KnightSelectorComponent implements OnInit {
     this.knightFilterSubscription = this.knightSelectorForm?.get('knightFilter')?.valueChanges?.subscribe(() => {
       this.knightFilterFunction();
     });
+
+    // this.paramsSubscription = this.route.paramMap.subscribe((routeParams) => {
+    //   if (routeParams.has('id')) {
+    //     console.log('1');
+    //   } else {
+    //     console.log('2');
+    //   }
+    // });
   }
 
   updateSelected(event: Event) {

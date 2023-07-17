@@ -6,6 +6,15 @@ import {KnightAddUpdateComponent} from "./partials/administration/knight-add-upd
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '/knight',
+    pathMatch: 'full'
+  },
+  {
+    path: 'knight',
+    component: KnightSelectorComponent
+  },
+  {
+    path: 'knight/:id',
     component: KnightSelectorComponent
   },
   {

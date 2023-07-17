@@ -103,16 +103,6 @@ export class KnightAddUpdateComponent implements OnInit {
     lastValueFrom(this.knightService.getKnights()).then(knights => {
       this.knights = knights;
 
-      // this.selectedKnight = this.knights.find(item => item.id === 'POSEIDON_EMPEREUR_DES_MERS');
-      //
-      // this.knightForm.patchValue(this.selectedKnight);
-      // this.knightForm.updateValueAndValidity();
-      //
-      // this.createSpecialtiesFormArray();
-      // this.createImagesFormArray();
-      // this.createArtefactsFormArray();
-      // this.createArayasFormArray();
-
       this.knights.sort(
         (p1, p2) => (p1.name > p2.name) ? 1 : (p1.name < p2.name) ? -1 : 0);
       this.knightFilterFunction();
@@ -143,17 +133,18 @@ export class KnightAddUpdateComponent implements OnInit {
   }
 
   updateSelected(event: Event) {
-    this.resetForm();
-
-    this.selectedKnight = this.knightAdapter.adapt(event);
-    this.knightForm.patchValue(this.selectedKnight);
-    this.knightForm.get('knightFilter').setValue(event);
-    this.knightForm.updateValueAndValidity();
-
-    this.createSpecialtiesFormArray();
-    this.createImagesFormArray();
-    this.createArayasFormArray();
-    this.createArtefactsFormArray();
+    console.log(event);
+    // this.resetForm();
+    //
+    // this.selectedKnight = this.knightAdapter.adapt(event);
+    // this.knightForm.patchValue(this.selectedKnight);
+    // this.knightForm.get('knightFilter').setValue(this.selectedKnight.name);
+    // this.knightForm.updateValueAndValidity();
+    //
+    // this.createSpecialtiesFormArray();
+    // this.createImagesFormArray();
+    // this.createArayasFormArray();
+    // this.createArtefactsFormArray();
   }
 
   createArtefactsFormArray() {
@@ -315,12 +306,16 @@ export class KnightAddUpdateComponent implements OnInit {
       return;
     }
     // get the search keyword
-    let search = this.knightForm?.get('knightFilter')?.value;
+    let search: string;
+     if (this.knightForm?.get('knightFilter')?.value) {
+       search = this.knightAdapter.adapt(this.knightForm?.get('knightFilter')?.value).name;
+     }
+    console.log(search);
     if (!search) {
       this.filteredKnights.next(this.knights.slice());
       return;
     } else {
-      search = search?.toLowerCase();
+      search = search.toString().toLowerCase();
     }
     // filter the banks
     this.filteredKnights.next(
