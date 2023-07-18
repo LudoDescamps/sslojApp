@@ -8,11 +8,11 @@
           <span *ngIf="selectedKnight">Modifier</span> un chevalier </h2>
 
         <mat-card-content style="height: calc(100vh - 150px); overflow: auto">
-          <form [formGroup]="knightForm">
+          <form [formGroup]="knightSelectorForm">
           <div class="full-width">
               <mat-form-field floatLabel="always" color="accent">
                 <mat-label class="mat-label"> Chevalier</mat-label>
-                <mat-select formControlName="knightFilter"
+                <mat-select formControlName="name" (selectionChange)="updateSelected($event.value)"
                             placeholder="Sélectionner un chevalier">
 
                   <mat-option>
@@ -28,8 +28,9 @@
               </mat-form-field>
 
           </div>
+          </form>
 
-
+          <form [formGroup]="knightForm">
             <fieldset class="with-legend">
               <legend>Info générales</legend>
               <div class="row no-margin">
@@ -332,7 +333,7 @@
 
         <mat-card-actions>
           <div class="text-right pr8">
-            <button mat-flat-button type="button" class="mr10" (click)="resetForm()">Annuler</button>
+            <button mat-flat-button type="button" class="mr10" (click)="resetForm(true)">Annuler</button>
             <button mat-flat-button color="primary" [disabled]="!knightForm.dirty || !knightForm.valid"
                     (click)="selectedKnight ? save() : addNew()">Enregistrer
             </button>
