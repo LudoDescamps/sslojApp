@@ -139,7 +139,6 @@ export class KnightAddUpdateComponent implements OnInit {
   }
 
   updateSelected(event: Event) {
-    console.log(event);
     this.resetForm();
 
     this.selectedKnight = this.knightAdapter.adapt(event);
