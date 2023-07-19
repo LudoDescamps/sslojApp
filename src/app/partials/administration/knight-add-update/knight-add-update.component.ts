@@ -120,7 +120,7 @@ export class KnightAddUpdateComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.knightFilterSubscription = this.knightForm?.get('knightFilter')?.valueChanges?.subscribe(() => {
+    this.knightFilterSubscription = this.knightSelectorForm?.get('knightFilter')?.valueChanges?.subscribe(() => {
       this.knightFilterFunction();
     });
   }
@@ -317,10 +317,7 @@ export class KnightAddUpdateComponent implements OnInit {
       return;
     }
     // get the search keyword
-    let search: string;
-    if (this.knightSelectorForm?.get('knightFilter')?.value) {
-       search = this.knightSelectorForm?.get('knightFilter')?.value;
-     }
+    let search = this.knightSelectorForm?.get('knightFilter')?.value;
 
     if (!search) {
       this.filteredKnights.next(this.knights.slice());
