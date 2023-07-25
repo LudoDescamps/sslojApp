@@ -21,6 +21,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import { ElementFilterComponent } from './partials/element-filter/element-filter.component';
+import { ArayaAddUpdateComponent } from './partials/administration/araya-add-update/araya-add-update.component';
 
 // Mat form fields appearance
 const appearance: MatFormFieldDefaultOptions = {
@@ -61,7 +62,8 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     KnightDetailsComponent,
     ClassAndElementComponent,
     KnightAddUpdateComponent,
-    ElementFilterComponent
+    ElementFilterComponent,
+    ArayaAddUpdateComponent
   ],
   imports: [
     BrowserModule,
