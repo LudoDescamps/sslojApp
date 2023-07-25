@@ -1,1 +1,153 @@
-<p>araya-add-update works!</p>
+<div class="container mt10">
+  <div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
+      <mat-card>
+
+        <h2 class="text-center">
+          <span *ngIf="!selectedKAraya">Ajouter</span>
+          <span *ngIf="selectedKAraya">Modifier</span> un arayashiki </h2>
+
+        <mat-card-content style="height: calc(100vh - 150px); overflow: auto">
+          <form [formGroup]="arayaSelectorForm">
+            <div class="full-width">
+              <mat-form-field floatLabel="always" color="accent" class="col-xs-12 col-sm-8 col-md-8 col-lg-10">
+                <mat-label class="mat-label"> Arayashiki</mat-label>
+                <mat-select formControlName="name" (selectionChange)="updateSelected($event.value)"
+                            placeholder="Sélectionner un araya">
+
+                  <mat-option>
+                    <ngx-mat-select-search formControlName="arayaFilter" placeholderLabel="Rechercher"
+                                           noEntriesFoundLabel="Aucun résultat">
+                    </ngx-mat-select-search>
+                  </mat-option>
+
+                  <ng-container *ngFor="let araya of filteredArayas | async">
+                    <mat-option [value]="araya">{{ araya.name }} - {{araya?.quality}}</mat-option>
+                  </ng-container>
+                </mat-select>
+              </mat-form-field>
+
+            </div>
+          </form>
+
+          <form [formGroup]="arayaForm">
+            <fieldset class="with-legend">
+              <legend>Info générales</legend>
+              <div class="row no-margin">
+                <div class="col-sm-6 col-md-6">
+                  <mat-form-field class="full-width">
+                    <mat-label>Identifiant</mat-label>
+                    <input matInput formControlName="id" autocomplete="off" name="id">
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <div class="row no-margin">
+                <div class="col-sm-6 col-md-6">
+                  <mat-form-field class="full-width">
+                    <mat-label>Nom</mat-label>
+                    <input matInput formControlName="name" autocomplete="off" name="name">
+                  </mat-form-field>
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                  <mat-form-field class="full-width">
+                    <mat-label class="mat-label"> Spécificité</mat-label>
+                    <mat-select formControlName="quality">
+                      <ng-container *ngFor="let specificity of knightSpecificities">
+                        <mat-option [value]="specificity.value">{{ specificity.viewValue }}</mat-option>
+                      </ng-container>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="with-legend">
+              <legend>Spécialités</legend>
+
+              <ng-container formArrayName="restrictions">
+
+                <div *ngFor="let specialty of restrictions?.controls; let i=index">
+                  <fieldset class="with-legend">
+                    <legend>Spécialité {{i + 1}}</legend>
+
+                    <div class="flex" style="align-items: center">
+
+                      <mat-form-field class="full-width">
+                        <mat-label>Spécialité</mat-label>
+                        <textarea matInput rows="1" [formControlName]="i" type="text" autocomplete="off"
+                                  name="i"></textarea>
+
+                      </mat-form-field>
+
+
+                      <div class="flex-evenly ml10">
+                        <button mat-stroked-button class="small" color="warn" type="button"
+                                (click)="removeRestriction(i)">
+                          <mat-icon class="font-size pt5 pb5">delete</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="text_right mt20">
+                  <button mat-flat-button class="small" color="primary" type="button" (click)="addRestriction()">
+                    <mat-icon class="font-size">add</mat-icon>
+                    Ajouter une spécialité
+                  </button>
+                </div>
+              </ng-container>
+            </fieldset>
+
+            <fieldset class="with-legend">
+              <legend>Images</legend>
+              <ng-container formArrayName="images">
+
+                <div *ngFor="let image of images?.controls; let i=index">
+                  <fieldset class="with-legend">
+                    <legend>Image {{i + 1}}</legend>
+
+                    <div class="flex" style="align-items: center">
+
+                      <mat-form-field class="full-width">
+                        <mat-label>Image</mat-label>
+                        <input matInput [formControlName]="i" type="text" autocomplete="off" name="i">
+                      </mat-form-field>
+
+
+                      <div class="flex-evenly ml10">
+                        <button mat-stroked-button class="small" color="warn" type="button"
+                                (click)="removeImage(i)">
+                          <mat-icon class="font-size pt5 pb5">delete</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="text_right mt20">
+                  <button mat-flat-button class="small" color="primary" type="button" (click)="addImage()">
+                    <mat-icon class="font-size">add</mat-icon>
+                    Ajouter une image
+                  </button>
+                </div>
+              </ng-container>
+            </fieldset>
+          </form>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <div class="text-right pr8">
+            <button mat-flat-button type="button" class="mr10" (click)="resetForm(true)">Annuler</button>
+            <button mat-flat-button color="primary" [disabled]="!arayaForm.dirty || !arayaForm.valid"
+                    (click)="selectedKAraya ? save() : addNew()">Enregistrer
+            </button>
+          </div>
+        </mat-card-actions>
+
+      </mat-card>
+    </div>
+  </div>
+</div>

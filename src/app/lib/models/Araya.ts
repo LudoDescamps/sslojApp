@@ -11,7 +11,7 @@ export class Araya {
   restriction?: any[];
   images?: Image[];
 
-  constructor(id: string, name: string, level: number, rank: number, quality: Quality,
+  constructor(id?: string, name?: string, level?: number, rank?: number, quality?: Quality,
               restriction?: any[], images?: Image[]) {
     this.id = id;
     this.name = name;
