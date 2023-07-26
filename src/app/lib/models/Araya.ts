@@ -8,17 +8,17 @@ export class Araya {
   level?: number;
   rank?: number;
   quality?: Quality;
-  restriction?: any[];
+  restrictions?: any[];
   images?: Image[];
 
   constructor(id?: string, name?: string, level?: number, rank?: number, quality?: Quality,
-              restriction?: any[], images?: Image[]) {
+              restrictions?: any[], images?: Image[]) {
     this.id = id;
     this.name = name;
     this.level = level;
     this.rank = rank;
     this.quality = quality;
-    this.restriction = restriction;
+    this.restrictions = restrictions;
     this.images = images;
   }
 }
@@ -34,7 +34,7 @@ export class ArayaAdapter implements Adapter<Araya> {
       item.level,
       item.rank,
       item.quality,
-      item.restriction,
+      item.restrictions,
       item.images ? item.images : []
     );
   }
@@ -45,7 +45,7 @@ export enum Quality {
   BLEU = 'Bleu',
   VIOLET = 'Violet',
   OR = 'Or',
-  ROUGE = 'Rouge'
+  ROUGE = 'Légendaire'
 }
 
 

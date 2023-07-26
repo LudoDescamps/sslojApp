@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {FormArray, FormControl, FormGroup, Validators} from "@angular/forms";
-import {Knight, KnightAdapter, knightClass, KnightElement, Specificity} from "../../../lib/models/Knight";
+import {Knight, KnightAdapter, knightClass, KnightElement} from "../../../lib/models/Knight";
 import {lastValueFrom, ReplaySubject, Subscription} from "rxjs";
 import {KnightService} from "../../../lib/services/knight.service";
 import {NgxUiLoaderService} from "ngx-ui-loader";
 import {ArtefactService} from "../../../lib/services/artefact.service";
-import {Araya, ArayaAdapter} from "../../../lib/models/Araya";
+import {Araya, ArayaAdapter, Quality} from "../../../lib/models/Araya";
 import {ArayaService} from "../../../lib/services/araya.service";
 
 @Component({
@@ -22,8 +22,9 @@ export class ArayaAddUpdateComponent implements OnInit {
   public arayas: Araya[];
   public arayasData: Araya[];
   public mappedArayas: { [p: string]: Araya } = {};
+  public mappedArayaQualities: { [p: string]: string } = {};
   public knightElements: {value: string, viewValue: string}[] = [];
-  public knightSpecificities: {value: string, viewValue: string}[] = [];
+  public arayaQualities: {value: string, viewValue: string}[] = [];
   public knightClass: {value: string, viewValue: string}[] = [];
   public selectedKAraya: Araya = new Araya();
 
@@ -58,8 +59,9 @@ export class ArayaAddUpdateComponent implements OnInit {
       this.knightElements.push({value: elmt[0], viewValue: elmt[1]})
     });
 
-    Object.entries(Specificity).forEach(spec => {
-      this.knightSpecificities.push({value: spec[0], viewValue: spec[1]})
+    Object.entries(Quality).forEach(spec => {
+      this.arayaQualities.push({value: spec[0], viewValue: spec[1]})
+      this.mappedArayaQualities[spec[0]] = spec[1];
     });
 
     Object.entries(knightClass).forEach(kClass => {
@@ -116,9 +118,10 @@ export class ArayaAddUpdateComponent implements OnInit {
 
   updateSelected(event: Event) {
     this.resetForm();
-
+    console.log(event);
     this.selectedKAraya = this.arayaAdapter.adapt(event);
     this.arayaForm.patchValue(this.selectedKAraya);
+    console.log(this.arayaForm);
     // this.knightForm.get('knightFilter').setValue(this.selectedKnight.name);
     this.arayaForm.updateValueAndValidity();
 
@@ -128,8 +131,8 @@ export class ArayaAddUpdateComponent implements OnInit {
 
   createRestrictionsFormArray() {
     this.restrictions?.clear();
-
-    this.selectedKAraya?.restriction?.forEach((restriction) => {
+    console.log(this.selectedKAraya?.restrictions);
+    this.selectedKAraya?.restrictions?.forEach((restriction) => {
       const control = new FormControl(
         restriction, [Validators.required]
       );
@@ -139,7 +142,7 @@ export class ArayaAddUpdateComponent implements OnInit {
   }
 
   get restrictions(): FormArray {
-    return this.arayaForm.get('specialties') as FormArray;
+    return this.arayaForm.get('restrictions') as FormArray;
   }
 
   addRestriction() {

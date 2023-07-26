@@ -4,8 +4,8 @@
   "name": "Athéna exclamation",
   "level": "",
   "rank": "",
-  "quality": "LEGENDAIRE",
-  "restriction": ["CHEVALIER_D_OR"],
+  "quality": "ROUGE",
+  "restrictions": ["CHEVALIER_D_OR"],
   "images": [
     "athena_exclamation_rouge.png"
   ]
@@ -15,8 +15,8 @@
     "name": "Calme comme l'eau",
     "level": "",
     "rank": "",
-    "quality": "LEGENDAIRE",
-    "restriction": [],
+    "quality": "ROUGE",
+    "restrictions": [],
     "images": [
       "calme_comme_l_eau_rouge.png"
     ]
@@ -26,8 +26,8 @@
     "name": "Excalibur",
     "level": "",
     "rank": "",
-    "quality": "LEGENDAIRE",
-    "restriction": [
+    "quality": "ROUGE",
+    "restrictions": [
       "SHIRYU_BALANCE",
       "SHURA_CAPRICORNE"
     ],
@@ -40,8 +40,8 @@
     "name": "Féroce comme le feu",
     "level": "",
     "rank": "",
-    "quality": "LEGENDAIRE",
-    "restriction": [],
+    "quality": "ROUGE",
+    "restrictions": [],
     "images": [
       "feroce_comme_le_feu_rouge.png"
     ]
@@ -51,8 +51,8 @@
     "name": "Immobile comme une montagne",
     "level": "",
     "rank": "",
-    "quality": "LEGENDAIRE",
-    "restriction": [],
+    "quality": "ROUGE",
+    "restrictions": [],
     "images": [
       "immobile_comme_une_montagne_rouge.png"
     ]
@@ -62,8 +62,8 @@
     "name": "Le pouvoir de l'extinction",
     "level": "",
     "rank": "",
-    "quality": "LEGENDAIRE",
-    "restriction": [
+    "quality": "ROUGE",
+    "restrictions": [
       "POSEIDON"
     ],
     "images": [
@@ -75,8 +75,8 @@
     "name": "Long chant du dragon",
     "level": "",
     "rank": "",
-    "quality": "LEGENDAIRE",
-    "restriction": [
+    "quality": "ROUGE",
+    "restrictions": [
       "DOHKO_BALANCE",
       "SHIRYU_BALANCE",
       "SHIRYU_DRAGON_DIVIN"
@@ -90,8 +90,8 @@
     "name": "Pouvoir ultime",
     "level": "",
     "rank": "",
-    "quality": "LEGENDAIRE",
-    "restriction": [
+    "quality": "ROUGE",
+    "restrictions": [
       "SHAKA_VIERGE"
     ],
     "images": [
@@ -103,8 +103,8 @@
     "name": "Rapide comme le vent",
     "level": "",
     "rank": "",
-    "quality": "LEGENDAIRE",
-    "restriction": [],
+    "quality": "ROUGE",
+    "restrictions": [],
     "images": [
       "rapide_comme_le_vent_rouge.png"
     ]
@@ -114,8 +114,8 @@
     "name": "Volonté des dieux",
     "level": "",
     "rank": "",
-    "quality": "LEGENDAIRE",
-    "restriction": [],
+    "quality": "ROUGE",
+    "restrictions": [],
     "images": [
       "volonte_des_dieux_rouge.png"
     ]
@@ -126,7 +126,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "ame_de_dragon_or.png"
     ]
@@ -137,7 +137,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "calme_comme_l_eau_or.png"
     ]
@@ -148,7 +148,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "coeur_de_perseverance_or.png"
     ]
@@ -159,7 +159,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": ["DEFENSIF"],
+    "restrictions": ["DEFENSIF"],
     "images": [
       "colere_du_phenix_or.png"
     ]
@@ -170,7 +170,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": ["ASSASSIN"],
+    "restrictions": ["ASSASSIN"],
     "images": [
       "explosion_de_l_adversite_or.png"
     ]
@@ -181,7 +181,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": ["OFFENSIF"],
+    "restrictions": ["OFFENSIF"],
     "images": [
       "excalibur_du_jugement_or.png"
     ]
@@ -192,7 +192,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "feroce_comme_le_feu_or.png"
     ]
@@ -203,7 +203,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": ["COMPETENCE"],
+    "restrictions": ["COMPETENCE"],
     "images": [
       "fleche_d_or_meurtrier_de_dieu_or.png"
     ]
@@ -214,7 +214,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": [
+    "restrictions": [
       "CAMUS_VERSEAU",
       "HYOGA_VERSEAU",
       "ISAAC_KRAKEN",
@@ -230,7 +230,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "immobile_comme_une_montagne_or.png"
     ]
@@ -241,7 +241,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "poing_de_la_vitesse_de_la_lumiere_or.png"
     ]
@@ -252,7 +252,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": ["SOUTIEN"],
+    "restrictions": ["SOUTIEN"],
     "images": [
       "purification_de_la_telekinesie_or.png"
     ]
@@ -263,7 +263,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "rapide_comme_le_vent_or.png"
     ]
@@ -274,7 +274,7 @@
     "level": "",
     "rank": "",
     "quality": "OR",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "resistant_et_inflexible_or.png"
     ]
@@ -286,7 +286,7 @@
     "level": "",
     "rank": "",
     "quality": "VIOLET",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "arts_martiaux_de_glace_violet.png"
     ]
@@ -297,7 +297,7 @@
     "level": "",
     "rank": "",
     "quality": "VIOLET",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "dragon_sans_armure_violet.png"
     ]
@@ -308,7 +308,7 @@
     "level": "",
     "rank": "",
     "quality": "VIOLET",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "flamme_phenix_violet.png"
     ]
@@ -319,7 +319,7 @@
     "level": "",
     "rank": "",
     "quality": "VIOLET",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "heritage_du_sagittaire_violet.png"
     ]
@@ -330,7 +330,7 @@
     "level": "",
     "rank": "",
     "quality": "VIOLET",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "iai_confrontation_violet.png"
     ]
@@ -341,7 +341,7 @@
     "level": "",
     "rank": "",
     "quality": "VIOLET",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "le_pouvoir_c_est_la_justice_violet.png"
     ]
@@ -352,7 +352,7 @@
     "level": "",
     "rank": "",
     "quality": "VIOLET",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "lion_en_colere_violet.png"
     ]
@@ -363,7 +363,7 @@
     "level": "",
     "rank": "",
     "quality": "VIOLET",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "rassemblement_de_chevaliers_violet.png"
     ]
@@ -374,7 +374,7 @@
     "level": "",
     "rank": "",
     "quality": "VIOLET",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "rose_demoniaque_violet.png"
     ]
@@ -385,7 +385,7 @@
     "level": "",
     "rank": "",
     "quality": "VIOLET",
-    "restriction": [],
+    "restrictions": [],
     "images": [
       "tactique_royale_violet.png"
     ]

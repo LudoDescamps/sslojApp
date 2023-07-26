@@ -22,7 +22,7 @@
                   </mat-option>
 
                   <ng-container *ngFor="let araya of filteredArayas | async">
-                    <mat-option [value]="araya">{{ araya.name }} - {{araya?.quality}}</mat-option>
+                    <mat-option [value]="araya">{{ araya.name }} - {{mappedArayaQualities[araya?.quality]}}</mat-option>
                   </ng-container>
                 </mat-select>
               </mat-form-field>
@@ -52,9 +52,9 @@
 
                 <div class="col-sm-6 col-md-6">
                   <mat-form-field class="full-width">
-                    <mat-label class="mat-label"> Spécificité</mat-label>
+                    <mat-label class="mat-label"> Qualité</mat-label>
                     <mat-select formControlName="quality">
-                      <ng-container *ngFor="let specificity of knightSpecificities">
+                      <ng-container *ngFor="let specificity of arayaQualities">
                         <mat-option [value]="specificity.value">{{ specificity.viewValue }}</mat-option>
                       </ng-container>
                     </mat-select>
