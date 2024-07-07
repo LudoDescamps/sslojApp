@@ -32,7 +32,7 @@
     ],
     "specificity": "DIEU",
     "advice": "???",
-    "topAgainst": [],
+    "mainTarget": [],
     "neverUseAgainst": [],
     "images": ["poseidon_empereur_des_mers.jpg"]
   },
@@ -52,7 +52,7 @@
     ],
     "specificity": "DIEU",
     "advice": "",
-    "topAgainst": [],
+    "mainTarget": [],
     "neverUseAgainst": []
   },
   {
@@ -62,7 +62,7 @@
     "artefacts": [],
     "specificity": "SPECTRE",
     "advice": "",
-    "topAgainst": [],
+    "mainTarget": [],
     "neverUseAgainst": []
   },
   {
@@ -72,7 +72,7 @@
     "artefacts": [],
     "specificity": "MARINA",
     "advice": "",
-    "topAgainst": [],
+    "mainTarget": [],
     "neverUseAgainst": []
   },
   {
@@ -82,7 +82,7 @@
     "artefacts": [],
     "specificity": "MARINA",
     "advice": "",
-    "topAgainst": [],
+    "mainTarget": [],
     "neverUseAgainst": []
   },
   {
@@ -92,7 +92,7 @@
     "artefacts": [],
     "specificity": "MARINA",
     "advice": "",
-    "topAgainst": [],
+    "mainTarget": [],
     "neverUseAgainst": []
   }
 ]

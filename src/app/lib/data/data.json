@@ -5,7 +5,7 @@
     "knightClass": "DEFENSIF",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "30",
-    "specialties": [
+    "otherInfos": [
       "Protège et fournit du cosmos aux alliés"
     ],
     "artefacts": [
@@ -50,7 +50,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "30",
-    "specialties": [
+    "otherInfos": [
       "Contrôle aléatoire grâce à l'étourdissement et perte de cosmos",
       "Dégat de zone importants sur toute la team adverse"
     ],
@@ -97,7 +97,7 @@
     ],
     "specificity": "DIEU",
     "advice": "???",
-    "topAgainst": [],
+    "mainTarget": [],
     "neverUseAgainst": [],
     "images": ["poseidon_empereur_des_mers.jpg"]
   },
@@ -127,7 +127,7 @@
     "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Soigne et dissipe les débuff des alliées",
       "Augmente les soins reçus pour toute l'équipe",
       "Peut empècher de mourir"
@@ -183,7 +183,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Fournit du cosmos aux alliés en back line quand l'adversaire est gelé",
       "Contrôle grâce à du renversement sur la back line adverse et ignore la bénédiction des dieux",
       "Immunisé au gel et au ralentissement"
@@ -239,7 +239,7 @@
     "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Soigne et fournit des boucliers",
       "Protège les alliés en front",
       "Capable d'infliger des décharges électriques"
@@ -292,7 +292,7 @@
     "knightClass": "OFFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
     ],
     "artefacts": [
 
@@ -310,7 +310,7 @@
     "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Soigne les alliés et attaque l'adversaire",
       "Empêche les soins des adversaires"
     ],
@@ -365,7 +365,7 @@
     "knightClass": "ASSASSIN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Augmente les dégats et la durée du poison",
       "Protège les allés en leurs fournissant de l'esquive",
       "Contrôle avec de l'étourdissement"
@@ -417,7 +417,7 @@
     "knightClass": "DEFENSIF",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Protège et buff les alliés"
     ],
     "artefacts": [
@@ -467,7 +467,7 @@
     "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Dissipe les débuffs, contrôles",
       "Effet de champ et d'environnement"
     ],
@@ -519,7 +519,7 @@
     "knightClass": "DEFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
 
     ],
     "artefacts": [
@@ -538,7 +538,7 @@
     "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Soigne et débuff les alliés et les ennemis",
       "Contrôle de l'équipe adverse (cosmos et séduction)"
     ],
@@ -592,7 +592,7 @@
     "knightClass": "ASSASSIN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Force son vis à vis à utiliser une compétence en ouverture et peut en reprendre le contrôle",
       "Fait perdre du cosmos, empêche les soins",
       "Exile un ennemi"
@@ -647,7 +647,7 @@
     "knightClass": "ASSASSIN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
 
     ],
     "artefacts": [
@@ -666,7 +666,7 @@
     "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Se lie avec l'allié le plus puissant puis le protège, lui fournit du cosmos et des buffs offensifs (sauf si Poséidon est dans l'équipe il sera prioritaire)",
       "Peut rendre l'ennemi rigide ce qui l'empêche d'agir"
     ],
@@ -717,7 +717,7 @@
     "knightClass": "OFFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Protège les alliés et augmente leurs attaques"
     ],
     "artefacts": [
@@ -767,7 +767,7 @@
     "knightClass": "DEFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Grande capacité de survie",
       "Protège le deuxième front à ses côtés",
       "Ralentit les adversaires"
@@ -813,7 +813,7 @@
     "knightClass": "OFFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Contrôle grâce à l'aveuglement",
       "Ralentit l'accumulation de cosmos et peut geler l'adversaire",
       "Devient plus fort au fil du combat"
@@ -864,7 +864,7 @@
     "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Peut sauver les alliés de dégats mortels",
       "Augmente les dégâts des alliés grâce à décharge électrique"
     ],
@@ -914,7 +914,7 @@
     "knightClass": "OFFENSIF",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Dégats de masse conséquents",
       "Capacité de survie",
       "Temporise le combat"
@@ -969,7 +969,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
     ],
     "artefacts": [
     ],
@@ -985,7 +985,7 @@
     "knightClass": "ASSASSIN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Contrôle l'adversaire avec confusion et peut l'étourdir",
       "Inflige de lourds dégats à sa mort"
     ],
@@ -1036,7 +1036,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Contrôle son vis à vis",
       "Dégats de masse importants",
       "Réduit l'accumulation du cosmos et les chances de coups critiques de la team adverse"
@@ -1094,7 +1094,7 @@
     "knightClass": "ASSASSIN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Focus sur l'ennemi avec les pv les plus élevés et l'empêche d'agir en début de combat",
       "Tue sa cible quand il atteint 15 stacks"
     ],
@@ -1148,7 +1148,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Ralentit l'accumulation de cosmos",
       "Brûle le cosmos de ses cibles et le vol",
       "Récupère du cosmos, de la santé, augmente son attaque et sa défense quand une cible meurt"
@@ -1203,7 +1203,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Dégats de poison sur toute le team adverse",
       "Affaiblit l'attaque et la défense",
       "Dégats importants à sa mort"
@@ -1252,7 +1252,7 @@
     "knightClass": "DEFENSIF",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Grande capacité de survie",
       "Dégats de plus en plus importants au fil du combat"
     ],
@@ -1303,7 +1303,7 @@
     "knightClass": "OFFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Augmente les dégâts des alliés grâce à décharge électrique",
       "Fournit du cosmos aux alliés quand une cible meurt"
     ],
@@ -1357,7 +1357,7 @@
     "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Protège et immunise les alliés aux contrôles",
       "Soigne les alliés"
     ],
@@ -1411,7 +1411,7 @@
     "knightClass": "ASSASSIN",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Renverse et réduit la défense de l'équipe adverse en ouverture",
       "Dégâts de zone rapides et importants"
     ],
@@ -1465,7 +1465,7 @@
     "knightClass": "ASSASSIN",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Renverse et réduit la défense de l'équipe adverse en ouverture",
       "Dégâts de zone rapides et importants"
     ],
@@ -1519,7 +1519,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Dégats et brûlures de masse",
       "Contrôle, temporise avec ses 2 résurections"
     ],
@@ -1574,7 +1574,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Contrôle la team adverse avec le gel",
       "Peut protéger un allié ou bloquer un adversaire avec le cercueil de glace"
     ],
@@ -1632,7 +1632,7 @@
     "knightClass": "DEFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Grande capacité de survie",
       "Buff les alliés",
       "Renverse la back line adverse"
@@ -1681,7 +1681,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Ralentit et gèle les adversaires",
       "Capable d'infliger de lourds dégâts rapidement"
     ],
@@ -1738,7 +1738,7 @@
     "knightClass": "DEFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Renvoi de dégâts",
       "Renverse les cibles face à lui"
     ],
@@ -1786,7 +1786,7 @@
     "knightClass": "ASSASSIN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Dégâts importants contre les boucliers",
       "Réduit le défense de l'adversaire"
     ],
@@ -1840,7 +1840,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Boost l'équipe en attaque comme en défense",
       "Possibilité d'empêcher les adversaires d'agir"
     ],
@@ -1891,7 +1891,7 @@
     "knightClass": "DEFENSIF",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Protège les alliés en front et l'équipe sur l'ouverture du combat",
       "Supprime les effets de contrôle des alliés et affaiblit les adversaires"
     ],
@@ -1939,7 +1939,7 @@
     "knightClass": "OFFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Grande capacité d'esquive"
     ],
     "artefacts": [
@@ -1989,7 +1989,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Contrôle multicible et drain de cosmos",
       "Brise la défense"
     ],
@@ -2046,7 +2046,7 @@
     "knightClass": "DEFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Grande capacité de survie",
       "Renverse son opposant et réduit sa défense"
     ],
@@ -2094,7 +2094,7 @@
     "knightClass": "ASSASSIN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Inflige de lourds dégâts sur les boss"
     ],
     "artefacts": [
@@ -2141,7 +2141,7 @@
     "knightClass": "OFFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Vol de vie qui ignore la défense adverse",
       "Soutient de l'équipe en fournissant du vol de vie aux alliés"
     ],
@@ -2192,7 +2192,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Dégâts de brûlure",
       "Augmente les dégâts de brûlure de l'équipe",
       "Étourdissements"
@@ -2244,7 +2244,7 @@
     "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Ralentit le cosmos de la front line",
       "Soigne et protège les allés"
     ],
@@ -2295,7 +2295,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "",
     "recommendedArmourLevel": "",
-    "specialties": [
+    "otherInfos": [
     ],
     "artefacts": [
     ],
@@ -2311,7 +2311,7 @@
     "knightClass": "OFFENSIF",
     "recommendedConstellationLevel": "",
     "recommendedArmourLevel": "",
-    "specialties": [
+    "otherInfos": [
     ],
     "artefacts": [
     ],
@@ -2327,7 +2327,7 @@
     "knightClass": "ASSASSIN",
     "recommendedConstellationLevel": "",
     "recommendedArmourLevel": "",
-    "specialties": [
+    "otherInfos": [
     ],
     "artefacts": [
     ],
@@ -2343,7 +2343,7 @@
     "knightClass": "DEFENSIF",
     "recommendedConstellationLevel": "",
     "recommendedArmourLevel": "",
-    "specialties": [
+    "otherInfos": [
     ],
     "artefacts": [
     ],
@@ -2359,7 +2359,7 @@
     "knightClass": "OFFENSIF",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Contrôle par étourdissement",
       "Protège les alliés et supprime les contrôles",
       "Boost le cosmos et la vitesse d'attaque en ouverture"
@@ -2411,7 +2411,7 @@
     "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Buff les alliés et débuff la back line adverse",
       "Soigne légérement tous les alliés simultanément",
       "Silence et débuff les cibles touchées par son ulti"
@@ -2466,7 +2466,7 @@
     "knightClass": "COMPETENCE",
     "recommendedConstellationLevel": "",
     "recommendedArmourLevel": "",
-    "specialties": [
+    "otherInfos": [
     ],
     "artefacts": [
     ],
@@ -2482,7 +2482,7 @@
     "knightClass": "SOUTIEN",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?",
-    "specialties": [
+    "otherInfos": [
       "Soigne, protège et fournit du cosmos aux alliés",
       "Empêche l'adversaire d'agir"
     ],

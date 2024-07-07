@@ -48,7 +48,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Augmente les dégâts des alliés grâce à décharge électrique",
       "Fournit du cosmos aux alliés quand une cible meurt"
     ],
@@ -106,7 +106,7 @@
         "id": "RAPIDE_COMME_LE_VENT_OR"
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Renverse et réduit la défense de l'équipe adverse en ouverture",
       "Dégâts de zone rapides et importants"
     ],
@@ -158,7 +158,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Renvoi de dégâts",
       "Renverse les cibles face à lui"
     ],
@@ -210,7 +210,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Grande capacité de survie",
       "Renverse son opposant et réduit sa défense"
     ],
@@ -230,7 +230,7 @@
     "element": "TERRE",
     "knightClass": "DEFENSIF",
     "arayas": [],
-    "specialties": [],
+    "otherInfos": [],
     "specificity": "ARGENT",
     "advice": "",
     "recommendedConstellationLevel": "",
@@ -279,7 +279,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Dégats de poison sur toute le team adverse",
       "Affaiblit l'attaque et la défense",
       "Dégats importants à sa mort"
@@ -338,7 +338,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Buff les alliés et débuff la back line adverse",
       "Soigne légérement tous les alliés simultanément",
       "Silence et débuff les cibles touchées par son ulti"
@@ -397,7 +397,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Soigne et dissipe les débuff des alliées",
       "Augmente les soins reçus pour toute l'équipe",
       "Peut empècher de mourir"
@@ -453,7 +453,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Dégâts de brûlure",
       "Augmente les dégâts de brûlure de l'équipe",
       "Étourdissements"
@@ -503,7 +503,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Grande capacité de survie",
       "Protège le deuxième front à ses côtés",
       "Ralentit les adversaires"
@@ -566,7 +566,7 @@
         "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Contrôle la team adverse avec le gel",
       "Peut protéger un allié ou bloquer un adversaire avec le cercueil de glace"
     ],
@@ -586,7 +586,7 @@
     "element": "TERRE",
     "knightClass": "COMPETENCE",
     "arayas": [],
-    "specialties": [],
+    "otherInfos": [],
     "specificity": "ARGENT",
     "advice": "",
     "recommendedConstellationLevel": "",
@@ -638,7 +638,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Vol de vie qui ignore la défense adverse",
       "Soutient de l'équipe en fournissant du vol de vie aux alliés"
     ],
@@ -696,7 +696,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Ralentit l'accumulation de cosmos",
       "Brûle le cosmos de ses cibles et le vol",
       "Récupère du cosmos, de la santé, augmente son attaque et sa défense quand une cible meurt"
@@ -717,7 +717,7 @@
     "element": "AIR",
     "knightClass": "OFFENSIF",
     "arayas": [],
-    "specialties": [],
+    "otherInfos": [],
     "specificity": "ARGENT",
     "advice": "",
     "recommendedConstellationLevel": "",
@@ -766,7 +766,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Grande capacité de survie",
       "Buff les alliés",
       "Renverse la back line adverse"
@@ -816,7 +816,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Protège et fournit du cosmos aux alliés"
     ],
     "specificity": "DIEU",
@@ -887,7 +887,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Fournit du cosmos aux alliés en back line quand l'adversaire est gelé",
       "Contrôle grâce à du renversement sur la back line adverse et ignore la bénédiction des dieux",
       "Immunisé au gel et au ralentissement"
@@ -949,7 +949,7 @@
         "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Ralentit et gèle les adversaires",
       "Capable d'infliger de lourds dégâts rapidement"
     ],
@@ -1008,7 +1008,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Dégats et brûlures de masse",
       "Contrôle, temporise avec ses 2 résurections"
     ],
@@ -1028,7 +1028,7 @@
     "element": "EAU",
     "knightClass": "ASSASSIN",
     "arayas": [],
-    "specialties": [],
+    "otherInfos": [],
     "specificity": "MARINA",
     "advice": "",
     "recommendedConstellationLevel": "?",
@@ -1079,7 +1079,7 @@
         "id": "EXCALIBUR_DU_JUGEMENT_OR"
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Contrôle grâce à l'aveuglement",
       "Ralentit l'accumulation de cosmos et peut geler l'adversaire",
       "Devient plus fort au fil du combat"
@@ -1100,7 +1100,7 @@
     "element": "AIR",
     "knightClass": "COMPETENCE",
     "arayas": [],
-    "specialties": [],
+    "otherInfos": [],
     "specificity": "ARGENT",
     "advice": "",
     "recommendedConstellationLevel": "",
@@ -1152,7 +1152,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Soigne, protège et fournit du cosmos aux alliés",
       "Empêche l'adversaire d'agir"
     ],
@@ -1210,7 +1210,7 @@
         "id": "RAPIDE_COMME_LE_VENT_OR"
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Force son vis à vis à utiliser une compétence en ouverture et peut en reprendre le contrôle",
       "Fait perdre du cosmos, empêche les soins",
       "Exile un ennemi"
@@ -1220,61 +1220,123 @@
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?"
   },
+
   {
     "artefacts": [
       {
-        "id": "DAGUE_DU_GRAND_POPE",
+        "id": "SCEPTRE_DE_VICTOIRE",
         "recommended": true
-      },
-      {
-        "id": "SCEPTRE_DE_VICTOIRE"
       }
     ],
     "images": [
       "kanon_gemaux.jpg"
     ],
     "id": "KANON_GEMAUX",
+    "visible": true,
     "name": "Kanon",
     "constellationName": "Gémaux",
     "element": "LUMIERE",
     "knightClass": "ASSASSIN",
+    "specificity": "OR",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "30",
+    "modificationDate": "2024-07-02T23:00:00.000Z",
     "arayas": [
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_ROUGE",
-        "recommended": true
-      },
-      {
-        "id": "IMMOBILE_COMME_UNE_MONTAGNE_OR"
-      },
       {
         "id": "VOLONTE_DES_DIEUX_ROUGE",
         "recommended": true
       },
       {
-        "id": "RAPIDE_COMME_LE_VENT_ROUGE",
+        "id": "RESISTANT_ET_INFLEXIBLE_ROUGE",
         "recommended": true
       },
       {
-        "id": "RAPIDE_COMME_LE_VENT_OR"
+        "id": "RESISTANT_ET_INFLEXIBLE_OR",
+        "recommended": true
+      },
+      {
+        "id": "CALME_ET_SANS_DISTRACTIONS_ROUGE",
+        "recommended": true
+      },
+      {
+        "id": "CALME_ET_SANS_DISTRACTIONS_OR",
+        "recommended": true
       },
       {
         "id": "AME_DE_DRAGON_OR",
         "recommended": true
       },
+
       {
-        "id": "COEUR_DE_PERSEVERANCE_OR",
+        "id": "LION_EN_COLERE_VIOLET",
         "recommended": true
       }
     ],
-    "specialties": [
-      "Contrôle l'adversaire avec confusion et peut l'étourdir",
-      "Inflige de lourds dégats à sa mort"
+    "arayaInfos": [
+      "Full défense",
+      "La carte des gémeaux est inutile sur lui car les combats sont trop expédif pour que l'effet de la carte s'active. Ce ne sera que pour les stats"
+
     ],
-    "specificity": "OR",
-    "advice": "",
-    "recommendedConstellationLevel": "?",
-    "recommendedArmourLevel": "?"
+    "mainTarget": [
+      {
+        "knightId": "ATHENA_DEESSE_DE_LA_GUERRE",
+        "comments": []
+      },
+      {
+        "knightId": "HYOGA_ARMURE_DIVINE_DU_CYGNE",
+        "comments": []
+      },
+      {
+        "knightId": "IKKI_ARMURE_DIVINE_DU_PHENIX",
+        "comments": []
+      },
+      {
+        "knightId": "POSEIDON_EMPEREUR_DES_MERS",
+        "comments": []
+      },
+      {
+        "knightId": "",
+        "comments": ["DPS"]
+      }
+    ],
+    "neverUseAgainst": [
+      {
+        "knightId": "MU_BELIER",
+        "comments": []
+      },
+      {
+        "knightId": "HYPNOS_DIEU_DU_SOMMEIL",
+        "comments": []
+      },
+      {
+        "knightId": "SHUN_ANDROMEDE_DIVIN",
+        "comments": []
+      },
+      {
+        "knightId": "DOHKO_MAITRE_BALANCE",
+        "comments": ["Second choix qui dépend sa composition"]
+      }
+    ],
+    "teams": {
+      "knights" : [["IKKI_ARMURE_DIVINE_DU_PHENIX", "KANON_GEMAUX"]],
+      "infos": ["Et ses variantes (un dps à la place de Popo)"]
+    },
+    "mainsStrength": [
+      "Son rôle et le contrôle multiple",
+      "Gel et immunisé au gel",
+      "Indispensable en GSI"
+    ],
+    "weakPoints": [],
+    "positions": [
+      "Front en priorité, back possible"
+    ],
+    "otherInfos": [
+      "Quand Gk est du même côté que HyôgaGc , HyôgaGc se fait contrôler la première fois qu'il touche Kanon avec un attaque normale. Donc c'est quasiment instantanément en début de combat.",
+      "Côté opposé ou back, HyôgaGc ne tape plus directement Kanon Gémaux avec ses attaques normales. Donc Kanon Gémaux prendra le contrôle quand HyôgaGc lancera Diamond Dust. Donc c'est une histoire de timing pour le contrôle pour que HyôgaGc lance le bon Skill sur sa propre team"
+    ]
   },
+
   {
     "artefacts": [
       {
@@ -1321,7 +1383,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Protège les alliés et augmente leurs attaques"
     ],
     "specificity": "MARINA",
@@ -1374,7 +1436,7 @@
         "id": "PURIFICATION_DE_LA_TELEKINESIE_OR"
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Peut sauver les alliés de dégats mortels",
       "Augmente les dégâts des alliés grâce à décharge électrique"
     ],
@@ -1429,7 +1491,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Grande capacité d'esquive"
     ],
     "specificity": "ARGENT",
@@ -1486,7 +1548,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Focus sur l'ennemi avec les pv les plus élevés et l'empêche d'agir en début de combat",
       "Tue sa cible quand il atteint 15 stacks"
     ],
@@ -1541,7 +1603,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Ralentit le cosmos de la front line",
       "Soigne et protège les allés"
     ],
@@ -1593,7 +1655,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Protège les alliés en front et l'équipe sur l'ouverture du combat",
       "Supprime les effets de contrôle des alliés et affaiblit les adversaires"
     ],
@@ -1648,7 +1710,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Dissipe les débuffs, contrôles",
       "Effet de champ et d'environnement"
     ],
@@ -1706,7 +1768,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Protège et immunise les alliés aux contrôles",
       "Soigne les alliés"
     ],
@@ -1761,7 +1823,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Augmente les dégats et la durée du poison",
       "Protège les allés en leurs fournissant de l'esquive",
       "Contrôle avec de l'étourdissement"
@@ -1823,7 +1885,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Contrôle multicible et drain de cosmos",
       "Brise la défense"
     ],
@@ -1881,7 +1943,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Soigne les alliés et attaque l'adversaire",
       "Empêche les soins des adversaires"
     ],
@@ -1939,13 +2001,13 @@
         "id": "RAPIDE_COMME_LE_VENT_OR"
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Contrôle aléatoire grâce à l'étourdissement et perte de cosmos",
       "Dégat de zone importants sur toute la team adverse"
     ],
     "specificity": "DIEU",
     "advice": "???",
-    "topAgainst": [],
+    "mainTarget": [],
     "neverUseAgainst": [],
     "recommendedConstellationLevel": "9",
     "recommendedArmourLevel": "30"
@@ -1961,7 +2023,7 @@
     "element": "AIR",
     "knightClass": "ASSASSIN",
     "arayas": [],
-    "specialties": [],
+    "otherInfos": [],
     "specificity": "ARGENT",
     "advice": "",
     "recommendedConstellationLevel": "",
@@ -1978,7 +2040,7 @@
     "element": "OBSCURITE",
     "knightClass": "OFFENSIF",
     "arayas": [],
-    "specialties": [],
+    "otherInfos": [],
     "specificity": "SPECTRES",
     "advice": "",
     "recommendedConstellationLevel": "?",
@@ -2033,7 +2095,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Dégats de masse conséquents",
       "Capacité de survie",
       "Temporise le combat"
@@ -2095,7 +2157,7 @@
         "id": "CALME_COMME_L_EAU_OR"
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Contrôle son vis à vis",
       "Dégats de masse importants",
       "Réduit l'accumulation du cosmos et les chances de coups critiques de la team adverse"
@@ -2154,7 +2216,7 @@
         "id": "RAPIDE_COMME_LE_VENT_OR"
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Renverse et réduit la défense de l'équipe adverse en ouverture",
       "Dégâts de zone rapides et importants"
     ],
@@ -2175,10 +2237,10 @@
     "knightClass": "OFFENSIF",
     "arayas": [],
     "constellation": null,
-    "specialties": [],
+    "otherInfos": [],
     "specificity": "CHEVALIERS_ARMURE_DIVINE",
     "advice": null,
-    "topAgainst": null,
+    "mainTarget": null,
     "neverUseAgainst": null,
     "recommendedConstellationLevel": 9,
     "recommendedArmourLevel": 30
@@ -2226,7 +2288,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Inflige de lourds dégâts sur les boss"
     ],
     "specificity": "ARGENT",
@@ -2245,7 +2307,7 @@
     "element": "LUMIERE",
     "knightClass": "COMPETENCE",
     "arayas": [],
-    "specialties": [],
+    "otherInfos": [],
     "specificity": "OR",
     "advice": "",
     "recommendedConstellationLevel": "?",
@@ -2297,7 +2359,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Protège et buff les alliés"
     ],
     "specificity": "SPECTRES",
@@ -2351,7 +2413,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Grande capacité de survie",
       "Dégats de plus en plus importants au fil du combat"
     ],
@@ -2406,7 +2468,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Soigne et fournit des boucliers",
       "Protège les alliés en front",
       "Capable d'infliger des décharges électriques"
@@ -2462,7 +2524,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Boost l'équipe en attaque comme en défense",
       "Possibilité d'empêcher les adversaires d'agir"
     ],
@@ -2520,7 +2582,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Dégâts importants contre les boucliers",
       "Réduit le défense de l'adversaire"
     ],
@@ -2575,7 +2637,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Contrôle par étourdissement",
       "Protège les alliés et supprime les contrôles",
       "Boost le cosmos et la vitesse d'attaque en ouverture"
@@ -2634,7 +2696,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Soigne et débuff les alliés et les ennemis",
       "Contrôle de l'équipe adverse (cosmos et séduction)"
     ],
@@ -2703,7 +2765,7 @@
         "recommended": true
       }
     ],
-    "specialties": [
+    "otherInfos": [
       "Se lie avec l'allié le plus puissant puis le protège, lui fournit du cosmos et des buffs offensifs (sauf si Poséidon est dans l'équipe il sera prioritaire)",
       "Peut rendre l'ennemi rigide ce qui l'empêche d'agir"
     ],
@@ -2723,10 +2785,126 @@
     "element": "TERRE",
     "knightClass": "DEFENSIF",
     "arayas": [],
-    "specialties": [],
+    "otherInfos": [],
     "specificity": "SPECTRES",
     "advice": "",
     "recommendedConstellationLevel": "?",
     "recommendedArmourLevel": "?"
+  },
+  {
+    "artefacts": [{
+      "id": "DAGUE_DU_GRAND_POPE",
+      "recommended": true
+    }],
+    "images": [
+      "ikki_armure_divie_du_phenix.jpg"
+    ],
+    "id": "IKKI_ARMURE_DIVINE_DU_PHENIX",
+    "visible": true,
+    "name": "Ikki",
+    "constellationName": "Armure divine du Phénix",
+    "element": "LUMIERE",
+    "knightClass": "ASSASSIN",
+    "arayas": [],
+    "otherInfos": [],
+    "specificity": "CHEVALIERS_ARMURE_DIVINE",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "30",
+    "modificationDate": "2024-06-24T23:00:00.000Z",
+    "mainTarget": [
+      {
+        "knightId": "SEIYA_PEGASE_DIVIN",
+        "comments": []
+      },
+      {
+        "knightId": "HYOGA_ARMURE_DIVINE_DU_CYGNE",
+        "comments": []
+      }
+    ],
+    "neverUseAgainst": [
+      {
+        "knightId": "AIACOS",
+        "comments": ["Empêche la résurection"]
+      },
+      {
+        "knightId": "SHAKA_ARAYA",
+        "comments": ["Empêche la résurection"]
+      },
+      {
+        "knightId": "KANON_GEMAUX",
+        "comments": ["Tempo et renvoie de skill sur sa team"]
+      }
+    ],
+    "mainsStrength": [
+      "La mécanique de brûlures",
+      "Résurection tant que 1 perso est en vie à ses côtés"
+    ],
+    "weakPoints": [],
+    "positions": [
+    "Front en priorité"
+  ]
+  },
+  {
+    "artefacts": [
+      {
+      "id": "TRIDENT_DE_POSEIDON",
+      "recommended": true
+      },
+      {
+      "id": "SCEPTRE_DE_VICTOIRE"
+    }],
+    "images": [
+      "hyoga_armure_divine_du_cygne.jpg"
+    ],
+    "id": "HYOGA_ARMURE_DIVINE_DU_CYGNE",
+    "visible": true,
+    "name": "Hyôga",
+    "constellationName": "Armure divine du Cygne",
+    "element": "LUMIERE",
+    "knightClass": "COMPETENCE",
+    "arayas": [],
+    "specificity": "CHEVALIERS_ARMURE_DIVINE",
+    "advice": "",
+    "recommendedConstellationLevel": "9",
+    "recommendedArmourLevel": "30",
+    "modificationDate": "2024-06-24T23:00:00.000Z",
+    "mainTarget": [
+      {
+        "knightId": "MU_BELIER",
+        "comments": []
+      },
+      {
+        "knightId": "",
+        "comments": ["Teams avec 3 supports"]
+      },
+      {
+        "knightId": "",
+        "comments": ["Teams Immortelles"]
+      }
+    ],
+    "neverUseAgainst": [
+      {
+        "knightId": "KANON_GEMAUX",
+        "comments": ["Côté opposé en front, ou tout simplement en back"]
+      },
+      {
+        "knightId": "IKKI_ARMURE_DIVINE_DU_PHENIX",
+        "comments": []
+      }
+    ],
+    "mainsStrength": [
+      "Contrôle / DPS",
+      "Gel et immunisé au gel",
+      "Indispensable en GSI"
+    ],
+    "weakPoints": [],
+    "positions": [
+      "Suivant la composition"
+    ],
+    "otherInfos": [
+      "Quand Gk est du même côté que HyôgaGc , HyôgaGc se fait contrôler la première fois qu'il touche Kanon avec un attaque normale. Donc c'est quasiment instantanément en début de combat.",
+      "Côté opposé ou back, HyôgaGc ne tape plus directement Kanon Gémaux avec ses attaques normales. Donc Kanon Gémaux prendra le contrôle quand HyôgaGc lancera Diamond Dust. Donc c'est une histoire de timing pour le contrôle pour que HyôgaGc lance le bon Skill sur sa propre team"
+    ]
   }
 ]

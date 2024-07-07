@@ -16,11 +16,16 @@
     <div class="col-xs-4 knight-img-mobile">
       <div class="mb10 flex">
         <img style="width: 100%;"
-             [alt]= "(knight.images && knight.images.length > 0 ?
-           'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')"
-             [src]= "(knight.images && knight.images.length > 0 ?
-           'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')" >
-        <!--           'https://at-the-villa.com/ssloj/knight_illustrations/' + knight.images[0] : 'assets/images/no-image.png')" >-->
+             [alt]= "(knight?.images?.length > 0 ?
+           'https://ssloj.at-the-villa.com/images/knights/' + knight.images[0] : 'no-image')"
+             [src]= "(knight?.images?.length > 0 ?
+        'https://ssloj.at-the-villa.com/images/knights/' + knight.images[0] : 'assets/images/no-image.png')" >
+<!--        <img style="width: 100%;"-->
+<!--             [alt]= "(knight.images && knight.images.length > 0 ?-->
+<!--           'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')"-->
+<!--             [src]= "(knight.images && knight.images.length > 0 ?-->
+<!--           'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')" >-->
+<!--        &lt;!&ndash;           'https://at-the-villa.com/ssloj/knight_illustrations/' + knight.images[0] : 'assets/images/no-image.png')" >&ndash;&gt;-->
       </div>
     </div>
   </div>
@@ -32,16 +37,16 @@
         <!--  Classe & élément -->
         <div class="semi-rounded-box col-xs-5" style="display: flex;justify-content: space-around">
           <div class="display-flex-center" style="flex-direction: column;">
-            <img style="height: 50px;" [alt]="knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'"
-                 [src]="knight?.knightClass ? 'assets/images/knight_class/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'">
+            <img style="height: 50px;" [alt]="knight?.knightClass ? knight?.knightClass : 'assets/images/no-image.png'"
+                 [src]="knight?.knightClass ? 'https://ssloj.at-the-villa.com/images/knight_classes/' + knight?.knightClass + '.png' : 'assets/images/no-image.png'">
 
             <span class="pt5 pb5"
                   style="font-size: 10px; width: 50px;line-height: normal;">{{ mappedKnightClass[knight?.knightClass] }}</span>
           </div>
 
           <div class="display-flex-center" style="flex-direction: column;">
-            <img style="height: 50px;" [alt]="knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'"
-                 [src]="knight?.element ? 'assets/images/element/' + knight?.element + '.png' : 'assets/images/no-image.png'">
+            <img style="height: 50px;" [alt]="knight?.element ? knight.element  : 'assets/images/no-image.png'"
+                 [src]="knight?.element ? 'https://ssloj.at-the-villa.com/images/elements/' + knight.element + '.png' : 'assets/images/no-image.png'">
 
             <span class="pt5 pb5"
                   style="font-size: 10px; width: 50px;line-height: normal;">{{ mappedKnightElement[knight?.element] }}</span>
@@ -54,8 +59,8 @@
             <ng-container *ngFor="let artefact of knight?.artefacts">
               <div class=" col-xs-4 col-sm-6 col-md-6 display-flex-center" style="flex-direction: column;">
                 <img class="artefact-img" [ngClass]="{'rainbow': artefact.recommended}"
-                     [alt]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'"
-                     [src]=" artefact?.id ? 'assets/images/artefacts/' + (artefact['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
+                     [alt]=" artefact?.id ? artefact.id.toLowerCase() : 'assets/images/no-image.png'"
+                     [src]=" artefact?.id ? 'https://ssloj.at-the-villa.com/images/artefacts/' + artefact.id.toLowerCase() + '.png' : 'assets/images/no-image.png'">
                 <span class="pt5 pb5"
                       style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArtefacts[artefact?.id]?.name}}</span>
               </div>
@@ -81,27 +86,125 @@
         </div>
       </div>
 
-      <!--  SPECIALITIES -->
-      <div class="semi-rounded-box mt10 mb10" *ngIf="knight?.specialties?.length > 0">
+      <!--  OTHER INFORMATIONS -->
+      <div class="semi-rounded-box mt10" *ngIf="knight?.otherInfos?.length > 0">
         <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
-          <div  class="text-center full-width">Spécialités</div>
-          <ng-container *ngFor="let specialty of knight?.specialties">
+          <div  class="text-center full-width">Autres informations</div>
+          <ng-container *ngFor="let otherInfo of knight?.otherInfos">
             <div class="text-left small">
-              . {{specialty}}
+              . {{otherInfo}}
             </div>
           </ng-container>
         </div>
       </div>
+
+      <!--  MAIN TARGETS -->
+      <div class="semi-rounded-box mt10" *ngIf="knight?.mainTarget?.length > 0">
+        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
+          <div  class="text-center full-width">Cibles privilégiées</div>
+          <ng-container *ngFor="let target of knight?.mainTarget">
+            <div class="text-left full-width small" *ngIf="mappedKnights?.[target?.knightId]">
+              . {{mappedKnights?.[target?.knightId]?.name}} {{mappedKnights?.[target?.knightId]?.constellationName}}
+              <span *ngIf="target?.comments?.length > 0 && target?.knightId !== ''">({{target.comments?.toString()}})</span>
+              <span *ngIf="target?.comments?.length > 0 && target?.knightId === ''">{{target.comments?.toString()}}</span><br>
+            </div>
+
+            <div class="text-left full-width small" *ngIf="!mappedKnights?.[target?.knightId]">
+              . {{target?.knightId}}
+              <span *ngIf="target?.comments?.length > 0 && target?.knightId !== ''">({{target.comments?.toString()}})</span>
+              <span *ngIf="target?.comments?.length > 0 && target?.knightId === ''">{{target.comments?.toString()}}</span><br>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <!--  NEVER USE AGAINST TARGETS -->
+      <div class="semi-rounded-box mt10" *ngIf="knight?.neverUseAgainst?.length > 0">
+        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
+          <div  class="text-center full-width">Ne jamais utiliser contre</div>
+          <ng-container *ngFor="let target of knight?.neverUseAgainst">
+            <div class="text-left full-width small" *ngIf="mappedKnights?.[target?.knightId]">
+              . {{mappedKnights?.[target?.knightId]?.name}} {{mappedKnights?.[target?.knightId]?.constellationName}}
+              <span *ngIf="target?.comments?.length > 0 && target?.knightId !== ''">({{target.comments?.toString()}})</span>
+              <span *ngIf="target?.comments?.length > 0 && target?.knightId === ''">{{target.comments?.toString()}}</span><br>
+            </div>
+
+            <div class="text-left full-width small" *ngIf="!mappedKnights?.[target?.knightId]">
+              . {{target?.knightId}}
+              <span *ngIf="target?.comments?.length > 0 && target?.knightId !== ''">({{target.comments?.toString()}})</span>
+              <span *ngIf="target?.comments?.length > 0 && target?.knightId === ''">{{target.comments?.toString()}}</span><br>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <!--  MAINS STRENGTH -->
+      <div class="semi-rounded-box mt10" *ngIf="knight?.mainsStrength?.length > 0">
+        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
+          <div  class="text-center full-width">Points forts</div>
+          <ng-container *ngFor="let mainStrength of knight?.mainsStrength">
+            <div class="text-left full-width small">
+              . {{mainStrength}}<br>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <!--  MAINS STRENGTH -->
+      <div class="semi-rounded-box mt10 mb10" *ngIf="knight?.weakPoints?.length > 0">
+        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
+          <div  class="text-center full-width">Points faibles</div>
+          <ng-container *ngFor="let weakPoint of knight?.weakPoints">
+            <div class="text-left full-width small">
+              . {{weakPoint}}<br>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <!--  POSITIONS -->
+      <div class="semi-rounded-box mt10 mb10" *ngIf="knight?.positions?.length > 0">
+        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
+          <div  class="text-center full-width">Positions</div>
+          <ng-container *ngFor="let position of knight?.positions">
+            <div class="text-left full-width small">
+              . {{position}}<br>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <!--  Teams -->
+      <div class="semi-rounded-box mt10 mb10" *ngIf="(knightTeams?.length > 0 && knightTeams?.[0]?.length > 0) || teamsInfos?.length > 0">
+        <div class="row no-margin" style="display: flex;flex-wrap: wrap;">
+          <div  class="text-center full-width">Teams</div>
+
+
+              <ng-container *ngFor="let team of knightTeams">
+                <div class="text-left full-width small">
+                  .<ng-container *ngFor="let knight of team; let last = last">
+                  {{mappedKnights?.[knight]?.name}} {{mappedKnights?.[knight]?.constellationName}}<ng-container *ngIf="!last">, </ng-container>
+                </ng-container>
+                </div>
+              </ng-container>
+
+              <ng-container *ngFor="let info of teamsInfos">
+                <div class="text-left full-width small">
+                  . {{info}}<br>
+                </div>
+              </ng-container>
+        </div>
+      </div>
     </div>
+
 
     <div class="hidden-xs col-sm-9 col-md-8 col-lg-offset-1 col-lg-7 flex">
       <div style="width: 60%; margin: auto;">
         <img style="width: 100%;"
-             [alt]= "(knight.images && knight.images.length > 0 ?
-           'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')"
-             [src]= "(knight.images && knight.images.length > 0 ?
-           'assets/images/knights/' + knight.images[0] : 'assets/images/no-image.png')" >
-        <!--           'https://at-the-villa.com/ssloj/knight_illustrations/' + knight.images[0] : 'assets/images/no-image.png')" >-->
+             [alt]= "(knight?.images?.length > 0 ?
+           'https://ssloj.at-the-villa.com/images/knights/' + knight.images[0] : 'no-image')"
+             [src]= "(knight?.images?.length > 0 ?
+        'https://ssloj.at-the-villa.com/images/knights/' + knight.images[0] : 'assets/images/no-image.png')" >
       </div>
     </div>
   </div>
@@ -113,15 +216,27 @@
         <ng-container *ngFor="let araya of knight?.arayas">
           <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 display-flex-center pb10" style="flex-direction: column;">
             <img style="height: 100px;" [ngClass]="{'rainbow': araya.recommended}"
-                 [alt]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'"
-                 [src]=" araya?.id ? 'assets/images/arayas/' + (araya['id'])?.toLowerCase() + '.png' : 'assets/images/no-image.png'">
+                 [alt]=" araya?.id ? araya.id.toLowerCase()  : 'assets/images/no-image.png'"
+                 [src]=" araya?.id ? 'https://ssloj.at-the-villa.com/images/arayas/' + araya.id.toLowerCase() + '.png' : 'assets/images/no-image.png'">
             <span class="pt10"
                   style="font-size: 10px; width: 50px;line-height: normal;">{{mappedArayas[araya?.id]?.name}}</span>
+          </div>
+        </ng-container>
+
+        <ng-container *ngFor="let arayaInfo of knight?.arayaInfos">
+          <div class="text-left full-width small">
+            . {{arayaInfo}}<br>
           </div>
         </ng-container>
       </div>
     </div>
   </div>
+
+
+</div>
+
+<div class="mt10 pr10 text-right">
+  Mis à jour le : {{knight?.modificationDate | date: 'shortDate':'':'fr'}}
 </div>
 
 

@@ -3,12 +3,14 @@ import {FormControl, FormGroup} from "@angular/forms";
 import {Artefact, ArtefactAdapter} from "../../lib/models/Artefact";
 import {Knight, KnightAdapter} from "../../lib/models/Knight";
 
-import {lastValueFrom, ReplaySubject, Subscription} from "rxjs";
+import {firstValueFrom, lastValueFrom, ReplaySubject, Subscription} from "rxjs";
 import {KnightService} from "../../lib/services/knight.service";
 import {NgxUiLoaderService} from "ngx-ui-loader";
 import {ArtefactService} from "../../lib/services/artefact.service";
 import {FilterByParam} from "../../lib/functions/filter-by-param";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
+import { Location } from '@angular/common';
+import {DiscordService} from "../../lib/services/discord.service";
 
 @Component({
   selector: 'app-knight-selector',
@@ -21,6 +23,7 @@ export class KnightSelectorComponent implements OnInit {
   public artefactsData: Artefact[];
   public selectedKnight: Knight = new Knight();
   public mappedArtefacts: { [p: string]: Artefact } = {};
+  mappedKnights: { [p: string]: Knight } = {};
 
   data: any;
   filteredKnights: ReplaySubject<Knight[]> = new ReplaySubject<Knight[]>(1);
@@ -30,8 +33,11 @@ export class KnightSelectorComponent implements OnInit {
   constructor(private knightAdapter: KnightAdapter,
               private knightService: KnightService,
               private artefactService: ArtefactService,
+              private discordService: DiscordService,
               private artefactAdapter: ArtefactAdapter,
               private route: ActivatedRoute,
+              private router: Router,
+              private location: Location,
               private loaderService: NgxUiLoaderService,
               public filterByParam: FilterByParam) {
 
@@ -64,22 +70,25 @@ export class KnightSelectorComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     // Search filter
     this.knightFilterSubscription = this.knightSelectorForm?.get('knightFilter')?.valueChanges?.subscribe(() => {
       this.knightFilterFunction();
     });
 
-    // this.paramsSubscription = this.route.paramMap.subscribe((routeParams) => {
-    //   if (routeParams.has('id')) {
-    //     console.log('1');
-    //   } else {
-    //     console.log('2');
-    //   }
-    // });
+    this.paramsSubscription = this.route.paramMap.subscribe((routeParams) => {
+      if (routeParams.has('id')) {
+
+        // this.elementFilterChange();
+        let selectedIdsArray = this.filterByParam.filter(this.knights, 'id', routeParams.get('id'));
+        this.updateSelected(selectedIdsArray[0]);
+      }
+    });
   }
 
-  updateSelected(event: Event) {
-    this.selectedKnight = this.knightAdapter.adapt(event);
+  updateSelected(knight: Knight) {
+    this.selectedKnight = this.knightAdapter.adapt(knight);
+    // this.router.navigate(['/knight/' + knight['id']])
   }
 
   elementFilterChange(element?: string) {
@@ -90,8 +99,15 @@ export class KnightSelectorComponent implements OnInit {
     lastValueFrom(this.knightService.getKnights()).then(knights => {
       this.knights = knights;
 
+      this.knights.forEach(knight => {
+        this.mappedKnights[knight.id] = knight;
+      });
+
+      // Get only visible knights
+      this.knights = this.filterByParam.filter(this.knights, 'visible', true);
+
       if (element) {
-        this.knights = this.filterByParam.filterByElement(this.knights, 'element', element);
+        this.knights = this.filterByParam.filter(this.knights, 'element', element);
       }
 
       // Sort knights by name
@@ -100,6 +116,7 @@ export class KnightSelectorComponent implements OnInit {
 
       this.knightSelectorForm.get('name')?.setValue(this.knights?.[0]);
       this.selectedKnight = this.knights?.[0];
+      // this.location.replaceState('/knight/' + this.selectedKnight.id);
 
       this.knightFilterFunction();
       this.loaderService.stop('getKnights');

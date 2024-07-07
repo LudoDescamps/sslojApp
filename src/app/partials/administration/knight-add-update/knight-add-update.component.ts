@@ -19,6 +19,8 @@ export class KnightAddUpdateComponent implements OnInit {
   public knightSelectorForm: FormGroup;
   public artefactsFormArray: FormArray = new FormArray([]);
   public arayasFormArray: FormArray = new FormArray([]);
+  public mainsStrengthFormArray: FormArray = new FormArray([]);
+  public weakPointsFormArray: FormArray = new FormArray([]);
   public imagesFormArray: FormArray = new FormArray([]);
   public knights: Knight[];
   public artefactsData: Artefact[];
@@ -56,11 +58,13 @@ export class KnightAddUpdateComponent implements OnInit {
       artefacts: this.artefactsFormArray,
       arayas: this.arayasFormArray,
       constellation: new FormControl(undefined),
-      specialties: new FormArray([]),
+      otherInfos: new FormArray([]),
+      mainsStrength: new FormArray([]),
+      weakPoints: new FormArray([]),
       images: this.imagesFormArray,
       specificity: new FormControl(undefined, [Validators.required]),
       advice: new FormControl(undefined),
-      topAgainst: new FormControl(undefined),
+      mainTarget: new FormControl(undefined),
       neverUseAgainst: new FormControl(undefined),
       recommendedConstellationLevel: new FormControl(undefined),
       recommendedArmourLevel: new FormControl(undefined)
@@ -146,10 +150,12 @@ export class KnightAddUpdateComponent implements OnInit {
     // this.knightForm.get('knightFilter').setValue(this.selectedKnight.name);
     this.knightForm.updateValueAndValidity();
 
-    this.createSpecialtiesFormArray();
+    this.createOtherInfosFormArray();
     this.createImagesFormArray();
     this.createArayasFormArray();
     this.createArtefactsFormArray();
+    this.createMainsStrengthFormArray();
+    this.createWeakPointsFormArray();
   }
 
   createArtefactsFormArray() {
@@ -182,30 +188,30 @@ export class KnightAddUpdateComponent implements OnInit {
     this.knightForm.markAsDirty();
   }
 
-  createSpecialtiesFormArray() {
-    this.specialties.clear();
+  createOtherInfosFormArray() {
+    this.otherInfos.clear();
 
-    this.selectedKnight?.specialties?.forEach((specialty) => {
+    this.selectedKnight?.otherInfos?.forEach((otherInfo) => {
       const control = new FormControl(
-        specialty, [Validators.required]
+          otherInfo, [Validators.required]
       );
-      this.specialties.push(control);
+      this.otherInfos.push(control);
     });
-    this.specialties.updateValueAndValidity();
+    this.otherInfos.updateValueAndValidity();
   }
 
-  get specialties(): FormArray {
-    return this.knightForm.get('specialties') as FormArray;
+  get otherInfos(): FormArray {
+    return this.knightForm.get('otherInfos') as FormArray;
   }
 
-  addSpecialty() {
+  addOtherInfo() {
     const control = new FormControl(undefined, Validators.required);
-    this.specialties.push(control);
+    this.otherInfos.push(control);
     this.knightForm.markAsDirty();
   }
 
-  removeSpecialty(index: number) {
-    this.specialties.removeAt(index);
+  removeOtherInfo(index: number) {
+    this.otherInfos.removeAt(index);
     this.knightForm.markAsDirty();
   }
 
@@ -237,6 +243,60 @@ export class KnightAddUpdateComponent implements OnInit {
   removeAraya(index: number) {
     this.arayas.removeAt(index);
     this.knightForm.markAsDirty();
+  }
+
+  createMainsStrengthFormArray() {
+    this.mainsStrength.clear();
+
+    this.selectedKnight?.mainsStrength?.forEach((mainStrength) => {
+      const control = new FormControl(
+          mainStrength, [Validators.required]
+      );
+      this.mainsStrength.push(control);
+    });
+    this.mainsStrength.updateValueAndValidity();
+  }
+
+  get mainsStrength(): FormArray {
+    return this.knightForm.get('mainsStrength') as FormArray;
+  }
+
+  addMainStrength() {
+    const control = new FormControl(undefined, Validators.required);
+    this.mainsStrength.push(control);
+    this.mainsStrengthFormArray.markAsDirty();
+  }
+
+  removeMainStrength(index: number) {
+    this.mainsStrength.removeAt(index);
+    this.mainsStrengthFormArray.markAsDirty();
+  }
+
+  createWeakPointsFormArray() {
+    this.weakPoints.clear();
+
+    this.selectedKnight?.weakPoints?.forEach((weakPoint) => {
+      const control = new FormControl(
+          weakPoint, [Validators.required]
+      );
+      this.weakPoints.push(control);
+    });
+    this.weakPoints.updateValueAndValidity();
+  }
+
+  get weakPoints(): FormArray {
+    return this.knightForm.get('weakPoints') as FormArray;
+  }
+
+  addWeakPoint() {
+    const control = new FormControl(undefined, Validators.required);
+    this.weakPoints?.push(control);
+    this.weakPointsFormArray.markAsDirty();
+  }
+
+  removeWeakPoint(index: number) {
+    this.weakPoints.removeAt(index);
+    this.weakPointsFormArray.markAsDirty();
   }
 
   createImagesFormArray() {
@@ -284,7 +344,7 @@ export class KnightAddUpdateComponent implements OnInit {
   resetForm(resetSelector?: boolean) {
     this.selectedKnight = undefined;
     this.artefacts.clear();
-    this.specialties.clear();
+    this.otherInfos.clear();
     this.arayas.clear();
     this.images.clear();
     this.knightForm.reset();

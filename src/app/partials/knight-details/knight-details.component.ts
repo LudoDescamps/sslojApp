@@ -12,11 +12,14 @@ import {Araya, ArayaAdapter} from "../../lib/models/Araya";
 })
 export class KnightDetailsComponent implements OnChanges {
   @Input() knight: Knight;
+  @Input() mappedKnights: { [p: string]: Knight } = {};
   public mappedSpecificities: { [p: string]: Specificity } = {};
   public mappedKnightElement: { [p: string]: KnightElement } = {};
   public mappedKnightClass: { [p: string]: KnightClass } = {};
   public mappedArtefacts: { [p: string]: Artefact } = {};
   public mappedArayas: { [p: string]: Araya } = {};
+  public knightTeams: [string[]] = [[]];
+  public teamsInfos: string[] = [];
 
   public artefacts: Artefact[];
   public arayas: Araya[];
@@ -49,7 +52,12 @@ export class KnightDetailsComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     this.knight = changes['knight']?.currentValue;
+    this.knightTeams = this.knight?.teams?.knights ? this.knight.teams.knights : [[]];
+    this.teamsInfos = this.knight?.teams?.infos;
+    console.log(this.knight);
   }
+
+  readonly Object = Object;
 }
 
 // enum SortOrder {

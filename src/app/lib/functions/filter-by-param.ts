@@ -7,7 +7,7 @@ import {Knight} from "../models/Knight";
 
 export class FilterByParam {
 
-  filterByElement(arr: Knight[], param: string, value: any): Knight[] {
+  filter(arr: Knight[], param: string, value: any): Knight[] {
     return arr.filter(obj => obj[param] === value);
   }
 

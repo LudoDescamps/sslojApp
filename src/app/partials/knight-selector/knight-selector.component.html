@@ -32,7 +32,7 @@
         </form>
 
         <div class="text-center details-container" *ngIf="knightSelectorForm.get('name')?.value">
-          <app-knight-details [knight]="selectedKnight"></app-knight-details>
+          <app-knight-details [knight]="selectedKnight" [mappedKnights]="mappedKnights"></app-knight-details>
         </div>
       </mat-card>
     </div>

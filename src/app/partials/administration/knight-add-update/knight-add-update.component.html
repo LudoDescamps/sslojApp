@@ -191,18 +191,18 @@
             </fieldset>
 
             <fieldset class="with-legend">
-              <legend>Spécialités</legend>
+              <legend>Autre informations</legend>
 
-              <ng-container formArrayName="specialties">
+              <ng-container formArrayName="otherInfos">
 
-                <div *ngFor="let specialty of specialties?.controls; let i=index">
+                <div *ngFor="let otherInfo of otherInfos?.controls; let i=index">
                   <fieldset class="with-legend">
                     <legend>Spécialité {{i + 1}}</legend>
 
                     <div class="flex" style="align-items: center">
 
                       <mat-form-field class="full-width">
-                        <mat-label>Spécialité</mat-label>
+                        <mat-label>Autre information</mat-label>
                         <textarea matInput rows="1" [formControlName]="i" type="text" autocomplete="off"
                                   name="i"></textarea>
 
@@ -211,7 +211,7 @@
 
                       <div class="flex-evenly ml10">
                         <button mat-stroked-button class="small" color="warn" type="button"
-                                (click)="removeSpecialty(i)">
+                                (click)="removeOtherInfo(i)">
                           <mat-icon class="font-size pt5 pb5">delete</mat-icon>
                         </button>
                       </div>
@@ -220,9 +220,9 @@
                 </div>
 
                 <div class="text_right mt20">
-                  <button mat-flat-button class="small" color="primary" type="button" (click)="addSpecialty()">
+                  <button mat-flat-button class="small" color="primary" type="button" (click)="addOtherInfo()">
                     <mat-icon class="font-size">add</mat-icon>
-                    Ajouter une spécialité
+                    Ajouter une information
                   </button>
                 </div>
               </ng-container>
@@ -289,6 +289,82 @@
                   <button mat-flat-button class="small" color="primary" type="button" (click)="addAraya()">
                     <mat-icon class="font-size">add</mat-icon>
                     Ajouter un arayashiki
+                  </button>
+                </div>
+              </ng-container>
+            </fieldset>
+
+            <fieldset class="with-legend">
+              <legend>Points forts</legend>
+
+              <ng-container formArrayName="mainsStrength">
+
+                <div *ngFor="let mainStrength of mainsStrength?.controls; let i=index">
+                  <fieldset class="with-legend">
+                    <legend>Point fort {{i + 1}}</legend>
+
+                    <div class="flex" style="align-items: center">
+
+                      <mat-form-field class="full-width">
+                        <mat-label>Point fort</mat-label>
+                        <textarea matInput rows="1" [formControlName]="i" type="text" autocomplete="off"
+                                  name="i"></textarea>
+
+                      </mat-form-field>
+
+
+                      <div class="flex-evenly ml10">
+                        <button mat-stroked-button class="small" color="warn" type="button"
+                                (click)="removeMainStrength(i)">
+                          <mat-icon class="font-size pt5 pb5">delete</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="text_right mt20">
+                  <button mat-flat-button class="small" color="primary" type="button" (click)="addMainStrength()">
+                    <mat-icon class="font-size">add</mat-icon>
+                    Ajouter un point fort
+                  </button>
+                </div>
+              </ng-container>
+            </fieldset>
+
+            <fieldset class="with-legend">
+              <legend>Points faibles</legend>
+
+              <ng-container formArrayName="weakPoints">
+
+                <div *ngFor="let weakPoint of weakPoints?.controls; let i=index">
+                  <fieldset class="with-legend">
+                    <legend>Point faible {{i + 1}}</legend>
+
+                    <div class="flex" style="align-items: center">
+
+                      <mat-form-field class="full-width">
+                        <mat-label>Point faible</mat-label>
+                        <textarea matInput rows="1" [formControlName]="i" type="text" autocomplete="off"
+                                  name="i"></textarea>
+
+                      </mat-form-field>
+
+
+                      <div class="flex-evenly ml10">
+                        <button mat-stroked-button class="small" color="warn" type="button"
+                                (click)="removeWeakPoint(i)">
+                          <mat-icon class="font-size pt5 pb5">delete</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="text_right mt20">
+                  <button mat-flat-button class="small" color="primary" type="button" (click)="addWeakPoint()">
+                    <mat-icon class="font-size">add</mat-icon>
+                    Ajouter un point faible
                   </button>
                 </div>
               </ng-container>
